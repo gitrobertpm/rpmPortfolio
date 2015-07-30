@@ -63,27 +63,6 @@ hr {
 /* END GENERAL *********************************/
 
 
-/* BAKGROUNDS *******************************/
-/* #background,
-#background2 {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: -999;
-}
-
-#background {
-	background: -webkit-linear-gradient(top left, rgba(50,50,50,0.2), rgba(200,200,200,0.2), rgba(255,255,255,0.2), rgba(200,200,200,0.2), rgba(50,50,50,0.2));background: linear-gradient(to bottom right, rgba(50,50,50,0.2), rgba(200,200,200,0.2), rgba(255,255,255,0.2), rgba(200,200,200,0.2), rgba(50,50,50,0.2));
-}
-
-#background2 {
-	background: -webkit-linear-gradient(top right, rgba(50,50,50,0.2), rgba(200,200,200,0.2), rgba(255,255,255,0.2), rgba(200,200,200,0.2), rgba(50,50,50,0.2));background: linear-gradient(to bottom left, rgba(50,50,50,0.2), rgba(200,200,200,0.2), rgba(255,255,255,0.2), rgba(200,200,200,0.2), rgba(50,50,50,0.2));
-} */
-/* END BACKGROUNDS ***********************/
-
-
 /*HEADER AND LOGO, FLOWER STYLINGS IN FLOWER.CSS ***********************/
 header {
 	position: relative;
@@ -210,7 +189,18 @@ section:nth-of-type(1) {
 footer {
 	/* margin: 50px auto auto; */
 	padding-top: 15px;
-	padding-bottom: 10px;
+	background: linear-gradient(to right, black, rgb(50,0,0), black);
+}
+
+footer p {
+	color: ivory;
+	font-size: .9em;
+	line-height: 20px;
+}
+
+footer p:nth-of-type(3) {
+	font-size: 2em;
+	margin-bottom: 15px;
 }
 /* END FOOTER ***********************/
 
@@ -281,7 +271,6 @@ footer {
 	footer {
 		/* margin: 50px auto auto; */
 		padding-top: 15px;
-		padding-bottom: 10px;
 	}
 	/* END FOOTER MEDIUM SCREENS***********************/
 }
@@ -406,9 +395,19 @@ footer {
 	
 	/* FOOTER LARGE SCREENS***********************/
 	footer {
-		/* margin: 50px auto auto; */
 		padding-top: 15px;
-		padding-bottom: 10px;
+	}
+	
+	footer p:nth-of-type(4) {
+		float: left;
+		margin-left: 10px;
+		/* padding-bottom: 10px; */
+	}
+	
+	footer p:nth-of-type(5) {
+		float: right;
+		margin-right: 10px;
+		/* padding-bottom: 10px; */
 	}
 	/* END FOOTER LARGE SCREENS***********************/
 }
