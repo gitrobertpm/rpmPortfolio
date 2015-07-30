@@ -1,0 +1,451 @@
+/* INDEX CSS */
+
+/* DESIGNED FOR SMALL SCREENS FIRST */
+/* STYLING FOR MEDIUM AND LARGE SCREENS BELOW IN MEDIA QUERRIES */
+
+
+/* GENERAL RESETS AND STYLINGS**********************************************************/
+*, *:before, *:after {
+	/* UNIVERSAL BOX-SIZING - SET WIDTH TO INCLUDE PADDING AND BORDER */
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1em;
+	position: relative;
+	text-align: center;
+}
+
+html,
+body,
+header,
+section,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+em,
+span,
+footer {
+	margin: 0;
+	padding: 0
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.1em;
+	color: rgb(125,0,0);
+	outline: none;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+	/* MORE ANCHOR STYLINGS BELOW IN SECTIONS */
+}
+
+a:active, a:focus, a:hover {
+	color: rgb(200,0,0);
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+p {
+	color: rgb(50,50,50);
+	cursor: default;
+}
+
+hr {
+	width: 90%;
+	max-width: 1000px;
+	border-radius: 50%;
+}
+/* END GENERAL *********************************/
+
+
+/* BAKGROUNDS *******************************/
+/* #background,
+#background2 {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -999;
+}
+
+#background {
+	background: -webkit-linear-gradient(top left, rgba(50,50,50,0.2), rgba(200,200,200,0.2), rgba(255,255,255,0.2), rgba(200,200,200,0.2), rgba(50,50,50,0.2));background: linear-gradient(to bottom right, rgba(50,50,50,0.2), rgba(200,200,200,0.2), rgba(255,255,255,0.2), rgba(200,200,200,0.2), rgba(50,50,50,0.2));
+}
+
+#background2 {
+	background: -webkit-linear-gradient(top right, rgba(50,50,50,0.2), rgba(200,200,200,0.2), rgba(255,255,255,0.2), rgba(200,200,200,0.2), rgba(50,50,50,0.2));background: linear-gradient(to bottom left, rgba(50,50,50,0.2), rgba(200,200,200,0.2), rgba(255,255,255,0.2), rgba(200,200,200,0.2), rgba(50,50,50,0.2));
+} */
+/* END BACKGROUNDS ***********************/
+
+
+/*HEADER AND LOGO, FLOWER STYLINGS IN FLOWER.CSS ***********************/
+header {
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 25px;
+	background: url('../img/backgrounds/keyboard.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 50%;
+	/* border: 1px solid black; */
+}
+
+header h1 {
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 12.5vw;
+	letter-spacing: 1px;
+	color: rgb(75,75,75);
+	text-shadow: .5px .25px 0px rgb(125,0,0);
+	margin-bottom: -25px;
+	cursor: default;
+}
+
+/* header h5 {
+	font-family: Georgia, serif;
+	font-size: 1.1em;
+	color: rgb(100,0,0);
+	margin-bottom: -15px;
+	cursor: default;
+} */
+
+.headerImg {
+	width: 125px; 
+	height: 204px; 
+}
+
+.headerTitle {
+	width: 200px; 
+	height: 30px;
+	margin: 5px;	
+}
+
+.subTitle {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 1.25em;
+	margin: 25px auto;
+}
+
+/* END HEADER ***********************/
+
+
+/* GENERAL SECTIONS STYLING ***********************/
+section {
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+section h1 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 15vw;
+	font-weight: 100;
+	color: rgb(75,75,75);
+	margin: 50px auto;
+}
+
+section a {
+	margin: 50px auto 10px;
+}
+
+section p {
+	width: 90%;
+	max-width: 500px;
+	line-height: 24px;
+	margin: 10px auto;
+	padding: 5px;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+/* END SECTIONS ***********************/
+
+
+/* SECTION ONE, PROJECTS ***********************/
+section:nth-of-type(1) {
+	background: url('../img/backgrounds/leoSm.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.projectWrap {
+	margin: 25px auto 75px;
+}
+
+.projectLink {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.5em;
+	/* padding-bottom: 175px; */
+}
+
+.projectImg {
+	width: 225px;
+	height: 175px;
+	margin: 10px auto;
+	/* border: 1px solid black; */
+}
+
+.projectDes {
+	width: 90%;
+	max-width: 500px;
+	line-height: 24px;
+	margin: 10px auto;
+	padding: 5px;
+	border-radius: 2.5px;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+.projectWrap:hover > p {
+	background: rgba(255,255,255,0.4);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.2), -5px 5px 5px rgba(0,0,0,0.2);
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+/* END SECTION ONE ***********************/
+
+
+/* FOOTER ***********************/
+footer {
+	/* margin: 50px auto auto; */
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+/* END FOOTER ***********************/
+
+
+/* MEDIA QUERIES ***********************/
+/* SMALL SCREENS ************/
+
+/* END SMALL SCREENS ************/
+
+
+/* MEDIUM SCREENS ************/
+@media screen and (min-width: 500px) {
+	/* HEADER MEDIUM SCREENS ***********************/
+	header h1 {
+		font-size: 10vw;
+		margin-top: 50px;
+		margin-bottom: 100px;
+	}
+
+	/* header h5 {
+		font-size: 1.1em;
+		margin-bottom: 100px;
+	} */
+
+	.headerImg {
+		width: 150px; 
+		height: 245px; 
+	}
+	
+	.headerTitle {
+		margin: 25px 10px;
+	}
+	
+	.subTitle {
+		font-size: 1.25em;
+		margin: 50px auto;
+	}
+	/* END HEADER MEDIUM SCREENS ***********************/
+	
+	
+	/* GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
+	section h1 {
+		font-size: 10vw;
+	}
+	/* END GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
+	
+	
+	/* SECTION ONE, PROJECTS MEDIUM SCREENS ***********************/
+	section:nth-of-type(1) {
+		background: url('../img/backgrounds/leo.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-attachment: fixed;
+	}
+	
+	/* .projectLink {
+		padding-bottom: 250px;
+	} */
+	
+	.projectImg {
+		width: 300px;
+		height: 250px;
+	}
+	/* END SECTION ONE MEDIUM SCREENS***********************/
+	
+	
+	/* FOOTER MEDIUM SCREENS***********************/
+	footer {
+		/* margin: 50px auto auto; */
+		padding-top: 15px;
+		padding-bottom: 10px;
+	}
+	/* END FOOTER MEDIUM SCREENS***********************/
+}
+/* END MEDIUM SCREENS ************/
+
+
+/* LARGE SCREENS ************/
+@media screen and (min-width: 1000px) {
+	/* HEADER LARGE SCREENS ***********************/
+	header {
+		padding-bottom: 100px;
+	}
+	
+	header h1 {
+		font-size: 7.5vw;
+		text-shadow: .75px .75px 0px rgb(125,0,0);
+		margin-top: 75px;
+		margin-bottom: 125px;
+	}
+
+	/* header h5 {
+		font-size: 1.1em;
+		margin-bottom: 125px;
+	} */
+
+	.headerImg {
+		width: 175px; 
+		height: 270px; 
+	}
+	
+	.headerTitle {
+		position: absolute;
+		bottom: 215px;
+		left: 50%;
+		width: 300px; 
+		height: 50px;
+	}
+	
+	#headerTitle1 {
+		margin-left: -450px;
+	}
+	
+	#headerTitle2 {
+		margin-left: 150px;
+	}
+	
+	.subTitle {
+		font-size: 1.5em;
+		margin: 50px auto;
+	}
+	/* END HEADER LARGE SCREENS ***********************/
+	
+	
+	/* GENERAL SECTIONS STYLING LARGE SCREENS ***********************/
+	section h1 {
+		font-size: 7vw;
+	}
+	/* END GENERAL SECTIONS STYLING LARGE SCREENS ***********************/
+	
+	
+	/* SECTION ONE, PROJECTS LARGE SCREENS ***********************/
+	section:nth-of-type(1) {
+		background: url('../img/backgrounds/leoL.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-attachment: fixed;
+	}
+	
+	.projectWrap {
+		position: relative;
+		margin: 25px auto 150px;
+		height: 420px;
+	}
+	
+	.projectLink {
+		font-size: 1.75em;
+	}
+	
+	.projectLinkLeft {
+		margin-left: -420px;
+	}
+	
+	.projectLinkRight {
+		margin-right: -550px;
+	}
+
+	.projectImg {
+		position: absolute;
+		top: 50px;
+		left: 50%;
+		width: 420px;
+		height: 345px;
+	}
+	
+	.projectImgLeft {
+		margin-left: -450px;
+	}
+	
+	.projectImgRight {
+		margin-left: 25px;
+	}
+
+	.projectDes {
+		position: absolute;
+		top: 125px;
+		left: 50%;
+		font-size: 1.25em;
+		line-height: 30px;
+		/* text-align: left; */
+		max-width: 420px;
+	}
+	
+	.projectDesRight {
+		margin-left: 25px;
+	}
+	
+	.projectDesLeft {
+		margin-left: -450px;
+	}
+	/* END SECTION ONE LARGE SCREENS***********************/
+	
+	
+	/* FOOTER LARGE SCREENS***********************/
+	footer {
+		/* margin: 50px auto auto; */
+		padding-top: 15px;
+		padding-bottom: 10px;
+	}
+	/* END FOOTER LARGE SCREENS***********************/
+}
+/* END LARGE SCREENS ************/
+
+
+/* X LARGE SCREENS ************/
+@media screen and (min-width: 1250px) {
+	/* HEADER X LARGE SCREENS ***********************/
+
+	/* END HEADER X LARGE SCREENS ***********************/
+	
+	
+	/* GENERAL SECTIONS STYLING X LARGE SCREENS ***********************/
+	section h1 {
+		font-size: 5.5vw;
+	}
+	/* END GENERAL SECTIONS STYLING X LARGE SCREENS ***********************/
+	
+	
+	/* SECTION ONE, PROJECTS X LARGE SCREENS ***********************/
+
+	/* END SECTION ONE X LARGE SCREENS***********************/
+	
+	
+	/* FOOTER X LARGE SCREENS***********************/
+	footer {
+		/* margin: 50px auto auto; */
+		padding-top: 15px;
+		padding-bottom: 10px;
+	}
+	/* END FOOTER X LARGE SCREENS***********************/
+}
+/* END X LARGE SCREENS ************/
+
+
+
+
+
+
