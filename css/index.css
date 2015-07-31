@@ -294,7 +294,7 @@ section:nth-of-type(1) {
 	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
-.projectWrap:hover > p {
+.projectWrap:avtive > p, .projectWrap:focus > p, .projectWrap:hover > p {
 	background: rgba(255,255,255,0.4);
 	box-shadow: 5px 5px 5px rgba(0,0,0,0.2), -5px 5px 5px rgba(0,0,0,0.2);
 	-webkit-transition-duration: .5s;transition-duration: .5s;
@@ -306,7 +306,7 @@ section:nth-of-type(1) {
 footer {
 	position: relative;
 	padding-top: 15px;
-	background: linear-gradient(to right, black, rgb(50,0,0), black);
+	background: -webkit-linear-gradient(left, black, rgb(50,0,0), black);background: linear-gradient(to right, black, rgb(50,0,0), black);
 }
 
 footer a {
