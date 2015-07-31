@@ -4,6 +4,30 @@
 var width = window.innerWidth;
 var height = window.innerHeight;
 
+// NAV BEHAVIOR
+document.getElementById("navIcon").onclick = function() {
+	document.getElementById("navIcon").style.display = "none";
+	document.getElementById("closeNav").style.display = "block";
+	document.getElementsByTagName("nav")[0].style.display = "block";
+	document.getElementsByTagName("nav")[0].style.animation = "nav 2s ease .25s forwards";
+};
+
+document.getElementById("closeNav").onclick = function() {
+	document.getElementById("navIcon").style.display = "block";
+	document.getElementById("closeNav").style.display = "none";
+	document.getElementsByTagName("nav")[0].style.display = "none";
+	document.getElementsByTagName("nav")[0].style.animation = "nav 2s ease .25s forwards";
+};
+
+document.getElementById("navProjectsLink").onclick = function() {
+	document.getElementById("navIcon").style.display = "block";
+	document.getElementById("closeNav").style.display = "none";
+	document.getElementsByTagName("nav")[0].style.display = "none";
+	document.getElementsByTagName("nav")[0].style.animation = "nav 2s ease .25s forwards";
+};
+
+
+
 // SHORTCUT FUNCIOTN FOR GRABBING ID AND SETTING BACKGROUND AND DISPLAY VALUES
 function set(idee, background, display, bs, br, bp) {
 	var setIdee = document.getElementById(idee);
@@ -21,6 +45,16 @@ set("projectImg4", "url('img/projectImgs/tabe.png')", "block", "100% 100%", "no-
 set("projectImg5", "url('img/projectImgs/twu.png')", "block", "100% 100%", "no-repeat");
 set("projectImg6", "url('img/projectImgs/decider.png')", "block", "100% 100%", "no-repeat");
 
+// SET NAV ICON IMAGE
+set("navIcon", "url('img/nav.png')", "block", "100% 100%", "no-repeat");
+
+// SET NAV LINK ICONS
+set("navGithubLink", "url('img/github.png')", "block", "50px 50px", "no-repeat", "center");
+set("navLinkedinLink", "url('img/linkedin.png')", "block", "50px 50px", "no-repeat", "center");
+
+// SET FOOTER LINK ICONS
+set("footerGithubLink", "url('img/github.png')", "block", "50px 50px", "no-repeat", "center");
+set("footerLinkedinLink", "url('img/linkedin.png')", "block", "50px 50px", "no-repeat", "center");
 
 
 // SHORTCUT FUNCTION FOR TURNING PROJECT IMAGE DIVS INTO LINKS

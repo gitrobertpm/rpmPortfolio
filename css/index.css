@@ -63,6 +63,97 @@ hr {
 /* END GENERAL *********************************/
 
 
+/* NAV ******************************/
+nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+	background: rgba(0,0,0,0.8);
+	z-index: 9999;
+}
+
+nav a {
+	color: ivory;
+	width: 75px;
+	height: 50px;
+	margin: auto;
+}
+
+nav p {
+	color: ivory;
+	font-size: 1.25em;
+	padding-top: 100px;
+	padding-bottom: 25px;
+}
+
+nav ul {
+	padding-left: 0;
+}
+
+nav ul li {
+	list-style: none;
+	/* text-align: left; */
+	margin: 10px auto;
+}
+
+nav ul li:nth-of-type(1),
+nav ul li:nth-of-type(2) {
+	display: inline-block;
+}
+
+#navIcon {
+	position: fixed;
+	top: 10px;
+	left: 50%;
+	margin-left: -37.5px;
+	width: 75px;
+	height: 40px;
+	cursor: pointer;
+}
+
+@keyframes nav {
+	0% {}
+	25% {width: 100%;}
+	50% {}
+	75% {height: 100%;}
+	100% {}
+}
+
+#closeNav {
+	display: none;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	width: 35px;
+	height: 35px;
+	background: rgb(125,0,0);
+	border-top: 1px solid rgb(200,0,0);
+	border-left: 1px solid rgb(200,0,0);
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	cursor: pointer;
+	z-index: 999999;
+}
+
+#closeNav p {
+	color: rgb(255,100,100);
+	line-height: 30px;
+	font-size: 1.25em;
+	font-weight: bold;
+	cursor: pointer;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+#closeNav p:active, #closeNav p:focus, #closeNav p:hover {
+	color: ivory;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+/* END NAV ******************/
+
+
 /*HEADER AND LOGO, FLOWER STYLINGS IN FLOWER.CSS ***********************/
 header {
 	position: relative;
@@ -187,9 +278,24 @@ section:nth-of-type(1) {
 
 /* FOOTER ***********************/
 footer {
-	/* margin: 50px auto auto; */
+	position: relative;
 	padding-top: 15px;
 	background: linear-gradient(to right, black, rgb(50,0,0), black);
+}
+
+footer a {
+	position: absolute;
+	top: 10px;
+	width: 50px;
+	height: 50px;
+}
+
+#footerGithubLink {
+	left: 10px;
+}
+
+#footerLinkedinLink {
+	right: 10px;
 }
 
 footer p {
@@ -271,6 +377,16 @@ footer p:nth-of-type(3) {
 	footer {
 		/* margin: 50px auto auto; */
 		padding-top: 15px;
+	}
+
+	#footerGithubLink {
+		left: 50%;
+		margin-left: -150px;
+	}
+
+	#footerLinkedinLink {
+		left: 50%;
+		margin-left: 100px;
 	}
 	/* END FOOTER MEDIUM SCREENS***********************/
 }
