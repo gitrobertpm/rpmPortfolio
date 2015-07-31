@@ -63,7 +63,7 @@ q {
 	font-style: italic;
 	color: rgb(150,0,0);
 	width: 95%;
-	max-width: 500px;
+	max-width: 700px;
 	margin: 10px auto;
 	padding: 10px;
 	border-radius: 2.5px;
@@ -569,9 +569,12 @@ footer p:nth-of-type(3) {
 		font-size: 5.5vw;
 	}
 	
-	q,
+	q {
+		font-size: 2em;
+	}
+	
 	q span {
-		font-size: 1.25em;
+		font-size: .9em;
 	}
 	/* END GENERAL SECTIONS STYLING X LARGE SCREENS ***********************/
 
