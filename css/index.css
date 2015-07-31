@@ -424,6 +424,11 @@ footer p:nth-of-type(3) {
 	}
 	/* END FOOTER MEDIUM SCREENS***********************/
 }
+
+
+@media screen and (min-width: 800px) {
+
+}
 /* END MEDIUM SCREENS ************/
 
 
@@ -440,7 +445,7 @@ footer p:nth-of-type(3) {
 
 
 	/* NAV v SCREENS ******************************/
-	nav p {
+	/* nav p {
 		font-size: 1.5em;
 		padding-top: 125px;
 	}
@@ -456,7 +461,7 @@ footer p:nth-of-type(3) {
 	nav ul li:nth-of-type(1),
 	nav ul li:nth-of-type(2) {
 		margin-bottom: 50px;
-	}
+	} */
 	/* END NAV LARGE SCREENS ******************/
 
 	
