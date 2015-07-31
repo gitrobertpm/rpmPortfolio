@@ -18,8 +18,14 @@ document.getElementById("closeNav").onclick = function() {
 	document.getElementsByTagName("nav")[0].style.display = "none";
 };
 
-// NAV IN HOUSE LINKS THAT NEED THAT NEED THE NAV TOP CLOSE
+// NAV IN HOUSE LINKS THAT NEED THE NAV TO CLOSE
 document.getElementById("navProjectsLink").onclick = function() {
+	document.getElementById("navIcon").style.display = "block";
+	document.getElementById("closeNav").style.display = "none";
+	document.getElementsByTagName("nav")[0].style.display = "none";
+};
+
+document.getElementById("navMyDealLink").onclick = function() {
 	document.getElementById("navIcon").style.display = "block";
 	document.getElementById("closeNav").style.display = "none";
 	document.getElementsByTagName("nav")[0].style.display = "none";
