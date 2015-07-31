@@ -64,7 +64,7 @@ q {
 	color: rgb(150,0,0);
 	width: 95%;
 	max-width: 500px;
-	margin: auto;
+	margin: 10px auto;
 	padding: 10px;
 	border-radius: 2.5px;
 	cursor: default;
@@ -83,6 +83,7 @@ q:active, q:focus, q:hover {
 cite {
 	font-style: normal;
 	padding: 10px;
+	margin-top: 15px;
 	cursor: default;
 }
 
