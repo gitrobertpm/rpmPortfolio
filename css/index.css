@@ -62,13 +62,28 @@ q {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-style: italic;
 	color: rgb(150,0,0);
+	width: 95%;
+	max-width: 500px;
+	margin: auto;
 	padding: 10px;
+	border-radius: 2.5px;
+	cursor: default;
 }
 
+q span {
+	color: rgb(75,0,0);
+}
+
+q:active, q:focus, q:hover {
+	background: rgba(255,255,255,0.4);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.2), -5px 5px 5px rgba(0,0,0,0.2);
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
 
 cite {
 	font-style: normal;
 	padding: 10px;
+	cursor: default;
 }
 
 cite span {
@@ -92,6 +107,7 @@ hr {
 	width: 75px;
 	height: 40px;
 	cursor: pointer;
+	z-index: 9999;
 }
 
 
