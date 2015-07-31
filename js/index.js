@@ -4,26 +4,25 @@
 var width = window.innerWidth;
 var height = window.innerHeight;
 
-// NAV BEHAVIOR
+// OPEN NAV
 document.getElementById("navIcon").onclick = function() {
 	document.getElementById("navIcon").style.display = "none";
 	document.getElementById("closeNav").style.display = "block";
 	document.getElementsByTagName("nav")[0].style.display = "block";
-	document.getElementsByTagName("nav")[0].style.animation = "nav 2s ease .25s forwards";
 };
 
+// CLOSE NAV
 document.getElementById("closeNav").onclick = function() {
 	document.getElementById("navIcon").style.display = "block";
 	document.getElementById("closeNav").style.display = "none";
 	document.getElementsByTagName("nav")[0].style.display = "none";
-	document.getElementsByTagName("nav")[0].style.animation = "nav 2s ease .25s forwards";
 };
 
+// NAV IN HOUSE LINKS THAT NEED THAT NEED THE NAV TOP CLOSE
 document.getElementById("navProjectsLink").onclick = function() {
 	document.getElementById("navIcon").style.display = "block";
 	document.getElementById("closeNav").style.display = "none";
 	document.getElementsByTagName("nav")[0].style.display = "none";
-	document.getElementsByTagName("nav")[0].style.animation = "nav 2s ease .25s forwards";
 };
 
 

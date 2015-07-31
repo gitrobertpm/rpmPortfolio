@@ -28,7 +28,9 @@ h4,
 h5,
 h6,
 p,
+q,
 em,
+cite,
 span,
 footer {
 	margin: 0;
@@ -55,6 +57,24 @@ p {
 	cursor: default;
 }
 
+q {
+	display: block;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-style: italic;
+	color: rgb(150,0,0);
+	padding: 10px;
+}
+
+
+cite {
+	font-style: normal;
+	padding: 10px;
+}
+
+cite span {
+	color: rgb(150,0,0);
+}
+
 hr {
 	width: 90%;
 	max-width: 1000px;
@@ -64,46 +84,6 @@ hr {
 
 
 /* NAV ******************************/
-nav {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	display: none;
-	background: rgba(0,0,0,0.8);
-	z-index: 9999;
-}
-
-nav a {
-	color: ivory;
-	width: 75px;
-	height: 50px;
-	margin: auto;
-}
-
-nav p {
-	color: ivory;
-	font-size: 1.25em;
-	padding-top: 100px;
-	padding-bottom: 25px;
-}
-
-nav ul {
-	padding-left: 0;
-}
-
-nav ul li {
-	list-style: none;
-	/* text-align: left; */
-	margin: 10px auto;
-}
-
-nav ul li:nth-of-type(1),
-nav ul li:nth-of-type(2) {
-	display: inline-block;
-}
-
 #navIcon {
 	position: fixed;
 	top: 10px;
@@ -114,12 +94,52 @@ nav ul li:nth-of-type(2) {
 	cursor: pointer;
 }
 
-@keyframes nav {
-	0% {}
-	25% {width: 100%;}
-	50% {}
-	75% {height: 100%;}
-	100% {}
+
+nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+	background: rgba(0,0,0,0.9);
+	z-index: 9999;
+}
+
+nav a {
+	color: rgb(255,240,240);
+	width: 75px;
+	height: 50px;
+	margin: auto;
+}
+
+nav p {
+	color: rgb(255,240,240);
+	font-size: 1.25em;
+	padding-top: 75px;
+	padding-bottom: 25px;
+}
+
+nav ul {
+	padding-left: 0;
+}
+
+nav ul li {
+	list-style: none;
+	margin: 10px auto;
+}
+
+nav ul li:nth-of-type(1),
+nav ul li:nth-of-type(2) {
+	display: inline-block;
+}
+
+nav q span {
+	color: rgb(255,240,240);
+}
+
+nav cite {
+	color: rgb(255,240,240);
 }
 
 #closeNav {
@@ -162,7 +182,6 @@ header {
 	background: url('../img/backgrounds/keyboard.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 50%;
-	/* border: 1px solid black; */
 }
 
 header h1 {
@@ -174,14 +193,6 @@ header h1 {
 	margin-bottom: -25px;
 	cursor: default;
 }
-
-/* header h5 {
-	font-family: Georgia, serif;
-	font-size: 1.1em;
-	color: rgb(100,0,0);
-	margin-bottom: -15px;
-	cursor: default;
-} */
 
 .headerImg {
 	width: 125px; 
@@ -248,14 +259,12 @@ section:nth-of-type(1) {
 .projectLink {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 1.5em;
-	/* padding-bottom: 175px; */
 }
 
 .projectImg {
 	width: 225px;
 	height: 175px;
 	margin: 10px auto;
-	/* border: 1px solid black; */
 }
 
 .projectDes {
@@ -317,19 +326,94 @@ footer p:nth-of-type(3) {
 /* END SMALL SCREENS ************/
 
 
+
+/* LANSCAPE MODE ***********************/
+@media all and (orientation:landscape) {
+	/* NAV LANDSCAPE******************************/
+	nav a {
+		color: rgb(255,240,240);
+		width: 75px;
+		height: 50px;
+		margin: auto;
+	}
+
+	nav p {
+		color: rgb(255,240,240);
+		font-size: 1.25em;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	nav ul {
+		padding-left: 0;
+	}
+
+	nav ul li {
+		list-style: none;
+		margin: 10px auto;
+	}
+
+	nav ul li:nth-of-type(1),
+	nav ul li:nth-of-type(2) {
+		display: inline-block;
+	}
+
+	nav q span {
+		color: rgb(255,240,240);
+	}
+
+	nav cite {
+		color: rgb(255,240,240);
+	}
+	/* END NAV LANDSCAPE******************/
+}
+/* END LANSCAPE MODE ***********************/
+
+
+
 /* MEDIUM SCREENS ************/
 @media screen and (min-width: 500px) {
+	/* GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
+	section h1 {
+		font-size: 10vw;
+	}
+	
+	q,
+	q span {
+		font-size: 1.25em;
+	}
+	/* END GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
+	
+	
+
+	/* NAV MEDIUM SCREENS ******************************/
+	nav p {
+		font-size: 1.5em;
+		padding-top: 125px;
+	}
+
+	nav ul {
+		margin: 50px auto 100px;
+	}
+
+	nav ul li {
+		margin: 25px auto;
+	}
+
+	nav ul li:nth-of-type(1),
+	nav ul li:nth-of-type(2) {
+		margin-bottom: 50px;
+	}
+	/* END NAV MEDIUM SCREENS ******************/
+
+	
+	
 	/* HEADER MEDIUM SCREENS ***********************/
 	header h1 {
 		font-size: 10vw;
 		margin-top: 50px;
 		margin-bottom: 100px;
 	}
-
-	/* header h5 {
-		font-size: 1.1em;
-		margin-bottom: 100px;
-	} */
 
 	.headerImg {
 		width: 150px; 
@@ -347,12 +431,6 @@ footer p:nth-of-type(3) {
 	/* END HEADER MEDIUM SCREENS ***********************/
 	
 	
-	/* GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
-	section h1 {
-		font-size: 10vw;
-	}
-	/* END GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
-	
 	
 	/* SECTION ONE, PROJECTS MEDIUM SCREENS ***********************/
 	section:nth-of-type(1) {
@@ -362,10 +440,6 @@ footer p:nth-of-type(3) {
 		background-attachment: fixed;
 	}
 	
-	/* .projectLink {
-		padding-bottom: 250px;
-	} */
-	
 	.projectImg {
 		width: 300px;
 		height: 250px;
@@ -373,12 +447,8 @@ footer p:nth-of-type(3) {
 	/* END SECTION ONE MEDIUM SCREENS***********************/
 	
 	
+	
 	/* FOOTER MEDIUM SCREENS***********************/
-	footer {
-		/* margin: 50px auto auto; */
-		padding-top: 15px;
-	}
-
 	#footerGithubLink {
 		left: 50%;
 		margin-left: -150px;
@@ -393,8 +463,40 @@ footer p:nth-of-type(3) {
 /* END MEDIUM SCREENS ************/
 
 
+
+
 /* LARGE SCREENS ************/
 @media screen and (min-width: 1000px) {
+	/* GENERAL SECTIONS STYLING LARGE SCREENS ***********************/
+	section h1 {
+		font-size: 7vw;
+	}
+	/* END GENERAL SECTIONS STYLING LARGE SCREENS ***********************/
+	
+
+
+	/* NAV LARGE SCREENS ******************************/
+	/* nav p {
+		font-size: 1.5em;
+		padding-top: 125px;
+	}
+
+	nav ul {
+		margin: 50px auto 100px;
+	}
+
+	nav ul li {
+		margin: 25px auto;
+	}
+
+	nav ul li:nth-of-type(1),
+	nav ul li:nth-of-type(2) {
+		margin-bottom: 50px;
+	} */
+	/* END NAV LARGE SCREENS ******************/
+
+	
+	
 	/* HEADER LARGE SCREENS ***********************/
 	header {
 		padding-bottom: 100px;
@@ -406,11 +508,6 @@ footer p:nth-of-type(3) {
 		margin-top: 75px;
 		margin-bottom: 125px;
 	}
-
-	/* header h5 {
-		font-size: 1.1em;
-		margin-bottom: 125px;
-	} */
 
 	.headerImg {
 		width: 175px; 
@@ -439,12 +536,6 @@ footer p:nth-of-type(3) {
 	}
 	/* END HEADER LARGE SCREENS ***********************/
 	
-	
-	/* GENERAL SECTIONS STYLING LARGE SCREENS ***********************/
-	section h1 {
-		font-size: 7vw;
-	}
-	/* END GENERAL SECTIONS STYLING LARGE SCREENS ***********************/
 	
 	
 	/* SECTION ONE, PROJECTS LARGE SCREENS ***********************/
@@ -495,7 +586,6 @@ footer p:nth-of-type(3) {
 		left: 50%;
 		font-size: 1.25em;
 		line-height: 30px;
-		/* text-align: left; */
 		max-width: 420px;
 	}
 	
@@ -509,39 +599,39 @@ footer p:nth-of-type(3) {
 	/* END SECTION ONE LARGE SCREENS***********************/
 	
 	
-	/* FOOTER LARGE SCREENS***********************/
-	footer {
-		padding-top: 15px;
-	}
 	
+	/* FOOTER LARGE SCREENS***********************/	
 	footer p:nth-of-type(4) {
 		float: left;
 		margin-left: 10px;
-		/* padding-bottom: 10px; */
 	}
 	
 	footer p:nth-of-type(5) {
 		float: right;
 		margin-right: 10px;
-		/* padding-bottom: 10px; */
 	}
 	/* END FOOTER LARGE SCREENS***********************/
 }
 /* END LARGE SCREENS ************/
 
 
+
+
+
 /* X LARGE SCREENS ************/
 @media screen and (min-width: 1250px) {
-	/* HEADER X LARGE SCREENS ***********************/
-
-	/* END HEADER X LARGE SCREENS ***********************/
-	
-	
 	/* GENERAL SECTIONS STYLING X LARGE SCREENS ***********************/
 	section h1 {
 		font-size: 5.5vw;
 	}
 	/* END GENERAL SECTIONS STYLING X LARGE SCREENS ***********************/
+
+
+
+	/* HEADER X LARGE SCREENS ***********************/
+
+	/* END HEADER X LARGE SCREENS ***********************/
+	
 	
 	
 	/* SECTION ONE, PROJECTS X LARGE SCREENS ***********************/
@@ -549,12 +639,9 @@ footer p:nth-of-type(3) {
 	/* END SECTION ONE X LARGE SCREENS***********************/
 	
 	
+	
 	/* FOOTER X LARGE SCREENS***********************/
-	footer {
-		/* margin: 50px auto auto; */
-		padding-top: 15px;
-		padding-bottom: 10px;
-	}
+
 	/* END FOOTER X LARGE SCREENS***********************/
 }
 /* END X LARGE SCREENS ************/
