@@ -327,30 +327,33 @@ footer p:nth-of-type(3) {
 
 
 
-/* LANSCAPE MODE ***********************/
-@media screen and (orientation:landscape) {
-	/* NAV LANDSCAPE******************************/
-	nav a {
-		color: rgb(255,240,240);
-		width: 75px;
-		height: 50px;
-		margin: auto;
+/* MEDIUM SCREENS ************/
+@media screen and (min-width: 500px) {
+	/* GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
+	section h1 {
+		font-size: 10vw;
 	}
-
-	nav p {
-		color: rgb(255,240,240);
+	
+	q,
+	q span {
 		font-size: 1.25em;
-		padding-top: 15px;
-		padding-bottom: 15px;
 	}
+	/* END GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
 
-	nav ul {
-		padding-left: 0;
+	
+	/* NAV MEDIUM SCREENS ******************************/
+	nav p {
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 
 	nav ul li {
-		list-style: none;
+		display: inline-block;
 		margin: 10px auto;
+	}
+	
+	nav ul li:nth-of-type(4) {
+		margin: auto 25px;
 	}
 
 	nav ul li:nth-of-type(1),
@@ -365,25 +368,8 @@ footer p:nth-of-type(3) {
 	nav cite {
 		color: rgb(255,240,240);
 	}
-	/* END NAV LANDSCAPE******************/
-}
-/* END LANSCAPE MODE ***********************/
-
-
-
-/* MEDIUM SCREENS ************/
-@media screen and (min-width: 500px) {
-	/* GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
-	section h1 {
-		font-size: 10vw;
-	}
+	/* END NAV MEDIUM SCREENS ******************/
 	
-	q,
-	q span {
-		font-size: 1.25em;
-	}
-	/* END GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
-
 	
 	
 	/* HEADER MEDIUM SCREENS ***********************/
