@@ -266,7 +266,7 @@ section p {
 section:nth-of-type(1) {
 	background: url('../img/backgrounds/leoSm.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 	background-attachment: fixed;
 }
 
@@ -308,7 +308,7 @@ section:nth-of-type(1) {
 section:nth-of-type(2) {
 	background: url('../img/backgrounds/rpmBackground.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 	background-attachment: fixed;
 }
 
@@ -319,14 +319,17 @@ section:nth-of-type(2) h1 {
 .aboutWrap {
 	width: 95%;
 	max-width: 1000px;
-	margin: auto;
+	margin: 50px auto;
 	padding: 25px;
 	border-radius: 2.5px;
-	background: rgba(255,240,240, 0.5);
+	background: -webkit-linear-gradient(left, rgba(255,240,240,1), rgba(255,240,240,0.7), rgba(255,240,240,0.3), transparent);background: linear-gradient(to right, rgba(255,240,240,1), rgba(255,240,240,0.7), rgba(255,240,240,0.3), transparent);
+	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
 .aboutWrap:active, .aboutWrap:focus, .aboutWrap:hover {
+	background: rgba(255,240,240, 0.7);
 	border: 1px solid white;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
 section:nth-of-type(2) q span {
@@ -334,8 +337,12 @@ section:nth-of-type(2) q span {
 }
 
 section:nth-of-type(2) p {
-	font-family: Georgia, serif;
-	max-width: 900px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	max-width: 1000px;
+}
+
+section:nth-of-type(2) cite {
+	color: rgb(255,240,240);
 }
 
 /* END SECTION TWO ***********************/
@@ -588,7 +595,7 @@ footer p:nth-of-type(3) {
 	section:nth-of-type(2) {
 		background: url('../img/backgrounds/rpmBackground.jpg');
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: 100% 100%;
 		background-attachment: fixed;
 	}
 
