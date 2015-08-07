@@ -215,7 +215,6 @@ header h1 {
 header h1 span {
 	font-family: Impact, Charcoal, sans-serif;
 	font-style: italic;
-	margin-right: 7.5px;
 }
 
 .headerImg {
@@ -556,6 +555,10 @@ footer p:nth-of-type(1) {
 		text-shadow: .75px .75px 0px rgb(125,0,0);
 		margin-top: 75px;
 		margin-bottom: 125px;
+	}
+	
+	header h1 span {
+		margin-right: 7.5px;
 	}
 
 	.headerImg {
