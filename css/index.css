@@ -212,10 +212,10 @@ header h1 {
 	cursor: default;
 }
 
-header h1 span {
+/* header h1 span {
 	font-family: Impact, Charcoal, sans-serif;
 	font-style: italic;
-}
+} */
 
 .headerImg {
 	width: 125px; 
@@ -557,9 +557,9 @@ footer p:nth-of-type(1) {
 		margin-bottom: 125px;
 	}
 	
-	header h1 span {
+	/* header h1 span {
 		margin-right: 7.5px;
-	}
+	} */
 
 	.headerImg {
 		width: 175px; 
