@@ -265,9 +265,9 @@ section p {
 /* SECTION ONE, PROJECTS ***********************/
 section:nth-of-type(1) {
 	background: url('../img/backgrounds/leoSm.jpg');
-	background-repeat: no-repeat;
+	/* background-repeat: no-repeat; */
 	background-size: contain;
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 }
 
 .projectWrap {
@@ -307,9 +307,9 @@ section:nth-of-type(1) {
 /* SECTION TWO, MY DEAL ***********************/
 section:nth-of-type(2) {
 	background: url('../img/backgrounds/rpmBackground.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-attachment: fixed;
+	/* background-repeat: no-repeat; */
+	background-size: contain;
+	/* background-attachment: fixed; */
 }
 
 section:nth-of-type(2) h1 {
@@ -450,9 +450,9 @@ footer p:nth-of-type(3) {
 	/* SECTION ONE, PROJECTS MEDIUM SCREENS ***********************/
 	section:nth-of-type(1) {
 		background: url('../img/backgrounds/leo.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
+		/* background-repeat: no-repeat; */
+		/* background-size: cover; */
+		/* background-attachment: fixed; */
 	}
 	
 	.projectImg {
@@ -532,9 +532,9 @@ footer p:nth-of-type(3) {
 	/* SECTION ONE, PROJECTS LARGE SCREENS ***********************/
 	section:nth-of-type(1) {
 		background: url('../img/backgrounds/leoL.jpg');
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		background-attachment: fixed;
+		/* background-repeat: no-repeat; */
+		/* background-size: contain; */
+		/* background-attachment: fixed; */
 	}
 	
 	.projectWrap {
