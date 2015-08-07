@@ -381,6 +381,62 @@ section:nth-of-type(2) cite {
 
 
 
+/* SECTION THREE, CODE FOR A HAPPY LIFE ******************************/
+section:nth-of-type(3) {
+	position: relative;
+	background: slategrey;
+	overflow-X: auto;
+}
+
+section:nth-of-type(3) h1 {
+	font-size: 10vw;
+	font-style: normal;
+	color: rgb(75,25,25);
+	padding: 5px;
+}
+
+section:nth-of-type(3) h1 span{
+	color: rgb(25,25,25);
+}
+
+.codeWrap{
+	margin: 50px auto;
+	margin-left: 5%;
+}
+
+code {
+	display: block;
+	text-align: left;
+	color: ivory;
+}
+
+.italic {
+	font-style: italic;
+	font-weight: bold;
+	color: rgb(150,50,50);
+}
+
+.punc{
+	font-family: 'Playfair Display', serif;
+	color: black;
+}
+
+.oneIndent {
+	text-indent: 15px;
+}
+
+.twoIndents {
+	text-indent: 30px;
+}
+
+.threeIndents {
+	text-indent: 45px;
+}
+
+/* END SECTION THREE *************/
+
+
+
 /* FOOTER ***********************/
 footer {
 	position: relative;
@@ -496,11 +552,65 @@ footer p:nth-of-type(1) {
 	.projectLink {
 		font-size: 2em;
 	}
-	/* END SECTION ONE MEDIUM SCREENS***********************/
+	/* END SECTION ONE MEDIUM SCREENS ***********************/
 	
 	
+	/* SECTION THREE, CODE FOR A HAPPY LIFE MEDIUM SCREENS ******************************/
+	section:nth-of-type(3) {
+		
+	}
+
+	/* section:nth-of-type(3) h1 {
+		font-size: 10vw;
+		font-style: normal;
+		color: rgb(75,25,25);
+		padding: 5px;
+	}
+
+	section:nth-of-type(3) h1 span{
+		color: rgb(25,25,25);
+	} */
+
+	.codeWrap{
+		/* position: absolute;
+		left: 50%;
+		width: 300px; */
+		/* margin: 50px auto;
+		padding: 5px; */
+	}
+
+	code {
+		font-size: 1.5em;
+		margin-left: 10%;
+	}
+
+	/* .italic {
+		font-style: italic;
+		font-weight: bold;
+		color: rgb(150,50,50);
+	}
+
+	.punc{
+		font-family: 'Playfair Display', serif;
+		color: black;
+	} */
+
+	.oneIndent {
+		text-indent: 15px;
+	}
+
+	.twoIndents {
+		text-indent: 30px;
+	}
+
+	.threeIndents {
+		text-indent: 45px;
+	}
+
+	/* END SECTION THREE MEDIUM SCREENS *************/
 	
-	/* FOOTER MEDIUM SCREENS***********************/
+	
+	/* FOOTER MEDIUM SCREENS ***********************/
 	#footerGithubLink {
 		left: 50%;
 		margin-left: -150px;
@@ -510,9 +620,9 @@ footer p:nth-of-type(1) {
 		left: 50%;
 		margin-left: 100px;
 	}
-	/* END FOOTER MEDIUM SCREENS***********************/
+	/* END FOOTER MEDIUM SCREENS ***********************/
 }
-/* END MEDIUM SCREENS***********************/
+/* END MEDIUM SCREENS ***********************/
 
 
 /* LARGE SCREENS ************/
