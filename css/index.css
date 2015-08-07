@@ -214,7 +214,8 @@ header h1 {
 
 header h1 span {
 	font-family: Impact, Charcoal, sans-serif;
-	/* font-style: italic; */
+	font-style: italic;
+	margin-right: 7.5px;
 }
 
 .headerImg {
@@ -280,7 +281,7 @@ section p {
 section:nth-of-type(1) {
 	background: url('../img/backgrounds/leoSm.jpg');
 	/* background-repeat: no-repeat; */
-	background-size: contain;
+	/* background-size: contain; */
 	/* background-attachment: fixed; */
 }
 
@@ -588,7 +589,7 @@ footer p:nth-of-type(1) {
 	
 	/* SECTION ONE, PROJECTS LARGE SCREENS ***********************/
 	section:nth-of-type(1) {
-		background: url('../img/backgrounds/leoL.jpg');
+		/* background: url('../img/backgrounds/leoL.jpg'); */
 		/* background-repeat: no-repeat; */
 		/* background-size: contain; */
 		/* background-attachment: fixed; */
