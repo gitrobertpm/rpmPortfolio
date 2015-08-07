@@ -14,7 +14,7 @@ body {
 	font-size: 1em;
 	position: relative;
 	text-align: center;
-	background-color: #FFF9E9;
+	background-color: ivory;
 }
 
 html,
@@ -200,6 +200,7 @@ header {
 	background: url('../img/backgrounds/keyboard2.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 50%;
+	box-shadow: 0px 10px 10px ivory;
 }
 
 header h1 {
@@ -207,7 +208,7 @@ header h1 {
 	font-weight: 900;
 	font-size: 12.5vw;
 	letter-spacing: 1px;
-	color: rgb(25,25,25);
+	color: rgb(35,35,35);
 	text-shadow: .5px .25px 0px rgb(125,0,0);
 	margin-bottom: -25px;
 	cursor: default;
@@ -251,7 +252,7 @@ section h1 {
 	font-style: italic;
 	font-size: 15vw;
 	font-weight: 100;
-	color: rgb(75,75,75);
+	color: rgb(65,65,65);
 	margin: 50px auto;
 	cursor: default;
 }
@@ -259,6 +260,7 @@ section h1 {
 section h1 span {
 	font-family: Impact, Charcoal, sans-serif;
 	font-style: normal;
+	color: rgb(45,45,45);
 	text-shadow: 2px 2px 0px rgb(125,75,75);
 }
 
@@ -338,7 +340,11 @@ section:nth-of-type(2) {
 }
 
 section:nth-of-type(2) h1 {
-	color: rgb(255,235,235);
+	color: rgb(255,245,245);
+}
+
+section:nth-of-type(2) h1 span{
+	color: rgb(255,245,245);
 }
 
 .aboutWrap {
