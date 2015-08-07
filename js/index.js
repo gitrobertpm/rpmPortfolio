@@ -111,6 +111,15 @@ hoverColor("projectImg5", "projectLink5", "rgb(200,0,0)", "rgb(125,0,0)");
 hoverColor("projectImg6", "projectLink6", "rgb(200,0,0)", "rgb(125,0,0)");
 
 
-
+// OPEN DECORATIVE CURTAINS ON LARGE SCREENS
+window.onload = function() {
+	if (width < 1200) {
+		document.getElementById("curtainRight").style.width = "5%";
+		document.getElementById("curtainLeft").style.width = "5%";
+	} else if (width > 1199) {
+		document.getElementById("curtainRight").style.width = "10%";
+		document.getElementById("curtainLeft").style.width = "10%";
+	}
+};
 
 
