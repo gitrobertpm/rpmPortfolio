@@ -78,7 +78,7 @@ set("footerGithubLink", "url('img/github.png')", "block", "50px 50px", "no-repea
 set("footerLinkedinLink", "url('img/linkedin.png')", "block", "50px 50px", "no-repeat", "center");
 
 // SET BIO PIC
-set("myPicDiv", "url('img/me5.jpg')", "block", "100px 125px", "no-repeat", "bottom");
+set("myPicDiv", "url('img/me5.jpg')", "block", "100px 125px", "no-repeat", "center");
 
 
 
