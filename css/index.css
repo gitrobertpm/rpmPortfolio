@@ -200,7 +200,7 @@ header {
 header h1 {
 	font-family: 'Playfair Display', serif;
 	font-weight: 900;
-	font-size: 12.5vw;
+	font-size: 12vw;
 	letter-spacing: 1px;
 	color: rgb(35,35,35);
 	text-shadow: .5px .25px 0px rgb(125,0,0);
@@ -213,10 +213,30 @@ header h1 {
 	height: 204px; 
 }
 
+#devHand {
+	-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
+	-webkit-transition-duration: 1s;transition-duration: 1s;
+}
+
+#desHand {
+	-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
+	-webkit-transition-duration: 1s;transition-duration: 1s;
+}
+
 .headerTitle {
 	width: 200px; 
 	height: 30px;
 	margin: 5px;	
+}
+
+#dev{
+	-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
+	-webkit-transition-duration: 1s;transition-duration: 1s;
+}
+
+#des {
+	-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
+	-webkit-transition-duration: 1s;transition-duration: 1s;
 }
 
 .subTitle {
@@ -268,9 +288,11 @@ section p {
 /* END SECTIONS ***********************/
 
 
+
 /* SECTION ONE, PROJECTS ***********************/
 section:nth-of-type(1) {
 	background: url('../img/backgrounds/leoSm.jpg');
+	background-size: 250px 275px;
 }
 
 section:nth-of-type(1)  {
@@ -317,84 +339,199 @@ section:nth-of-type(1)  {
 
 
 
-/* SECTION TWO, MY DEAL ***********************/
+/* SECTION TWO **************/
 section:nth-of-type(2) {
+	background: linear-gradient(to right, black 50%, ivory 50.01%);
+	/* min-height: 750px; */
+}
+
+section:nth-of-type(2) .wrapper {
+	background: url('../img/yinyang2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+section:nth-of-type(2) h1 {
+	font-style: normal;
+	color: ivory;
+	margin-left: -20px;
+	margin-bottom: 15px;
+}
+
+section:nth-of-type(2) h1 span {
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	font-size: 1em;
+	color: black;
+	text-shadow: none;
+	margin-left: 5px;
+}
+
+#myPicDiv {
+	width: 100px;
+	height: 125px;
+	margin: 25px auto 15px;
+	/* border: 1px solid red; */
+	border-radius: 0px 30% 0px 30%;
+}
+
+section:nth-of-type(2) h2 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	/* font-style: italic; */
+	/* color: rgb(100,150,255); */
+}
+.meWrap {
+	display: inline-block;
+	/* border: 1px solid red; */
+	width: 49%;
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+
+#meWrap1 h2 {
+	color: rgb(50,50,50);
+	text-shadow: 2px 1px 0px rgb(100,175,255);
+	font-size: 17vw;
+}
+
+.detailTitle {
+	color: rgb(225,225,225);
+	text-shadow: 2px 1px 0px rgb(100,175,255);
+	font-size: 1.75em;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	transform: rotate(35deg);
+}
+
+#details h2 {
+	font-size: 2.1em;
+}
+
+#trajectory h2 {
+	font-size: 1.4em;
+}
+
+#contact h2 {
+	font-size: 1.8em;
+}
+
+#references h2 {
+	font-size: 1.4em;
+}
+
+
+
+#meWrap1 {
+	
+}
+
+#meWrap1 p {
+	color: ivory;
+}
+
+#meWrap2 {
+	
+}
+
+section:nth-of-type(2) p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+/* END SECTION TWO ***********/
+
+
+
+/* SECTION THREE, MY DEAL ***********************/
+section:nth-of-type(3) {
 	background: url('../img/backgrounds/rpmBackground.jpg');
 	background-size: contain;
 }
 
-section:nth-of-type(2) h1 {
+section:nth-of-type(3) h1 {
 	color: rgb(255,245,245);
 }
 
-section:nth-of-type(2) h1 span{
+section:nth-of-type(3) h1 span{
 	color: rgb(255,245,245);
 }
 
 .aboutWrap {
 	width: 95%;
-	max-width: 1000px;
+	max-width: 800px;
 	margin: 50px auto;
-	padding: 25px;
+	padding: 5px 5px 7.5px;
 	border-radius: 2.5px;
-	background: -webkit-linear-gradient(left, rgba(255,240,240,1), rgba(255,240,240,0.8), rgba(255,240,240,0.7), rgba(255,240,240,0.6), rgba(255,240,240,0.5), transparent);background: linear-gradient(to right, rgba(255,240,240,1), rgba(255,240,240,0.8), rgba(255,240,240,0.7), rgba(255,240,240,0.6), rgba(255,240,240,0.5), transparent);
+	background: rgba(255,255,255,0.9);
+	/* background: -webkit-linear-gradient(left, rgba(255,240,240,1), rgba(255,240,240,0.9), rgba(255,240,240,0.8), rgba(255,240,240,0.7), rgba(255,240,240,0.6), transparent);background: linear-gradient(to right, rgba(255,240,240,1), rgba(255,240,240,0.9), rgba(255,240,240,0.8), rgba(255,240,240,0.7), rgba(255,240,240,0.6), transparent); */
 	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
-.aboutWrap:active, .aboutWrap:focus, .aboutWrap:hover {
-	background: rgba(255,240,240, 0.7);
+.innerAboutWrap {
+	padding: 35px 25px;
+	margin: auto;
+	border-radius: 2.5px;
+	border: 5px double rgb(75,5,5);
+}
+
+/* .aboutWrap:active, .aboutWrap:focus, .aboutWrap:hover {
+	background: rgba(255,240,240, 0.9);
 	border: 1px solid white;
 	-webkit-transition-duration: .5s;transition-duration: .5s;
-}
+} */
 
-section:nth-of-type(2) q span {
+section:nth-of-type(3) q span {
 	color: rgb(225,210,210);
 }
 
-section:nth-of-type(2) p {
+section:nth-of-type(3) p {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	max-width: 1000px;
 }
 
-section:nth-of-type(2) cite {
+section:nth-of-type(3) cite {
 	color: rgb(255,240,240);
 }
-/* END SECTION TWO ***********************/
+
+section:nth-of-type(3) cite span {
+	color: rgb(225,200,200);
+}
+/* END SECTION THREE ***********************/
 
 
 
-/* SECTION THREE, CODE FOR A HAPPY LIFE ******************************/
-section:nth-of-type(3) {
+/* SECTION FOUR, CODE FOR A HAPPY LIFE ******************************/
+section:nth-of-type(4) {
 	position: relative;
 	background: black;
-	overflow-X: auto;
+	overflow: hidden;
 }
 
-section:nth-of-type(3) h1 {
+section:nth-of-type(4) h1 {
 	font-size: 10vw;
 	color: ivory;
 	padding: 5px;
 	margin-bottom: 15px;
 }
 
-section:nth-of-type(3) h1 span{
+section:nth-of-type(4) h1 span{
 	color: rgb(25,25,25);
 	text-shadow: 2px 1px 0px rgb(100,175,255);
 }
 
-section:nth-of-type(3) p {
+section:nth-of-type(4) p {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
-	color: rgb(125,15,15);
+	color: rgb(175,15,15);
 	margin: 15px auto 20px;
 }
 
-section:nth-of-type(3) q span {
+section:nth-of-type(4) q span {
 	color: ivory;
 }
 
-section:nth-of-type(3) cite {
+section:nth-of-type(4) cite {
 	color: ivory;
 }
 
@@ -408,6 +545,8 @@ code {
 	text-align: left;
 	line-height: 20px;
 	color: ivory;
+	-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
+	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
 .italic {
@@ -418,7 +557,7 @@ code {
 
 .punc{
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	color: rgb(125,15,15);
+	color: rgb(175,15,15);
 }
 
 .string {
@@ -438,7 +577,12 @@ code {
 .threeIndents {
 	text-indent: 45px;
 }
-/* END SECTION THREE *************/
+
+#quoteDiv {
+	-webkit-transform: translate(750px, 0px);-ms-transform: translate(750px, 0px);transform: translate(750px, 0px);
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+/* END SECTION FOUR *************/
 
 
 
@@ -446,7 +590,7 @@ code {
 footer {
 	position: relative;
 	padding-top: 15px;
-	background: -webkit-linear-gradient(left, black, rgb(5,0,0), black);background: linear-gradient(to right, black, rgb(5,0,0), black);
+	background: -webkit-linear-gradient(black, rgb(15,0,0));background: linear-gradient( black, rgb(15,0,0));
 }
 
 footer a {
@@ -477,6 +621,7 @@ footer p:nth-of-type(1) {
 /* END FOOTER ***********************/
 
 
+
 /* MEDIA QUERIES ***********************/
 /* SMALL SCREENS ************/
 
@@ -492,6 +637,7 @@ footer p:nth-of-type(1) {
 	}
 	/* END GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
 
+	
 	
 	/* NAV MEDIUM SCREENS ******************************/
 	nav p {
@@ -541,6 +687,11 @@ footer p:nth-of-type(1) {
 	
 	
 	/* SECTION ONE, PROJECTS MEDIUM SCREENS ***********************/
+	section:nth-of-type(1) {
+		background: url('../img/backgrounds/leo.jpg');
+		background-size: 500px 580px;
+	}
+	
 	.projectImg {
 		width: 300px;
 		height: 250px;
@@ -553,17 +704,25 @@ footer p:nth-of-type(1) {
 	/* END SECTION ONE MEDIUM SCREENS ***********************/
 	
 	
-	/* SECTION THREE, CODE FOR A HAPPY LIFE MEDIUM SCREENS ******************************/
-	section:nth-of-type(3) p {
+	
+	/* SECTION THREE, MY DEAL MEDIUM SCREENS ***********************/
+	.innerAboutWrap {
+		padding: 50px 25px;
+	}
+	/* END SECTION THREE MEDIUM SCREENS ***********************/
+	
+	
+	
+	/* SECTION FOUR, CODE FOR A HAPPY LIFE MEDIUM SCREENS ******************************/
+	section:nth-of-type(4) p {
 		margin-bottom: 50px;
 	}
 
 	code {
 		font-size: 1.5em;
-		margin-left: 10%;
 		line-height: 30px;
 	}
-	/* END SECTION THREE MEDIUM SCREENS *************/
+	/* END SECTION FOUR MEDIUM SCREENS *************/
 	
 	
 	/* FOOTER MEDIUM SCREENS ***********************/
@@ -616,11 +775,11 @@ footer p:nth-of-type(1) {
 		height: 50px;
 	}
 	
-	#headerTitle1 {
+	#dev {
 		margin-left: -450px;
 	}
 	
-	#headerTitle2 {
+	#des {
 		margin-left: 150px;
 	}
 	
@@ -632,7 +791,12 @@ footer p:nth-of-type(1) {
 	
 	
 	
-	/* SECTION ONE, PROJECTS LARGE SCREENS ***********************/	
+	/* SECTION ONE, PROJECTS LARGE SCREENS ***********************/
+	section:nth-of-type(1) {
+		background: url('../img/backgrounds/leoL.jpg');
+		background-size: 777px 818px;
+	}
+	
 	.projectWrap {
 		position: relative;
 		margin: 25px auto 150px;
@@ -687,31 +851,52 @@ footer p:nth-of-type(1) {
 	
 	
 	
-	/* SECTION TWO, MY DEAL LARGE SCREENS ***********************/
-	section:nth-of-type(2) {
+	/* SECTION THREE, MY DEAL LARGE SCREENS ***********************/
+	section:nth-of-type(3) {
 		background: url('../img/backgrounds/rpmBackground.jpg');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		background-attachment: fixed;
 	}
 
+	.aboutWrap {
+		margin: 125px auto;
+	}
+	
+	.leftAboutWrap {
+		margin-left: 50px;
+	}
+	
+	.rightAboutWrap {
+		margin-right: 50px;
+	}
+	
+	.innerAboutWrap {
+		padding: 75px 25px;
+	}
 
-	section:nth-of-type(2) p {
+	section:nth-of-type(3) p {
 		font-size: 1.25em;
 	}
-	/* END SECTION TWO LARGE SCREENS ***********************/
+	
+	/* section:nth-of-type(3) q {
+		clear: both;
+	} */
+	/* END SECTION THREE LARGE SCREENS ***********************/
 	
 	
 	
-	/* SECTION THREE, CODE FOR A HAPPY LIFE SCREENS SCREENS ******************************/
-	section:nth-of-type(3) p {
+	/* SECTION FOUR, CODE FOR A HAPPY LIFE LARGE SCREENS ******************************/
+	section:nth-of-type(4) {
+		/* clear: both; */
+	}
+	section:nth-of-type(4) p {
 		font-size: 1.5em;
 		max-width: 700px;
 		margin-bottom: 75px;
 	}
 
 	code {
-		font-size: 1.5em;
 		margin-left: 10%;
 	}
 
@@ -727,26 +912,27 @@ footer p:nth-of-type(1) {
 		text-indent: 75px;
 	}
 	
-	.quoteDiv {
+	#quoteDiv {
 		position: absolute;
 		top: 55%;
 		right: 7.5%;
+		-webkit-transition-duration: .5s;transition-duration: .5s;
 	}
 	
 	#quote3 {
 		width: auto;
 	}
-	/* END SECTION THREE SCREENS SCREENS *************/
+	/* END SECTION THREE LARGE SCREENS *************/
 	
 	
 	
 	/* FOOTER LARGE SCREENS ***********************/	
-	footer p:nth-of-type(4) {
+	footer p:nth-of-type(2) {
 		float: left;
 		margin-left: 10px;
 	}
 	
-	footer p:nth-of-type(5) {
+	footer p:nth-of-type(3) {
 		float: right;
 		margin-right: 10px;
 	}

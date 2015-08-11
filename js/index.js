@@ -4,6 +4,22 @@
 var width = window.innerWidth;
 var height = window.innerHeight;
 
+// SLIDE IN HEADIMAGES AND TITLE
+window.onload = function() {
+	setTimeout(function(){ document.getElementById("devHand").style.msTransform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ document.getElementById("devHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ document.getElementById("devHand").style.transform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ document.getElementById("desHand").style.msTransform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ document.getElementById("desHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ document.getElementById("desHand").style.transform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ document.getElementById("dev").style.msTransform = "translate(0px, 0px)"; }, 250);
+	setTimeout(function(){ document.getElementById("dev").style.webkitTransform = "translate(0px, 0px)"; }, 250);
+	setTimeout(function(){ document.getElementById("dev").style.transform = "translate(0px, 0px)"; }, 250);
+	setTimeout(function(){ document.getElementById("des").style.msTransform = "translate(0px, 0px)"; }, 500);
+	setTimeout(function(){ document.getElementById("des").style.webkitTransform = "translate(0px, 0px)"; }, 500);
+	setTimeout(function(){ document.getElementById("des").style.transform = "translate(0px, 0px)"; }, 500);
+};
+
 // OPEN NAV
 document.getElementById("navIcon").onclick = function() {
 	document.getElementById("navIcon").style.display = "none";
@@ -61,12 +77,16 @@ set("navLinkedinLink", "url('img/linkedin.png')", "block", "50px 50px", "no-repe
 set("footerGithubLink", "url('img/github.png')", "block", "50px 50px", "no-repeat", "center");
 set("footerLinkedinLink", "url('img/linkedin.png')", "block", "50px 50px", "no-repeat", "center");
 
+// SET BIO PIC
+set("myPicDiv", "url('img/me5.jpg')", "block", "100px 125px", "no-repeat", "bottom");
+
+
 
 // SHORTCUT FUNCTION FOR TURNING PROJECT IMAGE DIVS INTO LINKS
-function linker(idee, local) {
+function linker(idee, locale) {
 	var setIdee = document.getElementById(idee);
 	setIdee.onclick = function() {
-	window.open(local);
+	window.open(locale);
 	};
 };
 
@@ -111,17 +131,30 @@ hoverColor("projectImg5", "projectLink5", "rgb(200,0,0)", "rgb(125,0,0)");
 hoverColor("projectImg6", "projectLink6", "rgb(200,0,0)", "rgb(125,0,0)");
 
 
-// OPEN DECORATIVE CURTAINS ON LARGE SCREENS
-window.onload = function() {
-	if (width < 1200) {
-		document.getElementById("curtainRight").style.width = "5%";
-		document.getElementById("curtainLeft").style.width = "5%";
-	} else if (width > 1199) {
-		document.getElementById("curtainRight").style.width = "10%";
-		document.getElementById("curtainLeft").style.width = "10%";
-	}
+
+// GOOD LIFE CODE TRANSOFRMS
+document.getElementById("codeSection").addEventListener("DOMMouseScroll", codeSlide);
+document.getElementById("codeSection").addEventListener("mousewheel", codeSlide);
+document.getElementById("codeSection").addEventListener("wheel", codeSlide);
+document.getElementById("codeSection").addEventListener("touchstart", codeSlide);
+
+var codeTag = document.getElementsByTagName("code");
+
+function codeSlide() {
+	setTimeout(function(){ codeTag[0].style.transform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ codeTag[1].style.transform = "translate(0px, 0px)"; }, 100);
+	setTimeout(function(){ codeTag[2].style.transform = "translate(0px, 0px)"; }, 200);
+	setTimeout(function(){ codeTag[3].style.transform = "translate(0px, 0px)"; }, 300);
+	setTimeout(function(){ codeTag[4].style.transform = "translate(0px, 0px)"; }, 400);
+	setTimeout(function(){ codeTag[5].style.transform = "translate(0px, 0px)"; }, 500);
+	setTimeout(function(){ codeTag[6].style.transform = "translate(0px, 0px)"; }, 600);
+	setTimeout(function(){ codeTag[7].style.transform = "translate(0px, 0px)"; }, 700);
+	setTimeout(function(){ codeTag[8].style.transform = "translate(0px, 0px)"; }, 800);
+	setTimeout(function(){ codeTag[9].style.transform = "translate(0px, 0px)"; }, 900);
+	setTimeout(function(){ codeTag[10].style.transform = "translate(0px, 0px)"; }, 1000);
+	setTimeout(function(){ codeTag[11].style.transform = "translate(0px, 0px)"; }, 1100);
+	setTimeout(function(){ codeTag[12].style.transform = "translate(0px, 0px)"; }, 1200);
+	setTimeout(function(){ codeTag[13].style.transform = "translate(0px, 0px)"; }, 1300);
+	setTimeout(function(){ codeTag[14].style.transform = "translate(0px, 0px)"; }, 1400);
+	setTimeout(function(){ document.getElementById("quoteDiv").style.transform = "translate(0px, 0px)"; }, 1500);
 };
-
-
-
-
