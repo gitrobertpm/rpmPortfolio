@@ -195,6 +195,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: 100% 50%;
 	box-shadow: 0px 10px 10px ivory;
+	overflow: hidden;
 }
 
 header h1 {
@@ -340,27 +341,28 @@ section:nth-of-type(1)  {
 
 
 /* SECTION TWO **************/
-section:nth-of-type(2) {
+#meSection {
 	position: relative;
 	background: linear-gradient(to right, black 50%, ivory 50.01%);
 	height: 750px;
+	overflow: hidden;
 }
 
-section:nth-of-type(2) .wrapper {
+#meSection .wrapper {
 	background: url('../img/yinyang2.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100%;
 }
 
-section:nth-of-type(2) h1 {
+#meSection h1 {
 	font-style: normal;
 	color: ivory;
 	margin-left: -20px;
 	margin-bottom: 15px;
 }
 
-section:nth-of-type(2) h1 span {
+#meSection h1 span {
 	font-family: 'Playfair Display', serif;
 	font-weight: 900;
 	font-size: 1em;
@@ -377,7 +379,7 @@ section:nth-of-type(2) h1 span {
 	border-radius: 0px 30% 0px 30%;
 }
 
-section:nth-of-type(2) h2 {
+#meSection h2 {
 	font-family: 'Playfair Display', serif;
 	font-weight: 900;
 	/* font-style: italic; */
@@ -397,7 +399,7 @@ section:nth-of-type(2) h2 {
 }
 
 #meWrap2 {
-	right: 0;
+	right: 2.5px;
 }
 
 #meWrap1 h2 {
@@ -443,12 +445,13 @@ section:nth-of-type(2) h2 {
 	display: none;
 }
 
-section:nth-of-type(2) p {
+#meSection p {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 }
 
-#bioButton {
+#bioButton,
+#bioButtonClose {
 	font-family: 'Playfair Display', serif;
 	font-weight: 900;
 	font-size: 1.25em;
@@ -456,7 +459,7 @@ section:nth-of-type(2) p {
 	cursor: pointer;
 }
 
-#bioButton:active, #bioButton:focus, #bioButton:hover {
+#bioButton:active, #bioButton:focus, #bioButton:hover, #bioButtonClose:active, #bioButtonClose:focus, #bioButtonClose:hover {
 	color: rgb(225,15,15);
 }
 /* END SECTION TWO ***********/

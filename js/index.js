@@ -86,7 +86,7 @@ set("myPicDiv", "url('img/me5.jpg')", "block", "100px 125px", "no-repeat", "cent
 function linker(idee, locale) {
 	var setIdee = document.getElementById(idee);
 	setIdee.onclick = function() {
-	window.open(locale);
+		window.open(locale);
 	};
 };
 
@@ -131,6 +131,36 @@ hoverColor("projectImg5", "projectLink5", "rgb(200,0,0)", "rgb(125,0,0)");
 hoverColor("projectImg6", "projectLink6", "rgb(200,0,0)", "rgb(125,0,0)");
 
 
+// SHORTCUT FUNCTION FOR OPENING AND CLOSING INDIVIDUAL SECTIONS OF THE ME SECTION
+function openOrClose(idee, idee2, idee3, display2, background, width, height, height2, z, klass, display, idee4, display3) {
+	var setIdee = document.getElementById(idee);
+	var setIdee2 = document.getElementById(idee2);
+	var setIdee3 = document.getElementById(idee3);
+	var setIdee4 = document.getElementById(idee4);
+	var klass = document.getElementsByClassName(klass);
+	setIdee.onclick = function() {
+		setIdee.style.display = display2;
+		setIdee3.style.height = height2;
+		setIdee2.style.background = background;
+		setIdee2.style.width = width;
+		setIdee2.style.height = height;
+		setIdee2.style.zIndex = z;
+		setIdee4.style.display = display3;
+		for(var i=0; i<klass.length; i++) {
+			klass[i].style.display = display;
+		}
+	};
+};
+
+openOrClose("bioTitle", "meWrap1", "meSection", "inline-block", "rgba(0,0,0,0.9)", "100%", "auto", "1000px", "999", "hiddenBioText", "inline-block", "bioButton", "none");
+
+openOrClose("bioButton", "meWrap1", "meSection", "none", "rgba(0,0,0,0.9)", "100%", "auto", "1000px", "999", "hiddenBioText", "inline-block", "bioButton", "none");
+
+openOrClose("bioButtonClose", "meWrap1", "meSection", "none", "none", "49%", "420px", "750px", "0", "hiddenBioText", "none", "bioButton", "inline-block");
+
+
+
+
 
 // GOOD LIFE CODE TRANSOFRMS
 document.getElementById("codeSection").addEventListener("DOMMouseScroll", codeSlide);
@@ -141,20 +171,67 @@ document.getElementById("codeSection").addEventListener("touchstart", codeSlide)
 var codeTag = document.getElementsByTagName("code");
 
 function codeSlide() {
+	setTimeout(function(){ codeTag[0].style.msTransform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ codeTag[0].style.webkitTransform = "translate(0px, 0px)"; }, 0);
 	setTimeout(function(){ codeTag[0].style.transform = "translate(0px, 0px)"; }, 0);
+	
+	setTimeout(function(){ codeTag[1].style.msTransform = "translate(0px, 0px)"; }, 100);
+	setTimeout(function(){ codeTag[1].style.webkitTransform = "translate(0px, 0px)"; }, 100);
 	setTimeout(function(){ codeTag[1].style.transform = "translate(0px, 0px)"; }, 100);
+	
+	setTimeout(function(){ codeTag[2].style.msTransform = "translate(0px, 0px)"; }, 200);
+	setTimeout(function(){ codeTag[2].style.webkitTransform = "translate(0px, 0px)"; }, 200);
 	setTimeout(function(){ codeTag[2].style.transform = "translate(0px, 0px)"; }, 200);
+	
+	setTimeout(function(){ codeTag[3].style.msTransform = "translate(0px, 0px)"; }, 300);
+	setTimeout(function(){ codeTag[3].style.webkitTransform = "translate(0px, 0px)"; }, 300);
 	setTimeout(function(){ codeTag[3].style.transform = "translate(0px, 0px)"; }, 300);
+	
+	setTimeout(function(){ codeTag[4].style.msTransform = "translate(0px, 0px)"; }, 400);
+	setTimeout(function(){ codeTag[4].style.webkitTransform = "translate(0px, 0px)"; }, 400);
 	setTimeout(function(){ codeTag[4].style.transform = "translate(0px, 0px)"; }, 400);
+	
+	setTimeout(function(){ codeTag[5].style.msTransform = "translate(0px, 0px)"; }, 500);
+	setTimeout(function(){ codeTag[5].style.webkitTransform = "translate(0px, 0px)"; }, 500);
 	setTimeout(function(){ codeTag[5].style.transform = "translate(0px, 0px)"; }, 500);
+	
+	setTimeout(function(){ codeTag[6].style.msTransform = "translate(0px, 0px)"; }, 600);
+	setTimeout(function(){ codeTag[6].style.webkitTransform = "translate(0px, 0px)"; }, 600);
 	setTimeout(function(){ codeTag[6].style.transform = "translate(0px, 0px)"; }, 600);
+	
+	setTimeout(function(){ codeTag[7].style.msTransform = "translate(0px, 0px)"; }, 700);
+	setTimeout(function(){ codeTag[7].style.webkitTransform = "translate(0px, 0px)"; }, 700);
 	setTimeout(function(){ codeTag[7].style.transform = "translate(0px, 0px)"; }, 700);
+	
+	setTimeout(function(){ codeTag[8].style.msTransform = "translate(0px, 0px)"; }, 800);
+	setTimeout(function(){ codeTag[8].style.webkitTransform = "translate(0px, 0px)"; }, 800);
 	setTimeout(function(){ codeTag[8].style.transform = "translate(0px, 0px)"; }, 800);
+	
+	setTimeout(function(){ codeTag[9].style.msTransform = "translate(0px, 0px)"; }, 900);
+	setTimeout(function(){ codeTag[9].style.webkitTransform = "translate(0px, 0px)"; }, 900);
 	setTimeout(function(){ codeTag[9].style.transform = "translate(0px, 0px)"; }, 900);
+	
+	setTimeout(function(){ codeTag[10].style.msTransform = "translate(0px, 0px)"; }, 1000);
+	setTimeout(function(){ codeTag[10].style.webkitTransform = "translate(0px, 0px)"; }, 1000);
 	setTimeout(function(){ codeTag[10].style.transform = "translate(0px, 0px)"; }, 1000);
+	
+	setTimeout(function(){ codeTag[11].style.msTransform = "translate(0px, 0px)"; }, 1100);
+	setTimeout(function(){ codeTag[11].style.webkitTransform = "translate(0px, 0px)"; }, 1100);
 	setTimeout(function(){ codeTag[11].style.transform = "translate(0px, 0px)"; }, 1100);
+	
+	setTimeout(function(){ codeTag[12].style.msTransform = "translate(0px, 0px)"; }, 1200);
+	setTimeout(function(){ codeTag[12].style.webkitTransform = "translate(0px, 0px)"; }, 1200);
 	setTimeout(function(){ codeTag[12].style.transform = "translate(0px, 0px)"; }, 1200);
+	
+	setTimeout(function(){ codeTag[13].style.msTransform = "translate(0px, 0px)"; }, 1300);
+	setTimeout(function(){ codeTag[13].style.webkitTransform = "translate(0px, 0px)"; }, 1300);
 	setTimeout(function(){ codeTag[13].style.transform = "translate(0px, 0px)"; }, 1300);
+	
+	setTimeout(function(){ codeTag[14].style.msTransform = "translate(0px, 0px)"; }, 1400);
+	setTimeout(function(){ codeTag[14].style.webkitTransform = "translate(0px, 0px)"; }, 1400);
 	setTimeout(function(){ codeTag[14].style.transform = "translate(0px, 0px)"; }, 1400);
+	
+	setTimeout(function(){ document.getElementById("quoteDiv").style.msTransform = "translate(0px, 0px)"; }, 1500);
+	setTimeout(function(){ document.getElementById("quoteDiv").style.webkitTransform = "translate(0px, 0px)"; }, 1500);
 	setTimeout(function(){ document.getElementById("quoteDiv").style.transform = "translate(0px, 0px)"; }, 1500);
 };
