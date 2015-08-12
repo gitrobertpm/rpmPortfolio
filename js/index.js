@@ -165,7 +165,7 @@ function openOrClose(idee, idee2, idee3, display2, background, width, height, he
 };
 
 // BIO SECTION
-openOrClose("bioTitle", "meWrap1", "meSection", "block", "rgba(0,0,0,0.9)", "100%", "auto", "1000px", "999", "hiddenText", "inline-block", "bioButton", "none");
+openOrClose("bioTitle", "meWrap1", "meSection", "block", "rgba(0,0,0,0.9)", "100%", "auto", "1000px", "999", "hiddenText", "block", "bioButton", "none");
 
 openOrClose("bioButton", "meWrap1", "meSection", "none", "rgba(0,0,0,0.9)", "100%", "auto", "1000px", "999", "hiddenText", "block", "bioButton", "none");
 
@@ -175,7 +175,7 @@ openOrClose("bioButtonClose", "meWrap1", "meSection", "none", "none", "49%", "42
 
 // DETAILS SECTION
 document.getElementById("detailsButton").onclick = function() {
-	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 500px; background: rgba(255,255,240,0.9)");
+	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 550px; background: rgba(255,255,240,0.9)");
 	document.getElementById("detailsClose").style.display = "inline-block";
 	document.getElementById("trajectoryButton").style.fontSize = "2em";
 	document.getElementById("contactButton").style.fontSize = "2em";
@@ -189,7 +189,7 @@ document.getElementById("detailsButton").onclick = function() {
 };
 
 document.getElementById("detailsButton2").onclick = function() {
-	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 500px; background: rgba(255,255,240,0.9)");
+	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 550px; background: rgba(255,255,240,0.9)");
 	document.getElementById("detailsClose").style.display = "inline-block";
 	document.getElementById("trajectoryButton").style.fontSize = "2em";
 	document.getElementById("contactButton").style.fontSize = "2em";
@@ -216,7 +216,7 @@ document.getElementById("detailsClose").onclick = function() {
 			document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(35deg)";
 		}
 	} else if (width > 499) {
-		document.getElementById("detailsButton").style.fontSize = "2.5em";
+		document.getElementById("detailsButton").style.fontSize = "4em";
 		document.getElementById("trajectoryButton").style.fontSize = "2em";
 		document.getElementById("contactButton").style.fontSize = "2.25em";
 		document.getElementById("referencesButton").style.fontSize = "2em";

@@ -407,8 +407,9 @@ section:nth-of-type(1)  {
 }
 
 #detailsButton {
+	font-family: Impact, Charcoal, sans-serif !important;
 	color: rgb(100,175,255);
-	font-size: 1.9em;
+	font-size: 2.25em;
 	margin-top: -10px;
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -434,7 +435,6 @@ section:nth-of-type(1)  {
 
 #references h2 {
 	font-size: 1.4em;
-	/* margin-top: -50px; */
 }
 
 .hiddenText,
@@ -472,7 +472,7 @@ section:nth-of-type(1)  {
 }
 
 #detailsButton2 {
-	margin-top: -15px;
+	margin-top: -20px;
 }
 
 #bioButton:active, #bioButton:focus, #bioButton:hover, #bioButtonClose:active, #bioButtonClose:focus, #bioButtonClose:hover, #detailsButton2:active, #detailsButton2:focus, #detailsButton2:hover {
@@ -753,7 +753,8 @@ footer p:nth-of-type(1) {
 	}
 	
 	#detailsButton {
-		font-size: 2.5em;
+		font-size: 3em;
+		margin-top: -20px;
 	}
 
 	#trajectory h2 {
@@ -931,7 +932,15 @@ footer p:nth-of-type(1) {
 	}
 
 	#meWrap2 {
-		top: 250px;
+		top: 150px;
+	}
+	
+	#bioTitle {
+		font-size: 5em !important;
+	}
+	
+	#detailsButton {
+		font-size: 5em;
 	}
 	/* END SECTION TWO LARGE SCREENS *****************************/
 	
