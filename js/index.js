@@ -243,6 +243,76 @@ document.getElementById("trajectoryButton").onclick = function() {
 		}
 };
 
+document.getElementById("trajectoryClose").onclick = function() {
+		document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
+	document.getElementById("trajectory").setAttribute("style", "width: 100%; height: auto; background: none");
+	document.getElementById("trajectoryClose").style.display = "none";
+	if (width < 500) {
+		for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
+			document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(35deg)";
+			document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(35deg)";
+			document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(35deg)";
+		}
+	} else if (width > 499) {
+		document.getElementById("detailsButton").style.fontSize = "2.5em";
+		document.getElementById("trajectoryButton").style.fontSize = "2em";
+		document.getElementById("contactButton").style.fontSize = "2.25em";
+		document.getElementById("referencesButton").style.fontSize = "2em";
+		for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
+			document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(0deg)";
+			document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(0deg)";
+			document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(0deg)";
+		}
+	}
+	for(var i=0; i<document.getElementsByClassName("hiddenText3").length; i++) {
+			document.getElementsByClassName("hiddenText3")[i].style.display = "none";
+		}
+};
+
+// CONTACT SECTION
+document.getElementById("contactButton").onclick = function() {
+		document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 500px; background: rgba(255,255,240,0.9)");
+	document.getElementById("contact").setAttribute("style", "width: 100%; height: 500px; background: rgba(255,255,240,0.9)");
+	document.getElementById("contactClose").style.display = "inline-block";
+	document.getElementById("trajectory").style.display = "none";
+	document.getElementsByClassName("detailTitle")[1].style.msTransform = "rotate(0deg)";
+	document.getElementsByClassName("detailTitle")[1].style.webkitTransform = "rotate(0deg)";
+	document.getElementsByClassName("detailTitle")[1].style.transform = "rotate(0deg)";
+	for(var i=0; i<document.getElementsByClassName("hiddenText4").length; i++) {
+			document.getElementsByClassName("hiddenText4")[i].style.display = "block";
+		}
+	// SET CONTACT LINK ICONS
+	set("contactGithubLink", "url('img/github.png')", "block", "50px 50px", "no-repeat", "center");
+	set("contactLinkedinLink", "url('img/linkedin.png')", "block", "50px 50px", "no-repeat", "center");
+};
+
+document.getElementById("contactClose").onclick = function() {
+	document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
+	document.getElementById("contact").setAttribute("style", "width: 100%; height: auto; background: none");
+	document.getElementById("contactClose").style.display = "none";
+	document.getElementById("trajectory").style.display = "inline-block";
+	if (width < 500) {
+		for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
+			document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(35deg)";
+			document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(35deg)";
+			document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(35deg)";
+		}
+	} else if (width > 499) {
+		document.getElementById("detailsButton").style.fontSize = "2.5em";
+		document.getElementById("trajectoryButton").style.fontSize = "2em";
+		document.getElementById("contactButton").style.fontSize = "2.25em";
+		document.getElementById("referencesButton").style.fontSize = "2em";
+		for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
+			document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(0deg)";
+			document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(0deg)";
+			document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(0deg)";
+		}
+	}
+	for(var i=0; i<document.getElementsByClassName("hiddenText4").length; i++) {
+			document.getElementsByClassName("hiddenText4")[i].style.display = "none";
+		}
+};
+
 
 
 

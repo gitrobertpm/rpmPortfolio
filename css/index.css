@@ -351,7 +351,7 @@ section:nth-of-type(1)  {
 #meSection .wrapper {
 	background: url('../img/yinyang2.png');
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: bottom;
 	height: 100%;
 }
 
@@ -434,6 +434,7 @@ section:nth-of-type(1)  {
 
 #references h2 {
 	font-size: 1.4em;
+	/* margin-top: -50px; */
 }
 
 .hiddenText,
@@ -476,6 +477,15 @@ section:nth-of-type(1)  {
 
 #bioButton:active, #bioButton:focus, #bioButton:hover, #bioButtonClose:active, #bioButtonClose:focus, #bioButtonClose:hover, #detailsButton2:active, #detailsButton2:focus, #detailsButton2:hover {
 	color: rgb(225,15,15);
+}
+
+#contactGithubLink,
+#contactLinkedinLink {
+	color: rgb(255,240,240);
+	width: 75px;
+	height: 50px;
+	margin: auto;
+	display: none;
 }
 /* END SECTION TWO ***********/
 
@@ -738,13 +748,6 @@ footer p:nth-of-type(1) {
 	
 	
 	/* SECTION TWO, ME MEDIUM SCREENS *****************************/
-	#meSection .wrapper {
-		background: url('../img/yinyang2.png');
-		background-repeat: no-repeat;
-		background-position: bottom;
-		height: 100%;
-	}
-	
 	.detailTitle {
 		-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);
 	}
