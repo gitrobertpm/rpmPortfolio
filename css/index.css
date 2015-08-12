@@ -343,7 +343,7 @@ section:nth-of-type(1)  {
 /* SECTION TWO **************/
 #meSection {
 	position: relative;
-	background: linear-gradient(to right, black 50%, ivory 50.01%);
+	background: -webkit-linear-gradient(left, black 50%, ivory 50.01%);background: linear-gradient(to right, black 50%, ivory 50.01%);
 	height: 750px;
 	overflow: hidden;
 }
@@ -472,7 +472,7 @@ section:nth-of-type(1)  {
 }
 
 #detailsButton2 {
-	margin-top: 27.5px;
+	margin-top: -15px;
 }
 
 #bioButton:active, #bioButton:focus, #bioButton:hover, #bioButtonClose:active, #bioButtonClose:focus, #bioButtonClose:hover, #detailsButton2:active, #detailsButton2:focus, #detailsButton2:hover {
