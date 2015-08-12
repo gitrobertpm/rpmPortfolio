@@ -358,6 +358,7 @@ section:nth-of-type(1)  {
 #meSection h1 {
 	font-style: normal;
 	color: ivory;
+	margin-top: 0px;
 	margin-left: -20px;
 	margin-bottom: 15px;
 }
@@ -375,15 +376,12 @@ section:nth-of-type(1)  {
 	width: 100px;
 	height: 125px;
 	margin: 25px auto 15px;
-	/* border: 1px solid red; */
 	border-radius: 0px 30% 0px 30%;
 }
 
 #meSection h2 {
 	font-family: 'Playfair Display', serif;
 	font-weight: 900;
-	/* font-style: italic; */
-	/* color: rgb(100,150,255); */
 }
 .meWrap {
 	position: absolute;
@@ -391,7 +389,6 @@ section:nth-of-type(1)  {
 	height: 420px;
 	padding-top: 10px;
 	padding-bottom: 50px;
-	/* border: 1px solid red; */
 }
 
 #meWrap1 {
@@ -405,24 +402,26 @@ section:nth-of-type(1)  {
 #meWrap1 h2 {
 	color: rgb(50,50,50);
 	text-shadow: 2px 1px 0px rgb(100,175,255);
-	font-size: 17vw;
+	font-size: 3em;
+	cursor: pointer;
+}
+
+#detailsButton {
+	color: rgb(100,175,255);
+	font-size: 1.9em;
+	margin-top: -10px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	cursor: pointer;
 }
 
 .detailTitle {
-	color: rgb(222,222,222);
-	text-shadow: 2px 1px 0px rgb(100,175,255);
+	color: rgb(65,65,50);
 	font-size: 1.75em;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	transform: rotate(35deg);
+	-webkit-transform: rotate(35deg);-ms-transform: rotate(35deg);transform: rotate(35deg);
 	cursor: pointer;
-}
-
-#details h2 {
-	font-size: 1.9em;
-	margin-top: -10px;
-	transform: rotate(0deg);
 }
 
 #trajectory h2 {
@@ -437,29 +436,45 @@ section:nth-of-type(1)  {
 	font-size: 1.4em;
 }
 
-.bioText {
-	color: ivory;
-}
-
-.hiddenBioText {
+.hiddenText,
+.hiddenText2,
+.hiddenText3,
+.hiddenText4,
+.hiddenText5 {
 	display: none;
 }
 
-#meSection p {
+.meWrap p {
 	font-family: 'Open Sans', sans-serif;
+}
+
+.bioText {
+	color: ivory;
 	font-weight: 300;
 }
 
+.detailText {
+	font-weight: 600;
+}
+
 #bioButton,
-#bioButtonClose {
-	font-family: 'Playfair Display', serif;
-	font-weight: 900;
+#detailsButton2,
+#bioButtonClose,
+#detailsClose,
+#trajectoryClose,
+#contactClose,
+#referencesClose {
+	font-weight: 600;
 	font-size: 1.25em;
 	color: rgb(175,15,15);
 	cursor: pointer;
 }
 
-#bioButton:active, #bioButton:focus, #bioButton:hover, #bioButtonClose:active, #bioButtonClose:focus, #bioButtonClose:hover {
+#detailsButton2 {
+	margin-top: 27.5px;
+}
+
+#bioButton:active, #bioButton:focus, #bioButton:hover, #bioButtonClose:active, #bioButtonClose:focus, #bioButtonClose:hover, #detailsButton2:active, #detailsButton2:focus, #detailsButton2:hover {
 	color: rgb(225,15,15);
 }
 /* END SECTION TWO ***********/
@@ -487,7 +502,6 @@ section:nth-of-type(3) h1 span{
 	padding: 5px 5px 7.5px;
 	border-radius: 2.5px;
 	background: rgba(255,255,255,0.9);
-	/* background: -webkit-linear-gradient(left, rgba(255,240,240,1), rgba(255,240,240,0.9), rgba(255,240,240,0.8), rgba(255,240,240,0.7), rgba(255,240,240,0.6), transparent);background: linear-gradient(to right, rgba(255,240,240,1), rgba(255,240,240,0.9), rgba(255,240,240,0.8), rgba(255,240,240,0.7), rgba(255,240,240,0.6), transparent); */
 	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
@@ -497,12 +511,6 @@ section:nth-of-type(3) h1 span{
 	border-radius: 2.5px;
 	border: 5px double rgb(75,5,5);
 }
-
-/* .aboutWrap:active, .aboutWrap:focus, .aboutWrap:hover {
-	background: rgba(255,240,240, 0.9);
-	border: 1px solid white;
-	-webkit-transition-duration: .5s;transition-duration: .5s;
-} */
 
 section:nth-of-type(3) q span {
 	color: rgb(225,210,210);
@@ -729,6 +737,45 @@ footer p:nth-of-type(1) {
 	
 	
 	
+	/* SECTION TWO, ME MEDIUM SCREENS *****************************/
+	#meSection .wrapper {
+		background: url('../img/yinyang2.png');
+		background-repeat: no-repeat;
+		background-position: bottom;
+		height: 100%;
+	}
+	
+	.detailTitle {
+		-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);
+	}
+	
+	#detailsButton {
+		font-size: 2.5em;
+	}
+
+	#trajectory h2 {
+		font-size: 2em;
+	}
+
+	#contact h2 {
+		font-size: 2.25em;
+	}
+
+	#references h2 {
+		font-size: 2em;
+	}
+	
+	#meWrap1 {
+		top: 200px;
+	}
+
+	#meWrap2 {
+		top: 200px;
+	}
+	/* END SECTION TWO MEDIUM SCREENS *****************************/
+	
+	
+	
 	/* SECTION THREE, MY DEAL MEDIUM SCREENS ***********************/
 	.innerAboutWrap {
 		padding: 50px 25px;
@@ -875,6 +922,18 @@ footer p:nth-of-type(1) {
 	
 	
 	
+	/* SECTION TWO, ME LARGE SCREENS *****************************/
+	#meWrap1 {
+		top: 250px;
+	}
+
+	#meWrap2 {
+		top: 250px;
+	}
+	/* END SECTION TWO LARGE SCREENS *****************************/
+	
+	
+	
 	/* SECTION THREE, MY DEAL LARGE SCREENS ***********************/
 	section:nth-of-type(3) {
 		background: url('../img/backgrounds/rpmBackground.jpg');
@@ -1012,6 +1071,14 @@ footer p:nth-of-type(1) {
 	/* HEADER X LARGE SCREENS ***********************/
 
 	/* END HEADER X LARGE SCREENS ***********************/
+	
+	
+	
+	/* SECTION TWO, ME X LARGE SCREENS *****************************/
+	#meSection h1 {
+		margin-left: -30px;
+	}
+	/* END SECTION TWO X LARGE SCREENS *****************************/
 	
 	
 	

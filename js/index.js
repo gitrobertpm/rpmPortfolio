@@ -41,7 +41,19 @@ document.getElementById("navProjectsLink").onclick = function() {
 	document.getElementsByTagName("nav")[0].style.display = "none";
 };
 
+document.getElementById("navMeLink").onclick = function() {
+	document.getElementById("navIcon").style.display = "block";
+	document.getElementById("closeNav").style.display = "none";
+	document.getElementsByTagName("nav")[0].style.display = "none";
+};
+
 document.getElementById("navMyDealLink").onclick = function() {
+	document.getElementById("navIcon").style.display = "block";
+	document.getElementById("closeNav").style.display = "none";
+	document.getElementsByTagName("nav")[0].style.display = "none";
+};
+
+document.getElementById("navCodeLink").onclick = function() {
 	document.getElementById("navIcon").style.display = "block";
 	document.getElementById("closeNav").style.display = "none";
 	document.getElementsByTagName("nav")[0].style.display = "none";
@@ -131,7 +143,7 @@ hoverColor("projectImg5", "projectLink5", "rgb(200,0,0)", "rgb(125,0,0)");
 hoverColor("projectImg6", "projectLink6", "rgb(200,0,0)", "rgb(125,0,0)");
 
 
-// SHORTCUT FUNCTION FOR OPENING AND CLOSING INDIVIDUAL SECTIONS OF THE ME SECTION
+// SHORTCUT FUNCTION FOR OPENING AND CLOSING BIO SECTION
 function openOrClose(idee, idee2, idee3, display2, background, width, height, height2, z, klass, display, idee4, display3) {
 	var setIdee = document.getElementById(idee);
 	var setIdee2 = document.getElementById(idee2);
@@ -152,11 +164,86 @@ function openOrClose(idee, idee2, idee3, display2, background, width, height, he
 	};
 };
 
-openOrClose("bioTitle", "meWrap1", "meSection", "inline-block", "rgba(0,0,0,0.9)", "100%", "auto", "1000px", "999", "hiddenBioText", "inline-block", "bioButton", "none");
+// BIO SECTION
+openOrClose("bioTitle", "meWrap1", "meSection", "block", "rgba(0,0,0,0.9)", "100%", "auto", "1000px", "999", "hiddenText", "inline-block", "bioButton", "none");
 
-openOrClose("bioButton", "meWrap1", "meSection", "none", "rgba(0,0,0,0.9)", "100%", "auto", "1000px", "999", "hiddenBioText", "inline-block", "bioButton", "none");
+openOrClose("bioButton", "meWrap1", "meSection", "none", "rgba(0,0,0,0.9)", "100%", "auto", "1000px", "999", "hiddenText", "block", "bioButton", "none");
 
-openOrClose("bioButtonClose", "meWrap1", "meSection", "none", "none", "49%", "420px", "750px", "0", "hiddenBioText", "none", "bioButton", "inline-block");
+openOrClose("bioButtonClose", "meWrap1", "meSection", "none", "none", "49%", "420px", "750px", "0", "hiddenText", "none", "bioButton", "block");
+
+
+
+// DETAILS SECTION
+document.getElementById("detailsButton").onclick = function() {
+	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 500px; background: rgba(255,255,240,0.9)");
+	document.getElementById("detailsClose").style.display = "inline-block";
+	document.getElementById("trajectoryButton").style.fontSize = "2em";
+	document.getElementById("contactButton").style.fontSize = "2em";
+	document.getElementById("referencesButton").style.fontSize = "2em";
+	document.getElementById("detailsButton2").style.display = "none";
+	for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
+		document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(0deg)";
+		document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(0deg)";
+		document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(0deg)";
+	}
+};
+
+document.getElementById("detailsButton2").onclick = function() {
+	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 500px; background: rgba(255,255,240,0.9)");
+	document.getElementById("detailsClose").style.display = "inline-block";
+	document.getElementById("trajectoryButton").style.fontSize = "2em";
+	document.getElementById("contactButton").style.fontSize = "2em";
+	document.getElementById("referencesButton").style.fontSize = "2em";
+	document.getElementById("detailsButton2").style.display = "none";
+	for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
+		document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(0deg)";
+		document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(0deg)";
+		document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(0deg)";
+	}
+};
+
+document.getElementById("detailsClose").onclick = function() {
+	document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
+	document.getElementById("detailsClose").style.display = "none";
+	document.getElementById("detailsButton2").style.display = "inline-block";
+	if (width < 500) {
+		document.getElementById("trajectoryButton").style.fontSize = "1.4em";
+		document.getElementById("contactButton").style.fontSize = "1.8em";
+		document.getElementById("referencesButton").style.fontSize = "1.4em";
+		for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
+			document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(35deg)";
+			document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(35deg)";
+			document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(35deg)";
+		}
+	} else if (width > 499) {
+		document.getElementById("detailsButton").style.fontSize = "2.5em";
+		document.getElementById("trajectoryButton").style.fontSize = "2em";
+		document.getElementById("contactButton").style.fontSize = "2.25em";
+		document.getElementById("referencesButton").style.fontSize = "2em";
+		for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
+			document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(0deg)";
+			document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(0deg)";
+			document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(0deg)";
+		}
+	}
+};
+
+
+
+// TRAJECTORY SECTION
+document.getElementById("trajectoryButton").onclick = function() {
+		document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 500px; background: rgba(255,255,240,0.9)");
+	document.getElementById("trajectory").setAttribute("style", "width: 100%; height: 500px; background: rgba(255,255,240,0.9)");
+	document.getElementById("trajectoryClose").style.display = "inline-block";
+	document.getElementsByClassName("detailTitle")[0].style.msTransform = "rotate(0deg)";
+	document.getElementsByClassName("detailTitle")[0].style.webkitTransform = "rotate(0deg)";
+	document.getElementsByClassName("detailTitle")[0].style.transform = "rotate(0deg)";
+	for(var i=0; i<document.getElementsByClassName("hiddenText3").length; i++) {
+			document.getElementsByClassName("hiddenText3")[i].style.display = "block";
+		}
+};
+
+
 
 
 
