@@ -194,7 +194,7 @@ header {
 	background: url('../img/backgrounds/keyboard2.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 50%;
-	box-shadow: 0px 10px 10px ivory;
+	/* box-shadow: 0px 10px 10px ivory; */
 	overflow: hidden;
 }
 
@@ -290,57 +290,7 @@ section p {
 
 
 
-/* SECTION ONE, PROJECTS ***********************/
-section:nth-of-type(1) {
-	background: url('../img/backgrounds/leoSm.jpg');
-	background-size: 250px 275px;
-}
-
-section:nth-of-type(1)  {
-	color: rgb(35,35,35);
-}
-
-.projectWrap {
-	margin: 25px auto 75px;
-}
-
-.projectLink {
-	font-family: 'Playfair Display', serif;
-	font-weight: 900;
-	font-size: 1.5em;
-	padding: auto 5px;
-	border-top: 5px double black;
-	border-bottom: 5px double black;
-}
-
-.projectImg {
-	width: 225px;
-	height: 175px;
-	margin: 10px auto;
-}
-
-.projectDes {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-	width: 90%;
-	max-width: 500px;
-	line-height: 24px;
-	margin: 10px auto;
-	padding: 5px;
-	border-radius: 2.5px;
-	-webkit-transition-duration: .5s;transition-duration: .5s;
-}
-
-.projectWrap:avtive > p, .projectWrap:focus > p, .projectWrap:hover > p {
-	background: rgba(255,255,255,0.4);
-	box-shadow: 5px 5px 5px rgba(0,0,0,0.2), -5px 5px 5px rgba(0,0,0,0.2);
-	-webkit-transition-duration: .5s;transition-duration: .5s;
-}
-/* END SECTION ONE ***********************/
-
-
-
-/* SECTION TWO **************/
+/* ME SECTION **************/
 #meSection {
 	position: relative;
 	background: -webkit-linear-gradient(left, black 50%, ivory 50.01%);background: linear-gradient(to right, black 50%, ivory 50.01%);
@@ -379,10 +329,6 @@ section:nth-of-type(1)  {
 	border-radius: 0px 30% 0px 30%;
 }
 
-#meSection h2 {
-	font-family: 'Playfair Display', serif;
-	font-weight: 900;
-}
 .meWrap {
 	position: absolute;
 	width: 49%;
@@ -392,14 +338,21 @@ section:nth-of-type(1)  {
 }
 
 #meWrap1 {
-	
+	top: 250px;
 }
 
 #meWrap2 {
+	top: 250px;
 	right: 2.5px;
 }
 
-#meWrap1 h2 {
+#meSection h2 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+
+#bioTitle {
 	color: rgb(50,50,50);
 	text-shadow: 2px 1px 0px rgb(100,175,255);
 	font-size: 3em;
@@ -409,8 +362,8 @@ section:nth-of-type(1)  {
 #detailsButton {
 	font-family: Impact, Charcoal, sans-serif !important;
 	color: rgb(100,175,255);
-	font-size: 2.25em;
-	margin-top: -10px;
+	font-size: 2.5em;
+	margin-top: -15px;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	cursor: pointer;
@@ -418,23 +371,21 @@ section:nth-of-type(1)  {
 
 .detailTitle {
 	color: rgb(65,65,50);
-	font-size: 1.75em;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	-webkit-transform: rotate(35deg);-ms-transform: rotate(35deg);transform: rotate(35deg);
 	cursor: pointer;
 }
 
 #trajectory h2 {
-	font-size: 1.4em;
+	font-size: 1.1em;
 }
 
 #contact h2 {
-	font-size: 1.8em;
+	font-size: 1.5em;
 }
 
 #references h2 {
-	font-size: 1.4em;
+	font-size: 1.1em;
 }
 
 .hiddenText,
@@ -472,7 +423,7 @@ section:nth-of-type(1)  {
 }
 
 #detailsButton2 {
-	margin-top: -20px;
+	margin-top: 40px;
 }
 
 #bioButton:active, #bioButton:focus, #bioButton:hover, #bioButtonClose:active, #bioButtonClose:focus, #bioButtonClose:hover, #detailsButton2:active, #detailsButton2:focus, #detailsButton2:hover {
@@ -487,21 +438,83 @@ section:nth-of-type(1)  {
 	margin: auto;
 	display: none;
 }
-/* END SECTION TWO ***********/
+
+.refEmail {
+	color: rgb(100,175,255);
+}
+
+.refPhoneNumber {
+	color: rgb(175,15,15);
+}
+
+.refHr {
+	display: none;
+}
+/* END ME SECTION ***********/
 
 
 
-/* SECTION THREE, MY DEAL ***********************/
-section:nth-of-type(3) {
+/* PROJECTS SECTION ***********************/
+#projectSection {
+	background: url('../img/backgrounds/leoSm.jpg');
+	background-size: 250px 275px;
+}
+
+#projectSection  {
+	color: rgb(35,35,35);
+}
+
+.projectWrap {
+	margin: 25px auto 75px;
+}
+
+.projectLink {
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	font-size: 1.5em;
+	padding: auto 5px;
+	border-top: 5px double black;
+	border-bottom: 5px double black;
+}
+
+.projectImg {
+	width: 225px;
+	height: 175px;
+	margin: 10px auto;
+}
+
+.projectDes {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	width: 90%;
+	max-width: 500px;
+	line-height: 24px;
+	margin: 10px auto;
+	padding: 5px;
+	border-radius: 2.5px;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+.projectWrap:active > p, .projectWrap:focus > p, .projectWrap:hover > p {
+	background: rgba(255,255,255,0.4);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.2), -5px 5px 5px rgba(0,0,0,0.2);
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+/* END PROJECTS SECTION***********************/
+
+
+
+/* MY DEAL SECTION ***********************/
+#dealSection {
 	background: url('../img/backgrounds/rpmBackground.jpg');
 	background-size: contain;
 }
 
-section:nth-of-type(3) h1 {
+#dealSection {
 	color: rgb(255,245,245);
 }
 
-section:nth-of-type(3) h1 span{
+#dealSection h1 span{
 	color: rgb(255,245,245);
 }
 
@@ -522,58 +535,58 @@ section:nth-of-type(3) h1 span{
 	border: 5px double rgb(75,5,5);
 }
 
-section:nth-of-type(3) q span {
+#dealSection q span {
 	color: rgb(225,210,210);
 }
 
-section:nth-of-type(3) p {
+#dealSection p {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	max-width: 1000px;
 }
 
-section:nth-of-type(3) cite {
+#dealSection cite {
 	color: rgb(255,240,240);
 }
 
-section:nth-of-type(3) cite span {
+#dealSection cite span {
 	color: rgb(225,200,200);
 }
-/* END SECTION THREE ***********************/
+/* END MY DEAL SECTION ***********************/
 
 
 
-/* SECTION FOUR, CODE FOR A HAPPY LIFE ******************************/
-section:nth-of-type(4) {
+/* CODE FOR A HAPPY LIFE SECTION ******************************/
+#codeSection {
 	position: relative;
 	background: black;
 	overflow: hidden;
 }
 
-section:nth-of-type(4) h1 {
+#codeSection h1 {
 	font-size: 10vw;
 	color: ivory;
 	padding: 5px;
 	margin-bottom: 15px;
 }
 
-section:nth-of-type(4) h1 span{
+#codeSection h1 span{
 	color: rgb(25,25,25);
 	text-shadow: 2px 1px 0px rgb(100,175,255);
 }
 
-section:nth-of-type(4) p {
+#codeSection p {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	color: rgb(175,15,15);
 	margin: 15px auto 20px;
 }
 
-section:nth-of-type(4) q span {
+#codeSection q span {
 	color: ivory;
 }
 
-section:nth-of-type(4) cite {
+#codeSection cite {
 	color: ivory;
 }
 
@@ -624,7 +637,7 @@ code {
 	-webkit-transform: translate(750px, 0px);-ms-transform: translate(750px, 0px);transform: translate(750px, 0px);
 	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
-/* END SECTION FOUR *************/
+/* END CODE SECTION *************/
 
 
 
@@ -728,30 +741,7 @@ footer p:nth-of-type(1) {
 	
 	
 	
-	/* SECTION ONE, PROJECTS MEDIUM SCREENS ***********************/
-	section:nth-of-type(1) {
-		background: url('../img/backgrounds/leo.jpg');
-		background-size: 500px 580px;
-	}
-	
-	.projectImg {
-		width: 300px;
-		height: 250px;
-		margin-top: 35px;
-	}
-	
-	.projectLink {
-		font-size: 2em;
-	}
-	/* END SECTION ONE MEDIUM SCREENS ***********************/
-	
-	
-	
-	/* SECTION TWO, ME MEDIUM SCREENS *****************************/
-	.detailTitle {
-		-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);
-	}
-	
+	/* ME SECTION MEDIUM SCREENS *****************************/
 	#detailsButton {
 		font-size: 3em;
 		margin-top: -20px;
@@ -780,16 +770,35 @@ footer p:nth-of-type(1) {
 	
 	
 	
-	/* SECTION THREE, MY DEAL MEDIUM SCREENS ***********************/
+	/* PROJECTS MEDIUM SCREENS ***********************/
+	#projectSection {
+		background: url('../img/backgrounds/leo.jpg');
+		background-size: 500px 580px;
+	}
+	
+	.projectImg {
+		width: 300px;
+		height: 250px;
+		margin-top: 35px;
+	}
+	
+	.projectLink {
+		font-size: 2em;
+	}
+	/* END PROJECTS SECTION MEDIUM SCREENS ***********************/
+	
+	
+	
+	/* MY DEAL SECTION MEDIUM SCREENS ***********************/
 	.innerAboutWrap {
 		padding: 50px 25px;
 	}
-	/* END SECTION THREE MEDIUM SCREENS ***********************/
+	/* END MY DEAL SECTION MEDIUM SCREENS ***********************/
 	
 	
 	
-	/* SECTION FOUR, CODE FOR A HAPPY LIFE MEDIUM SCREENS ******************************/
-	section:nth-of-type(4) p {
+	/* CODE FOR A HAPPY LIFE SECTION MEDIUM SCREENS ******************************/
+	#codeSection p {
 		margin-bottom: 50px;
 	}
 
@@ -797,7 +806,7 @@ footer p:nth-of-type(1) {
 		font-size: 1.5em;
 		line-height: 30px;
 	}
-	/* END SECTION FOUR MEDIUM SCREENS *************/
+	/* END CODE SECTION MEDIUM SCREENS *************/
 	
 	
 	/* FOOTER MEDIUM SCREENS ***********************/
@@ -866,8 +875,28 @@ footer p:nth-of-type(1) {
 	
 	
 	
-	/* SECTION ONE, PROJECTS LARGE SCREENS ***********************/
-	section:nth-of-type(1) {
+	/* ME SECTION LARGE SCREENS *****************************/
+	#meWrap1 {
+		top: 250px;
+	}
+
+	#meWrap2 {
+		top: 150px;
+	}
+	
+	#bioTitle {
+		font-size: 5em !important;
+	}
+	
+	#detailsButton {
+		font-size: 5em;
+	}
+	/* END ME SECTION LARGE SCREENS *****************************/
+	
+	
+	
+	/* PROJECTS SECTION LARGE SCREENS ***********************/
+	#projectSection {
 		background: url('../img/backgrounds/leoL.jpg');
 		background-size: 777px 818px;
 	}
@@ -922,32 +951,12 @@ footer p:nth-of-type(1) {
 	.projectDesLeft {
 		margin-left: -450px;
 	}
-	/* END SECTION ONE LARGE SCREENS***********************/
+	/* END PROJECTS SECTION LARGE SCREENS***********************/
 	
 	
 	
-	/* SECTION TWO, ME LARGE SCREENS *****************************/
-	#meWrap1 {
-		top: 250px;
-	}
-
-	#meWrap2 {
-		top: 150px;
-	}
-	
-	#bioTitle {
-		font-size: 5em !important;
-	}
-	
-	#detailsButton {
-		font-size: 5em;
-	}
-	/* END SECTION TWO LARGE SCREENS *****************************/
-	
-	
-	
-	/* SECTION THREE, MY DEAL LARGE SCREENS ***********************/
-	section:nth-of-type(3) {
+	/*  MY DEAL SECTION LARGE SCREENS ***********************/
+	#dealSection {
 		background: url('../img/backgrounds/rpmBackground.jpg');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
@@ -970,22 +979,15 @@ footer p:nth-of-type(1) {
 		padding: 75px 25px;
 	}
 
-	section:nth-of-type(3) p {
+	#dealSection p {
 		font-size: 1.25em;
 	}
-	
-	/* section:nth-of-type(3) q {
-		clear: both;
-	} */
-	/* END SECTION THREE LARGE SCREENS ***********************/
+	/* END MY DEAL SECTION LARGE SCREENS ***********************/
 	
 	
 	
-	/* SECTION FOUR, CODE FOR A HAPPY LIFE LARGE SCREENS ******************************/
-	section:nth-of-type(4) {
-		/* clear: both; */
-	}
-	section:nth-of-type(4) p {
+	/* CODE FOR A HAPPY LIFE SECTION LARGE SCREENS ******************************/
+	#codeSection p {
 		font-size: 1.5em;
 		max-width: 700px;
 		margin-bottom: 75px;
@@ -1017,7 +1019,7 @@ footer p:nth-of-type(1) {
 	#quote3 {
 		width: auto;
 	}
-	/* END SECTION THREE LARGE SCREENS *************/
+	/* END CODE SECTION LARGE SCREENS *************/
 	
 	
 	
@@ -1034,8 +1036,6 @@ footer p:nth-of-type(1) {
 	/* END FOOTER LARGE SCREENS***********************/
 }
 /* END LARGE SCREENS ************/
-
-
 
 
 
@@ -1086,17 +1086,17 @@ footer p:nth-of-type(1) {
 	
 	
 	
-	/* SECTION TWO, ME X LARGE SCREENS *****************************/
+	/* ME SECTION X LARGE SCREENS *****************************/
 	#meSection h1 {
 		margin-left: -30px;
 	}
-	/* END SECTION TWO X LARGE SCREENS *****************************/
+	/* END ME SECTION X LARGE SCREENS *****************************/
 	
 	
 	
-	/* SECTION THREE, PROJECTS X LARGE SCREENS ***********************/
+	/* PROJECTS SECTION X LARGE SCREENS ***********************/
 	
-	/* END SECTION THREE X LARGE SCREENS***********************/
+	/* END PROJECTS SECTION X LARGE SCREENS***********************/
 	
 	
 	
@@ -1105,9 +1105,3 @@ footer p:nth-of-type(1) {
 	/* END FOOTER X LARGE SCREENS***********************/
 }
 /* END X LARGE SCREENS ************/
-
-
-
-
-
-

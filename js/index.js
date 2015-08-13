@@ -143,101 +143,100 @@ hoverColor("projectImg5", "projectLink5", "rgb(200,0,0)", "rgb(125,0,0)");
 hoverColor("projectImg6", "projectLink6", "rgb(200,0,0)", "rgb(125,0,0)");
 
 
+
 // SHORTCUT FUNCTION FOR OPENING AND CLOSING BIO SECTION
-function openOrClose(idee, idee2, idee3, display2, background, width, height, height2, z, klass, display, idee4, display3) {
-	var setIdee = document.getElementById(idee);
-	var setIdee2 = document.getElementById(idee2);
-	var setIdee3 = document.getElementById(idee3);
-	var setIdee4 = document.getElementById(idee4);
-	var klass = document.getElementsByClassName(klass);
-	setIdee.onclick = function() {
-		setIdee.style.display = display2;
-		setIdee3.style.height = height2;
-		setIdee2.style.background = background;
-		setIdee2.style.width = width;
-		setIdee2.style.height = height;
-		setIdee2.style.zIndex = z;
-		setIdee4.style.display = display3;
-		for(var i=0; i<klass.length; i++) {
-			klass[i].style.display = display;
-		}
-	};
-};
+// function openOrClose(idee, idee2, idee3, display2, background, width, height, height2, z, klass, display, idee4, display3) {
+	// var setIdee = document.getElementById(idee);
+	// var setIdee2 = document.getElementById(idee2);
+	// var setIdee3 = document.getElementById(idee3);
+	// var setIdee4 = document.getElementById(idee4);
+	// var klass = document.getElementsByClassName(klass);
+	// setIdee.onclick = function() {
+		// setIdee.style.display = display2;
+		// setIdee3.style.height = height2;
+		// setIdee2.style.background = background;
+		// setIdee2.style.width = width;
+		// setIdee2.style.height = height;
+		// setIdee2.style.zIndex = z;
+		// setIdee4.style.display = display3;
+		// for(var i=0; i<klass.length; i++) {
+			// klass[i].style.display = display;
+		// }
+	// };
+// };
 
 // BIO SECTION
-openOrClose("bioTitle", "meWrap1", "meSection", "block", "rgba(0,0,0,0.9)", "100%", "auto", "1000px", "999", "hiddenText", "block", "bioButton", "none");
+// openOrClose("bioTitle", "meWrap1", "meSection", "block", "rgba(0,0,0,0.9)", "100%", "auto", "1000px", "999", "hiddenText", "block", "bioButton", "none");
 
-openOrClose("bioButton", "meWrap1", "meSection", "none", "rgba(0,0,0,0.9)", "100%", "auto", "1000px", "999", "hiddenText", "block", "bioButton", "none");
+// openOrClose("bioButton", "meWrap1", "meSection", "none", "rgba(0,0,0,0.9)", "100%", "auto", "1000px", "999", "hiddenText", "block", "bioButton", "none");
 
-openOrClose("bioButtonClose", "meWrap1", "meSection", "none", "none", "49%", "420px", "750px", "0", "hiddenText", "none", "bioButton", "block");
+// openOrClose("bioButtonClose", "meWrap1", "meSection", "none", "none", "49%", "420px", "750px", "0", "hiddenText", "none", "bioButton", "block");
+
+
+
+document.getElementById("bioTitle").onclick = function() {
+	document.getElementById("meWrap1").setAttribute("style", "width: 100%; height: 100%; background: rgba(0,0,0,0.9)");
+	document.getElementById("bioButton").style.display = "none";
+	document.getElementById("meSection").style.height = "1000px";
+	document.getElementById("meWrap2").style.display = "none";
+	
+	for(var i=0; i<document.getElementsByClassName("hiddenText").length; i++) {
+			document.getElementsByClassName("hiddenText")[i].style.display = "block";
+		}
+};
+
+document.getElementById("bioButton").onclick = function() {
+	document.getElementById("meWrap1").setAttribute("style", "width: 100%; height: 100%; background: rgba(0,0,0,0.9)");
+	document.getElementById("bioButton").style.display = "none";
+	document.getElementById("meSection").style.height = "1000px";
+	document.getElementById("meWrap2").style.display = "none";
+	
+	for(var i=0; i<document.getElementsByClassName("hiddenText").length; i++) {
+			document.getElementsByClassName("hiddenText")[i].style.display = "block";
+		}
+};
+
+document.getElementById("bioButtonClose").onclick = function() {
+	document.getElementById("meWrap1").setAttribute("style", "width: 49%; height: 420px; background: none");
+	document.getElementById("bioButton").style.display = "block";
+	document.getElementById("meSection").style.height = "750px";
+	document.getElementById("meWrap2").style.display = "block";
+	
+	for(var i=0; i<document.getElementsByClassName("hiddenText").length; i++) {
+			document.getElementsByClassName("hiddenText")[i].style.display = "none";
+		}
+};
 
 
 
 // DETAILS SECTION
 document.getElementById("detailsButton").onclick = function() {
-	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 550px; background: rgba(255,255,240,0.9)");
-	document.getElementById("detailsClose").style.display = "inline-block";
-	document.getElementById("trajectoryButton").style.fontSize = "2em";
-	document.getElementById("contactButton").style.fontSize = "2em";
-	document.getElementById("referencesButton").style.fontSize = "2em";
+	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
+	document.getElementById("detailsClose").style.display = "block";
 	document.getElementById("detailsButton2").style.display = "none";
-	for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
-		document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(0deg)";
-		document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(0deg)";
-		document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(0deg)";
-	}
 };
 
 document.getElementById("detailsButton2").onclick = function() {
-	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 550px; background: rgba(255,255,240,0.9)");
-	document.getElementById("detailsClose").style.display = "inline-block";
-	document.getElementById("trajectoryButton").style.fontSize = "2em";
-	document.getElementById("contactButton").style.fontSize = "2em";
-	document.getElementById("referencesButton").style.fontSize = "2em";
+	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
+	document.getElementById("detailsClose").style.display = "block";
 	document.getElementById("detailsButton2").style.display = "none";
-	for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
-		document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(0deg)";
-		document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(0deg)";
-		document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(0deg)";
-	}
 };
 
 document.getElementById("detailsClose").onclick = function() {
 	document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
 	document.getElementById("detailsClose").style.display = "none";
-	document.getElementById("detailsButton2").style.display = "inline-block";
-	if (width < 500) {
-		document.getElementById("trajectoryButton").style.fontSize = "1.4em";
-		document.getElementById("contactButton").style.fontSize = "1.8em";
-		document.getElementById("referencesButton").style.fontSize = "1.4em";
-		for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
-			document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(35deg)";
-			document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(35deg)";
-			document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(35deg)";
-		}
-	} else if (width > 499) {
-		document.getElementById("detailsButton").style.fontSize = "4em";
-		document.getElementById("trajectoryButton").style.fontSize = "2em";
-		document.getElementById("contactButton").style.fontSize = "2.25em";
-		document.getElementById("referencesButton").style.fontSize = "2em";
-		for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
-			document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(0deg)";
-			document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(0deg)";
-			document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(0deg)";
-		}
-	}
+	document.getElementById("detailsButton2").style.display = "block";
 };
 
 
 
 // TRAJECTORY SECTION
 document.getElementById("trajectoryButton").onclick = function() {
-		document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 500px; background: rgba(255,255,240,0.9)");
-	document.getElementById("trajectory").setAttribute("style", "width: 100%; height: 500px; background: rgba(255,255,240,0.9)");
-	document.getElementById("trajectoryClose").style.display = "inline-block";
-	document.getElementsByClassName("detailTitle")[0].style.msTransform = "rotate(0deg)";
-	document.getElementsByClassName("detailTitle")[0].style.webkitTransform = "rotate(0deg)";
-	document.getElementsByClassName("detailTitle")[0].style.transform = "rotate(0deg)";
+		document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
+	document.getElementById("trajectory").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
+	document.getElementById("meSection").style.height = "1000px";
+	document.getElementById("trajectoryClose").style.display = "block";
+	
 	for(var i=0; i<document.getElementsByClassName("hiddenText3").length; i++) {
 			document.getElementsByClassName("hiddenText3")[i].style.display = "block";
 		}
@@ -246,24 +245,9 @@ document.getElementById("trajectoryButton").onclick = function() {
 document.getElementById("trajectoryClose").onclick = function() {
 		document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
 	document.getElementById("trajectory").setAttribute("style", "width: 100%; height: auto; background: none");
+	document.getElementById("meSection").style.height = "750px";
 	document.getElementById("trajectoryClose").style.display = "none";
-	if (width < 500) {
-		for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
-			document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(35deg)";
-			document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(35deg)";
-			document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(35deg)";
-		}
-	} else if (width > 499) {
-		document.getElementById("detailsButton").style.fontSize = "2.5em";
-		document.getElementById("trajectoryButton").style.fontSize = "2em";
-		document.getElementById("contactButton").style.fontSize = "2.25em";
-		document.getElementById("referencesButton").style.fontSize = "2em";
-		for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
-			document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(0deg)";
-			document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(0deg)";
-			document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(0deg)";
-		}
-	}
+	
 	for(var i=0; i<document.getElementsByClassName("hiddenText3").length; i++) {
 			document.getElementsByClassName("hiddenText3")[i].style.display = "none";
 		}
@@ -273,13 +257,11 @@ document.getElementById("trajectoryClose").onclick = function() {
 
 // CONTACT SECTION
 document.getElementById("contactButton").onclick = function() {
-		document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 500px; background: rgba(255,255,240,0.9)");
-	document.getElementById("contact").setAttribute("style", "width: 100%; height: 500px; background: rgba(255,255,240,0.9)");
+		document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
+	document.getElementById("contact").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
 	document.getElementById("contactClose").style.display = "inline-block";
 	document.getElementById("trajectory").style.display = "none";
-	document.getElementsByClassName("detailTitle")[1].style.msTransform = "rotate(0deg)";
-	document.getElementsByClassName("detailTitle")[1].style.webkitTransform = "rotate(0deg)";
-	document.getElementsByClassName("detailTitle")[1].style.transform = "rotate(0deg)";
+	
 	for(var i=0; i<document.getElementsByClassName("hiddenText4").length; i++) {
 			document.getElementsByClassName("hiddenText4")[i].style.display = "block";
 		}
@@ -293,23 +275,7 @@ document.getElementById("contactClose").onclick = function() {
 	document.getElementById("contact").setAttribute("style", "width: 100%; height: auto; background: none");
 	document.getElementById("contactClose").style.display = "none";
 	document.getElementById("trajectory").style.display = "block";
-	if (width < 500) {
-		for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
-			document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(35deg)";
-			document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(35deg)";
-			document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(35deg)";
-		}
-	} else if (width > 499) {
-		document.getElementById("detailsButton").style.fontSize = "2.5em";
-		document.getElementById("trajectoryButton").style.fontSize = "2em";
-		document.getElementById("contactButton").style.fontSize = "2.25em";
-		document.getElementById("referencesButton").style.fontSize = "2em";
-		for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
-			document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(0deg)";
-			document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(0deg)";
-			document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(0deg)";
-		}
-	}
+	
 	for(var i=0; i<document.getElementsByClassName("hiddenText4").length; i++) {
 			document.getElementsByClassName("hiddenText4")[i].style.display = "none";
 		}
@@ -320,17 +286,19 @@ document.getElementById("contactClose").onclick = function() {
 // REFERENCES SECTION
 document.getElementById("referencesButton").onclick = function() {
 	document.getElementById("meSection").setAttribute("style", "width: 100%; height: 1000px");
-	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 750px; background: rgba(255,255,240,0.9)");
-	document.getElementById("references").setAttribute("style", "width: 100%; height: 750px; background: rgba(255,255,240,0.9)");
+	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
+	document.getElementById("references").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
 	document.getElementById("referencesClose").style.display = "inline-block";
 	document.getElementById("trajectory").style.display = "none";
 	document.getElementById("contact").style.display = "none";
 	document.getElementById("meWrap1").style.display = "none";
-	document.getElementsByClassName("detailTitle")[2].style.msTransform = "rotate(0deg)";
-	document.getElementsByClassName("detailTitle")[2].style.webkitTransform = "rotate(0deg)";
-	document.getElementsByClassName("detailTitle")[2].style.transform = "rotate(0deg)";
+	
 	for(var i=0; i<document.getElementsByClassName("hiddenText5").length; i++) {
 			document.getElementsByClassName("hiddenText5")[i].style.display = "block";
+		}
+		
+	for(var i=0; i<document.getElementsByClassName("refHr").length; i++) {
+			document.getElementsByClassName("refHr")[i].style.display = "block";
 		}
 };
 
@@ -342,31 +310,15 @@ document.getElementById("referencesClose").onclick = function() {
 	document.getElementById("trajectory").style.display = "block";
 	document.getElementById("contact").style.display = "block";
 	document.getElementById("meWrap1").style.display = "block";
-	if (width < 500) {
-		for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
-			document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(35deg)";
-			document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(35deg)";
-			document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(35deg)";
-		}
-	} else if (width > 499) {
-		document.getElementById("detailsButton").style.fontSize = "2.5em";
-		document.getElementById("trajectoryButton").style.fontSize = "2em";
-		document.getElementById("contactButton").style.fontSize = "2.25em";
-		document.getElementById("referencesButton").style.fontSize = "2em";
-		for(var i=0; i<document.getElementsByClassName("detailTitle").length; i++) {
-			document.getElementsByClassName("detailTitle")[i].style.msTransform = "rotate(0deg)";
-			document.getElementsByClassName("detailTitle")[i].style.webkitTransform = "rotate(0deg)";
-			document.getElementsByClassName("detailTitle")[i].style.transform = "rotate(0deg)";
-		}
-	}
+	
 	for(var i=0; i<document.getElementsByClassName("hiddenText5").length; i++) {
 			document.getElementsByClassName("hiddenText5")[i].style.display = "none";
 		}
+		
+	for(var i=0; i<document.getElementsByClassName("refHr").length; i++) {
+			document.getElementsByClassName("refHr")[i].style.display = "none";
+		}
 };
-
-
-
-
 
 
 
