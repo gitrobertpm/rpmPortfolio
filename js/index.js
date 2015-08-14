@@ -144,60 +144,52 @@ hoverColor("projectImg6", "projectLink6", "rgb(200,0,0)", "rgb(125,0,0)");
 
 
 
-// SHORTCUT FUNCTION FOR OPENING AND CLOSING BIO SECTION
-// function openOrClose(idee, idee2, idee3, display2, background, width, height, height2, z, klass, display, idee4, display3) {
-	// var setIdee = document.getElementById(idee);
-	// var setIdee2 = document.getElementById(idee2);
-	// var setIdee3 = document.getElementById(idee3);
-	// var setIdee4 = document.getElementById(idee4);
-	// var klass = document.getElementsByClassName(klass);
-	// setIdee.onclick = function() {
-		// setIdee.style.display = display2;
-		// setIdee3.style.height = height2;
-		// setIdee2.style.background = background;
-		// setIdee2.style.width = width;
-		// setIdee2.style.height = height;
-		// setIdee2.style.zIndex = z;
-		// setIdee4.style.display = display3;
-		// for(var i=0; i<klass.length; i++) {
-			// klass[i].style.display = display;
-		// }
-	// };
-// };
-
 // BIO SECTION
-// openOrClose("bioTitle", "meWrap1", "meSection", "block", "rgba(0,0,0,0.9)", "100%", "auto", "1000px", "999", "hiddenText", "block", "bioButton", "none");
-
-// openOrClose("bioButton", "meWrap1", "meSection", "none", "rgba(0,0,0,0.9)", "100%", "auto", "1000px", "999", "hiddenText", "block", "bioButton", "none");
-
-// openOrClose("bioButtonClose", "meWrap1", "meSection", "none", "none", "49%", "420px", "750px", "0", "hiddenText", "none", "bioButton", "block");
-
-
-
+// BIO TITLE BUTTON
 document.getElementById("bioTitle").onclick = function() {
 	document.getElementById("meWrap1").setAttribute("style", "width: 100%; height: 100%; background: rgba(0,0,0,0.9)");
 	document.getElementById("bioButton").style.display = "none";
-	document.getElementById("meSection").style.height = "1000px";
 	document.getElementById("meWrap2").style.display = "none";
 	
 	for(var i=0; i<document.getElementsByClassName("hiddenText").length; i++) {
-			document.getElementsByClassName("hiddenText")[i].style.display = "block";
-		}
+		document.getElementsByClassName("hiddenText")[i].style.display = "block";
+	}
+	
+	if (width < 500) {
+		document.getElementById("meSection").style.height = "1000px";
+	} else if (width > 499 && width < 1000) {
+		document.getElementById("meSection").style.height = "825px";
+		document.getElementById("meWrap1"). style.top = "300px";
+	} else if (width > 999) {
+		document.getElementById("meSection").style.height = "900px";
+		document.getElementById("meWrap1"). style.top = "325px";
+	}
 };
 
+// BIO READ MORE BUTTON
 document.getElementById("bioButton").onclick = function() {
 	document.getElementById("meWrap1").setAttribute("style", "width: 100%; height: 100%; background: rgba(0,0,0,0.9)");
 	document.getElementById("bioButton").style.display = "none";
-	document.getElementById("meSection").style.height = "1000px";
 	document.getElementById("meWrap2").style.display = "none";
 	
 	for(var i=0; i<document.getElementsByClassName("hiddenText").length; i++) {
 			document.getElementsByClassName("hiddenText")[i].style.display = "block";
 		}
+		
+	if (width < 500) {
+		document.getElementById("meSection").style.height = "1000px";
+	} else if (width > 499 && width < 1000) {
+		document.getElementById("meSection").style.height = "825px";
+		document.getElementById("meWrap1"). style.top = "300px";
+	} else if (width > 999) {
+		document.getElementById("meSection").style.height = "900px";
+		document.getElementById("meWrap1"). style.top = "325px";
+	}
 };
 
+// BIO CLOSE BUTTON
 document.getElementById("bioButtonClose").onclick = function() {
-	document.getElementById("meWrap1").setAttribute("style", "width: 49%; height: 420px; background: none");
+	document.getElementById("meWrap1").setAttribute("style", "width: 49%; height: 420px; background: none; top: 250");
 	document.getElementById("bioButton").style.display = "block";
 	document.getElementById("meSection").style.height = "750px";
 	document.getElementById("meWrap2").style.display = "block";
@@ -210,47 +202,97 @@ document.getElementById("bioButtonClose").onclick = function() {
 
 
 // DETAILS SECTION
+// DETAILS TITLE BUTTON
 document.getElementById("detailsButton").onclick = function() {
 	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
 	document.getElementById("detailsClose").style.display = "block";
 	document.getElementById("detailsButton2").style.display = "none";
+	document.getElementById("meWrap1").style.display = "none";
+	
+	if (width > 499 && width < 1000) {
+		document.getElementById("meWrap2"). style.top = "300px";
+	} else if (width > 999) {
+		document.getElementById("meSection").style.height = "850px";
+		document.getElementById("meWrap2"). style.top = "325px";
+	}
 };
 
+// DETAILS READ MORE BUTTON
 document.getElementById("detailsButton2").onclick = function() {
 	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
 	document.getElementById("detailsClose").style.display = "block";
 	document.getElementById("detailsButton2").style.display = "none";
+	document.getElementById("meWrap1").style.display = "none";
+	
+	if (width > 499 && width < 1000) {
+		document.getElementById("meWrap2"). style.top = "300px";
+	} else if (width > 999) {
+		document.getElementById("meSection").style.height = "850px";
+		document.getElementById("meWrap2"). style.top = "325px";
+	}
 };
 
+// DETAILS CLOSE BUTTON
 document.getElementById("detailsClose").onclick = function() {
 	document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
 	document.getElementById("detailsClose").style.display = "none";
 	document.getElementById("detailsButton2").style.display = "block";
+	document.getElementById("meWrap1").style.display = "block";
+	document.getElementById("meSection").style.height = "750px";
+	
+	if (width < 500) {
+		document.getElementById("meWrap2"). style.top = "250px";
+	} else if (width > 499 && width < 1000) {
+		document.getElementById("meWrap2"). style.top = "200px";
+	} else if (width > 999) {
+		document.getElementById("meWrap2"). style.top = "150px";
+	}
 };
 
 
 
 // TRAJECTORY SECTION
 document.getElementById("trajectoryButton").onclick = function() {
-		document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
+	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
 	document.getElementById("trajectory").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
-	document.getElementById("meSection").style.height = "1000px";
 	document.getElementById("trajectoryClose").style.display = "block";
+	document.getElementById("meWrap1").style.display = "none";
 	
 	for(var i=0; i<document.getElementsByClassName("hiddenText3").length; i++) {
 			document.getElementsByClassName("hiddenText3")[i].style.display = "block";
 		}
+		
+	if (width < 500) {
+		document.getElementById("meWrap2"). style.top = "250px";
+		document.getElementById("meSection").style.height = "900px";
+	} else if (width > 499 && width < 1000) {
+		document.getElementById("meWrap2"). style.top = "325px";
+		document.getElementById("meSection").style.height = "850px";
+	} else if (width > 999) {
+		document.getElementById("meWrap2"). style.top = "325px";
+		document.getElementById("meSection").style.height = "900px";
+	}
 };
 
+// TRAJECTORY CLOSE BUTTON
 document.getElementById("trajectoryClose").onclick = function() {
-		document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
+	document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
 	document.getElementById("trajectory").setAttribute("style", "width: 100%; height: auto; background: none");
 	document.getElementById("meSection").style.height = "750px";
 	document.getElementById("trajectoryClose").style.display = "none";
+	document.getElementById("meWrap1").style.display = "block";
 	
 	for(var i=0; i<document.getElementsByClassName("hiddenText3").length; i++) {
 			document.getElementsByClassName("hiddenText3")[i].style.display = "none";
 		}
+		
+	if (width < 500) {
+		document.getElementById("meWrap2"). style.top = "250px";
+	} else if (width > 499 && width < 1000) {
+		document.getElementById("meWrap2"). style.top = "200px";
+	} else if (width > 999) {
+		document.getElementById("meWrap2"). style.top = "150px";
+	}
 };
 
 
@@ -261,31 +303,53 @@ document.getElementById("contactButton").onclick = function() {
 	document.getElementById("contact").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
 	document.getElementById("contactClose").style.display = "inline-block";
 	document.getElementById("trajectory").style.display = "none";
+	document.getElementById("meWrap1").style.display = "none";
 	
 	for(var i=0; i<document.getElementsByClassName("hiddenText4").length; i++) {
 			document.getElementsByClassName("hiddenText4")[i].style.display = "block";
 		}
+		
+	if (width < 500) {
+		document.getElementById("meWrap2"). style.top = "250px";
+	} else if (width > 499 && width < 1000) {
+		document.getElementById("meWrap2"). style.top = "325px";
+	} else if (width > 999) {
+		document.getElementById("meWrap2"). style.top = "325px";
+		document.getElementById("meSection").style.height = "800px";
+	}
+		
 	// SET CONTACT LINK ICONS
 	set("contactGithubLink", "url('img/github.png')", "inline-block", "50px 50px", "no-repeat", "center");
 	set("contactLinkedinLink", "url('img/linkedin.png')", "inline-block", "50px 50px", "no-repeat", "center");
 };
 
+// CONTACT CLOSE BUTTON
 document.getElementById("contactClose").onclick = function() {
 	document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
 	document.getElementById("contact").setAttribute("style", "width: 100%; height: auto; background: none");
+	document.getElementById("meSection").style.height = "750px";
 	document.getElementById("contactClose").style.display = "none";
 	document.getElementById("trajectory").style.display = "block";
+	document.getElementById("meWrap1").style.display = "block";
 	
 	for(var i=0; i<document.getElementsByClassName("hiddenText4").length; i++) {
 			document.getElementsByClassName("hiddenText4")[i].style.display = "none";
 		}
+		
+	if (width < 500) {
+		document.getElementById("meWrap2"). style.top = "250px";
+	} else if (width > 499 && width < 1000) {
+		document.getElementById("meWrap2"). style.top = "200px";
+	} else if (width > 999) {
+		document.getElementById("meWrap2"). style.top = "150px";
+	}
 };
 
 
 
 // REFERENCES SECTION
 document.getElementById("referencesButton").onclick = function() {
-	document.getElementById("meSection").setAttribute("style", "width: 100%; height: 1000px");
+	// document.getElementById("meSection").setAttribute("style", "width: 100%; height: 1000px");
 	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
 	document.getElementById("references").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
 	document.getElementById("referencesClose").style.display = "inline-block";
@@ -300,8 +364,20 @@ document.getElementById("referencesButton").onclick = function() {
 	for(var i=0; i<document.getElementsByClassName("refHr").length; i++) {
 			document.getElementsByClassName("refHr")[i].style.display = "block";
 		}
+		
+	if (width < 500) {
+		document.getElementById("meWrap2"). style.top = "250px";
+		document.getElementById("meSection").style.height = "1000px";
+	} else if (width > 499 && width < 1000) {
+		document.getElementById("meWrap2"). style.top = "325px";
+		document.getElementById("meSection").style.height = "1050px";
+	} else if (width > 999) {
+		document.getElementById("meWrap2"). style.top = "325px";
+		document.getElementById("meSection").style.height = "1100px";
+	}
 };
 
+// REFERENCES CLOSE BUTTON
 document.getElementById("referencesClose").onclick = function() {
 	document.getElementById("meSection").setAttribute("style", "width: 100%; height: 750px");
 	document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
@@ -309,6 +385,7 @@ document.getElementById("referencesClose").onclick = function() {
 	document.getElementById("referencesClose").style.display = "none";
 	document.getElementById("trajectory").style.display = "block";
 	document.getElementById("contact").style.display = "block";
+	document.getElementById("meWrap1").style.display = "block";
 	document.getElementById("meWrap1").style.display = "block";
 	
 	for(var i=0; i<document.getElementsByClassName("hiddenText5").length; i++) {
@@ -318,6 +395,14 @@ document.getElementById("referencesClose").onclick = function() {
 	for(var i=0; i<document.getElementsByClassName("refHr").length; i++) {
 			document.getElementsByClassName("refHr")[i].style.display = "none";
 		}
+		
+	if (width < 500) {
+		document.getElementById("meWrap2"). style.top = "250px";
+	} else if (width > 499 && width < 1000) {
+		document.getElementById("meWrap2"). style.top = "200px";
+	} else if (width > 999) {
+		document.getElementById("meWrap2"). style.top = "150px";
+	}
 };
 
 
