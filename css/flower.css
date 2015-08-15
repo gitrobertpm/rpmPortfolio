@@ -146,12 +146,23 @@
 	border-radius: 50%;
 }
 
-#flowerBulb p {
+/* #flowerBulb p {
 	font-size: 30px;
 	color: black;
 	width: 25px;
 	height: 25px;
 	margin: 0;
 	margin-top: -10px;
+} */
+
+#yinyang {
+	width: 25px;
+	height: 25px;
+	margin: 0;
+	background: url('../img/yinyangSm.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
+
+
 /* END FLOWER ****************/
