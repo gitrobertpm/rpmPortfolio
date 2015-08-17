@@ -411,7 +411,7 @@ section p {
 }
 
 #bioButton,
-#detailsButton2,
+#detailsResume,
 #bioButtonClose,
 #detailsClose,
 #trajectoryClose,
@@ -423,8 +423,8 @@ section p {
 	cursor: pointer;
 }
 
-#detailsButton2 {
-	margin-top: 40px;
+#referencesButton {
+	margin-bottom: 47.5px;
 }
 
 #bioButton:active, #bioButton:focus, #bioButton:hover, #bioButtonClose:active, #bioButtonClose:focus, #bioButtonClose:hover, #detailsButton2:active, #detailsButton2:focus, #detailsButton2:hover {

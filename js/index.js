@@ -218,19 +218,19 @@ document.getElementById("detailsButton").onclick = function() {
 };
 
 // DETAILS READ MORE BUTTON
-document.getElementById("detailsButton2").onclick = function() {
-	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
-	document.getElementById("detailsClose").style.display = "block";
-	document.getElementById("detailsButton2").style.display = "none";
-	document.getElementById("meWrap1").style.display = "none";
+// document.getElementById("detailsButton2").onclick = function() {
+	// document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
+	// document.getElementById("detailsClose").style.display = "block";
+	// document.getElementById("detailsButton2").style.display = "none";
+	// document.getElementById("meWrap1").style.display = "none";
 	
-	if (width > 499 && width < 1000) {
-		document.getElementById("meWrap2"). style.top = "300px";
-	} else if (width > 999) {
-		document.getElementById("meSection").style.height = "850px";
-		document.getElementById("meWrap2"). style.top = "325px";
-	}
-};
+	// if (width > 499 && width < 1000) {
+		// document.getElementById("meWrap2"). style.top = "300px";
+	// } else if (width > 999) {
+		// document.getElementById("meSection").style.height = "850px";
+		// document.getElementById("meWrap2"). style.top = "325px";
+	// }
+// };
 
 // DETAILS CLOSE BUTTON
 document.getElementById("detailsClose").onclick = function() {
