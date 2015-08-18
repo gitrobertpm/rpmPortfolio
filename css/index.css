@@ -14,7 +14,7 @@ body {
 	font-size: 1em;
 	position: relative;
 	text-align: center;
-	background-color: ivory;
+	background-color: black;
 }
 
 html,
@@ -192,9 +192,9 @@ header {
 	position: relative;
 	padding-top: 50px;
 	padding-bottom: 25px;
-	background: url('../img/backgrounds/keyboard2.jpg');
+	/* background: url('../img/backgrounds/keyboard2.jpg');
 	background-repeat: no-repeat;
-	background-size: 100% 50%;
+	background-size: 100% 50%; */
 	/* box-shadow: 0px 10px 10px ivory; */
 	overflow: hidden;
 }
@@ -205,7 +205,7 @@ header h1 {
 	font-size: 12vw;
 	letter-spacing: 1px;
 	color: rgb(35,35,35);
-	text-shadow: .5px .25px 0px rgb(125,0,0);
+	text-shadow: 2px 1px 0px rgb(100,175,255);
 	margin-bottom: -25px;
 	cursor: default;
 }
@@ -843,7 +843,7 @@ footer p:nth-of-type(1) {
 	
 	header h1 {
 		font-size: 7.5vw;
-		text-shadow: .75px .75px 0px rgb(125,0,0);
+		text-shadow: 2px 1px 0px rgb(100,175,255);
 		margin-top: 75px;
 		margin-bottom: 125px;
 	}
