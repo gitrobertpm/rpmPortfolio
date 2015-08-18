@@ -360,6 +360,12 @@ section p {
 	cursor: pointer;
 }
 
+#meSection2 {
+	position: relative;
+	background: ivory;
+	height: 750px;
+}
+
 #detailsButton {
 	font-family: Impact, Charcoal, sans-serif !important;
 	color: rgb(100,175,255);
