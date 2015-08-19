@@ -12,9 +12,9 @@ window.onload = function() {
 	setTimeout(function(){ document.getElementById("desHand").style.msTransform = "translate(0px, 0px)"; }, 0);
 	setTimeout(function(){ document.getElementById("desHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
 	setTimeout(function(){ document.getElementById("desHand").style.transform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("dev").style.msTransform = "translate(0px, 0px)"; }, 250);
-	setTimeout(function(){ document.getElementById("dev").style.webkitTransform = "translate(0px, 0px)"; }, 250);
-	setTimeout(function(){ document.getElementById("dev").style.transform = "translate(0px, 0px)"; }, 250);
+	setTimeout(function(){ document.getElementById("dev").style.msTransform = "translate(0px, 0px)"; }, 500);
+	setTimeout(function(){ document.getElementById("dev").style.webkitTransform = "translate(0px, 0px)"; }, 500);
+	setTimeout(function(){ document.getElementById("dev").style.transform = "translate(0px, 0px)"; }, 500);
 	setTimeout(function(){ document.getElementById("des").style.msTransform = "translate(0px, 0px)"; }, 500);
 	setTimeout(function(){ document.getElementById("des").style.webkitTransform = "translate(0px, 0px)"; }, 500);
 	setTimeout(function(){ document.getElementById("des").style.transform = "translate(0px, 0px)"; }, 500);
@@ -71,6 +71,11 @@ function set(idee, background, display, bs, br, bp) {
 	setIdee.style.backgroundPosition = bp;
 };
 
+// SET KEYBOARD IMAGE
+// if (width > 999) {
+	// set("keyboardImg", "url('img/backgrounds/keyboard2.jpg')", "block", "100% 100%", "no-repeat");
+// }
+
 // SET PROJECTS IMAGES
 set("projectImg2", "url('img/projectImgs/gallery.png')", "block", "100% 100%", "no-repeat");
 set("projectImg3", "url('img/projectImgs/odom.png')", "block", "100% 100%", "no-repeat");
@@ -91,6 +96,10 @@ set("footerLinkedinLink", "url('img/linkedin.png')", "block", "50px 50px", "no-r
 
 // SET BIO PIC
 set("myPicDiv", "url('img/me5.jpg')", "block", "100px 125px", "no-repeat", "center");
+
+// SET CONTACT LINK ICONS
+set("contactGithubLink", "url('img/github.png')", "inline-block", "50px 50px", "no-repeat", "center");
+set("contactLinkedinLink", "url('img/linkedin.png')", "inline-block", "50px 50px", "no-repeat", "center");
 
 
 
@@ -146,76 +155,76 @@ hoverColor("projectImg6", "projectLink6", "rgb(200,0,0)", "rgb(125,0,0)");
 
 // BIO SECTION
 // BIO TITLE BUTTON
-document.getElementById("bioTitle").onclick = function() {
-	document.getElementById("meWrap1").setAttribute("style", "width: 100%; height: 100%; background: rgba(0,0,0,0.9)");
-	document.getElementById("bioButton").style.display = "none";
-	document.getElementById("meWrap2").style.display = "none";
+// document.getElementById("bioTitle").onclick = function() {
+	// document.getElementById("meWrap1").setAttribute("style", "width: 100%; height: 100%; background: rgba(0,0,0,0.9)");
+	// document.getElementById("bioButton").style.display = "none";
+	// document.getElementById("meWrap2").style.display = "none";
 	
-	for(var i=0; i<document.getElementsByClassName("hiddenText").length; i++) {
-		document.getElementsByClassName("hiddenText")[i].style.display = "block";
-	}
+	// for(var i=0; i<document.getElementsByClassName("hiddenText").length; i++) {
+		// document.getElementsByClassName("hiddenText")[i].style.display = "block";
+	// }
 	
-	if (width < 500) {
-		document.getElementById("meSection").style.height = "1000px";
-	} else if (width > 499 && width < 1000) {
-		document.getElementById("meSection").style.height = "825px";
-		document.getElementById("meWrap1"). style.top = "300px";
-	} else if (width > 999) {
-		document.getElementById("meSection").style.height = "900px";
-		document.getElementById("meWrap1"). style.top = "325px";
-	}
-};
+	// if (width < 500) {
+		// document.getElementById("meSection").style.height = "1000px";
+	// } else if (width > 499 && width < 1000) {
+		// document.getElementById("meSection").style.height = "825px";
+		// document.getElementById("meWrap1"). style.top = "300px";
+	// } else if (width > 999) {
+		// document.getElementById("meSection").style.height = "900px";
+		// document.getElementById("meWrap1"). style.top = "325px";
+	// }
+// };
 
 // BIO READ MORE BUTTON
-document.getElementById("bioButton").onclick = function() {
-	document.getElementById("meWrap1").setAttribute("style", "width: 100%; height: 100%; background: rgba(0,0,0,0.9)");
-	document.getElementById("bioButton").style.display = "none";
-	document.getElementById("meWrap2").style.display = "none";
+// document.getElementById("bioButton").onclick = function() {
+	// document.getElementById("meWrap1").setAttribute("style", "width: 100%; height: 100%; background: rgba(0,0,0,0.9)");
+	// document.getElementById("bioButton").style.display = "none";
+	// document.getElementById("meWrap2").style.display = "none";
 	
-	for(var i=0; i<document.getElementsByClassName("hiddenText").length; i++) {
-			document.getElementsByClassName("hiddenText")[i].style.display = "block";
-		}
+	// for(var i=0; i<document.getElementsByClassName("hiddenText").length; i++) {
+			// document.getElementsByClassName("hiddenText")[i].style.display = "block";
+		// }
 		
-	if (width < 500) {
-		document.getElementById("meSection").style.height = "1000px";
-	} else if (width > 499 && width < 1000) {
-		document.getElementById("meSection").style.height = "825px";
-		document.getElementById("meWrap1"). style.top = "300px";
-	} else if (width > 999) {
-		document.getElementById("meSection").style.height = "900px";
-		document.getElementById("meWrap1"). style.top = "325px";
-	}
-};
+	// if (width < 500) {
+		// document.getElementById("meSection").style.height = "1000px";
+	// } else if (width > 499 && width < 1000) {
+		// document.getElementById("meSection").style.height = "825px";
+		// document.getElementById("meWrap1"). style.top = "300px";
+	// } else if (width > 999) {
+		// document.getElementById("meSection").style.height = "900px";
+		// document.getElementById("meWrap1"). style.top = "325px";
+	// }
+// };
 
 // BIO CLOSE BUTTON
-document.getElementById("bioButtonClose").onclick = function() {
-	document.getElementById("meWrap1").setAttribute("style", "width: 49%; height: 420px; background: none; top: 250");
-	document.getElementById("bioButton").style.display = "block";
-	document.getElementById("meSection").style.height = "750px";
-	document.getElementById("meWrap2").style.display = "block";
+// document.getElementById("bioButtonClose").onclick = function() {
+	// document.getElementById("meWrap1").setAttribute("style", "width: 49%; height: 420px; background: none; top: 250");
+	// document.getElementById("bioButton").style.display = "block";
+	// document.getElementById("meSection").style.height = "750px";
+	// document.getElementById("meWrap2").style.display = "block";
 	
-	for(var i=0; i<document.getElementsByClassName("hiddenText").length; i++) {
-			document.getElementsByClassName("hiddenText")[i].style.display = "none";
-		}
-};
+	// for(var i=0; i<document.getElementsByClassName("hiddenText").length; i++) {
+			// document.getElementsByClassName("hiddenText")[i].style.display = "none";
+		// }
+// };
 
 
 
 // DETAILS SECTION
 // DETAILS TITLE BUTTON
-document.getElementById("detailsButton").onclick = function() {
-	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
-	document.getElementById("detailsClose").style.display = "block";
-	document.getElementById("detailsButton2").style.display = "none";
-	document.getElementById("meWrap1").style.display = "none";
+// document.getElementById("detailsButton").onclick = function() {
+	// document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
+	// document.getElementById("detailsClose").style.display = "block";
+	// document.getElementById("detailsButton2").style.display = "none";
+	// document.getElementById("meWrap1").style.display = "none";
 	
-	if (width > 499 && width < 1000) {
-		document.getElementById("meWrap2"). style.top = "300px";
-	} else if (width > 999) {
-		document.getElementById("meSection").style.height = "850px";
-		document.getElementById("meWrap2"). style.top = "325px";
-	}
-};
+	// if (width > 499 && width < 1000) {
+		// document.getElementById("meWrap2"). style.top = "300px";
+	// } else if (width > 999) {
+		// document.getElementById("meSection").style.height = "850px";
+		// document.getElementById("meWrap2"). style.top = "325px";
+	// }
+// };
 
 // DETAILS READ MORE BUTTON
 // document.getElementById("detailsButton2").onclick = function() {
@@ -233,177 +242,174 @@ document.getElementById("detailsButton").onclick = function() {
 // };
 
 // DETAILS CLOSE BUTTON
-document.getElementById("detailsClose").onclick = function() {
-	document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
-	document.getElementById("detailsClose").style.display = "none";
-	document.getElementById("detailsButton2").style.display = "block";
-	document.getElementById("meWrap1").style.display = "block";
-	document.getElementById("meSection").style.height = "750px";
+// document.getElementById("detailsClose").onclick = function() {
+	// document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
+	// document.getElementById("detailsClose").style.display = "none";
+	// document.getElementById("detailsButton2").style.display = "block";
+	// document.getElementById("meWrap1").style.display = "block";
+	// document.getElementById("meSection").style.height = "750px";
 	
-	if (width < 500) {
-		document.getElementById("meWrap2"). style.top = "250px";
-	} else if (width > 499 && width < 1000) {
-		document.getElementById("meWrap2"). style.top = "200px";
-	} else if (width > 999) {
-		document.getElementById("meWrap2"). style.top = "150px";
-	}
-};
+	// if (width < 500) {
+		// document.getElementById("meWrap2"). style.top = "250px";
+	// } else if (width > 499 && width < 1000) {
+		// document.getElementById("meWrap2"). style.top = "200px";
+	// } else if (width > 999) {
+		// document.getElementById("meWrap2"). style.top = "150px";
+	// }
+// };
 
 
 
 // TRAJECTORY SECTION
-document.getElementById("trajectoryButton").onclick = function() {
-	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
-	document.getElementById("trajectory").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
-	document.getElementById("trajectoryClose").style.display = "block";
-	document.getElementById("meWrap1").style.display = "none";
+// document.getElementById("trajectoryButton").onclick = function() {
+	// document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
+	// document.getElementById("trajectory").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
+	// document.getElementById("trajectoryClose").style.display = "block";
+	// document.getElementById("meWrap1").style.display = "none";
 	
-	for(var i=0; i<document.getElementsByClassName("hiddenText3").length; i++) {
-			document.getElementsByClassName("hiddenText3")[i].style.display = "block";
-		}
+	// for(var i=0; i<document.getElementsByClassName("hiddenText3").length; i++) {
+			// document.getElementsByClassName("hiddenText3")[i].style.display = "block";
+		// }
 		
-	if (width < 500) {
-		document.getElementById("meWrap2"). style.top = "250px";
-		document.getElementById("meSection").style.height = "900px";
-	} else if (width > 499 && width < 1000) {
-		document.getElementById("meWrap2"). style.top = "325px";
-		document.getElementById("meSection").style.height = "850px";
-	} else if (width > 999) {
-		document.getElementById("meWrap2"). style.top = "325px";
-		document.getElementById("meSection").style.height = "900px";
-	}
-};
+	// if (width < 500) {
+		// document.getElementById("meWrap2"). style.top = "250px";
+		// document.getElementById("meSection").style.height = "900px";
+	// } else if (width > 499 && width < 1000) {
+		// document.getElementById("meWrap2"). style.top = "325px";
+		// document.getElementById("meSection").style.height = "850px";
+	// } else if (width > 999) {
+		// document.getElementById("meWrap2"). style.top = "325px";
+		// document.getElementById("meSection").style.height = "900px";
+	// }
+// };
 
 // TRAJECTORY CLOSE BUTTON
-document.getElementById("trajectoryClose").onclick = function() {
-	document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
-	document.getElementById("trajectory").setAttribute("style", "width: 100%; height: auto; background: none");
-	document.getElementById("meSection").style.height = "750px";
-	document.getElementById("trajectoryClose").style.display = "none";
-	document.getElementById("meWrap1").style.display = "block";
+// document.getElementById("trajectoryClose").onclick = function() {
+	// document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
+	// document.getElementById("trajectory").setAttribute("style", "width: 100%; height: auto; background: none");
+	// document.getElementById("meSection").style.height = "750px";
+	// document.getElementById("trajectoryClose").style.display = "none";
+	// document.getElementById("meWrap1").style.display = "block";
 	
-	for(var i=0; i<document.getElementsByClassName("hiddenText3").length; i++) {
-			document.getElementsByClassName("hiddenText3")[i].style.display = "none";
-		}
+	// for(var i=0; i<document.getElementsByClassName("hiddenText3").length; i++) {
+			// document.getElementsByClassName("hiddenText3")[i].style.display = "none";
+		// }
 		
-	if (width < 500) {
-		document.getElementById("meWrap2"). style.top = "250px";
-	} else if (width > 499 && width < 1000) {
-		document.getElementById("meWrap2"). style.top = "200px";
-	} else if (width > 999) {
-		document.getElementById("meWrap2"). style.top = "150px";
-	}
-};
+	// if (width < 500) {
+		// document.getElementById("meWrap2"). style.top = "250px";
+	// } else if (width > 499 && width < 1000) {
+		// document.getElementById("meWrap2"). style.top = "200px";
+	// } else if (width > 999) {
+		// document.getElementById("meWrap2"). style.top = "150px";
+	// }
+// };
 
 
 
 // CONTACT SECTION
-document.getElementById("contactButton").onclick = function() {
-		document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
-	document.getElementById("contact").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
-	document.getElementById("contactClose").style.display = "inline-block";
-	document.getElementById("trajectory").style.display = "none";
-	document.getElementById("meWrap1").style.display = "none";
+// document.getElementById("contactButton").onclick = function() {
+		// document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
+	// document.getElementById("contact").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
+	// document.getElementById("contactClose").style.display = "inline-block";
+	// document.getElementById("trajectory").style.display = "none";
+	// document.getElementById("meWrap1").style.display = "none";
 	
-	for(var i=0; i<document.getElementsByClassName("hiddenText4").length; i++) {
-			document.getElementsByClassName("hiddenText4")[i].style.display = "block";
-		}
+	// for(var i=0; i<document.getElementsByClassName("hiddenText4").length; i++) {
+			// document.getElementsByClassName("hiddenText4")[i].style.display = "block";
+		// }
 		
-	if (width < 500) {
-		document.getElementById("meWrap2"). style.top = "250px";
-	} else if (width > 499 && width < 1000) {
-		document.getElementById("meWrap2"). style.top = "325px";
-	} else if (width > 999) {
-		document.getElementById("meWrap2"). style.top = "325px";
-		document.getElementById("meSection").style.height = "800px";
-	}
+	// if (width < 500) {
+		// document.getElementById("meWrap2"). style.top = "250px";
+	// } else if (width > 499 && width < 1000) {
+		// document.getElementById("meWrap2"). style.top = "325px";
+	// } else if (width > 999) {
+		// document.getElementById("meWrap2"). style.top = "325px";
+		// document.getElementById("meSection").style.height = "800px";
+	// }
 		
-	// SET CONTACT LINK ICONS
-	set("contactGithubLink", "url('img/github.png')", "inline-block", "50px 50px", "no-repeat", "center");
-	set("contactLinkedinLink", "url('img/linkedin.png')", "inline-block", "50px 50px", "no-repeat", "center");
-};
+	// 
+// };
 
 // CONTACT CLOSE BUTTON
-document.getElementById("contactClose").onclick = function() {
-	document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
-	document.getElementById("contact").setAttribute("style", "width: 100%; height: auto; background: none");
-	document.getElementById("meSection").style.height = "750px";
-	document.getElementById("contactClose").style.display = "none";
-	document.getElementById("trajectory").style.display = "block";
-	document.getElementById("meWrap1").style.display = "block";
+// document.getElementById("contactClose").onclick = function() {
+	// document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
+	// document.getElementById("contact").setAttribute("style", "width: 100%; height: auto; background: none");
+	// document.getElementById("meSection").style.height = "750px";
+	// document.getElementById("contactClose").style.display = "none";
+	// document.getElementById("trajectory").style.display = "block";
+	// document.getElementById("meWrap1").style.display = "block";
 	
-	for(var i=0; i<document.getElementsByClassName("hiddenText4").length; i++) {
-			document.getElementsByClassName("hiddenText4")[i].style.display = "none";
-		}
+	// for(var i=0; i<document.getElementsByClassName("hiddenText4").length; i++) {
+			// document.getElementsByClassName("hiddenText4")[i].style.display = "none";
+		// }
 		
-	if (width < 500) {
-		document.getElementById("meWrap2"). style.top = "250px";
-	} else if (width > 499 && width < 1000) {
-		document.getElementById("meWrap2"). style.top = "200px";
-	} else if (width > 999) {
-		document.getElementById("meWrap2"). style.top = "150px";
-	}
-};
+	// if (width < 500) {
+		// document.getElementById("meWrap2"). style.top = "250px";
+	// } else if (width > 499 && width < 1000) {
+		// document.getElementById("meWrap2"). style.top = "200px";
+	// } else if (width > 999) {
+		// document.getElementById("meWrap2"). style.top = "150px";
+	// }
+// };
 
 
 
 // REFERENCES SECTION
-document.getElementById("referencesButton").onclick = function() {
-	// document.getElementById("meSection").setAttribute("style", "width: 100%; height: 1000px");
-	document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
-	document.getElementById("references").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
-	document.getElementById("referencesClose").style.display = "inline-block";
-	document.getElementById("trajectory").style.display = "none";
-	document.getElementById("contact").style.display = "none";
-	document.getElementById("meWrap1").style.display = "none";
+// document.getElementById("referencesButton").onclick = function() {
+	// document.getElementById("meWrap2").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
+	// document.getElementById("references").setAttribute("style", "width: 100%; height: 100%; background: rgba(255,255,240,0.9)");
+	// document.getElementById("referencesClose").style.display = "inline-block";
+	// document.getElementById("trajectory").style.display = "none";
+	// document.getElementById("contact").style.display = "none";
+	// document.getElementById("meWrap1").style.display = "none";
 	
-	for(var i=0; i<document.getElementsByClassName("hiddenText5").length; i++) {
-			document.getElementsByClassName("hiddenText5")[i].style.display = "block";
-		}
+	// for(var i=0; i<document.getElementsByClassName("hiddenText5").length; i++) {
+			// document.getElementsByClassName("hiddenText5")[i].style.display = "block";
+		// }
 		
-	for(var i=0; i<document.getElementsByClassName("refHr").length; i++) {
-			document.getElementsByClassName("refHr")[i].style.display = "block";
-		}
+	// for(var i=0; i<document.getElementsByClassName("refHr").length; i++) {
+			// document.getElementsByClassName("refHr")[i].style.display = "block";
+		// }
 		
-	if (width < 500) {
-		document.getElementById("meWrap2"). style.top = "250px";
-		document.getElementById("meSection").style.height = "1000px";
-	} else if (width > 499 && width < 1000) {
-		document.getElementById("meWrap2"). style.top = "325px";
-		document.getElementById("meSection").style.height = "1050px";
-	} else if (width > 999) {
-		document.getElementById("meWrap2"). style.top = "325px";
-		document.getElementById("meSection").style.height = "1100px";
-	}
-};
+	// if (width < 500) {
+		// document.getElementById("meWrap2"). style.top = "250px";
+		// document.getElementById("meSection").style.height = "1000px";
+	// } else if (width > 499 && width < 1000) {
+		// document.getElementById("meWrap2"). style.top = "325px";
+		// document.getElementById("meSection").style.height = "1050px";
+	// } else if (width > 999) {
+		// document.getElementById("meWrap2"). style.top = "325px";
+		// document.getElementById("meSection").style.height = "1100px";
+	// }
+// };
 
 // REFERENCES CLOSE BUTTON
-document.getElementById("referencesClose").onclick = function() {
-	document.getElementById("meSection").setAttribute("style", "width: 100%; height: 750px");
-	document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
-	document.getElementById("references").setAttribute("style", "width: 100%; height: auto; background: none");
-	document.getElementById("referencesClose").style.display = "none";
-	document.getElementById("trajectory").style.display = "block";
-	document.getElementById("contact").style.display = "block";
-	document.getElementById("meWrap1").style.display = "block";
-	document.getElementById("meWrap1").style.display = "block";
+// document.getElementById("referencesClose").onclick = function() {
+	// document.getElementById("meSection").setAttribute("style", "width: 100%; height: 750px");
+	// document.getElementById("meWrap2").setAttribute("style", "width: 49%; height: 420px; background: none");
+	// document.getElementById("references").setAttribute("style", "width: 100%; height: auto; background: none");
+	// document.getElementById("referencesClose").style.display = "none";
+	// document.getElementById("trajectory").style.display = "block";
+	// document.getElementById("contact").style.display = "block";
+	// document.getElementById("meWrap1").style.display = "block";
+	// document.getElementById("meWrap1").style.display = "block";
 	
-	for(var i=0; i<document.getElementsByClassName("hiddenText5").length; i++) {
-			document.getElementsByClassName("hiddenText5")[i].style.display = "none";
-		}
+	// for(var i=0; i<document.getElementsByClassName("hiddenText5").length; i++) {
+			// document.getElementsByClassName("hiddenText5")[i].style.display = "none";
+		// }
 		
-	for(var i=0; i<document.getElementsByClassName("refHr").length; i++) {
-			document.getElementsByClassName("refHr")[i].style.display = "none";
-		}
+	// for(var i=0; i<document.getElementsByClassName("refHr").length; i++) {
+			// document.getElementsByClassName("refHr")[i].style.display = "none";
+		// }
 		
-	if (width < 500) {
-		document.getElementById("meWrap2"). style.top = "250px";
-	} else if (width > 499 && width < 1000) {
-		document.getElementById("meWrap2"). style.top = "200px";
-	} else if (width > 999) {
-		document.getElementById("meWrap2"). style.top = "150px";
-	}
-};
+	// if (width < 500) {
+		// document.getElementById("meWrap2"). style.top = "250px";
+	// } else if (width > 499 && width < 1000) {
+		// document.getElementById("meWrap2"). style.top = "200px";
+	// } else if (width > 999) {
+		// document.getElementById("meWrap2"). style.top = "150px";
+	// }
+// };
 
 
 

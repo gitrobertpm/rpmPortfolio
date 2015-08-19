@@ -14,7 +14,7 @@ body {
 	font-size: 1em;
 	position: relative;
 	text-align: center;
-	background-color: black;
+	/* background-color: black; */
 }
 
 html,
@@ -204,10 +204,15 @@ header h1 {
 	font-weight: 900;
 	font-size: 12vw;
 	letter-spacing: 1px;
-	color: rgb(35,35,35);
-	text-shadow: 2px 1px 0px rgb(100,175,255);
+	/* color: rgb(35,35,35); */
+	color: black;
+	/* text-shadow: 2px 1px 0px rgb(100,175,255); */
 	margin-bottom: -25px;
 	cursor: default;
+}
+
+#monitor {
+	display: none;
 }
 
 .headerImg {
@@ -281,7 +286,7 @@ section a {
 
 section p {
 	width: 90%;
-	max-width: 500px;
+	/* max-width: 500px; */
 	line-height: 24px;
 	margin: 10px auto;
 	padding: 5px;
@@ -294,8 +299,10 @@ section p {
 /* ME SECTION **************/
 #meSection {
 	position: relative;
-	background: -webkit-linear-gradient(left, black 50%, ivory 50.01%);background: linear-gradient(to right, black 50%, ivory 50.01%);
-	height: 750px;
+	background: -webkit-linear-gradient(left, black 50%, white 50.01%);background: linear-gradient(to right, black 50%, white 50.01%);
+	height: 500px;
+	padding-top: 50px;
+	padding-bottom: 75px;
 	overflow: hidden;
 }
 
@@ -308,7 +315,7 @@ section p {
 
 #meSection h1 {
 	font-style: normal;
-	color: ivory;
+	color: white;
 	margin-top: 0px;
 	margin-left: -20px;
 	margin-bottom: 15px;
@@ -331,38 +338,66 @@ section p {
 }
 
 .meWrap {
-	position: absolute;
-	width: 49%;
-	height: 420px;
+	/* position: absolute; */
+	/* width: 49%; */
+	/* height: 420px; */
 	padding-top: 10px;
-	padding-bottom: 50px;
+	padding-bottom: 35px;
 }
 
-#meWrap1 {
+/* #meWrap1 {
 	top: 250px;
 }
 
 #meWrap2 {
 	top: 250px;
 	right: 2.5px;
-}
+} */
 
-#meSection h2 {
+
+#meSection h2 ,
+#meBioSection h2{
 	font-family: 'Playfair Display', serif;
 	font-weight: 900;
 	letter-spacing: 1px;
+}
+
+#meBioSection {
+	background: black;
+	text-align: center;
 }
 
 #bioTitle {
 	color: rgb(50,50,50);
 	text-shadow: 2px 1px 0px rgb(100,175,255);
 	font-size: 3em;
-	cursor: pointer;
+	cursor: default;
+	padding-top: 50px;
+	padding-bottom: 20px;
 }
+
+#contactTitle {
+	color: white;
+	font-size: 3em;
+	cursor: default;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+#bioTitle span {
+	font-style: italic;
+	text-shadow: 2px 1px 0px rgb(175,25,25);
+}
+
+/* #bioTitle span:nth-of-type(1) {
+	font-style: normal;
+	color: white;
+	text-shadow: none;
+} */
 
 #meSection2 {
 	position: relative;
-	background: ivory;
+	/* background: ivory; */
 	height: 750px;
 }
 
@@ -373,17 +408,17 @@ section p {
 	margin-top: -15px;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	cursor: pointer;
+	cursor: default;
 }
 
 .detailTitle {
 	color: rgb(65,65,50);
 	padding-top: 25px;
 	padding-bottom: 25px;
-	cursor: pointer;
+	cursor: default;
 }
 
-#trajectory h2 {
+/* #trajectory h2 {
 	font-size: 1.1em;
 }
 
@@ -393,15 +428,15 @@ section p {
 
 #references h2 {
 	font-size: 1.1em;
-}
+} */
 
-.hiddenText,
+/* .hiddenText,
 .hiddenText2,
 .hiddenText3,
 .hiddenText4,
 .hiddenText5 {
 	display: none;
-}
+} */
 
 .meWrap p {
 	font-family: 'Open Sans', sans-serif;
@@ -410,13 +445,14 @@ section p {
 .bioText {
 	color: ivory;
 	font-weight: 300;
+	line-height: 27px;
 }
 
-.detailText {
+/* .detailText {
 	font-weight: 600;
-}
+} */
 
-#bioButton,
+/* #bioButton,
 #detailsResume,
 #bioButtonClose,
 #detailsClose,
@@ -435,7 +471,7 @@ section p {
 
 #bioButton:active, #bioButton:focus, #bioButton:hover, #bioButtonClose:active, #bioButtonClose:focus, #bioButtonClose:hover, #detailsButton2:active, #detailsButton2:focus, #detailsButton2:hover {
 	color: rgb(225,15,15);
-}
+} */
 
 #contactGithubLink,
 #contactLinkedinLink {
@@ -450,25 +486,51 @@ section p {
 	color: rgb(100,175,255);
 }
 
-.refPhoneNumber {
+/* .refPhoneNumber {
 	color: rgb(175,15,15);
 }
 
 .refHr {
 	display: none;
-}
+} */
 /* END ME SECTION ***********/
 
 
 
 /* PROJECTS SECTION ***********************/
 #projectSection {
-	background: url('../img/backgrounds/leoSm.jpg');
-	background-size: 250px 275px;
+	color: rgb(35,35,35);
+	padding-top: 0px;
+	overflow: hidden;
+	/* perspective: 1000px; */
 }
 
-#projectSection  {
-	color: rgb(35,35,35);
+#projectsTitle {
+	padding-top: 100px;
+	padding-bottom: 111px;
+	background: url('../img/backgrounds/leoSm.jpg');
+	background-size: 250px 50%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#leoLedge {
+	width: 110%;
+	height: 25px;
+	background: url('../img/backgrounds/leoLedge.jpg');
+	background-size: 250px 100%;
+	/* transform: skewZ(35deg); */
+	/* margin-left: -15px; */
+	margin-bottom: 75px;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+}
+
+#projectMainDes {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	width: 90%;
+	line-height: 27px;
+	margin: 10px auto;
 }
 
 .projectWrap {
@@ -488,6 +550,7 @@ section p {
 	width: 225px;
 	height: 175px;
 	margin: 10px auto;
+	-webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));
 }
 
 .projectDes {
@@ -495,7 +558,7 @@ section p {
 	font-weight: 600;
 	width: 90%;
 	max-width: 500px;
-	line-height: 24px;
+	line-height: 27px;
 	margin: 10px auto;
 	padding: 5px;
 	border-radius: 2.5px;
@@ -504,7 +567,7 @@ section p {
 
 .projectWrap:active > p, .projectWrap:focus > p, .projectWrap:hover > p {
 	background: rgba(255,255,255,0.4);
-	box-shadow: 5px 5px 5px rgba(0,0,0,0.2), -5px 5px 5px rgba(0,0,0,0.2);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 /* END PROJECTS SECTION***********************/
@@ -729,9 +792,21 @@ footer p:nth-of-type(1) {
 	header h1 {
 		font-size: 10vw;
 		margin-top: 50px;
-		margin-bottom: 100px;
+		margin-bottom: 75px;
 	}
 
+	#monitor {
+		display: block;
+		position: absolute;
+		top: 40px;
+		left: 5%;
+		width: 90%;
+		height: 1100px;
+		background: url('../img/backgrounds/monitor.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	
 	.headerImg {
 		width: 150px; 
 		height: 245px; 
@@ -743,14 +818,19 @@ footer p:nth-of-type(1) {
 	
 	.subTitle {
 		font-size: 1.25em;
-		margin: 50px auto;
+		margin: 0px auto 50px;
 	}
 	/* END HEADER MEDIUM SCREENS ***********************/
 	
 	
 	
 	/* ME SECTION MEDIUM SCREENS *****************************/
-	#detailsButton {
+	#meSection {
+		height: 525px;
+		margin-top: 400px;
+	}
+	
+	/* #detailsButton {
 		font-size: 3em;
 		margin-top: -20px;
 	}
@@ -773,16 +853,16 @@ footer p:nth-of-type(1) {
 
 	#meWrap2 {
 		top: 200px;
-	}
+	} */
 	/* END SECTION TWO MEDIUM SCREENS *****************************/
 	
 	
 	
 	/* PROJECTS MEDIUM SCREENS ***********************/
-	#projectSection {
+	/* #projectSection {
 		background: url('../img/backgrounds/leo.jpg');
 		background-size: 500px 580px;
-	}
+	} */
 	
 	.projectImg {
 		width: 300px;
@@ -849,9 +929,19 @@ footer p:nth-of-type(1) {
 	
 	header h1 {
 		font-size: 7.5vw;
-		text-shadow: 2px 1px 0px rgb(100,175,255);
+		/* text-shadow: 2px 1px 0px rgb(100,175,255); */
 		margin-top: 75px;
 		margin-bottom: 125px;
+	}
+	
+	#monitor {
+		top: 25px;
+		left: 5%;
+		width: 90%;
+		height: 1300px;
+		background: url('../img/backgrounds/monitorLG.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
 	}
 
 	.headerImg {
@@ -868,11 +958,11 @@ footer p:nth-of-type(1) {
 	}
 	
 	#dev {
-		margin-left: -450px;
+		margin-left: -400px;
 	}
 	
 	#des {
-		margin-left: 150px;
+		margin-left: 100px;
 	}
 	
 	.subTitle {
@@ -884,29 +974,43 @@ footer p:nth-of-type(1) {
 	
 	
 	/* ME SECTION LARGE SCREENS *****************************/
-	#meWrap1 {
+	#meSection {
+		height: 550px;
+	}
+	
+	/* #meWrap1 {
 		top: 250px;
 	}
 
 	#meWrap2 {
 		top: 150px;
-	}
+	} */
 	
+	#contactTitle,
 	#bioTitle {
 		font-size: 5em !important;
 	}
 	
-	#detailsButton {
-		font-size: 5em;
+	.bioText {
+		font-size: 1.25em;
 	}
+	
+	/* #detailsButton {
+		font-size: 5em;
+	} */
 	/* END ME SECTION LARGE SCREENS *****************************/
 	
 	
 	
 	/* PROJECTS SECTION LARGE SCREENS ***********************/
-	#projectSection {
+	/* #projectSection {
 		background: url('../img/backgrounds/leoL.jpg');
 		background-size: 777px 818px;
+	} */
+	
+	#projectMainDes {
+		font-size: 1.25em;
+		line-height: 30px;
 	}
 	
 	.projectWrap {
@@ -1089,6 +1193,17 @@ footer p:nth-of-type(1) {
 
 
 	/* HEADER X LARGE SCREENS ***********************/
+	#dev {
+		margin-left: -450px;
+	}
+	
+	#des {
+		margin-left: 150px;
+	}
+	
+	.subTitle {
+		margin-top: 25px;
+	}
 
 	/* END HEADER X LARGE SCREENS ***********************/
 	
