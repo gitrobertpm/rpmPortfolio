@@ -411,6 +411,15 @@ hoverColor("projectImg6", "projectLink6", "rgb(200,0,0)", "rgb(125,0,0)");
 	// }
 // };
 
+// YINYANG SPIN FOR ME SECTION
+// document.getElementById("codeSection").addEventListener("DOMMouseScroll", yinyangSpin);
+// document.getElementById("codeSection").addEventListener("mousewheel", yinyangSpin);
+// document.getElementById("codeSection").addEventListener("wheel", yinyangSpin);
+// document.getElementById("codeSection").addEventListener("touchstart", yinyangSpin);
+
+// function yingyangSpin() {
+	// document.getElementById("")
+// } 
 
 
 // GOOD LIFE CODE TRANSOFRMS

@@ -215,6 +215,10 @@ header h1 {
 	display: none;
 }
 
+.stripe {
+	display: none;
+}
+
 .headerImg {
 	width: 125px; 
 	height: 204px; 
@@ -223,11 +227,13 @@ header h1 {
 #devHand {
 	-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
 	-webkit-transition-duration: 1s;transition-duration: 1s;
+	filter: saturate(9);
 }
 
 #desHand {
 	-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
 	-webkit-transition-duration: 1s;transition-duration: 1s;
+	filter: saturate(2);
 }
 
 .headerTitle {
@@ -253,6 +259,10 @@ header h1 {
 	margin: 25px auto;
 }
 
+#screen,
+#color {
+	display: none;
+}
 /* END HEADER ***********************/
 
 
@@ -446,6 +456,7 @@ section p {
 	color: ivory;
 	font-weight: 300;
 	line-height: 27px;
+	/* max-width: 750px; */
 }
 
 /* .detailText {
@@ -512,6 +523,7 @@ section p {
 	background-size: 250px 50%;
 	margin-top: 0;
 	margin-bottom: 0;
+	box-shadow: 0px -5px 5px rgba(0,0,0,0.3) inset,  0px 15px 5px rgba(0,0,0,0.5) inset;
 }
 
 #leoLedge {
@@ -519,8 +531,8 @@ section p {
 	height: 25px;
 	background: url('../img/backgrounds/leoLedge.jpg');
 	background-size: 250px 100%;
-	/* transform: skewZ(35deg); */
-	/* margin-left: -15px; */
+	transform: skewX(35deg);
+	margin-left: -15px;
 	margin-bottom: 75px;
 	box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
 }
@@ -791,21 +803,70 @@ footer p:nth-of-type(1) {
 	/* HEADER MEDIUM SCREENS ***********************/
 	header h1 {
 		font-size: 10vw;
-		margin-top: 50px;
-		margin-bottom: 75px;
+		margin-top: 75px;
+		margin-bottom: 25px;
 	}
-
+	
 	#monitor {
 		display: block;
 		position: absolute;
 		top: 40px;
 		left: 5%;
 		width: 90%;
-		height: 1100px;
+		height: 1200px;
 		background: url('../img/backgrounds/monitor.png');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 	}
+	
+	/* #screen {
+		display: block;
+		position: absolute;
+		width: 80%;
+		height: 650px;
+		left: 10%;
+		top: 120px;
+		background: url('../img/backgrounds/screen.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	} */
+	
+	/* .stripe {
+		display: block;
+		position: absolute;
+		top: 140px;
+		width: 100%;
+		margin: 5px auto;
+		border: 5px solid rgb(50,50,50);
+		border-radius: 50%;
+	}
+	
+	.stripe:nth-of-type(2) {
+		top: 155px;
+		border: 5px solid rgb(100,100,100);
+	}
+	
+	.stripe:nth-of-type(3) {
+		top: 170px;
+		border: 5px solid rgb(150,150,150);
+	}
+	
+	.monitorStripe {
+		top: 200px;
+		left: 50%;
+		width: 80%;
+		margin-left: -40%;
+	}
+	
+	.stripe:nth-of-type(5) {
+		top: 265px;
+		border: 5px solid rgb(100,100,100);
+	}
+	
+	.stripe:nth-of-type(6) {
+		top: 280px;
+		border: 5px solid rgb(150,150,150);
+	} */
 	
 	.headerImg {
 		width: 150px; 
@@ -820,6 +881,18 @@ footer p:nth-of-type(1) {
 		font-size: 1.25em;
 		margin: 0px auto 50px;
 	}
+	
+	#color {
+		display: inline-block;
+		width: 250px;
+		height: 300px;
+		margin: -57.5px auto auto;
+		background: url('../img/backgrounds/colorPaper2.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		/* filter: invert(.9); */
+		filter: hue-rotate(45deg);
+	}
 	/* END HEADER MEDIUM SCREENS ***********************/
 	
 	
@@ -827,7 +900,7 @@ footer p:nth-of-type(1) {
 	/* ME SECTION MEDIUM SCREENS *****************************/
 	#meSection {
 		height: 525px;
-		margin-top: 400px;
+		margin-top: 300px;
 	}
 	
 	/* #detailsButton {
@@ -931,7 +1004,7 @@ footer p:nth-of-type(1) {
 		font-size: 7.5vw;
 		/* text-shadow: 2px 1px 0px rgb(100,175,255); */
 		margin-top: 75px;
-		margin-bottom: 125px;
+		margin-bottom: 50px;
 	}
 	
 	#monitor {
@@ -951,7 +1024,7 @@ footer p:nth-of-type(1) {
 	
 	.headerTitle {
 		position: absolute;
-		bottom: 215px;
+		bottom: 450px;
 		left: 50%;
 		width: 300px; 
 		height: 50px;
@@ -1049,10 +1122,12 @@ footer p:nth-of-type(1) {
 
 	.projectDes {
 		position: absolute;
-		top: 125px;
+		top: 90px;
 		left: 50%;
 		font-size: 1.25em;
 		line-height: 30px;
+		text-align: left;
+		text-indent: 125px;
 		max-width: 420px;
 	}
 	
@@ -1193,12 +1268,26 @@ footer p:nth-of-type(1) {
 
 
 	/* HEADER X LARGE SCREENS ***********************/
+	#monitor {
+		top: 25px;
+		left: 10%;
+		width: 80%;
+		height: 1300px;
+		background: url('../img/backgrounds/monitorLG.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	
 	#dev {
 		margin-left: -450px;
 	}
 	
 	#des {
 		margin-left: 150px;
+	}
+	
+	.headerTitle {
+		bottom: 425px;
 	}
 	
 	.subTitle {
