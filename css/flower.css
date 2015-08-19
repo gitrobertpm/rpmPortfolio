@@ -6,20 +6,20 @@
 	margin: 50px auto -75px;
 	/* padding-top: 100px; */
 	border-radius: 50%;
-	-webkit-animation: petalGlow 5s ease .5s forwards;animation: petalGlow 5s ease .5s forwards; 
+	-webkit-animation: petalGlow 5s ease .5s forwards;animation: petalGlow 5s ease .5s forwards;
 }
 
 @-webkit-keyframes petalGlow {
 	0% {background: transparent; box-shadow: none; -webkit-transform: rotateZ(0deg); transform: rotateZ(0deg);}
 	80% {background: transparent; box-shadow: none;}
 	90% {background: rgba(255,0,0,0.3); box-shadow: 1px 1px 2px rgb(100,175,255), 1px -1px 2px rgb(100,175,255), -1px 1px 2px rgb(100,175,255), -1px -1px 2px rgb(100,175,255);}
-	100% {background: rgba(255,0,0,0.3); box-shadow: 1px 1px 2px rgb(100,175,255), 1px -1px 2px rgb(100,175,255), -1px 1px 2px rgb(100,175,255), -1px -1px 2px rgb(100,175,255); -webkit-transform: rotateZ(360deg); transform: rotateZ(360deg);}
+	100% {background: rgba(255,0,0,0.3); box-shadow: 1px 1px 2px rgb(100,175,255), 1px -1px 2px rgb(100,175,255), -1px 1px 2px rgb(100,175,255), -1px -1px 2px rgb(100,175,255); -webkit-transform: rotateZ(360deg); transform: rotateZ(360deg); -webkit-filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.5));filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.5));}
 }
 @keyframes petalGlow {
 	0% {background: transparent; box-shadow: none; -webkit-transform: rotateZ(0deg); transform: rotateZ(0deg);}
 	80% {background: transparent; box-shadow: none;}
 	90% {background: rgba(255,0,0,0.3); box-shadow: 1px 1px 2px rgb(100,175,255), 1px -1px 2px rgb(100,175,255), -1px 1px 2px rgb(100,175,255), -1px -1px 2px rgb(100,175,255);}
-	100% {background: rgba(255,0,0,0.3); box-shadow: 1px 1px 2px rgb(100,175,255), 1px -1px 2px rgb(100,175,255), -1px 1px 2px rgb(100,175,255), -1px -1px 2px rgb(100,175,255); -webkit-transform: rotateZ(360deg); transform: rotateZ(360deg);}
+	100% {background: rgba(255,0,0,0.3); box-shadow: 1px 1px 2px rgb(100,175,255), 1px -1px 2px rgb(100,175,255), -1px 1px 2px rgb(100,175,255), -1px -1px 2px rgb(100,175,255); -webkit-transform: rotateZ(360deg); transform: rotateZ(360deg); -webkit-filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.5));filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.5));}
 }
 
 .petal {

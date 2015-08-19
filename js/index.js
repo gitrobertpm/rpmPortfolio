@@ -47,11 +47,11 @@ document.getElementById("navMeLink").onclick = function() {
 	document.getElementsByTagName("nav")[0].style.display = "none";
 };
 
-document.getElementById("navMyDealLink").onclick = function() {
-	document.getElementById("navIcon").style.display = "block";
-	document.getElementById("closeNav").style.display = "none";
-	document.getElementsByTagName("nav")[0].style.display = "none";
-};
+// document.getElementById("navMyDealLink").onclick = function() {
+	// document.getElementById("navIcon").style.display = "block";
+	// document.getElementById("closeNav").style.display = "none";
+	// document.getElementsByTagName("nav")[0].style.display = "none";
+// };
 
 document.getElementById("navCodeLink").onclick = function() {
 	document.getElementById("navIcon").style.display = "block";
@@ -84,7 +84,7 @@ set("projectImg5", "url('img/projectImgs/twu.png')", "block", "100% 100%", "no-r
 set("projectImg6", "url('img/projectImgs/decider.png')", "block", "100% 100%", "no-repeat");
 
 // SET NAV ICON IMAGE
-set("navIcon", "url('img/nav.png')", "block", "100% 100%", "no-repeat");
+set("navIcon", "url('img/rpm.png')", "block", "100% 100%", "no-repeat");
 
 // SET NAV LINK ICONS
 set("navGithubLink", "url('img/github.png')", "block", "50px 50px", "no-repeat", "center");

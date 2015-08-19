@@ -12,20 +12,16 @@
 	</head>
 	<body>
 		<div id="wrapper">
-			<!-- <div class="stripe windowStripe"></div>
-			<div class="stripe windowStripe"></div>
-			<div class="stripe windowStripe"></div> -->
 			<div id="monitor"></div>
-			<!-- <div class="stripe monitorStripe"></div>
-			<div class="stripe monitorStripe"></div>
-			<div class="stripe monitorStripe"></div> -->
 			<header>
-				<div id="navIcon"></div>
+				<div id="navIconWrap">
+					<div id="navIcon"></div>
+				</div>
 				<nav>
 					<ul>
 						<li><a href="#projectSection" id="navProjectsLink">Projects</a></li>
 						<li><a href="#meSection" id="navMeLink">ME</a></li>
-						<li><a href="#dealSection" id="navMyDealLink">My Deal</a></li>
+						<!-- <li><a href="#dealSection" id="navMyDealLink">My Deal</a></li> -->
 						<li><a href="#codeSection" id="navCodeLink">TGL code</a></li>
 						<li><a href="resume.pdf" target="_blank" id="navResumeLink">Resume</a></li>
 						<br>
@@ -59,7 +55,6 @@
 				<img src="img/designer.png" alt="Designer" id="des" class="headerTitle">
 				<p class="subTitle">Thinking outside the box</p>
 				<div id="color"></div>
-				<!-- <div id="screen"></div> -->
 			</header>
 			<div id="mainDiv">
 				<section id="meSection">
@@ -74,14 +69,17 @@
 						<p class="bioText">Greetings!</p>
 						<p class="bioText">My name is Robert Manolis, but you can call me Bobby.</p>
 						<p class="bioText">I am a Front-End Web Developer and Designer.</p>
+						<img src="img/devices.png" alt="Mobile, Tablet, Desktop devices" id="devices">
+						<p class="note">Mobile, Responsive, Cross-Browser</p>
+						<br>
 						<p class="bioText">I do this because I love it.</p>
 						<p class="bioText">I'm all about making things better, safer, and more enjoyable.</p>
-						<!-- <p class="bioText hiddenText">Geetings!  My name is Robert Manolis, but you can call me Bobby.  I am a married father of three.  I am a writer, artist, philosopher and humanist.</p>
-						<p class="bioText hiddenText">My education didn't stop at the classroom.  I've been studying the arts and sciences with a passion for most of my life.  In the summer of 2014, I dove into Web Development and Design, and I'm having the time of my life.</p> -->
 						<p class="bioText">I view each new project as an opportunity to create a work of art.</p>
 						<p class="bioText">I approach each new project with passion and an open-mind.</p>
 						<p class="bioText">Then I commit myself to the timely completion of a product that meets or beats expectations.</p>
 						<p class="bioText">My sights are aimed at earning a Front End Web position on a good team where I can contribute and learn.</p>
+						<!-- <p class="bioText hiddenText">Geetings!  My name is Robert Manolis, but you can call me Bobby.  I am a married father of three.  I am a writer, artist, philosopher and humanist.</p>
+						<p class="bioText hiddenText">My education didn't stop at the classroom.  I've been studying the arts and sciences with a passion for most of my life.  In the summer of 2014, I dove into Web Development and Design, and I'm having the time of my life.</p> -->
 						<!-- <p class="bioText">I'm charting a course towards learning more, earning more, getting better and doing great.</p>
 						<p class="bioText">My professional goals are not more specific because I want to remain flexible enough to consider any opportunity that presents itself.</p> -->
 						<!-- <p id="bioButton">Read More</p>
@@ -134,7 +132,8 @@
 					<div class="wrapper">
 						<h1 id="projectsTitle">PROJECTS</h1>
 						<div id="leoLedge"></div>
-						<p id="projectMainDes">These projects were all created by me with the use of HTML, CSS, JavaScript, Adobe Illustrator, and GitHub.</p>
+						<p id="projectMainDes">These projects were all created by me with the use of HTML, CSS, JavaScript, Adobe Illustrator, and GitHub.  Built with responsive design, mobile first, and cross-browser compatibility.</p>
+						<br>
 						<br>
 						<!-- <div class="projectWrap">
 							<a href="#" class="projectLink">Coming Soon</a>
@@ -144,27 +143,27 @@
 						<div class="projectWrap">
 							<a href="http://gitrobertpm.github.io/galacticodom" target="_blank" id="projectLink3" class="projectLink projectLinkRight">Galactic Odometer</a>
 							<div id="projectImg3" class="projectImg projectImgRight"></div>
-							<p class="projectDes projectDesLeft">2014 ~ 2015<br>A JavaScript powered odometer that calculates and outputs a running count of the space miles you've traveled as the Earth and galaxy orbit.  Complete with cool animations and a space-styled explanation.</p>
+							<p class="projectDes projectDesLeft"><span>2014 ~ 2015</span><br><br>A JavaScript powered odometer that calculates and outputs a running count of the space miles you've traveled as the Earth and galaxy orbit.  Complete with cool animations and a space-styled explanation.</p>
 						</div>
 						<div class="projectWrap">
 							<a href="http://thefreshesthigh.com" target="_blank" id="projectLink4" class="projectLink projectLinkLeft">The Freshest High</a>
 							<div id="projectImg4" class="projectImg projectImgLeft"></div>
-							<p class="projectDes projectDesRight">June, 2015<br>Product description website for new start-up, TABE, LLC.  A playful animation adds levity to the home page.  Original icons and photographs assist a detailed and slide-styled explanation of product info, instructions. and safety information.</p>
+							<p class="projectDes projectDesRight"><span>June, 2015</span><br><br>Product description website for new start-up, TABE, LLC.  A playful animation adds levity to the home page.  Original icons and photographs assist a detailed and slide-styled explanation of product info, instructions. and safety information.</p>
 						</div>
 						<div class="projectWrap">
 							<a href="http://thewayunraveled.com" target="_blank" id="projectLink5" class="projectLink projectLinkRight">The Way Unraveled</a>
 							<div id="projectImg5" class="projectImg projectImgRight"></div>
-							<p class="projectDes projectDesLeft">March, 2015<br>My playful code laboratory, with an emphasis on inspiration and compassion.  Plenty of CSS and JavaScript DOM manipulation experiments in here.</p>
+							<p class="projectDes projectDesLeft"><span>March, 2015</span><br><br>My playful code laboratory, with an emphasis on inspiration and compassion.  Plenty of CSS and JavaScript DOM manipulation experiments in here.</p>
 						</div>
 						<div class="projectWrap">
 							<a href="http://gitrobertpm.github.io/the-decid-o-matic-5000/" target="_blank" id="projectLink6" class="projectLink projectLinkLeft">The Decid-o-matic 5000</a>
 							<div id="projectImg6" class="projectImg projectImgLeft"></div>
-							<p class="projectDes projectDesRight">2014 ~ 2015<br>An interesting question and answer machine.  Think of something you are considering doing, answer a few simple questions and enjoy a little JavaScript powered advice.  Designed entirely with CSS.  No images.</p>
+							<p class="projectDes projectDesRight"><span>2014 ~ 2015</span><br><br>An interesting question and answer machine.  Think of something you are considering doing, answer a few simple questions and enjoy a little JavaScript powered advice.  Designed entirely with CSS.  No images.</p>
 						</div>
 						<div class="projectWrap">
 							<a href="http://gitrobertpm.github.io/gianni" target="_blank" id="projectLink2" class="projectLink projectLinkRight">Gianni's Gallery</a>
 							<div id="projectImg2" class="projectImg projectImgRight"></div>
-							<p class="projectDes projectDesLeft">July, 2015 ~ Present<br>A simple but elegant horizontal display set to Pachebel's Cannon. Art by Gianni Vardanega, 3D Lighting Artist.  Doesn't work in mobile yet.</p>
+							<p class="projectDes projectDesLeft"><span>July, 2015 ~ Present</span><br><br>A simple but elegant horizontal display with an auto scroll feature set to Pachebel's Cannon. Art by Gianni Vardanega, 3D Lighting Artist.  Doesn't work in mobile or tablet yet.</p>
 						</div>
 						<q><span>Those who were seen dancing<br>were thought to be insane<br>by those who could not hear the music</span></q>
 						<cite>Friedrich Nietzsche, <span>Philosopher</span></cite>
@@ -172,6 +171,145 @@
 				</section>
 				<section id="dealSection">
 					<div class="wrapper">
+						<h2>My <span>SKILLS</span></h2>
+						<div id="skills">
+							<div id="skillsKey">
+								<h4 id="skillCategory" class="thin">SKILL</h4>
+								<h4 id="skillGauge" class="thin">0 - LEVEL - 10</h4>
+							</div>
+							<div id="skill0" class="skill">
+								<div id="skillInfo0" class="skillInfo">
+									<div id="skillLogo0" class="skillLogo"></div>
+									<p id="skillName0" class="skillName">HTML</p>
+								</div>
+								<div id="skillLev0" class="skillLev">
+									<div id="skillLevDis0" class="skillLevDis">
+										<p id="skillNum0" class="skillNum">8</p>
+									</div>
+								</div>
+							</div>
+							<div id="skill1" class="skill">
+								<div id="skillInfo1" class="skillInfo">
+									<div id="skillLogo1" class="skillLogo"></div>
+									<p id="skillName1" class="skillName">CSS</p>
+								</div>
+								<div id="skillLev1" class="skillLev">
+									<div id="skillLevDis1" class="skillLevDis">
+										<p id="skillNum1" class="skillNum">8</p>
+									</div>
+								</div>
+							</div>
+							<div id="skill2" class="skill">
+								<div id="skillInfo2" class="skillInfo">
+									<div id="skillLogo2" class="skillLogo"></div>
+									<p id="skillName2" class="skillName">JavaScript</p>
+								</div>
+								<div id="skillLev2" class="skillLev">
+									<div id="skillLevDis2" class="skillLevDis">
+										<p id="skillNum2" class="skillNum">6</p>
+									</div>
+								</div>
+							</div>
+							<div id="skill3" class="skill">
+								<div id="skillInfo3" class="skillInfo">
+									<div id="skillLogo3" class="skillLogo"></div>
+									<p id="skillName3" class="skillName">Illustrator</p>
+								</div>
+								<div id="skillLev3" class="skillLev">
+									<div id="skillLevDis3" class="skillLevDis">
+										<p id="skillNum3" class="skillNum">7</p>
+									</div>
+								</div>
+							</div>
+							<div id="skill4" class="skill">
+								<div id="skillInfo4" class="skillInfo">
+									<div id="skillLogo4" class="skillLogo"></div>
+									<p id="skillName4" class="skillName">Photshop</p>
+								</div>
+								<div id="skillLev4" class="skillLev">
+									<div id="skillLevDis4" class="skillLevDis">
+										<p id="skillNum4" class="skillNum">5</p>
+									</div>
+								</div>
+							</div>
+							<div id="skill5" class="skill">
+								<div id="skillInfo5" class="skillInfo">
+									<div id="skillLogo5" class="skillLogo"></div>
+									<p id="skillName5" class="skillName">Github</p>
+								</div>
+								<div id="skillLev5" class="skillLev">
+									<div id="skillLevDis5" class="skillLevDis">
+										<p id="skillNum5" class="skillNum">4</p>
+									</div>
+								</div>
+							</div>
+							<div id="skill6" class="skill">
+								<div id="skillInfo6" class="skillInfo">
+									<div id="skillLogo6" class="skillLogo"></div>
+									<p id="skillName6" class="skillName">jQuery</p>
+								</div>
+								<div id="skillLev6" class="skillLev">
+									<div id="skillLevDis6" class="skillLevDis">
+										<p id="skillNum6" class="skillNum">3</p>
+									</div>
+								</div>
+							</div>
+							<div id="skill7" class="skill">
+								<div id="skillInfo7" class="skillInfo">
+									<div id="skillLogo7" class="skillLogo"></div>
+									<p id="skillName7" class="skillName">AJAX</p>
+								</div>
+								<div id="skillLev7" class="skillLev">
+									<div id="skillLevDis7" class="skillLevDis">
+										<p id="skillNum7" class="skillNum">3</p>
+									</div>
+								</div>
+							</div>
+							<div id="skill8" class="skill">
+								<div id="skillInfo8" class="skillInfo">
+									<div id="skillLogo8" class="skillLogo"></div>
+									<p id="skillName8" class="skillName">Node</p>
+								</div>
+								<div id="skillLev8" class="skillLev">
+									<div id="skillLevDis8" class="skillLevDis">
+										<p id="skillNum8" class="skillNum">3</p>
+									</div>
+								</div>
+							</div>
+							<div id="skill9" class="skill">
+								<div id="skillInfo9" class="skillInfo">
+									<div id="skillLogo9" class="skillLogo"></div>
+									<p id="skillName9" class="skillName">Angular</p>
+								</div>
+								<div id="skillLev9" class="skillLev">
+									<div id="skillLevDis9" class="skillLevDis">
+										<p id="skillNum9" class="skillNum">2</p>
+									</div>
+								</div>
+							</div>
+							<div id="skill10" class="skill">
+								<div id="skillInfo10" class="skillInfo">
+									<div id="skillLogo10" class="skillLogo"></div>
+									<p id="skillName10" class="skillName">PHP</p>
+								</div>
+								<div id="skillLev10" class="skillLev">
+									<div id="skillLevDis10" class="skillLevDis">
+										<p id="skillNum10" class="skillNum">2</p>
+									</div>
+								</div>
+							</div>
+							<div id="skill11" class="skill">
+								<div id="skillInfo11" class="skillInfo">
+									<div id="skillLogo11" class="skillLogo"></div>
+									<p id="skillName11" class="skillName">MySQL</p>
+								</div>
+								<div id="skillLev11" class="skillLev">
+									<div id="skillLevDis11" class="skillLevDis">
+										<p id="skillNum11" class="skillNum">2</p>
+									</div>
+								</div>
+							</div>
+						</div>
 						<!-- <h1>What's my <span>DEAL</span></h1>
 						<div class="aboutWrap">
 							<div class="innerAboutWrap">

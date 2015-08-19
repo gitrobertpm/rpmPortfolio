@@ -95,12 +95,21 @@ hr {
 
 
 /* NAV ******************************/
-#navIcon {
+#navIconWrap {
 	position: fixed;
-	top: 10px;
-	left: 50%;
-	margin-left: -37.5px;
-	width: 75px;
+	top: 5px;
+	left: 5px;
+	width: 50px;
+	height: 50px;
+	background-color: rgba(255,255,255,0.7);
+	padding: 5px;
+	border-radius: 5px;
+	z-index: 999;
+}
+
+#navIcon {
+	/* margin-left: -37.5px; */
+	width: 40px;
 	height: 40px;
 	cursor: pointer;
 	z-index: 9999;
@@ -142,8 +151,8 @@ nav ul li {
 	margin: 10px auto;
 }
 
-nav ul li:nth-of-type(6),
-nav ul li:nth-of-type(7) {
+nav ul li:nth-of-type(5),
+nav ul li:nth-of-type(6) {
 	display: inline-block;
 }
 
@@ -227,13 +236,13 @@ header h1 {
 #devHand {
 	-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
 	-webkit-transition-duration: 1s;transition-duration: 1s;
-	filter: saturate(9);
+	-webkit-filter: saturate(9);filter: saturate(9);
 }
 
 #desHand {
 	-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
 	-webkit-transition-duration: 1s;transition-duration: 1s;
-	filter: saturate(2);
+	-webkit-filter: saturate(2);filter: saturate(2);
 }
 
 .headerTitle {
@@ -384,6 +393,16 @@ section p {
 	cursor: default;
 	padding-top: 50px;
 	padding-bottom: 20px;
+}
+
+#devices {
+	margin-top: 15px;
+}
+
+.note {
+	color: rgb(175,175,175);
+	font-style: italic;
+	margin-top: 0px;
 }
 
 #contactTitle {
@@ -541,6 +560,7 @@ section p {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	width: 90%;
+	max-width: 925px;
 	line-height: 27px;
 	margin: 10px auto;
 }
@@ -575,6 +595,10 @@ section p {
 	padding: 5px;
 	border-radius: 2.5px;
 	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+.projectDes span {
+	font-style: italic;
 }
 
 .projectWrap:active > p, .projectWrap:focus > p, .projectWrap:hover > p {
@@ -625,6 +649,143 @@ section p {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	max-width: 1000px;
+}
+
+#skillsKey h4 {
+	display: inline-block;
+	width: 135px;
+	border-bottom: 2px solid black;
+}
+
+.skill div {
+	display: inline-block;
+}
+
+.skillInfo {
+	width: 135px;
+}
+
+.skillName {
+	display: inline-block;
+	text-align: left;
+	font-size: 0.9em;
+	width: 90px;
+	padding-left: 0px !important;
+}
+
+.skillLogo {
+	width: 35px;
+	height: 35px;
+	margin-bottom: -10px;
+	-webkit-filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.3));filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.3));
+}
+
+.skillLev {
+	text-align: left;
+	width: 135px;
+	height: 25px;
+	margin-bottom: -8px;
+}
+
+.skillNum {
+	display: inline-block;
+	color: white;
+	font-size: 0.9em;
+	width: 15px;
+	margin: 0px auto !important;
+	padding: 0px !important;
+	text-shadow: 1px 1px 0px black;
+}
+
+.skillLevDis {
+	text-align: right;
+	height: 100%;
+	padding-right: 5px;
+	-webkit-filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.3));filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.3));
+}
+
+/* HTML */
+#skillLevDis0 {
+	background: -webkit-linear-gradient(left, black, orange);background: linear-gradient(to right, black, orange);
+	width: 110px;
+}
+
+/* CSS */
+#skillLevDis1 {
+	background: -webkit-linear-gradient(left, black, dodgerblue);background: linear-gradient(to right, black, dodgerblue);
+	width: 110px;
+}
+
+/* JAVASCRIPT */
+#skillLevDis2 {
+	background: -webkit-linear-gradient(left, black, red);background: linear-gradient(to right, black, red);
+	width: 83px;
+}
+
+/* ILLUSTRATOR */
+#skillLevDis3 {
+	background: -webkit-linear-gradient(left, black, orange);background: linear-gradient(to right, black, orange);
+	width: 97px;
+}
+
+/* PHOTOSHOP */
+#skillLevDis4 {
+	background: -webkit-linear-gradient(left, black, dodgerblue);background: linear-gradient(to right, black, dodgerblue);
+	width: 70px;
+}
+
+/* GITHUB */
+#skillLevDis5 {
+	background: -webkit-linear-gradient(left, black, purple);background: linear-gradient(to right, black, purple);
+	width: 54px;
+}
+
+/* JQUERY */
+#skillLevDis6 {
+	background: -webkit-linear-gradient(left, black, darkblue);background: linear-gradient(to right, black, darkblue);
+	width: 40px;
+}
+
+/* AJAX */
+#skillLevDis7 {
+	background: -webkit-linear-gradient(left, black, blue);background: linear-gradient(to right, black, blue);
+	width: 40px;
+}
+
+/* NODE */
+#skillLevDis8 {
+	background: -webkit-linear-gradient(left, black, green);background: linear-gradient(to right, black, green);
+	width: 40px;
+}
+
+/* ANGULAR */
+#skillLevDis9 {
+	background: -webkit-linear-gradient(left, black, red);background: linear-gradient(to right, black, red);
+	width: 27px;
+}
+
+/* PHP */
+#skillLevDis10 {
+	background: -webkit-linear-gradient(left, black, purple);background: linear-gradient(to right, black, purple);
+	width: 27px;
+}
+
+/* MYSQL */
+#skillLevDis11 {
+	background: -webkit-linear-gradient(left, dodgerblue, orange);background: linear-gradient(to right, dodgerblue, orange);
+	width: 27px;
+}
+
+.skillHeading {
+	font-size: 1.2em;
+	max-width: 400px !important;
+	margin: auto;
+	border-bottom: 1px solid black;
+}
+
+#aSkills ul {
+	list-style: none;
+	padding-left: 0;
 }
 
 #dealSection cite {
@@ -788,12 +949,12 @@ footer p:nth-of-type(1) {
 	}
 	
 	nav ul li:nth-of-type(2),
-	nav ul li:nth-of-type(4) {
+	nav ul li:nth-of-type(3) {
 		margin: auto 25px;
 	}
 
-	nav ul li:nth-of-type(6),
-	nav ul li:nth-of-type(7) {
+	nav ul li:nth-of-type(5),
+	nav ul li:nth-of-type(6) {
 		display: inline-block;
 	}
 	/* END NAV MEDIUM SCREENS ******************/
@@ -803,17 +964,17 @@ footer p:nth-of-type(1) {
 	/* HEADER MEDIUM SCREENS ***********************/
 	header h1 {
 		font-size: 10vw;
-		margin-top: 75px;
-		margin-bottom: 25px;
+		margin-top: 100px;
+		margin-bottom: -25px;
 	}
 	
 	#monitor {
 		display: block;
 		position: absolute;
-		top: 40px;
+		top: 75px;
 		left: 5%;
 		width: 90%;
-		height: 1200px;
+		height: 1150px;
 		background: url('../img/backgrounds/monitor.png');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
@@ -891,7 +1052,7 @@ footer p:nth-of-type(1) {
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		/* filter: invert(.9); */
-		filter: hue-rotate(45deg);
+		-webkit-filter: hue-rotate(45deg) drop-shadow(0px 10px 5px rgba(0,0,0,0.5));filter: hue-rotate(45deg) drop-shadow(0px 10px 5px rgba(0,0,0,0.5));
 	}
 	/* END HEADER MEDIUM SCREENS ***********************/
 	
@@ -1003,12 +1164,12 @@ footer p:nth-of-type(1) {
 	header h1 {
 		font-size: 7.5vw;
 		/* text-shadow: 2px 1px 0px rgb(100,175,255); */
-		margin-top: 75px;
-		margin-bottom: 50px;
+		margin-top: 100px;
+		margin-bottom: 25px;
 	}
 	
 	#monitor {
-		top: 25px;
+		/* top: 25px; */
 		left: 5%;
 		width: 90%;
 		height: 1300px;
@@ -1144,6 +1305,8 @@ footer p:nth-of-type(1) {
 	
 	/*  MY DEAL SECTION LARGE SCREENS ***********************/
 	#dealSection {
+		position: relative;
+		height: 750px;
 		background: url('../img/backgrounds/rpmBackground.jpg');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
@@ -1168,6 +1331,37 @@ footer p:nth-of-type(1) {
 
 	#dealSection p {
 		font-size: 1.25em;
+	}
+	
+	#skills {
+		position: absolute;
+		top: -50px;
+		left: 50%;
+		width: 350px;
+		margin-left: -175px;
+		-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);
+		box-shadow: -5px -5px 5px rgba(0,0,0,0.3);
+	}
+	
+	#skillGauge {
+		margin-left: 135px;
+		margin-bottom: 25px;
+	}
+	
+	#skillCategory {
+		position: absolute;
+		width: 500px !important;
+		top: 360px;
+		left: -225px;
+		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
+	}
+	
+	.skillInfo {
+		-webkit-transform: rotate(35deg);-ms-transform: rotate(35deg);transform: rotate(35deg);
+	}
+	
+	.skillNum {
+		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
 	}
 	/* END MY DEAL SECTION LARGE SCREENS ***********************/
 	
@@ -1258,9 +1452,13 @@ footer p:nth-of-type(1) {
 		display: block;
 		margin: 25px auto;
 	}
+	
+	nav ul li:nth-of-type(2) {
+		margin-bottom: 15px;
+	}
 
-	nav ul li:nth-of-type(6),
-	nav ul li:nth-of-type(7) {
+	nav ul li:nth-of-type(5),
+	nav ul li:nth-of-type(6) {
 		margin-bottom: 25px;
 	}
 	/* END NAV X LARGE SCREENS ******************/
@@ -1268,11 +1466,15 @@ footer p:nth-of-type(1) {
 
 
 	/* HEADER X LARGE SCREENS ***********************/
+	header h1 {
+		margin-bottom: -25px;
+	}
+	
 	#monitor {
-		top: 25px;
+		/* top: 25px; */
 		left: 10%;
 		width: 80%;
-		height: 1300px;
+		height: 1200px;
 		background: url('../img/backgrounds/monitorLG.png');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
