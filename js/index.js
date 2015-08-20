@@ -4,10 +4,6 @@
 var width = window.innerWidth;
 var height = window.innerHeight;
 
-// var head = document.head, link = document.createElement('link');
-	// link.type = 'text/css';
-	// link.rel = 'stylesheet';
-	// link.href = 'css/flower.css';
 
 // SLIDE IN HEADIMAGES AND TITLE
 window.onload = function() {
@@ -17,14 +13,9 @@ window.onload = function() {
 	setTimeout(function(){ document.getElementById("desHand").style.msTransform = "translate(0px, 0px)"; }, 0);
 	setTimeout(function(){ document.getElementById("desHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
 	setTimeout(function(){ document.getElementById("desHand").style.transform = "translate(0px, 0px)"; }, 0);
-	// setTimeout(function(){ document.getElementById("dev").style.msTransform = "translate(0px, 0px)"; }, 500);
-	// setTimeout(function(){ document.getElementById("dev").style.webkitTransform = "translate(0px, 0px)"; }, 500);
-	// setTimeout(function(){ document.getElementById("dev").style.transform = "translate(0px, 0px)"; }, 500);
-	// setTimeout(function(){ document.getElementById("des").style.msTransform = "translate(0px, 0px)"; }, 500);
-	// setTimeout(function(){ document.getElementById("des").style.webkitTransform = "translate(0px, 0px)"; }, 500);
-	// setTimeout(function(){ document.getElementById("des").style.transform = "translate(0px, 0px)"; }, 500);
 };
 
+// ADD ANIMATIONS TO HEADER FLOWER FOR LARGER SCREENS
 if (width > 999) {
 	document.getElementById("flowerBox").style.webkitAnimation = "petalGlow 5s ease .5s forwards";
 	document.getElementById("flowerBox").style.animation = "petalGlow 5s ease .5s forwards";
@@ -42,11 +33,7 @@ if (width > 999) {
 	document.getElementById("petal_7").style.animation = "petal_7 3s ease .5s forwards";
 	document.getElementById("petal_8").style.webkitAnimation = "petal_8 3.5s ease .5s forwards";
 	document.getElementById("petal_8").style.animation = "petal_8 3.5s ease .5s forwards";
-	
-	// ADD FLOWER STYLESHEET for LARGER SCREENS
-	// head.appendChild(link);
 }
-
 
 
 // OPEN NAV
@@ -92,19 +79,6 @@ function set(idee, background, display, bs, br, bp) {
 	setIdee.style.backgroundRepeat = br;
 	setIdee.style.backgroundPosition = bp;
 };
-
-
-// SET MONITOR IMAGE
-// if (width > 499 && width < 1000) {
-	// set("monitor", "url('img/backgrounds/monitor.png')", "block", "100% 100%", "no-repeat");
-// } else if (width > 999) {
-	// set("monitor", "url('img/backgrounds/monitorLg.png')", "block", "100% 100%", "no-repeat");
-// }
-
-// SET PAINT STROKE IMAGE
-// if (width > 499) {
-	// set("color", "url('img/backgrounds/colorPaper2.png')", "block", "100% 100%", "no-repeat");
-// }
 
 // SET NAV ICON IMAGE
 set("navIcon", "url('img/rpm.png')", "block", "100% 100%", "no-repeat");

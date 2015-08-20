@@ -44,7 +44,7 @@ a {
 	color: rgb(125,0,0);
 	outline: none;
 	-webkit-transition-duration: .5s;transition-duration: .5s;
-	/* MORE ANCHOR STYLINGS BELOW IN SECTIONS */
+	/* MORE ANCHOR STYLINGS BELOW IN NAV AND SECTIONS */
 }
 
 p {
@@ -149,9 +149,11 @@ nav ul li {
 	margin: 10px auto;
 }
 
-nav ul li:nth-of-type(5),
-nav ul li:nth-of-type(6) {
-	display: inline-block;
+#navGithubLink,
+#navLinkedinLink {
+	display: inline-block !important;
+	width: 75px;
+	margin: 15px auto;
 }
 
 nav q span {
@@ -265,12 +267,10 @@ header h1 {
 }
 
 #dev{
-	/* -webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px); */
 	-webkit-transition-duration: 1s;transition-duration: 1s;
 }
 
 #des {
-	/* -webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px); */
 	-webkit-transition-duration: 1s;transition-duration: 1s;
 }
 
@@ -491,7 +491,6 @@ color: rgb(175,15,15);
 #meBioSection cite span {
 	color: rgb(100,175,255);
 }
-
 /* END ME SECTION ***********/
 
 
@@ -917,17 +916,11 @@ footer p:nth-of-type(1) {
 
 	nav ul li {
 		display: inline-block;
-		margin: 10px auto;
+		margin: 5px auto;
 	}
 	
-	nav ul li:nth-of-type(2),
-	nav ul li:nth-of-type(3) {
-		margin: auto 25px;
-	}
-
-	nav ul li:nth-of-type(5),
-	nav ul li:nth-of-type(6) {
-		display: inline-block;
+	nav ul li{
+		padding-left: 15px;
 	}
 	
 	#headerNav {
@@ -1091,23 +1084,13 @@ footer p:nth-of-type(1) {
 		width: 300px; 
 		height: 50px;
 	}
-	
-	#devHand {
-		/* -webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px); */
-	}
-
-	#desHand {
-		/* -webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px); */
-	}
 
 	#dev{
 		margin-left: -400px;
-		/* -webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px); */
 	}
 
 	#des {
 		margin-left: 100px;
-		/* -webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px); */
 	}
 	
 	.subTitle {
@@ -1362,11 +1345,6 @@ footer p:nth-of-type(1) {
 	
 	nav ul li:nth-of-type(2) {
 		margin-bottom: 15px;
-	}
-
-	nav ul li:nth-of-type(5),
-	nav ul li:nth-of-type(6) {
-		margin-bottom: 25px;
 	}
 	/* END NAV X LARGE SCREENS ******************/
 	
