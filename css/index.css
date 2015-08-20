@@ -14,7 +14,6 @@ body {
 	font-size: 1em;
 	position: relative;
 	text-align: center;
-	/* background-color: black; */
 }
 
 html,
@@ -108,7 +107,6 @@ hr {
 }
 
 #navIcon {
-	/* margin-left: -37.5px; */
 	width: 40px;
 	height: 40px;
 	cursor: pointer;
@@ -201,10 +199,6 @@ header {
 	position: relative;
 	padding-top: 50px;
 	padding-bottom: 25px;
-	/* background: url('../img/backgrounds/keyboard2.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 50%; */
-	/* box-shadow: 0px 10px 10px ivory; */
 	overflow: hidden;
 }
 
@@ -213,9 +207,7 @@ header h1 {
 	font-weight: 900;
 	font-size: 12vw;
 	letter-spacing: 1px;
-	/* color: rgb(35,35,35); */
 	color: black;
-	/* text-shadow: 2px 1px 0px rgb(100,175,255); */
 	margin-bottom: -25px;
 	cursor: default;
 }
@@ -287,7 +279,6 @@ section h1 {
 	font-style: italic;
 	font-size: 15vw;
 	font-weight: 100;
-	
 	margin: 50px auto;
 	cursor: default;
 }
@@ -305,7 +296,6 @@ section a {
 
 section p {
 	width: 90%;
-	/* max-width: 500px; */
 	line-height: 24px;
 	margin: 10px auto;
 	padding: 5px;
@@ -357,22 +347,9 @@ section p {
 }
 
 .meWrap {
-	/* position: absolute; */
-	/* width: 49%; */
-	/* height: 420px; */
 	padding-top: 10px;
 	padding-bottom: 35px;
 }
-
-/* #meWrap1 {
-	top: 250px;
-}
-
-#meWrap2 {
-	top: 250px;
-	right: 2.5px;
-} */
-
 
 #meSection h2 ,
 #meBioSection h2{
@@ -400,7 +377,7 @@ section p {
 }
 
 .note {
-	color: rgb(175,175,175);
+	color: rgb(100,175,255);
 	font-style: italic;
 	margin-top: 0px;
 }
@@ -418,15 +395,8 @@ section p {
 	text-shadow: 2px 1px 0px rgb(175,25,25);
 }
 
-/* #bioTitle span:nth-of-type(1) {
-	font-style: normal;
-	color: white;
-	text-shadow: none;
-} */
-
 #meSection2 {
 	position: relative;
-	/* background: ivory; */
 	height: 750px;
 }
 
@@ -447,26 +417,6 @@ section p {
 	cursor: default;
 }
 
-/* #trajectory h2 {
-	font-size: 1.1em;
-}
-
-#contact h2 {
-	font-size: 1.5em;
-}
-
-#references h2 {
-	font-size: 1.1em;
-} */
-
-/* .hiddenText,
-.hiddenText2,
-.hiddenText3,
-.hiddenText4,
-.hiddenText5 {
-	display: none;
-} */
-
 .meWrap p {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -475,33 +425,7 @@ section p {
 	color: ivory;
 	font-weight: 300;
 	line-height: 27px;
-	/* max-width: 750px; */
 }
-
-/* .detailText {
-	font-weight: 600;
-} */
-
-/* #bioButton,
-#detailsResume,
-#bioButtonClose,
-#detailsClose,
-#trajectoryClose,
-#contactClose,
-#referencesClose {
-	font-weight: 600;
-	font-size: 1.25em;
-	color: rgb(175,15,15);
-	cursor: pointer;
-}
-
-#referencesButton {
-	margin-bottom: 47.5px;
-}
-
-#bioButton:active, #bioButton:focus, #bioButton:hover, #bioButtonClose:active, #bioButtonClose:focus, #bioButtonClose:hover, #detailsButton2:active, #detailsButton2:focus, #detailsButton2:hover {
-	color: rgb(225,15,15);
-} */
 
 #contactGithubLink,
 #contactLinkedinLink {
@@ -516,13 +440,6 @@ section p {
 	color: rgb(100,175,255);
 }
 
-/* .refPhoneNumber {
-	color: rgb(175,15,15);
-}
-
-.refHr {
-	display: none;
-} */
 /* END ME SECTION ***********/
 
 
@@ -532,7 +449,6 @@ section p {
 	color: rgb(35,35,35);
 	padding-top: 0px;
 	overflow: hidden;
-	/* perspective: 1000px; */
 }
 
 #projectsTitle {
@@ -610,42 +526,30 @@ section p {
 
 
 
-/* MY DEAL SECTION ***********************/
-#dealSection {
+/* SKILL SECTION ***********************/
+#skillSection {
+	background: url('../img/backgrounds/rpmBackground.jpg');
+	background-size: 100% auto;
+	background-attachment: fixed;
+	padding-top: 0px;
+}
+
+#skillSection h1 {
 	background: url('../img/backgrounds/rpmBackground.jpg');
 	background-size: contain;
+	padding-top: 100px;
+	padding-bottom: 125px;
+	margin-top: 0px;
+	text-shadow: 2px 1px 0px rgb(100,175,255);
+	box-shadow: 0px 10px 15px white, 0px 10px 10px rgba(0,0,0,0.7) inset;
 }
 
-#dealSection {
+#skillSection h1 span{
 	color: rgb(255,245,245);
+	text-shadow: none;
 }
 
-#dealSection h1 span{
-	color: rgb(255,245,245);
-}
-
-.aboutWrap {
-	width: 95%;
-	max-width: 800px;
-	margin: 50px auto;
-	padding: 5px 5px 7.5px;
-	border-radius: 2.5px;
-	background: rgba(255,255,255,0.9);
-	-webkit-transition-duration: .5s;transition-duration: .5s;
-}
-
-.innerAboutWrap {
-	padding: 35px 25px;
-	margin: auto;
-	border-radius: 2.5px;
-	border: 5px double rgb(75,5,5);
-}
-
-#dealSection q span {
-	color: rgb(225,210,210);
-}
-
-#dealSection p {
+#skillSection p {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	max-width: 1000px;
@@ -654,7 +558,21 @@ section p {
 #skillsKey h4 {
 	display: inline-block;
 	width: 135px;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid white;
+}
+
+#skills {
+	width: 100%;
+	max-width: 420px;
+	margin: 100px auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background: rgba(0,0,0,0.9);
+	border-bottom-color: white;
+}
+
+.skillKey {
+	color: white;
 }
 
 .skill div {
@@ -667,6 +585,7 @@ section p {
 
 .skillName {
 	display: inline-block;
+	color: ivory;
 	text-align: left;
 	font-size: 0.9em;
 	width: 90px;
@@ -674,10 +593,11 @@ section p {
 }
 
 .skillLogo {
-	width: 35px;
-	height: 35px;
+	width: 30px;
+	height: 30px;
 	margin-bottom: -10px;
-	-webkit-filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.3));filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.3));
+	margin-right: 5px;
+	border-radius: 1px;
 }
 
 .skillLev {
@@ -701,7 +621,6 @@ section p {
 	text-align: right;
 	height: 100%;
 	padding-right: 5px;
-	-webkit-filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.3));filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.3));
 }
 
 /* HTML */
@@ -772,7 +691,7 @@ section p {
 
 /* MYSQL */
 #skillLevDis11 {
-	background: -webkit-linear-gradient(left, dodgerblue, orange);background: linear-gradient(to right, dodgerblue, orange);
+	background: -webkit-linear-gradient(left, black, dodgerblue, orange);background: linear-gradient(to right, black, dodgerblue, orange);
 	width: 27px;
 }
 
@@ -783,9 +702,8 @@ section p {
 	border-bottom: 1px solid black;
 }
 
-#aSkills ul {
-	list-style: none;
-	padding-left: 0;
+#skillSection q span {
+	color: rgb(225,210,210);
 }
 
 #dealSection cite {
@@ -795,7 +713,7 @@ section p {
 #dealSection cite span {
 	color: rgb(225,200,200);
 }
-/* END MY DEAL SECTION ***********************/
+/* END SKILL SECTION ***********************/
 
 
 
@@ -980,55 +898,6 @@ footer p:nth-of-type(1) {
 		background-size: 100% 100%;
 	}
 	
-	/* #screen {
-		display: block;
-		position: absolute;
-		width: 80%;
-		height: 650px;
-		left: 10%;
-		top: 120px;
-		background: url('../img/backgrounds/screen.png');
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-	} */
-	
-	/* .stripe {
-		display: block;
-		position: absolute;
-		top: 140px;
-		width: 100%;
-		margin: 5px auto;
-		border: 5px solid rgb(50,50,50);
-		border-radius: 50%;
-	}
-	
-	.stripe:nth-of-type(2) {
-		top: 155px;
-		border: 5px solid rgb(100,100,100);
-	}
-	
-	.stripe:nth-of-type(3) {
-		top: 170px;
-		border: 5px solid rgb(150,150,150);
-	}
-	
-	.monitorStripe {
-		top: 200px;
-		left: 50%;
-		width: 80%;
-		margin-left: -40%;
-	}
-	
-	.stripe:nth-of-type(5) {
-		top: 265px;
-		border: 5px solid rgb(100,100,100);
-	}
-	
-	.stripe:nth-of-type(6) {
-		top: 280px;
-		border: 5px solid rgb(150,150,150);
-	} */
-	
 	.headerImg {
 		width: 150px; 
 		height: 245px; 
@@ -1051,7 +920,6 @@ footer p:nth-of-type(1) {
 		background: url('../img/backgrounds/colorPaper2.png');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
-		/* filter: invert(.9); */
 		-webkit-filter: hue-rotate(45deg) drop-shadow(0px 10px 5px rgba(0,0,0,0.5));filter: hue-rotate(45deg) drop-shadow(0px 10px 5px rgba(0,0,0,0.5));
 	}
 	/* END HEADER MEDIUM SCREENS ***********************/
@@ -1063,41 +931,11 @@ footer p:nth-of-type(1) {
 		height: 525px;
 		margin-top: 300px;
 	}
-	
-	/* #detailsButton {
-		font-size: 3em;
-		margin-top: -20px;
-	}
-
-	#trajectory h2 {
-		font-size: 2em;
-	}
-
-	#contact h2 {
-		font-size: 2.25em;
-	}
-
-	#references h2 {
-		font-size: 2em;
-	}
-	
-	#meWrap1 {
-		top: 200px;
-	}
-
-	#meWrap2 {
-		top: 200px;
-	} */
 	/* END SECTION TWO MEDIUM SCREENS *****************************/
 	
 	
 	
 	/* PROJECTS MEDIUM SCREENS ***********************/
-	/* #projectSection {
-		background: url('../img/backgrounds/leo.jpg');
-		background-size: 500px 580px;
-	} */
-	
 	.projectImg {
 		width: 300px;
 		height: 250px;
@@ -1111,11 +949,9 @@ footer p:nth-of-type(1) {
 	
 	
 	
-	/* MY DEAL SECTION MEDIUM SCREENS ***********************/
-	.innerAboutWrap {
-		padding: 50px 25px;
-	}
-	/* END MY DEAL SECTION MEDIUM SCREENS ***********************/
+	/* SKILL SECTION MEDIUM SCREENS ***********************/
+	
+	/* END SKILL SECTION MEDIUM SCREENS ***********************/
 	
 	
 	
@@ -1163,13 +999,11 @@ footer p:nth-of-type(1) {
 	
 	header h1 {
 		font-size: 7.5vw;
-		/* text-shadow: 2px 1px 0px rgb(100,175,255); */
 		margin-top: 100px;
 		margin-bottom: 25px;
 	}
 	
 	#monitor {
-		/* top: 25px; */
 		left: 5%;
 		width: 90%;
 		height: 1300px;
@@ -1212,14 +1046,6 @@ footer p:nth-of-type(1) {
 		height: 550px;
 	}
 	
-	/* #meWrap1 {
-		top: 250px;
-	}
-
-	#meWrap2 {
-		top: 150px;
-	} */
-	
 	#contactTitle,
 	#bioTitle {
 		font-size: 5em !important;
@@ -1228,20 +1054,11 @@ footer p:nth-of-type(1) {
 	.bioText {
 		font-size: 1.25em;
 	}
-	
-	/* #detailsButton {
-		font-size: 5em;
-	} */
 	/* END ME SECTION LARGE SCREENS *****************************/
 	
 	
 	
-	/* PROJECTS SECTION LARGE SCREENS ***********************/
-	/* #projectSection {
-		background: url('../img/backgrounds/leoL.jpg');
-		background-size: 777px 818px;
-	} */
-	
+	/* PROJECTS SECTION LARGE SCREENS ***********************/	
 	#projectMainDes {
 		font-size: 1.25em;
 		line-height: 30px;
@@ -1303,10 +1120,10 @@ footer p:nth-of-type(1) {
 	
 	
 	
-	/*  MY DEAL SECTION LARGE SCREENS ***********************/
-	#dealSection {
+	/*  SKILL SECTION LARGE SCREENS ***********************/
+	#skillSection {
 		position: relative;
-		height: 750px;
+		height: 1000px;
 		background: url('../img/backgrounds/rpmBackground.jpg');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
@@ -1335,12 +1152,12 @@ footer p:nth-of-type(1) {
 	
 	#skills {
 		position: absolute;
-		top: -50px;
+		top: 150px;
 		left: 50%;
 		width: 350px;
 		margin-left: -175px;
 		-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);
-		box-shadow: -5px -5px 5px rgba(0,0,0,0.3);
+		box-shadow: -5px 0px 5px rgba(255,255,255,0.7);
 	}
 	
 	#skillGauge {
@@ -1363,7 +1180,15 @@ footer p:nth-of-type(1) {
 	.skillNum {
 		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
 	}
-	/* END MY DEAL SECTION LARGE SCREENS ***********************/
+	
+	#skillQuoteDiv {
+		position: absolute;
+		bottom: 25px;
+		left: 50%;
+		width: 700px;
+		margin-left: -350px;
+	}
+	/* END SKILL SECTION LARGE SCREENS ***********************/
 	
 	
 	
@@ -1471,7 +1296,6 @@ footer p:nth-of-type(1) {
 	}
 	
 	#monitor {
-		/* top: 25px; */
 		left: 10%;
 		width: 80%;
 		height: 1200px;
@@ -1511,6 +1335,14 @@ footer p:nth-of-type(1) {
 	/* PROJECTS SECTION X LARGE SCREENS ***********************/
 	
 	/* END PROJECTS SECTION X LARGE SCREENS***********************/
+	
+	
+	
+	/* SKILL SECTION X LARGE SCREENS ***********************/
+	#skillSection {
+		height: 1100px;
+	}
+	/* END SKILL SECTION X LARGE SCREENS***********************/
 	
 	
 	
