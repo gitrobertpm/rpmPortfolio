@@ -1,12 +1,21 @@
 // INDEX JS
 
+window.onresize = function() {
+	location.reload(true);
+};
+
 // GET WINDOW HEIGHT AND WIDTH
 var width = window.innerWidth;
 var height = window.innerHeight;
 
+var head = document.head, link = document.createElement('link');
+	link.type = 'text/css';
+	link.rel = 'stylesheet';
+	link.href = 'css/flower.css';
 
-// SLIDE IN HEADIMAGES AND TITLE
+
 if (width > 999) {
+	// SLIDE IN HEADIMAGES AND TITLE
 	window.onload = function() {
 		setTimeout(function(){ document.getElementById("devHand").style.msTransform = "translate(0px, 0px)"; }, 0);
 		setTimeout(function(){ document.getElementById("devHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
@@ -21,22 +30,15 @@ if (width > 999) {
 		setTimeout(function(){ document.getElementById("des").style.webkitTransform = "translate(0px, 0px)"; }, 500);
 		setTimeout(function(){ document.getElementById("des").style.transform = "translate(0px, 0px)"; }, 500);
 	};
+	
+	// ADD FLOWER STYLESHEET for LARGER SCREENS
+	head.appendChild(link);
 }
 
-window.onresize = function() {
-	document.getElementById("devHand").style.msTransform = "translate(0px, 0px)";
-	document.getElementById("devHand").style.webkitTransform = "translate(0px, 0px)";
-	document.getElementById("devHand").style.transform = "translate(0px, 0px)";
-	document.getElementById("desHand").style.msTransform = "translate(0px, 0px)";
-	document.getElementById("desHand").style.webkitTransform = "translate(0px, 0px)";
-	document.getElementById("desHand").style.transform = "translate(0px, 0px)";
-	document.getElementById("dev").style.msTransform = "translate(0px, 0px)";
-	document.getElementById("dev").style.webkitTransform = "translate(0px, 0px)";
-	document.getElementById("dev").style.transform = "translate(0px, 0px)";
-	document.getElementById("des").style.msTransform = "translate(0px, 0px)";
-	document.getElementById("des").style.webkitTransform = "translate(0px, 0px)";
-	document.getElementById("des").style.transform = "translate(0px, 0px)";
-};
+
+
+
+
 
 // OPEN NAV
 document.getElementById("navIcon").onclick = function() {
@@ -78,7 +80,6 @@ document.getElementById("navCodeLink").onclick = function() {
 };
 
 
-
 // SHORTCUT FUNCIOTN FOR GRABBING ID AND SETTING BACKGROUND AND DISPLAY VALUES
 function set(idee, background, display, bs, br, bp) {
 	var setIdee = document.getElementById(idee);
@@ -88,6 +89,7 @@ function set(idee, background, display, bs, br, bp) {
 	setIdee.style.backgroundRepeat = br;
 	setIdee.style.backgroundPosition = bp;
 };
+
 
 // SET MONITOR IMAGE
 if (width > 499 && width < 1000) {
