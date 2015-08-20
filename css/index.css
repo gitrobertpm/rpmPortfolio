@@ -247,13 +247,13 @@ header h1 {
 }
 
 #devHand {
-	/* -webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px); */
+	-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
 	-webkit-transition-duration: 1s;transition-duration: 1s;
 	-webkit-filter: saturate(9);filter: saturate(9);
 }
 
 #desHand {
-	/* -webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px); */
+	-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
 	-webkit-transition-duration: 1s;transition-duration: 1s;
 	-webkit-filter: saturate(2);filter: saturate(2);
 }
@@ -281,7 +281,7 @@ header h1 {
 	margin: 25px auto;
 }
 
-#flowerBox,
+
 #color {
 	display: none;
 }
@@ -473,6 +473,22 @@ color: rgb(175,15,15);
 }
 
 .refEmail {
+	color: rgb(100,175,255);
+}
+
+#meBioSection q {
+	max-width: 420px;
+}
+
+#meBioSection q span {
+	color: rgb(225,210,210);
+}
+
+#meBioSection cite {
+	color: rgb(175,15,15);
+}
+
+#meBioSection cite span {
 	color: rgb(100,175,255);
 }
 
@@ -930,6 +946,7 @@ footer p:nth-of-type(1) {
 	header h1 {
 		font-size: 10vw;
 		margin-top: 100px;
+		margin-bottom: -10px;
 	}
 	
 	#monitor {
@@ -939,6 +956,9 @@ footer p:nth-of-type(1) {
 		left: 5%;
 		width: 90%;
 		height: 1150px;
+		background: url('../img/backgrounds/monitor.png');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
 	}
 	
 	.headerImg {
@@ -959,6 +979,9 @@ footer p:nth-of-type(1) {
 		display: inline-block;
 		width: 250px;
 		height: 300px;
+		background: url('../img/backgrounds/colorPaper2.png');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
 		margin: -57.5px auto auto;
 		-webkit-filter: hue-rotate(45deg) drop-shadow(0px 10px 5px rgba(0,0,0,0.5));filter: hue-rotate(45deg) drop-shadow(0px 10px 5px rgba(0,0,0,0.5));
 	}
@@ -1051,6 +1074,9 @@ footer p:nth-of-type(1) {
 		left: 5%;
 		width: 90%;
 		height: 1300px;
+		background: url('../img/backgrounds/monitorLg.png');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
 	}
 
 	.headerImg {
@@ -1067,34 +1093,26 @@ footer p:nth-of-type(1) {
 	}
 	
 	#devHand {
-		-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
+		/* -webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px); */
 	}
 
 	#desHand {
-		-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
+		/* -webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px); */
 	}
 
 	#dev{
 		margin-left: -400px;
-		-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
+		/* -webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px); */
 	}
 
 	#des {
 		margin-left: 100px;
-		-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
+		/* -webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px); */
 	}
 	
 	.subTitle {
 		font-size: 1.5em;
 		margin: 50px auto;
-	}
-	
-	#flowerImg {
-		display: none;
-	}
-	
-	#flowerBox {
-		display: block;
 	}
 	/* END HEADER LARGE SCREENS ***********************/
 	
@@ -1116,6 +1134,10 @@ footer p:nth-of-type(1) {
 	
 	.happyFace {
 		font-size: 2.5em;
+	}
+	
+	#meBioSection q {
+		max-width: 700px;
 	}
 	/* END ME SECTION LARGE SCREENS *****************************/
 	
