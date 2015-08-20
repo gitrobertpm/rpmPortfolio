@@ -71,17 +71,17 @@ function set(idee, background, display, bs, br, bp) {
 	setIdee.style.backgroundPosition = bp;
 };
 
-// SET KEYBOARD IMAGE
-// if (width > 999) {
-	// set("keyboardImg", "url('img/backgrounds/keyboard2.jpg')", "block", "100% 100%", "no-repeat");
-// }
+// SET MONITOR IMAGE
+if (width > 499 && width < 1000) {
+	set("monitor", "url('img/backgrounds/monitor.png')", "block", "100% 100%", "no-repeat");
+} else if (width > 999) {
+	set("monitor", "url('img/backgrounds/monitorLg.png')", "block", "100% 100%", "no-repeat");
+}
 
-// SET PROJECTS IMAGES
-set("projectImg2", "url('img/projectImgs/gallery.png')", "block", "100% 100%", "no-repeat");
-set("projectImg3", "url('img/projectImgs/odom.png')", "block", "100% 100%", "no-repeat");
-set("projectImg4", "url('img/projectImgs/tabe.png')", "block", "100% 100%", "no-repeat");
-set("projectImg5", "url('img/projectImgs/twu.png')", "block", "100% 100%", "no-repeat");
-set("projectImg6", "url('img/projectImgs/decider.png')", "block", "100% 100%", "no-repeat");
+// SET PAINT STROKE IMAGE
+if (width > 499) {
+	set("color", "url('img/backgrounds/colorPaper2.png')", "block", "100% 100%", "no-repeat");
+}
 
 // SET NAV ICON IMAGE
 set("navIcon", "url('img/rpm.png')", "block", "100% 100%", "no-repeat");
@@ -101,7 +101,19 @@ set("myPicDiv", "url('img/me5.jpg')", "block", "100px 125px", "no-repeat", "cent
 set("contactGithubLink", "url('img/github.png')", "inline-block", "50px 50px", "no-repeat", "center");
 set("contactLinkedinLink", "url('img/linkedin.png')", "inline-block", "50px 50px", "no-repeat", "center");
 
+// SET PROJECTS IMAGES
+set("projectsTitle", "url('img/backgrounds/leoSm.jpg')", "block", "250px 50%", "repeat");
+set("leoLedge", "url('img/backgrounds/leoLedge.jpg')", "block", "250px 100%", "repeat");
+set("projectImg2", "url('img/projectImgs/gallery.png')", "block", "100% 100%", "no-repeat");
+set("projectImg3", "url('img/projectImgs/odom.png')", "block", "100% 100%", "no-repeat");
+set("projectImg4", "url('img/projectImgs/tabe.png')", "block", "100% 100%", "no-repeat");
+set("projectImg5", "url('img/projectImgs/twu.png')", "block", "100% 100%", "no-repeat");
+set("projectImg6", "url('img/projectImgs/decider.png')", "block", "100% 100%", "no-repeat");
+
+
 // SET SKILL IMAGES
+set("skillSection", "url('img/backgrounds/rpmBackground.jpg')", "block", "100% auto", "repeat");
+set("skillTitle", "url('img/backgrounds/rpmBackground.jpg')", "block", "contain", "repeat");
 set("skillLogo0", "url('img/misc_icons/html.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
 set("skillLogo1", "url('img/misc_icons/css.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
 set("skillLogo2", "url('img/misc_icons/js.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
