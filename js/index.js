@@ -4,20 +4,38 @@
 var width = window.innerWidth;
 var height = window.innerHeight;
 
+
 // SLIDE IN HEADIMAGES AND TITLE
-window.onload = function() {
-	setTimeout(function(){ document.getElementById("devHand").style.msTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("devHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("devHand").style.transform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("desHand").style.msTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("desHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("desHand").style.transform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("dev").style.msTransform = "translate(0px, 0px)"; }, 500);
-	setTimeout(function(){ document.getElementById("dev").style.webkitTransform = "translate(0px, 0px)"; }, 500);
-	setTimeout(function(){ document.getElementById("dev").style.transform = "translate(0px, 0px)"; }, 500);
-	setTimeout(function(){ document.getElementById("des").style.msTransform = "translate(0px, 0px)"; }, 500);
-	setTimeout(function(){ document.getElementById("des").style.webkitTransform = "translate(0px, 0px)"; }, 500);
-	setTimeout(function(){ document.getElementById("des").style.transform = "translate(0px, 0px)"; }, 500);
+if (width > 999) {
+	window.onload = function() {
+		setTimeout(function(){ document.getElementById("devHand").style.msTransform = "translate(0px, 0px)"; }, 0);
+		setTimeout(function(){ document.getElementById("devHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
+		setTimeout(function(){ document.getElementById("devHand").style.transform = "translate(0px, 0px)"; }, 0);
+		setTimeout(function(){ document.getElementById("desHand").style.msTransform = "translate(0px, 0px)"; }, 0);
+		setTimeout(function(){ document.getElementById("desHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
+		setTimeout(function(){ document.getElementById("desHand").style.transform = "translate(0px, 0px)"; }, 0);
+		setTimeout(function(){ document.getElementById("dev").style.msTransform = "translate(0px, 0px)"; }, 500);
+		setTimeout(function(){ document.getElementById("dev").style.webkitTransform = "translate(0px, 0px)"; }, 500);
+		setTimeout(function(){ document.getElementById("dev").style.transform = "translate(0px, 0px)"; }, 500);
+		setTimeout(function(){ document.getElementById("des").style.msTransform = "translate(0px, 0px)"; }, 500);
+		setTimeout(function(){ document.getElementById("des").style.webkitTransform = "translate(0px, 0px)"; }, 500);
+		setTimeout(function(){ document.getElementById("des").style.transform = "translate(0px, 0px)"; }, 500);
+	};
+}
+
+window.onresize = function() {
+	document.getElementById("devHand").style.msTransform = "translate(0px, 0px)";
+	document.getElementById("devHand").style.webkitTransform = "translate(0px, 0px)";
+	document.getElementById("devHand").style.transform = "translate(0px, 0px)";
+	document.getElementById("desHand").style.msTransform = "translate(0px, 0px)";
+	document.getElementById("desHand").style.webkitTransform = "translate(0px, 0px)";
+	document.getElementById("desHand").style.transform = "translate(0px, 0px)";
+	document.getElementById("dev").style.msTransform = "translate(0px, 0px)";
+	document.getElementById("dev").style.webkitTransform = "translate(0px, 0px)";
+	document.getElementById("dev").style.transform = "translate(0px, 0px)";
+	document.getElementById("des").style.msTransform = "translate(0px, 0px)";
+	document.getElementById("des").style.webkitTransform = "translate(0px, 0px)";
+	document.getElementById("des").style.transform = "translate(0px, 0px)";
 };
 
 // OPEN NAV

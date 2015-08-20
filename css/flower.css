@@ -164,5 +164,16 @@
 	background-repeat: no-repeat;
 }
 
-
+@media screen and (max-width: 1000) {
+	#flowerBox,
+	#petal_2,
+	#petal_3,
+	#petal_4,
+	#petal_5,
+	#petal_6,
+	#petal_7,
+	#petal_8 {
+		-webkit-animation: none;animation: none;
+	}
+}
 /* END FLOWER ****************/

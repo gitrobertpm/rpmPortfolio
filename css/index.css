@@ -226,13 +226,13 @@ header h1 {
 }
 
 #devHand {
-	-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
+	/* -webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px); */
 	-webkit-transition-duration: 1s;transition-duration: 1s;
 	-webkit-filter: saturate(9);filter: saturate(9);
 }
 
 #desHand {
-	-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
+	/* -webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px); */
 	-webkit-transition-duration: 1s;transition-duration: 1s;
 	-webkit-filter: saturate(2);filter: saturate(2);
 }
@@ -244,12 +244,12 @@ header h1 {
 }
 
 #dev{
-	-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
+	/* -webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px); */
 	-webkit-transition-duration: 1s;transition-duration: 1s;
 }
 
 #des {
-	-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
+	/* -webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px); */
 	-webkit-transition-duration: 1s;transition-duration: 1s;
 }
 
@@ -425,6 +425,11 @@ section p {
 	color: ivory;
 	font-weight: 300;
 	line-height: 27px;
+}
+
+.happyFace {
+color: rgb(175,15,15);
+	font-size: 2.5em;
 }
 
 #contactGithubLink,
@@ -694,16 +699,25 @@ section p {
 	border-bottom: 1px solid black;
 }
 
-#skillSection q span {
+#skillQuoteDiv {
+	width: 95%;
+	max-width: 750px;
+	margin: auto;
+	background: rgba(0,0,0,0.9);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#skillQuoteDiv  q span {
 	color: rgb(225,210,210);
 }
 
-#dealSection cite {
-	color: rgb(255,240,240);
+#skillQuoteDiv  cite {
+	color: rgb(175,15,15);
 }
 
-#dealSection cite span {
-	color: rgb(225,200,200);
+#skillQuoteDiv  cite span {
+	color: rgb(100,175,255);
 }
 /* END SKILL SECTION ***********************/
 
@@ -824,6 +838,7 @@ footer p {
 
 footer p:nth-of-type(1) {
 	font-size: 2em;
+	color: rgb(100,175,255);
 	margin-bottom: 15px;
 }
 /* END FOOTER ***********************/
@@ -1008,12 +1023,22 @@ footer p:nth-of-type(1) {
 		height: 50px;
 	}
 	
-	#dev {
-		margin-left: -400px;
+	#devHand {
+		-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
 	}
-	
+
+	#desHand {
+		-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
+	}
+
+	#dev{
+		margin-left: -400px;
+		-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
+	}
+
 	#des {
 		margin-left: 100px;
+		-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
 	}
 	
 	.subTitle {
@@ -1036,6 +1061,10 @@ footer p:nth-of-type(1) {
 	
 	.bioText {
 		font-size: 1.25em;
+	}
+	
+	.happyFace {
+		font-size: 2.5em;
 	}
 	/* END ME SECTION LARGE SCREENS *****************************/
 	
@@ -1165,8 +1194,8 @@ footer p:nth-of-type(1) {
 		position: absolute;
 		bottom: 25px;
 		left: 50%;
-		width: 700px;
-		margin-left: -350px;
+		width: 750px;
+		margin-left: -375px;
 	}
 	/* END SKILL SECTION LARGE SCREENS ***********************/
 	
