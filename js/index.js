@@ -1,8 +1,8 @@
 // INDEX JS
 
-window.onresize = function() {
-	location.reload(true);
-};
+// window.onresize = function() {
+	// location.reload(true);
+// };
 
 // GET WINDOW HEIGHT AND WIDTH
 var width = window.innerWidth;
