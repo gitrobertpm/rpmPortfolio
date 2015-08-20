@@ -195,22 +195,26 @@ nav cite {
 #headerNav {
 	position: absolute;
 	top: 10px;
-	right: 10px;
+	right: 50px;
 }
 
 #headerNav a {
 	font-family: 'Playfair Display', serif;
 	font-style: italic;
 	color: rgb(125,125,125);
-}
-
-#headerNav a:nth-of-type(2) {
-	margin: auto 10px;
+	padding-left: 5px;
 }
 
 #headerNav a:active, #headerNav a:focus, #headerNav a:hover {
 	font-style: normal;
 	color: rgb(172,15,15);
+}
+
+#headerTop {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 999;
 }
 /* END NAV ******************/
 
@@ -910,8 +914,13 @@ footer p:nth-of-type(1) {
 		display: inline-block;
 	}
 	
+	#headerNav {
+		right: 65px;
+	}
+	
 	#headerNav a {
 		font-size: 1.5em;
+		padding-left: 10px;
 	}
 	/* END NAV MEDIUM SCREENS ******************/
 	
