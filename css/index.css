@@ -47,11 +47,6 @@ a {
 	/* MORE ANCHOR STYLINGS BELOW IN SECTIONS */
 }
 
-a:active, a:focus, a:hover {
-	color: rgb(255,255,240);
-	-webkit-transition-duration: .5s;transition-duration: .5s;
-}
-
 p {
 	color: rgb(50,50,50);
 	cursor: default;
@@ -133,6 +128,11 @@ nav a {
 	margin: auto;
 }
 
+nav a:active, nav a:focus, nav a:hover {
+	color: rgb(255,255,240);
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
 nav p {
 	color: rgb(255,255,240);
 	font-size: 1.25em;
@@ -190,6 +190,27 @@ nav cite {
 #closeNav p:active, #closeNav p:focus, #closeNav p:hover {
 	color: ivory;
 	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+#headerNav {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#headerNav a {
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	color: rgb(125,125,125);
+}
+
+#headerNav a:nth-of-type(2) {
+	margin: auto 10px;
+}
+
+#headerNav a:active, #headerNav a:focus, #headerNav a:hover {
+	font-style: normal;
+	color: rgb(172,15,15);
 }
 /* END NAV ******************/
 
@@ -887,6 +908,10 @@ footer p:nth-of-type(1) {
 	nav ul li:nth-of-type(5),
 	nav ul li:nth-of-type(6) {
 		display: inline-block;
+	}
+	
+	#headerNav a {
+		font-size: 1.5em;
 	}
 	/* END NAV MEDIUM SCREENS ******************/
 	

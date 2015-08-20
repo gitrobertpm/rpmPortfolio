@@ -1,9 +1,5 @@
 // INDEX JS
 
-// window.onresize = function() {
-	// location.reload(true);
-// };
-
 // GET WINDOW HEIGHT AND WIDTH
 var width = window.innerWidth;
 var height = window.innerHeight;
@@ -37,9 +33,6 @@ if (width > 999) {
 
 
 
-
-
-
 // OPEN NAV
 document.getElementById("navIcon").onclick = function() {
 	document.getElementById("navIcon").style.display = "none";
@@ -67,13 +60,7 @@ document.getElementById("navMeLink").onclick = function() {
 	document.getElementsByTagName("nav")[0].style.display = "none";
 };
 
-// document.getElementById("navMyDealLink").onclick = function() {
-	// document.getElementById("navIcon").style.display = "block";
-	// document.getElementById("closeNav").style.display = "none";
-	// document.getElementsByTagName("nav")[0].style.display = "none";
-// };
-
-document.getElementById("navCodeLink").onclick = function() {
+document.getElementById("backToTop").onclick = function() {
 	document.getElementById("navIcon").style.display = "block";
 	document.getElementById("closeNav").style.display = "none";
 	document.getElementsByTagName("nav")[0].style.display = "none";
