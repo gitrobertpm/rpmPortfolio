@@ -913,14 +913,19 @@ footer p:nth-of-type(1) {
 		padding-top: 0px;
 		padding-bottom: 0px;
 	}
+	
+	nav ul {
+		margin-top: 0px;
+	}
 
 	nav ul li {
 		display: inline-block;
-		margin: 5px auto;
+		padding-left: 15px;
 	}
 	
-	nav ul li{
-		padding-left: 15px;
+	#navGithubLink,
+	#navLinkedinLink {
+		margin-top: 0px;
 	}
 	
 	#headerNav {
@@ -1345,6 +1350,11 @@ footer p:nth-of-type(1) {
 	
 	nav ul li:nth-of-type(2) {
 		margin-bottom: 15px;
+	}
+	
+	#navGithubLink,
+	#navLinkedinLink {
+		margin-top: 25px;
 	}
 	/* END NAV X LARGE SCREENS ******************/
 	
