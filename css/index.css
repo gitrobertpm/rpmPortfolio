@@ -884,7 +884,6 @@ footer p {
 
 footer p:nth-of-type(1) {
 	font-size: 2em;
-	color: rgb(100,175,255);
 	margin-bottom: 15px;
 }
 /* END FOOTER ***********************/
