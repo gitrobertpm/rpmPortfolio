@@ -108,6 +108,15 @@ set("projectImg5", "url('img/projectImgs/twu.png')", "block", "100% 100%", "no-r
 set("projectImg6", "url('img/projectImgs/decider.png')", "block", "100% 100%", "no-repeat");
 
 
+
+// GITHUB IMAGES FOR PROJECT SOURCE CODE LINKS
+for (var i = 0; i < document.getElementsByClassName("projGitImg").length; i++) {
+	document.getElementsByClassName("projGitImg")[i].style.background = "url('img/misc_icons/github.jpg')";
+	document.getElementsByClassName("projGitImg")[i].style.backgroundSize = "100% 100%";
+}
+
+
+
 // SET SKILL IMAGES
 set("skillSection", "url('img/backgrounds/rpmBackground.jpg')", "block", "100% auto", "repeat");
 set("skillTitle", "url('img/backgrounds/rpmBackground.jpg')", "block", "contain", "repeat");

@@ -286,7 +286,7 @@ header h1 {
 	display: none;
 }
 
-#flowerImg {
+/* #flowerImg {
 	display: block;
 	position: absolute;
 	top: 125px;
@@ -294,7 +294,7 @@ header h1 {
 	width: 100px;
 	height: 100px;
 	margin-left: -50px;
-}
+} */
 /* END HEADER ***********************/
 
 
@@ -333,6 +333,91 @@ section p {
 	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 /* END SECTIONS ***********************/
+
+
+
+/* PROJECTS SECTION ***********************/
+#projectSection {
+	color: rgb(35,35,35);
+	padding-top: 0px;
+	overflow: hidden;
+}
+
+#projectsTitle {
+	padding-top: 100px;
+	padding-bottom: 111px;
+	margin-top: 0;
+	margin-bottom: 0;
+	box-shadow: 0px -5px 5px rgba(0,0,0,0.3) inset,  0px 15px 5px rgba(0,0,0,0.5) inset;
+}
+
+#leoLedge {
+	width: 110%;
+	height: 25px;
+	transform: skewX(35deg);
+	margin-left: -15px;
+	margin-bottom: 75px;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+}
+
+.projGitImg {
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin: 10px auto;
+}
+
+.projectMainDes {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	width: 90%;
+	max-width: 725px;
+	line-height: 27px;
+	margin: 10px auto;
+}
+
+.projectWrap {
+	margin: 25px auto 75px;
+}
+
+.projectLink {
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	font-size: 1.5em;
+	padding: auto 5px;
+	border-top: 5px double black;
+	border-bottom: 5px double black;
+}
+
+.projectImg {
+	width: 225px;
+	height: 175px;
+	margin: 10px auto;
+	-webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));
+}
+
+.projectDes {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	width: 90%;
+	max-width: 500px;
+	line-height: 27px;
+	margin: 10px auto;
+	padding: 5px;
+	border-radius: 2.5px;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+.projectDes span {
+	font-style: italic;
+}
+
+.projectWrap:active > p, .projectWrap:focus > p, .projectWrap:hover > p {
+	background: rgba(255,255,255,0.4);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+/* END PROJECTS SECTION***********************/
 
 
 
@@ -492,84 +577,6 @@ color: rgb(175,15,15);
 	color: rgb(100,175,255);
 }
 /* END ME SECTION ***********/
-
-
-
-/* PROJECTS SECTION ***********************/
-#projectSection {
-	color: rgb(35,35,35);
-	padding-top: 0px;
-	overflow: hidden;
-}
-
-#projectsTitle {
-	padding-top: 100px;
-	padding-bottom: 111px;
-	margin-top: 0;
-	margin-bottom: 0;
-	box-shadow: 0px -5px 5px rgba(0,0,0,0.3) inset,  0px 15px 5px rgba(0,0,0,0.5) inset;
-}
-
-#leoLedge {
-	width: 110%;
-	height: 25px;
-	transform: skewX(35deg);
-	margin-left: -15px;
-	margin-bottom: 75px;
-	box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
-}
-
-#projectMainDes {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-	width: 90%;
-	max-width: 925px;
-	line-height: 27px;
-	margin: 10px auto;
-}
-
-.projectWrap {
-	margin: 25px auto 75px;
-}
-
-.projectLink {
-	font-family: 'Playfair Display', serif;
-	font-weight: 900;
-	font-size: 1.5em;
-	padding: auto 5px;
-	border-top: 5px double black;
-	border-bottom: 5px double black;
-}
-
-.projectImg {
-	width: 225px;
-	height: 175px;
-	margin: 10px auto;
-	-webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));
-}
-
-.projectDes {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-	width: 90%;
-	max-width: 500px;
-	line-height: 27px;
-	margin: 10px auto;
-	padding: 5px;
-	border-radius: 2.5px;
-	-webkit-transition-duration: .5s;transition-duration: .5s;
-}
-
-.projectDes span {
-	font-style: italic;
-}
-
-.projectWrap:active > p, .projectWrap:focus > p, .projectWrap:hover > p {
-	background: rgba(255,255,255,0.4);
-	box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
-	-webkit-transition-duration: .5s;transition-duration: .5s;
-}
-/* END PROJECTS SECTION***********************/
 
 
 
@@ -898,15 +905,7 @@ footer p:nth-of-type(1) {
 
 
 /* MEDIUM SCREENS ************/
-@media screen and (min-width: 500px) {
-	/* GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
-	section h1 {
-		font-size: 10vw;
-	}
-	/* END GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
-
-	
-	
+@media screen and (min-width: 500px) {	
 	/* NAV MEDIUM SCREENS ******************************/
 	nav p {
 		padding-top: 0px;
@@ -990,10 +989,21 @@ footer p:nth-of-type(1) {
 	
 	
 	
+	/* GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
+	section h1 {
+		font-size: 10vw;
+	}
+	
+	#mainDiv {
+		margin-top: 25px;
+	}
+	/* END GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
+	
+	
 	/* ME SECTION MEDIUM SCREENS *****************************/
 	#meSection {
 		height: 525px;
-		margin-top: 300px;
+		margin-top: 50px;
 	}
 	/* END SECTION TWO MEDIUM SCREENS *****************************/
 	
@@ -1104,6 +1114,12 @@ footer p:nth-of-type(1) {
 	/* END HEADER LARGE SCREENS ***********************/
 	
 	
+	/* MANI DIV   LARGE SCREENS *************/
+	#mainDiv {
+		margin-top: 50px;
+	}
+	/* END LARGE SCREENS ****************/
+	
 	
 	/* ME SECTION LARGE SCREENS *****************************/
 	#meSection {
@@ -1131,7 +1147,7 @@ footer p:nth-of-type(1) {
 	
 	
 	/* PROJECTS SECTION LARGE SCREENS ***********************/	
-	#projectMainDes {
+	.projectMainDes {
 		font-size: 1.25em;
 		line-height: 30px;
 	}
@@ -1358,6 +1374,13 @@ footer p:nth-of-type(1) {
 	/* END NAV X LARGE SCREENS ******************/
 	
 
+	/* MANI DIV X LARGE SCREENS *************/
+	#mainDiv {
+		margin-top: -25px;
+	}
+	/* END X LARGE SCREENS ****************/
+	
+	
 
 	/* HEADER X LARGE SCREENS ***********************/
 	header h1 {
