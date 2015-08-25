@@ -606,6 +606,20 @@ color: rgb(175,15,15);
 	border-bottom: 2px solid white;
 }
 
+#skillExplanationDiv {
+	background: rgba(0,0,0,0.9);
+	width: 95%;
+	max-width: 750px;
+	margin: 75px auto auto; 
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+.skillExplanation {
+	line-height: 27px;
+	color: white;
+}
+
 #skills {
 	width: 100%;
 	max-width: 420px;
@@ -860,7 +874,7 @@ code {
 footer {
 	position: relative;
 	padding-top: 15px;
-	background: -webkit-linear-gradient(black, rgb(15,0,0));background: linear-gradient( black, rgb(15,0,0));
+	background: -webkit-linear-gradient(black, rgb(10,0,0));background: linear-gradient( black, rgb(10,0,0));
 }
 
 footer a {
@@ -1207,7 +1221,7 @@ footer p:nth-of-type(1) {
 	/*  SKILL SECTION LARGE SCREENS ***********************/
 	#skillSection {
 		position: relative;
-		height: 1000px;
+		height: 1600px;
 		background-attachment: fixed !important;
 	}
 
@@ -1233,7 +1247,7 @@ footer p:nth-of-type(1) {
 	
 	#skills {
 		position: absolute;
-		top: 150px;
+		top: 700px;
 		left: 50%;
 		width: 350px;
 		margin-left: -175px;
@@ -1429,7 +1443,7 @@ footer p:nth-of-type(1) {
 	
 	/* SKILL SECTION X LARGE SCREENS ***********************/
 	#skillSection {
-		height: 1100px;
+		height: 1700px;
 	}
 	/* END SKILL SECTION X LARGE SCREENS***********************/
 	
