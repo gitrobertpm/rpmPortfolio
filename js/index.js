@@ -99,7 +99,7 @@ set("contactGithubLink", "url('img/github.png')", "inline-block", "50px 50px", "
 set("contactLinkedinLink", "url('img/linkedin.png')", "inline-block", "50px 50px", "no-repeat", "center");
 
 // SET PROJECTS IMAGES
-set("projectsTitle", "url('img/backgrounds/leoSm.jpg')", "block", "250px 50%", "repeat");
+set("projectsTitle", "url('img/backgrounds/leoSm.jpg')", "block", "250px 100%", "repeat");
 set("leoLedge", "url('img/backgrounds/leoLedge.jpg')", "block", "250px 100%", "repeat");
 set("projectImg2", "url('img/projectImgs/gallery.png')", "block", "100% 100%", "no-repeat");
 set("projectImg3", "url('img/projectImgs/odom.png')", "block", "100% 100%", "no-repeat");
