@@ -586,7 +586,7 @@ color: rgb(175,15,15);
 	padding-bottom: 50px;
 	margin-top: 0px;
 	text-shadow: 2px 1px 0px rgb(100,175,255);
-	box-shadow: 0px 10px 10px rgba(0,0,0,0.7) inset;
+	box-shadow: 0px 10px 15px rgba(0,0,0,0.7), 0px 10px 10px rgba(0,0,0,0.7) inset;
 }
 
 #skillSection h1 span{
