@@ -84,6 +84,7 @@ hr {
 	width: 90%;
 	max-width: 1000px;
 	border-radius: 50%;
+	margin: 50px auto 75px;
 }
 /* END GENERAL *********************************/
 
@@ -294,7 +295,6 @@ section {
 section h1 {
 	font-family: 'Playfair Display', serif;
 	font-weight: 900;
-	/* font-style: italic; */
 	font-size: 15vw;
 	font-weight: 100;
 	margin: 50px auto;
@@ -426,10 +426,6 @@ section p {
 
 #meSection .wrapper {
 	margin: auto;
-	/* background: url('../img/yinyang2.png');
-	background-repeat: no-repeat;
-	background-position: bottom;
-	background-size: 50px 50px; */
 	height: 100%;
 }
 
@@ -465,7 +461,7 @@ section p {
 	background: white;
 	padding: 10px;
 	border-radius: 5px;
-	width: 95%;
+	width: 90%;
 	margin: 25px auto;
 }
 
@@ -475,7 +471,6 @@ section p {
 
 .meText:nth-of-type(2) {
 	max-width: 600px;
-	/* margin-bottom: 100px; */
 }
 
 #yinyang2 {
@@ -484,35 +479,35 @@ section p {
 	margin: auto auto 25px;
 	background: url('../img/yinyang2.png');
 	background-repeat: no-repeat;
-	/* background-position: bottom; */
 	background-size: 50px 50px;
 }
 
-.meWrap {
-	padding-top: 10px;
-	/* padding-bottom: 35px; */
-}
-
 #meSection h2 ,
-#meBioSection h2{
+#myDealSection h2,
+#contactSection h2 {
 	font-family: 'Playfair Display', serif;
 	font-weight: 900;
 	letter-spacing: 1px;
 }
 
-#meBioSection {
+#myDealSection {
 	background: black;
 	text-align: center;
-	padding-bottom: 0px;
+	padding-bottom: 50px;
 }
 
-#bioTitle {
+#myDealTitle {
 	color: rgb(50,50,50);
 	text-shadow: 2px 1px 0px rgb(100,175,255);
 	font-size: 3em;
 	cursor: default;
-	padding-top: 50px;
+	padding-top: 35px;
 	padding-bottom: 20px;
+}
+
+#myDealTitle span {
+	font-style: italic;
+	text-shadow: 2px 1px 0px rgb(175,25,25);
 }
 
 #devices {
@@ -523,11 +518,6 @@ section p {
 	color: rgb(100,175,255);
 	font-style: italic;
 	margin-top: 0px;
-}
-
-#bioTitle span {
-	font-style: italic;
-	text-shadow: 2px 1px 0px rgb(175,25,25);
 }
 
 #meSection2 {
@@ -541,7 +531,7 @@ section p {
 	cursor: default;
 }
 
-.bioText {
+.myDealText {
 	font-family: 'Open Sans', sans-serif;
 	color: ivory;
 	font-weight: 300;
@@ -554,9 +544,29 @@ section p {
 	margin-bottom: 50px;
 }
 
+#myDealSection q {
+	max-width: 420px;
+}
+
+#myDealSection q span {
+	color: rgb(225,210,210);
+}
+
+#myDealSection cite {
+	color: rgb(175,15,15);
+}
+
+#myDealSection cite span {
+	color: rgb(100,175,255);
+}
+
+#contactSection {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
 #contact {
 	background: -webkit-linear-gradient(right, black 50%, white 50.01%);background: linear-gradient(to left, black 50%, white 50.01%);
-	margin-top: 75px;
 	padding-bottom: 75px;
 }
 
@@ -607,22 +617,6 @@ section p {
 	margin: auto;
 	display: none;
 }
-
-#meBioSection q {
-	max-width: 420px;
-}
-
-#meBioSection q span {
-	color: rgb(225,210,210);
-}
-
-#meBioSection cite {
-	color: rgb(175,15,15);
-}
-
-#meBioSection cite span {
-	color: rgb(100,175,255);
-}
 /* END ME SECTION ***********/
 
 
@@ -639,14 +633,7 @@ section p {
 	padding-top: 75px;
 	padding-bottom: 75px;
 	margin-top: 0px;
-	/* text-shadow: 2px 1px 0px rgb(100,175,255); */
-	/* box-shadow: 0px 10px 15px rgba(0,0,0,0.7), 0px 10px 10px rgba(0,0,0,0.7) inset; */
 }
-
-/* #skillSection h1 span{
-	color: rgb(255,245,245);
-	text-shadow: none;
-} */
 
 #skillSection p {
 	font-family: 'Open Sans', sans-serif;
@@ -769,7 +756,7 @@ section p {
 /* GITHUB */
 #skillLevDis5 {
 	background: -webkit-linear-gradient(left, black, purple);background: linear-gradient(to right, black, purple);
-	width: 54px;
+	width: 70px;
 }
 
 /* JQUERY */
@@ -793,7 +780,7 @@ section p {
 /* ANGULAR */
 #skillLevDis9 {
 	background: -webkit-linear-gradient(left, black, red);background: linear-gradient(to right, black, red);
-	width: 27px;
+	width: 40px;
 }
 
 /* PHP */
@@ -813,6 +800,14 @@ section p {
 	max-width: 400px !important;
 	margin: auto;
 	border-bottom: 1px solid black;
+}
+
+#skillLevelExplanationDiv {
+	margin-top: 15px;
+}
+
+.skillLevelExplanation {
+	color: white;
 }
 
 #skillQuoteDiv {
@@ -993,10 +988,6 @@ footer p:nth-of-type(1) {
 		margin-top: 0px;
 	}
 	
-	/* #headerNav {
-		right: 65px;
-	} */
-	
 	#headerNav a {
 		font-size: 1.5em;
 		padding-left: 10px;
@@ -1016,18 +1007,6 @@ footer p:nth-of-type(1) {
 		margin-top: 75px;
 		margin-bottom: 0px;
 	}
-	
-	/* #monitor {
-		display: block;
-		position: absolute;
-		top: 75px;
-		left: 5%;
-		width: 90%;
-		height: 1050px;
-		background: url('../img/backgrounds/monitor.png');
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
-	} */
 	
 	.headerImg {
 		width: 150px; 
@@ -1070,18 +1049,6 @@ footer p:nth-of-type(1) {
 	/* END GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
 	
 	
-	/* ME SECTION MEDIUM SCREENS *****************************/
-	#meSection {
-		/* height: 390px; */
-		margin-top: 50px;
-	}
-	
-	.refEmail {
-		letter-spacing: .75px;
-	}
-	/* END SECTION TWO MEDIUM SCREENS *****************************/
-	
-	
 	
 	/* PROJECTS MEDIUM SCREENS ***********************/
 	.projectImg {
@@ -1097,10 +1064,21 @@ footer p:nth-of-type(1) {
 	
 	
 	
+	/* ME SECTION MEDIUM SCREENS *****************************/
+	#meSection {
+		margin-top: 50px;
+	}
+	
+	.refEmail {
+		letter-spacing: .75px;
+	}
+	/* END SECTION TWO MEDIUM SCREENS *****************************/
+	
+	
+	
 	/* SKILL SECTION MEDIUM SCREENS ***********************/
 	#skillSection h1 {
 		padding-bottom: 111px;
-		/* box-shadow: 0px 10px 15px white; */
 	}
 	/* END SKILL SECTION MEDIUM SCREENS ***********************/
 	
@@ -1201,33 +1179,6 @@ footer p:nth-of-type(1) {
 	
 	
 	
-	/* ME SECTION LARGE SCREENS *****************************/
-	/* #meSection {
-		height: 420px;
-	} */
-	
-	#contactTitle,
-	#bioTitle {
-		font-size: 5em !important;
-	}
-	
-	.meText,
-	.bioText,
-	.contactText {
-		font-size: 1.25em;
-	}
-	
-	.happyFace {
-		font-size: 2.5em;
-	}
-	
-	#meBioSection q {
-		max-width: 700px;
-	}
-	/* END ME SECTION LARGE SCREENS *****************************/
-	
-	
-	
 	/* PROJECTS SECTION LARGE SCREENS ***********************/	
 	.projectMainDes {
 		font-size: 1.25em;
@@ -1290,15 +1241,34 @@ footer p:nth-of-type(1) {
 	
 	
 	
+	/* ME SECTION LARGE SCREENS *****************************/
+	#contactTitle,
+	#myDealTitle {
+		font-size: 5em !important;
+	}
+	
+	.meText,
+	.myDealText,
+	.contactText {
+		font-size: 1.25em;
+	}
+	
+	.happyFace {
+		font-size: 2.5em;
+	}
+	
+	#myDealSection q {
+		max-width: 700px;
+	}
+	/* END ME SECTION LARGE SCREENS *****************************/
+	
+	
+	
 	/*  SKILL SECTION LARGE SCREENS ***********************/
 	#skillSection {
 		position: relative;
 		height: 1750px;
 		background-attachment: fixed !important;
-	}
-	
-	#skillExplanationDiv {
-		/* box-shadow: 0px 5px 5px rgba(255,255,255,0.7); */
 	}
 	
 	.skillExplanation {
@@ -1332,7 +1302,6 @@ footer p:nth-of-type(1) {
 		width: 350px;
 		margin-left: -175px;
 		-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);
-		/* box-shadow: -5px 0px 5px rgba(255,255,255,0.7); */
 	}
 	
 	#skillGauge {
@@ -1356,13 +1325,25 @@ footer p:nth-of-type(1) {
 		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
 	}
 	
+	#skillLevelExplanationDiv {
+		position: absolute;
+		top: 45%;
+		left: 75px;
+		width: 500px;
+		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
+		border-bottom: 2px solid white;
+	}
+	
+	.skillLevelExplanation {
+		display: inline;
+	}
+	
 	#skillQuoteDiv {
 		position: absolute;
 		bottom: 25px;
 		left: 50%;
 		width: 750px;
 		margin-left: -375px;
-		/* box-shadow: 0px 5px 5px rgba(255,255,255,0.7); */
 	}
 	/* END SKILL SECTION LARGE SCREENS ***********************/
 	
@@ -1422,22 +1403,6 @@ footer p:nth-of-type(1) {
 
 /* X LARGE SCREENS ************/
 @media screen and (min-width: 1250px) {
-	/* GENERAL SECTIONS STYLING X LARGE SCREENS ***********************/
-	section h1 {
-		font-size: 5.5vw;
-	}
-	
-	q {
-		font-size: 2em;
-	}
-	
-	q span {
-		font-size: .9em;
-	}
-	/* END GENERAL SECTIONS STYLING X LARGE SCREENS ***********************/
-
-	
-	
 	/* NAV X LARGE SCREENS ******************************/
 	nav p {
 		font-size: 1.5em;
@@ -1464,6 +1429,7 @@ footer p:nth-of-type(1) {
 	/* END NAV X LARGE SCREENS ******************/
 	
 
+	
 	/* MAIN DIV X LARGE SCREENS *************/
 	#mainDiv {
 		margin-top: -25px;
@@ -1507,17 +1473,33 @@ footer p:nth-of-type(1) {
 	
 	
 	
-	/* ME SECTION X LARGE SCREENS *****************************/
-	#meSection h1 {
-		margin-left: -30px;
+	/* GENERAL SECTIONS STYLING X LARGE SCREENS ***********************/
+	section h1 {
+		font-size: 5.5vw;
 	}
-	/* END ME SECTION X LARGE SCREENS *****************************/
+	
+	q {
+		font-size: 2em;
+	}
+	
+	q span {
+		font-size: .9em;
+	}
+	/* END GENERAL SECTIONS STYLING X LARGE SCREENS ***********************/
 	
 	
 	
 	/* PROJECTS SECTION X LARGE SCREENS ***********************/
 	
 	/* END PROJECTS SECTION X LARGE SCREENS***********************/
+	
+	
+	
+	/* ME SECTION X LARGE SCREENS *****************************/
+	#meSection h1 {
+		margin-left: -30px;
+	}
+	/* END ME SECTION X LARGE SCREENS *****************************/
 	
 	
 	
