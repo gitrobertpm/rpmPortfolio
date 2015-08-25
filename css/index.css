@@ -91,13 +91,13 @@ hr {
 /* NAV ******************************/
 #navIconWrap {
 	position: fixed;
-	top: 5px;
-	left: 5px;
+	top: 0px;
+	left: 0px;
 	width: 50px;
 	height: 50px;
-	background-color: rgba(255,255,255,0.7);
+	background-color: rgba(255,255,255,0.9);
 	padding: 5px;
-	border-radius: 5px;
+	border-radius: 0px 0px 5px 0px;
 	z-index: 999;
 }
 
@@ -117,7 +117,7 @@ nav {
 	left: 0;
 	display: none;
 	padding-top: 15px;
-	background: rgba(0,0,0,0.9);
+	background: rgba(0,0,0,0.99);
 	z-index: 9999;
 }
 
@@ -195,9 +195,14 @@ nav cite {
 }
 
 #headerNav {
-	position: absolute;
-	top: 10px;
-	right: 50px;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	padding: 10px;
+	padding-left: 0px;
+	background-color: rgba(255,255,255,0.99);
+	border-radius: 0px 0px 0px 15px;
+	z-index: 999;
 }
 
 #headerNav a {
@@ -210,13 +215,6 @@ nav cite {
 #headerNav a:active, #headerNav a:focus, #headerNav a:hover {
 	font-style: normal;
 	color: rgb(172,15,15);
-}
-
-#headerTop {
-	position: fixed;
-	top: 10px;
-	right: 10px;
-	z-index: 999;
 }
 /* END NAV ******************/
 
@@ -296,7 +294,7 @@ section {
 section h1 {
 	font-family: 'Playfair Display', serif;
 	font-weight: 900;
-	font-style: italic;
+	/* font-style: italic; */
 	font-size: 15vw;
 	font-weight: 100;
 	margin: 50px auto;
@@ -333,6 +331,7 @@ section p {
 }
 
 #projectsTitle {
+	font-style: normal;
 	padding-top: 100px;
 	padding-bottom: 111px;
 	margin-top: 0;
@@ -420,16 +419,17 @@ section p {
 #meSection {
 	position: relative;
 	background: -webkit-linear-gradient(left, black 50%, white 50.01%);background: linear-gradient(to right, black 50%, white 50.01%);
-	height: 500px;
-	padding-top: 50px;
-	padding-bottom: 75px;
+	padding-top: 25px;
+	padding-bottom: 0px;
 	overflow: hidden;
 }
 
 #meSection .wrapper {
-	background: url('../img/yinyang2.png');
+	margin: auto;
+	/* background: url('../img/yinyang2.png');
 	background-repeat: no-repeat;
 	background-position: bottom;
+	background-size: 50px 50px; */
 	height: 100%;
 }
 
@@ -457,9 +457,40 @@ section p {
 	border-radius: 0px 30% 0px 30%;
 }
 
+.meText {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: black;
+	line-height: 27px;
+	background: white;
+	padding: 10px;
+	border-radius: 5px;
+	width: 95%;
+	margin: 25px auto;
+}
+
+.meText:nth-of-type(1) {
+	width: 150px;
+}
+
+.meText:nth-of-type(2) {
+	max-width: 600px;
+	/* margin-bottom: 100px; */
+}
+
+#yinyang2 {
+	width: 50px;
+	height: 50px;
+	margin: auto auto 25px;
+	background: url('../img/yinyang2.png');
+	background-repeat: no-repeat;
+	/* background-position: bottom; */
+	background-size: 50px 50px;
+}
+
 .meWrap {
 	padding-top: 10px;
-	padding-bottom: 35px;
+	/* padding-bottom: 35px; */
 }
 
 #meSection h2 ,
@@ -472,6 +503,7 @@ section p {
 #meBioSection {
 	background: black;
 	text-align: center;
+	padding-bottom: 0px;
 }
 
 #bioTitle {
@@ -493,14 +525,6 @@ section p {
 	margin-top: 0px;
 }
 
-#contactTitle {
-	color: white;
-	font-size: 3em;
-	cursor: default;
-	padding-top: 50px;
-	padding-bottom: 20px;
-}
-
 #bioTitle span {
 	font-style: italic;
 	text-shadow: 2px 1px 0px rgb(175,25,25);
@@ -511,36 +535,68 @@ section p {
 	height: 750px;
 }
 
-#detailsButton {
-	font-family: Impact, Charcoal, sans-serif !important;
-	color: rgb(100,175,255);
-	font-size: 2.5em;
-	margin-top: -15px;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	cursor: default;
-}
-
 .detailTitle {
-	color: rgb(65,65,50);
 	padding-top: 25px;
 	padding-bottom: 25px;
 	cursor: default;
-}
-
-.meWrap p {
-	font-family: 'Open Sans', sans-serif;
 }
 
 .bioText {
+	font-family: 'Open Sans', sans-serif;
 	color: ivory;
 	font-weight: 300;
 	line-height: 27px;
 }
 
 .happyFace {
-color: rgb(175,15,15);
+	color: rgb(175,15,15);
 	font-size: 2.5em;
+	margin-bottom: 50px;
+}
+
+#contact {
+	background: -webkit-linear-gradient(right, black 50%, white 50.01%);background: linear-gradient(to left, black 50%, white 50.01%);
+	margin-top: 75px;
+	padding-bottom: 75px;
+}
+
+#contactTitle {
+	font-size: 3em;
+	cursor: default;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	margin-left: -10px;
+}
+
+#contactTitle span {
+	color: white;
+}
+
+.contactText {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: black;
+	line-height: 27px;
+	background: white;
+	padding: 10px;
+	border-radius: 5px;
+	max-width: 275px;
+	margin: 25px auto;
+}
+
+.contactText:nth-of-type(2) {
+	max-width: 500px;
+}
+
+.refEmail {
+	color: black;
+	font-weight: bold;
+	font-size: 1.25em;
+	background: white;
+	padding: 10px;
+	border-radius: 5px;
+	max-width: 325px;
+	margin: 25px auto;
 }
 
 #contactGithubLink,
@@ -550,10 +606,6 @@ color: rgb(175,15,15);
 	height: 50px;
 	margin: auto;
 	display: none;
-}
-
-.refEmail {
-	color: rgb(100,175,255);
 }
 
 #meBioSection q {
@@ -582,17 +634,19 @@ color: rgb(175,15,15);
 }
 
 #skillSection h1 {
-	padding-top: 100px;
-	padding-bottom: 50px;
+	color: white;
+	background: black;
+	padding-top: 75px;
+	padding-bottom: 75px;
 	margin-top: 0px;
-	text-shadow: 2px 1px 0px rgb(100,175,255);
-	box-shadow: 0px 10px 15px rgba(0,0,0,0.7), 0px 10px 10px rgba(0,0,0,0.7) inset;
+	/* text-shadow: 2px 1px 0px rgb(100,175,255); */
+	/* box-shadow: 0px 10px 15px rgba(0,0,0,0.7), 0px 10px 10px rgba(0,0,0,0.7) inset; */
 }
 
-#skillSection h1 span{
+/* #skillSection h1 span{
 	color: rgb(255,245,245);
 	text-shadow: none;
-}
+} */
 
 #skillSection p {
 	font-family: 'Open Sans', sans-serif;
@@ -939,9 +993,9 @@ footer p:nth-of-type(1) {
 		margin-top: 0px;
 	}
 	
-	#headerNav {
+	/* #headerNav {
 		right: 65px;
-	}
+	} */
 	
 	#headerNav a {
 		font-size: 1.5em;
@@ -952,13 +1006,18 @@ footer p:nth-of-type(1) {
 	
 	
 	/* HEADER MEDIUM SCREENS ***********************/
-	header h1 {
-		font-size: 10vw;
-		margin-top: 100px;
-		margin-bottom: -40px;
+	header {
+		padding-bottom: 0px;
+		margin-bottom: -100px;
 	}
 	
-	#monitor {
+	header h1 {
+		font-size: 10vw;
+		margin-top: 75px;
+		margin-bottom: 0px;
+	}
+	
+	/* #monitor {
 		display: block;
 		position: absolute;
 		top: 75px;
@@ -968,12 +1027,12 @@ footer p:nth-of-type(1) {
 		background: url('../img/backgrounds/monitor.png');
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
-	}
+	} */
 	
 	.headerImg {
 		width: 150px; 
 		height: 245px;
-		margin-top: -15px;
+		margin-top: 25px;
 	}
 	
 	.headerTitle {
@@ -982,18 +1041,19 @@ footer p:nth-of-type(1) {
 	
 	.subTitle {
 		font-size: 1.25em;
-		margin: -10px auto 50px;
+		margin: 0px auto 50px;
 	}
 	
 	#color {
 		display: inline-block;
 		width: 250px;
 		height: 300px;
-		background: url('../img/backgrounds/colorPaper2.png');
+		background: url('../img/backgrounds/colorPaper.png');
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 		margin: -57.5px auto auto;
 		-webkit-filter: hue-rotate(45deg) drop-shadow(0px 10px 5px rgba(0,0,0,0.5));filter: hue-rotate(45deg) drop-shadow(0px 10px 5px rgba(0,0,0,0.5));
+		z-index: 99;
 	}
 	/* END HEADER MEDIUM SCREENS ***********************/
 	
@@ -1012,8 +1072,12 @@ footer p:nth-of-type(1) {
 	
 	/* ME SECTION MEDIUM SCREENS *****************************/
 	#meSection {
-		height: 525px;
+		/* height: 390px; */
 		margin-top: 50px;
+	}
+	
+	.refEmail {
+		letter-spacing: .75px;
 	}
 	/* END SECTION TWO MEDIUM SCREENS *****************************/
 	
@@ -1036,7 +1100,7 @@ footer p:nth-of-type(1) {
 	/* SKILL SECTION MEDIUM SCREENS ***********************/
 	#skillSection h1 {
 		padding-bottom: 111px;
-		box-shadow: 0px 10px 15px white, 0px 10px 10px rgba(0,0,0,0.7) inset;
+		/* box-shadow: 0px 10px 15px white; */
 	}
 	/* END SKILL SECTION MEDIUM SCREENS ***********************/
 	
@@ -1078,6 +1142,7 @@ footer p:nth-of-type(1) {
 	/* HEADER LARGE SCREENS ***********************/
 	header {
 		padding-bottom: 10px;
+		margin-bottom: auto;
 	}
 	
 	header h1 {
@@ -1087,9 +1152,12 @@ footer p:nth-of-type(1) {
 	}
 	
 	#monitor {
+		display: block;
+		position: absolute;
+		top: 75px;
 		left: 5%;
 		width: 90%;
-		height: 1150px;
+		height: 1100px;
 		background: url('../img/backgrounds/monitorLg.png');
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
@@ -1098,11 +1166,12 @@ footer p:nth-of-type(1) {
 	.headerImg {
 		width: 175px; 
 		height: 270px; 
+		margin-top: -25px;
 	}
 	
 	.headerTitle {
 		position: absolute;
-		bottom: 450px;
+		bottom: 350px;
 		left: 50%;
 		width: 300px; 
 		height: 50px;
@@ -1118,29 +1187,33 @@ footer p:nth-of-type(1) {
 	
 	.subTitle {
 		font-size: 1.5em;
-		margin: 50px auto;
+		margin: 25px auto 50px;
 	}
 	/* END HEADER LARGE SCREENS ***********************/
 	
 	
-	/* MANI DIV   LARGE SCREENS *************/
+	
+	/* MAIN DIV  LARGE SCREENS *************/
 	#mainDiv {
 		margin-top: 50px;
 	}
 	/* END LARGE SCREENS ****************/
 	
 	
+	
 	/* ME SECTION LARGE SCREENS *****************************/
-	#meSection {
-		height: 550px;
-	}
+	/* #meSection {
+		height: 420px;
+	} */
 	
 	#contactTitle,
 	#bioTitle {
 		font-size: 5em !important;
 	}
 	
-	.bioText {
+	.meText,
+	.bioText,
+	.contactText {
 		font-size: 1.25em;
 	}
 	
@@ -1225,7 +1298,7 @@ footer p:nth-of-type(1) {
 	}
 	
 	#skillExplanationDiv {
-		box-shadow: 0px 5px 5px rgba(255,255,255,0.7);
+		/* box-shadow: 0px 5px 5px rgba(255,255,255,0.7); */
 	}
 	
 	.skillExplanation {
@@ -1259,7 +1332,7 @@ footer p:nth-of-type(1) {
 		width: 350px;
 		margin-left: -175px;
 		-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);
-		box-shadow: -5px 0px 5px rgba(255,255,255,0.7);
+		/* box-shadow: -5px 0px 5px rgba(255,255,255,0.7); */
 	}
 	
 	#skillGauge {
@@ -1289,7 +1362,7 @@ footer p:nth-of-type(1) {
 		left: 50%;
 		width: 750px;
 		margin-left: -375px;
-		box-shadow: 0px 5px 5px rgba(255,255,255,0.7);
+		/* box-shadow: 0px 5px 5px rgba(255,255,255,0.7); */
 	}
 	/* END SKILL SECTION LARGE SCREENS ***********************/
 	
