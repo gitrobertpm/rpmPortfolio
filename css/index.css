@@ -250,13 +250,13 @@ header h1 {
 #devHand {
 	-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
 	-webkit-transition-duration: 1s;transition-duration: 1s;
-	-webkit-filter: saturate(9);filter: saturate(9);
+	-webkit-filter: saturate(2);filter: saturate(2);
 }
 
 #desHand {
 	-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
 	-webkit-transition-duration: 1s;transition-duration: 1s;
-	-webkit-filter: saturate(2);filter: saturate(2);
+	/* -webkit-filter: saturate(2);filter: saturate(2); */
 }
 
 .headerTitle {
@@ -332,21 +332,23 @@ section p {
 
 #projectsTitle {
 	font-style: normal;
+	color: white;
+	background: black;
 	padding-top: 100px;
 	padding-bottom: 111px;
-	margin-top: 0;
-	margin-bottom: 0;
-	box-shadow: 0px -5px 5px rgba(0,0,0,0.3) inset,  0px 15px 5px rgba(0,0,0,0.5) inset;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	/* box-shadow: 0px -5px 5px rgba(0,0,0,0.3) inset,  0px 15px 5px rgba(0,0,0,0.5) inset; */
 }
 
-#leoLedge {
+/* #leoLedge {
 	width: 110%;
-	height: 25px;
+	height: 15px;
 	transform: skewX(35deg);
 	margin-left: -15px;
 	margin-bottom: 75px;
-	box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
-}
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.3), 0px -10px 10px rgba(0,0,0,0.3) inset;
+} */
 
 .projGitImg {
 	display: block;
@@ -460,7 +462,7 @@ section p {
 	line-height: 27px;
 	background: white;
 	padding: 10px;
-	border-radius: 5px;
+	border-radius: 25px;
 	width: 90%;
 	margin: 25px auto;
 }
@@ -589,7 +591,7 @@ section p {
 	line-height: 27px;
 	background: white;
 	padding: 10px;
-	border-radius: 5px;
+	border-radius: 25px;
 	max-width: 275px;
 	margin: 25px auto;
 }
@@ -604,7 +606,7 @@ section p {
 	font-size: 1.25em;
 	background: white;
 	padding: 10px;
-	border-radius: 5px;
+	border-radius: 25px;
 	max-width: 325px;
 	margin: 25px auto;
 }
@@ -1124,7 +1126,7 @@ footer p:nth-of-type(1) {
 	/* HEADER LARGE SCREENS ***********************/
 	header {
 		padding-bottom: 10px;
-		margin-bottom: auto;
+		margin-bottom: 0px;
 	}
 	
 	header h1 {
@@ -1139,8 +1141,8 @@ footer p:nth-of-type(1) {
 		top: 75px;
 		left: 5%;
 		width: 90%;
-		height: 1100px;
-		background: url('../img/backgrounds/monitorLg.png');
+		height: 775px;
+		background: url('../img/backgrounds/monitorLg2.png');
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 	}
@@ -1454,7 +1456,7 @@ footer p:nth-of-type(1) {
 	#monitor {
 		left: 10%;
 		width: 80%;
-		height: 1160px;
+		height: 825px;
 	}
 	
 	#dev {
