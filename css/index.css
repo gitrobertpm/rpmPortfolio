@@ -460,7 +460,7 @@ section p {
 	line-height: 27px;
 	background: white;
 	padding: 10px;
-	border-radius: 5px;
+	border-radius: 25px;
 	width: 90%;
 	margin: 25px auto;
 }
@@ -589,7 +589,7 @@ section p {
 	line-height: 27px;
 	background: white;
 	padding: 10px;
-	border-radius: 5px;
+	border-radius: 25px;
 	max-width: 275px;
 	margin: 25px auto;
 }
@@ -604,7 +604,7 @@ section p {
 	font-size: 1.25em;
 	background: white;
 	padding: 10px;
-	border-radius: 5px;
+	border-radius: 25px;
 	max-width: 325px;
 	margin: 25px auto;
 }
