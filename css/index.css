@@ -332,21 +332,23 @@ section p {
 
 #projectsTitle {
 	font-style: normal;
+	color: white;
+	background: black;
 	padding-top: 100px;
 	padding-bottom: 111px;
-	margin-top: 0;
-	margin-bottom: 0;
-	box-shadow: 0px -5px 5px rgba(0,0,0,0.3) inset,  0px 15px 5px rgba(0,0,0,0.5) inset;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	/* box-shadow: 0px -5px 5px rgba(0,0,0,0.3) inset,  0px 15px 5px rgba(0,0,0,0.5) inset; */
 }
 
-#leoLedge {
+/* #leoLedge {
 	width: 110%;
 	height: 15px;
 	transform: skewX(35deg);
 	margin-left: -15px;
 	margin-bottom: 75px;
 	box-shadow: 0px 10px 10px rgba(0,0,0,0.3), 0px -10px 10px rgba(0,0,0,0.3) inset;
-}
+} */
 
 .projGitImg {
 	display: block;
@@ -1124,7 +1126,7 @@ footer p:nth-of-type(1) {
 	/* HEADER LARGE SCREENS ***********************/
 	header {
 		padding-bottom: 10px;
-		margin-bottom: auto;
+		margin-bottom: 50px;
 	}
 	
 	header h1 {
@@ -1448,7 +1450,7 @@ footer p:nth-of-type(1) {
 	}
 	
 	header h1 {
-		margin-bottom: -25px;
+		margin-bottom: -65px;
 	}
 	
 	#monitor {
