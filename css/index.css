@@ -586,7 +586,7 @@ color: rgb(175,15,15);
 	padding-bottom: 125px;
 	margin-top: 0px;
 	text-shadow: 2px 1px 0px rgb(100,175,255);
-	box-shadow: 0px 10px 15px white, 0px 10px 10px rgba(0,0,0,0.7) inset;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.7) inset;
 }
 
 #skillSection h1 span{
@@ -808,7 +808,11 @@ color: rgb(175,15,15);
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	color: rgb(175,15,15);
-	margin: 15px auto 20px;
+	margin: 15px auto 10px;
+}
+
+#codeSection h5 {
+	color: white;
 }
 
 #codeSection q span {
@@ -991,10 +995,6 @@ footer p:nth-of-type(1) {
 		margin: -57.5px auto auto;
 		-webkit-filter: hue-rotate(45deg) drop-shadow(0px 10px 5px rgba(0,0,0,0.5));filter: hue-rotate(45deg) drop-shadow(0px 10px 5px rgba(0,0,0,0.5));
 	}
-	
-	#flowerImg {
-		top: 275px;
-	}
 	/* END HEADER MEDIUM SCREENS ***********************/
 	
 	
@@ -1034,16 +1034,14 @@ footer p:nth-of-type(1) {
 	
 	
 	/* SKILL SECTION MEDIUM SCREENS ***********************/
-	
+	#skillSection h1 {
+		box-shadow: 0px 10px 15px white, 0px 10px 10px rgba(0,0,0,0.7) inset;
+	}
 	/* END SKILL SECTION MEDIUM SCREENS ***********************/
 	
 	
 	
 	/* CODE FOR A HAPPY LIFE SECTION MEDIUM SCREENS ******************************/
-	#codeSection p {
-		margin-bottom: 50px;
-	}
-
 	code {
 		font-size: 1.5em;
 		line-height: 30px;
@@ -1221,8 +1219,16 @@ footer p:nth-of-type(1) {
 	/*  SKILL SECTION LARGE SCREENS ***********************/
 	#skillSection {
 		position: relative;
-		height: 1600px;
+		height: 1750px;
 		background-attachment: fixed !important;
+	}
+	
+	#skillExplanationDiv {
+		box-shadow: 0px 5px 5px rgba(255,255,255,0.7);
+	}
+	
+	.skillExplanation {
+		font-size: 1.25em;
 	}
 
 	.aboutWrap {
@@ -1247,7 +1253,7 @@ footer p:nth-of-type(1) {
 	
 	#skills {
 		position: absolute;
-		top: 700px;
+		top: 850px;
 		left: 50%;
 		width: 350px;
 		margin-left: -175px;
@@ -1282,6 +1288,7 @@ footer p:nth-of-type(1) {
 		left: 50%;
 		width: 750px;
 		margin-left: -375px;
+		box-shadow: 0px 5px 5px rgba(255,255,255,0.7);
 	}
 	/* END SKILL SECTION LARGE SCREENS ***********************/
 	
@@ -1291,7 +1298,6 @@ footer p:nth-of-type(1) {
 	#codeSection p {
 		font-size: 1.5em;
 		max-width: 700px;
-		margin-bottom: 75px;
 	}
 
 	code {
@@ -1443,7 +1449,11 @@ footer p:nth-of-type(1) {
 	
 	/* SKILL SECTION X LARGE SCREENS ***********************/
 	#skillSection {
-		height: 1700px;
+		height: 1850px;
+	}
+	
+	#skills {
+		top: 850px;
 	}
 	/* END SKILL SECTION X LARGE SCREENS***********************/
 	
