@@ -583,7 +583,7 @@ color: rgb(175,15,15);
 
 #skillSection h1 {
 	padding-top: 100px;
-	padding-bottom: 125px;
+	padding-bottom: 50px;
 	margin-top: 0px;
 	text-shadow: 2px 1px 0px rgb(100,175,255);
 	box-shadow: 0px 10px 10px rgba(0,0,0,0.7) inset;
@@ -1035,6 +1035,7 @@ footer p:nth-of-type(1) {
 	
 	/* SKILL SECTION MEDIUM SCREENS ***********************/
 	#skillSection h1 {
+		padding-bottom: 111px;
 		box-shadow: 0px 10px 15px white, 0px 10px 10px rgba(0,0,0,0.7) inset;
 	}
 	/* END SKILL SECTION MEDIUM SCREENS ***********************/
