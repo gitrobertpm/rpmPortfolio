@@ -119,7 +119,6 @@ for (var i = 0; i < document.getElementsByClassName("projGitImg").length; i++) {
 
 // SET SKILL IMAGES
 set("skillSection", "url('img/backgrounds/rpmBackground.jpg')", "block", "100% auto", "repeat");
-set("skillTitle", "url('img/backgrounds/rpmBackground.jpg')", "block", "contain", "repeat");
 set("skillLogo0", "url('img/misc_icons/html.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
 set("skillLogo1", "url('img/misc_icons/css.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
 set("skillLogo2", "url('img/misc_icons/js.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
