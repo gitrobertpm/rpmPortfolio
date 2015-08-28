@@ -256,7 +256,7 @@ header h1 {
 #desHand {
 	-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
 	-webkit-transition-duration: 1s;transition-duration: 1s;
-	/* -webkit-filter: saturate(2);filter: saturate(2); */
+	-webkit-filter: saturate(2);filter: saturate(2);
 }
 
 .headerTitle {
@@ -301,13 +301,6 @@ section h1 {
 	cursor: default;
 }
 
-section h1 span {
-	font-family: Impact, Charcoal, sans-serif;
-	font-style: normal;
-	color: rgb(45,45,45);
-	text-shadow: 2px 2px 0px rgb(125,75,75);
-}
-
 section a {
 	margin: 50px auto 10px;
 }
@@ -332,23 +325,19 @@ section p {
 
 #projectsTitle {
 	font-style: normal;
-	color: white;
-	background: black;
+	letter-spacing: 5px;
+	text-indent:47.5px;
+	background: -webkit-linear-gradient(right, black 50%, white 50.01%);background: linear-gradient(to left, black 50%, white 50.01%);
 	padding-top: 100px;
 	padding-bottom: 111px;
 	margin-top: 0px;
 	margin-bottom: 50px;
-	/* box-shadow: 0px -5px 5px rgba(0,0,0,0.3) inset,  0px 15px 5px rgba(0,0,0,0.5) inset; */
 }
 
-/* #leoLedge {
-	width: 110%;
-	height: 15px;
-	transform: skewX(35deg);
-	margin-left: -15px;
-	margin-bottom: 75px;
-	box-shadow: 0px 10px 10px rgba(0,0,0,0.3), 0px -10px 10px rgba(0,0,0,0.3) inset;
-} */
+#projectsTitle  span {
+	color: white;
+	margin-left:10px;
+}
 
 .projGitImg {
 	display: block;
@@ -1053,6 +1042,15 @@ footer p:nth-of-type(1) {
 	
 	
 	/* PROJECTS MEDIUM SCREENS ***********************/
+	#projectsTitle {
+		letter-spacing: 7.5px;
+		text-indent: 65px;
+	}
+
+	#projectsTitle  span {
+		margin-left: 15px;
+	}
+	
 	.projectImg {
 		width: 300px;
 		height: 250px;
@@ -1185,7 +1183,16 @@ footer p:nth-of-type(1) {
 	
 	
 	
-	/* PROJECTS SECTION LARGE SCREENS ***********************/	
+	/* PROJECTS SECTION LARGE SCREENS ***********************/
+	#projectsTitle {
+		letter-spacing: 10px;
+		text-indent: 85px;
+	}
+
+	#projectsTitle  span {
+		margin-left: 15px;
+	}
+	
 	.projectMainDes {
 		font-size: 1.25em;
 		line-height: 30px;
