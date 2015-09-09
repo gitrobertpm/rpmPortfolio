@@ -101,6 +101,7 @@ set("contactLinkedinLink", "url('img/linkedin.png')", "inline-block", "50px 50px
 // SET PROJECTS IMAGES
 //set("projectsTitle", "url('img/backgrounds/leoSm.jpg')", "block", "350px 100%", "repeat");
 //set("leoLedge", "url('img/backgrounds/leoLedge.jpg')", "block", "250px 100%", "repeat");
+set("projectImg1", "url('img/projectImgs/eching.png')", "block", "100% 100%", "no-repeat");
 set("projectImg2", "url('img/projectImgs/gallery.png')", "block", "100% 100%", "no-repeat");
 set("projectImg3", "url('img/projectImgs/odom.png')", "block", "100% 100%", "no-repeat");
 set("projectImg4", "url('img/projectImgs/tabe.png')", "block", "100% 100%", "no-repeat");
@@ -143,6 +144,7 @@ function linker(idee, locale) {
 };
 
 // CHANGE PROJECT IMAGE DIVS TO LINKS
+linker("projectImg1", "http://gitrobertpm.github.io/eching");
 linker("projectImg2", "http://gitrobertpm.github.io/gianni");
 linker("projectImg3", "http://gitrobertpm.github.io/galacticodom");
 linker("projectImg4", "http://thefreshesthigh.com");
