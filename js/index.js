@@ -178,11 +178,12 @@ function hoverColor(idee, idee2, color, color2) {
 };
 
 // CHANGE LINK COLOR ON PROJECT IMAGE HOVER
-hoverColor("projectImg2", "projectLink2", "rgb(200,0,0)", "rgb(125,0,0)");
-hoverColor("projectImg3", "projectLink3", "rgb(200,0,0)", "rgb(125,0,0)");
-hoverColor("projectImg4", "projectLink4", "rgb(200,0,0)", "rgb(125,0,0)");
-hoverColor("projectImg5", "projectLink5", "rgb(200,0,0)", "rgb(125,0,0)");
-hoverColor("projectImg6", "projectLink6", "rgb(200,0,0)", "rgb(125,0,0)");
+hoverColor("projectImg1", "projectLink1", "rgb(225,15,15)", "rgb(25,25,25)");
+hoverColor("projectImg2", "projectLink2", "rgb(225,15,15)", "rgb(25,25,25)");
+hoverColor("projectImg3", "projectLink3", "rgb(225,15,15)", "rgb(25,25,25)");
+hoverColor("projectImg4", "projectLink4", "rgb(225,15,15)", "rgb(25,25,25)");
+hoverColor("projectImg5", "projectLink5", "rgb(225,15,15)", "rgb(25,25,25)");
+hoverColor("projectImg6", "projectLink6", "rgb(225,15,15)", "rgb(25,25,25)");
 
 
 
