@@ -12,8 +12,14 @@
 	</head>
 	<body>
 		<div id="wrapper">
-			<div id="monitor"></div>
+			
 			<header>
+				<div id="navBackground"></div>
+				<div id="whoIAmDiv">
+					<h2>Robert Manolis</h2>
+					<p>Thoughtful Web Development and Design</p>
+					<p>robertpm@robertpm.com</p>
+				</div>
 				<div id="headerNav">
 					<a href="#projectSection" id="headerProjects" class="headerLink">Projects</a>
 					<a href="#meSection" id="headerMe" class="headerLink">ME</a>
@@ -37,43 +43,38 @@
 					<cite>Babe Ruth, <span>Ball Player</span></cite>
 				</nav>
 				<div id="closeNav"><p>X</p></div>
-				<h1><span>R</span>obert <span>M</span>anolis</h1>
-				<div id="flowerBox">
-					<div id="petal_8" class="petal"></div>
-					<div id="petal_7" class="petal"></div>
-					<div id="petal_6" class="petal"></div>
-					<div id="petal_5" class="petal"></div>
-					<div id="petal_4" class="petal"></div>
-					<div id="petal_3" class="petal"></div>
-					<div id="petal_2" class="petal"></div>
-					<div id="petal_1" class="petal"></div>
-					<div id="flowerBulb">
-						<div id="yinyang"></div>
-					</div>
-				</div>
-				<img src="img/devHand2.png" alt="Hand of a Developer" id="devHand" class="headerImg">
-				<img src="img/desHand2.png" alt="Hand of a Designer" id="desHand" class="headerImg">
-				<br>
-				<img src="img/developer.png" alt="Developer" id="dev" class="headerTitle">
-				<img src="img/designer2.png" alt="Designer" id="des" class="headerTitle">
-				<p class="subTitle">Thinking outside the box</p>
-				<div id="color"></div>
 			</header>
 			<div id="mainDiv">
+				<div id="tools">
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>Illustrator</li>
+						<li>GitHub</li>
+						<li>jQuery</li>
+						<li>Angular</li>
+						<li>Node.js</li>
+						<li>AJAX</li>
+						<li>Photoshop</li>
+						<li>Notepad++</li>
+						<li>Development Tools</li>
+					</ul>
+				</div>
 				<section id="projectSection">
 					<div class="wrapper">
-						<h1 id="projectsTitle">Pro<span>jects</span></h1>
-						<p class="projectMainDes">I created these projects using Notepad ++, HTML, CSS, JavaScript, Adobe Illustrator, and GitHub.</p>
-						<p class="projectMainDes">Built with responsive design, mobile first, cross-browser and cross-platform in mind.</p>
-						<img src="img/devices.png" alt="Mobile, Tablet, Desktop devices" id="devices2">
+						<h1 id="projectsTitle">Pr<span>o</span>jects</h1>
+						<div id="projBox1"  class="projBox">
+							<p class="projectMainDes"><span>~ Mobile First ~</span> <span>~ Responsive ~</span> <span>~ Cross Browser ~</span></p>
+							<img src="img/devices.png" alt="Mobile, Tablet, Desktop devices" id="devices2">
+						</div>
 						<br>
+						<div id="projBox2" class="projBox">
+							<p class="projectMainDes">Click on the GitHub icon to view the source code</p>
+							<a href="https://github.com/gitrobertpm/rpmPortfolio" target="_blank" class="projGitImg"></a>
+						</div>
 						<br>
-						<p class="projectMainDes">The source code for each of these projects can be viewed by clicking on the corresponding GitHub icon.</p>
-						<p class="projectMainDes">The source code for this site may be viewed here</p>
-						<a href="https://github.com/gitrobertpm/rpmPortfolio" target="_blank" class="projGitImg"></a>
-						<br>
-						<br>
-						<hr>
+						<hr id="mainProjHr">
 						<!-- <div class="projectWrap">
 							<a href="http://gitrobertpm.github.io/galacticodom" target="_blank" id="projectLink4" class="projectLink projectLinkLeft">Coming Soon</a>
 							<div id="projectImg1" class="projectImg projectImgRight"></div>
@@ -82,43 +83,72 @@
 						<div class="projectWrap">
 							<a href="http://gitrobertpm.github.io/eching" target="_blank" id="projectLink1" class="projectLink projectLinkLeft">E Ching</a>
 							<div id="projectImg1" class="projectImg projectImgLeft"></div>
-							<p class="projectDes projectDesRight"><span>August ~ Septemeber, 2015</span><br><br>A digital simulation of the preeminent form of ancient divination. A CSS sprite animation gives life to coins you can flip with the press of a button. JavaScript produces three random coin flips, which are added up to make one of the six broken or unbroken lines of an I Ching Hexagram.  After the hexagram is built randomly, one line at a time, one of sixty four possible hexagrams is displayed along with a reading of that hexagram.<a href="https://github.com/gitrobertpm/eching" target="_blank" class="projGitImg"></a></p>
+							<p class="projectDes projectDesRight"><span>August ~ Septemeber, 2015</span><br><br><span>Just for fun</span><br><br>Enjoy a free digital simulation of the preeminent form of ancient divination.<br><br>A CSS sprite animation gives life to coins you can flip with the press of a button.  Choose from a selection of coins, follow the prompts, and recieve some relevant sage-like advice.<br><br>JavaScript produces 3 * 6 random coin flips, which builds a random I Ching Hexagram, and displays a reading of that hexagram.<a href="https://github.com/gitrobertpm/eching" target="_blank" class="projGitImg"></a></p>
 						</div>
 						<hr>
 						<div class="projectWrap">
 							<a href="http://gitrobertpm.github.io/galacticodom" target="_blank" id="projectLink3" class="projectLink projectLinkRight">Galactic Odometer</a>
 							<div id="projectImg3" class="projectImg projectImgRight"></div>
-							<p class="projectDes projectDesLeft"><span>2014 ~ 2015</span><br><br>A JavaScript powered odometer that calculates and outputs a running count of the space miles you've traveled as the Earth and galaxy orbit.  Complete with cool animations and a space-styled explanation.<a href="https://github.com/gitrobertpm/galacticodom" target="_blank" class="projGitImg"></a></p>
+							<p class="projectDes projectDesLeft"><span>2014 ~ 2015</span><br><br><span>Just for fun</span><br><br>This JavaScript powered odometer calculates and outputs a running count of the space miles you've traveled as the Earth and galaxy orbit.<br><br>Just enter your date of birth, and watch the vast miles fly by.<br><br>Complete with cool animations and a space-styled explanation of the math and speeds involved in coming up with milage approximation.<a href="https://github.com/gitrobertpm/galacticodom" target="_blank" class="projGitImg"></a></p>
 						</div>
 						<hr>
 						<div class="projectWrap">
 							<a href="http://gitrobertpm.github.io/the-decid-o-matic-5000/" target="_blank" id="projectLink6" class="projectLink projectLinkLeft">The Decid-o-matic 5000</a>
 							<div id="projectImg6" class="projectImg projectImgLeft"></div>
-							<p class="projectDes projectDesRight"><span>2014 ~ 2015</span><br><br>An interesting question and answer machine.  Think of something you are considering doing, answer a few simple questions and enjoy a little JavaScript powered advice.  Designed entirely with CSS.  No images.<a href="https://github.com/gitrobertpm/the-decid-o-matic-5000" target="_blank" class="projGitImg"></a></p>
+							<p class="projectDes projectDesRight"><span>2014 ~ 2015</span><br><br><span>Just for fun</span><br><br>This stylized question and answer machine is designed to help with those difficult decisions.<br><br>Think of something you are considering doing, answer a few simple questions and enjoy a little JavaScript powered advice.<br><br>Programmed with JavaScript, but designed entirely with CSS.  No images.<a href="https://github.com/gitrobertpm/the-decid-o-matic-5000" target="_blank" class="projGitImg"></a></p>
 						</div>
 						<hr>
 						<div class="projectWrap">
 							<a href="http://thewayunraveled.com" target="_blank" id="projectLink5" class="projectLink projectLinkRight">The Way Unraveled</a>
 							<div id="projectImg5" class="projectImg projectImgRight"></div>
-							<p class="projectDes projectDesLeft"><span>March, 2015</span><br><br>My playful code laboratory, with an emphasis on inspiration and compassion.  Plenty of CSS and JavaScript DOM manipulation experiments in here.<a href="https://github.com/gitrobertpm/thewayunraveled" target="_blank" class="projGitImg"></a></p>
+							<p class="projectDes projectDesLeft"><span>March, 2015</span><br><br><span>First portfolio and code laboratory</span><br><br>I built this to be something of a portfolio, and also a sort of inspirational website with an emphasis on compassion and creativity.<br><br>I didn't quite pull it off, but there were plenty of CSS and JavaScript DOM manipulation experiments in here.<a href="https://github.com/gitrobertpm/thewayunraveled" target="_blank" class="projGitImg"></a></p>
 						</div>
 						<hr>
 						<div class="projectWrap">
 							<a href="http://thefreshesthigh.com" target="_blank" id="projectLink4" class="projectLink projectLinkLeft">The Freshest High</a>
 							<div id="projectImg4" class="projectImg projectImgLeft"></div>
-							<p class="projectDes projectDesRight"><span>June, 2015</span><br><br>Product description website for new start-up, TABE, LLC.  A playful animation adds levity to the home page.  Original icons and photographs assist a detailed and slide-styled explanation of product info, instructions, and safety information.<a href="https://github.com/gitrobertpm/newTabe" target="_blank" class="projGitImg"></a></p>
+							<p class="projectDes projectDesRight"><span>June, 2015</span><br><br><span>Pro bono gig</span><br><br>This is a product description website for new start-up, TABE, LLC.<br><br>A playful animation adds levity to the home page.  Original icons and photographs assist a detailed and slide-styled explanation of product info, instructions, and safety information.<br><br>I built this for free just to gain experience and addd to my portfolio.<a href="https://github.com/gitrobertpm/newTabe" target="_blank" class="projGitImg"></a></p>
 						</div>
 						<hr>
 						<div class="projectWrap">
 							<a href="http://gitrobertpm.github.io/gianni" target="_blank" id="projectLink2" class="projectLink projectLinkRight">Gianni's Gallery</a>
 							<div id="projectImg2" class="projectImg projectImgRight"></div>
-							<p class="projectDes projectDesLeft"><span>July, 2015 ~ Present</span><br><br>A simple but elegant horizontal display with an auto scroll feature set to Pachebel's Cannon. Art by Gianni Vardanega, 3D Lighting Artist.  Doesn't work in mobile or tablet yet.<a href="https://github.com/gitrobertpm/gianni" target="_blank" class="projGitImg"></a></p>
+							<p class="projectDes projectDesLeft"><span>July, 2015 ~ Present</span><br><br><span>Ongoing side project</span><br><br>The purpose of this project is to experiment with possible horizontal display options, and to showcase some portfolio art for my brother, the recent college grad.<br><br>It's meant to simulate the experience of walking through a gallery.  JavaScript powers a neat auto scroll feature that can be set to Pachebel's Cannon.<br><br>Art by Gianni Vardanega, 3D Lighting Artist.  Doesn't work in mobile or tablet yet.<a href="https://github.com/gitrobertpm/gianni" target="_blank" class="projGitImg"></a></p>
 						</div>
 						<hr>
 						<q><span>Those who were seen dancing<br>were thought to be insane<br>by those who could not hear the music</span></q>
 						<cite>Friedrich Nietzsche, <span>Philosopher</span></cite>
+						<hr>
 					</div>
 				</section>
+				
+				<div id="subHeaderWrap">
+					<div id="monitor"></div>
+					<div id="subHeader">
+						<h1>ONE-OF-A-KIND</h1>
+						<div id="flowerBox">
+							<div id="petal_8" class="petal"></div>
+							<div id="petal_7" class="petal"></div>
+							<div id="petal_6" class="petal"></div>
+							<div id="petal_5" class="petal"></div>
+							<div id="petal_4" class="petal"></div>
+							<div id="petal_3" class="petal"></div>
+							<div id="petal_2" class="petal"></div>
+							<div id="petal_1" class="petal"></div>
+							<div id="flowerBulb">
+								<div id="yinyang"></div>
+							</div>
+						</div>
+						<img src="img/devHand2.png" alt="Hand of a Developer" id="devHand" class="headerImg">
+						<img src="img/desHand2.png" alt="Hand of a Designer" id="desHand" class="headerImg">
+						<br>
+						<img src="img/developer.png" alt="Developer" id="dev" class="headerTitle">
+						<img src="img/designer2.png" alt="Designer" id="des" class="headerTitle">
+						<p class="subTitle">Thinking outside the box</p>
+						<div id="color"></div>
+					</div>
+				</div>
+				
 				<section id="meSection">
 					<div class="wrapper">
 						<h1>M<span>E</span></h1>
@@ -133,7 +163,7 @@
 						<h2 id="myDealTitle">MY<span> DEAL</span></h2>
 						<p class="myDealText">I am a Front-End Web Developer and Designer.</p>
 						<img src="img/devices.png" alt="Mobile, Tablet, Desktop devices" id="devices">
-						<p class="note">Mobile, Responsive, Cross-Browser, Cross-Platform</p>
+						<p class="note">Mobile, Responsive, Cross-Browser</p>
 						<br>
 						<p class="myDealText">I do this because I love it.</p>
 						<p class="myDealText">I'm all about making things better, safer, and more enjoyable.</p>
@@ -162,13 +192,14 @@
 						<h1 id="skillTitle">My Skills</h1>
 						<div id="skillExplanationDiv">
 							<img src="img/devices.png" alt="Mobile, Tablet, Desktop devices" id="devices3">
-							<p class="skillExplanation">In the summer of 2014, I began studying Front-End Web Development.</p>
-							<p class="skillExplanation">I now have a firm grasp on responsive design, mobile-first design, cross-browser and cross-platform compatibility, and the basic skills needed to build a functioning website.</p>
-							<p class="skillExplanation">With HTML 5, I can write semantic markup.</p>
-							<p class="skillExplanation">With CSS and Illustrator, I am able to create styles that can match any mood or theme.</p>
-							<p class="skillExplanation">With JavaScript, I can manipulate the DOM, create programs, and add functionality and user interaction in a number of creative ways.</p>
-							<p class="skillExplanation">Currently, I am expanding my skills by studying development tools and more of the tools in the JavaScript family, (Angular, Node, AJAX, jQuery).</p>
-							<p class="skillExplanation">My plan is to further my education by learning server-side technologies, (the MEAN stack) and 3D in the browser, (HTML Canvas, three.js, WebGL).</p>
+							<p class="skillExplanation">I am a perpetual student of Front-End Web Development, programming, and general web technologies.</p>
+							<p class="skillExplanation">At present I have a firm grasp on mobile-first, responsive design, cross-browser compatibility, and the basic skills needed to build a functioning website.  And I'm always learning more.</p>
+							<p class="skillExplanation">With HTML 5, I aim to write semantic markup.</p>
+							<p class="skillExplanation">With CSS and Illustrator, I aim to create styles that can match any mood or theme.</p>
+							<p class="skillExplanation">With JavaScript, I manipulate the DOM, create programs, and add functionality and user interaction in a number of creative ways.</p>
+							<p class="skillExplanation">With GitHub, I manage development and version control, as well as multi-device testing.</p>
+							<p class="skillExplanation">Currently, I am studying development tools and more of the tools in the JavaScript family (Angular, Node, AJAX, jQuery, Express, NPM, MongoDB).</p>
+							<p class="skillExplanation">My plan is to further my education by learning server-side technologies (the MEAN stack), CMS, frameworks, preprocessors, and task runners (Wordpress, LESS, Grunt), and 3D in the browser, (HTML Canvas, three.js, WebGL).</p>
 						</div>
 						<div id="skills">
 							<div id="skillsKey">
