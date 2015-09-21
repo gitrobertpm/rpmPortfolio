@@ -5,35 +5,40 @@ var width = window.innerWidth;
 var height = window.innerHeight;
 
 
-// SLIDE IN HEADIMAGES AND TITLE
-window.onload = function() {
+// SLIDE IN SUBHEADER IMAGES
+document.getElementById("subHeaderWrap").addEventListener("DOMMouseScroll", subHeader);
+document.getElementById("subHeaderWrap").addEventListener("mousewheel", subHeader);
+document.getElementById("subHeaderWrap").addEventListener("wheel", subHeader);
+document.getElementById("subHeaderWrap").addEventListener("touchstart", subHeader);
+
+function subHeader() {
 	setTimeout(function(){ document.getElementById("devHand").style.msTransform = "translate(0px, 0px)"; }, 0);
 	setTimeout(function(){ document.getElementById("devHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
 	setTimeout(function(){ document.getElementById("devHand").style.transform = "translate(0px, 0px)"; }, 0);
 	setTimeout(function(){ document.getElementById("desHand").style.msTransform = "translate(0px, 0px)"; }, 0);
 	setTimeout(function(){ document.getElementById("desHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
 	setTimeout(function(){ document.getElementById("desHand").style.transform = "translate(0px, 0px)"; }, 0);
+	
+	// ADD ANIMATIONS TO HEADER FLOWER FOR LARGER SCREENS
+	if (width > 999) {
+		document.getElementById("flowerBox").style.webkitAnimation = "petalGlow 5s ease .5s forwards";
+		document.getElementById("flowerBox").style.animation = "petalGlow 5s ease .5s forwards";
+		document.getElementById("petal_2").style.webkitAnimation = "petal_2 .5s ease .5s forwards";
+		document.getElementById("petal_2").style.animation = "petal_2 .5s ease .5s forwards";
+		document.getElementById("petal_3").style.webkitAnimation = "petal_3 1s ease .5s forwards";
+		document.getElementById("petal_3").style.animation = "petal_3 1s ease .5s forwards";
+		document.getElementById("petal_4").style.webkitAnimation = "petal_4 1.5s ease .5s forwards";
+		document.getElementById("petal_4").style.animation = "petal_4 1.5s ease .5s forwards";
+		document.getElementById("petal_5").style.webkitAnimation = "petal_5 2s ease .5s forwards";
+		document.getElementById("petal_5").style.animation = "petal_5 2s ease .5s forwards";
+		document.getElementById("petal_6").style.webkitAnimation = "petal_6 2.5s ease .5s forwards";
+		document.getElementById("petal_6").style.animation = "petal_6 2.5s ease .5s forwards";
+		document.getElementById("petal_7").style.webkitAnimation = "petal_7 3s ease .5s forwards";
+		document.getElementById("petal_7").style.animation = "petal_7 3s ease .5s forwards";
+		document.getElementById("petal_8").style.webkitAnimation = "petal_8 3.5s ease .5s forwards";
+		document.getElementById("petal_8").style.animation = "petal_8 3.5s ease .5s forwards";
+	}
 };
-
-// ADD ANIMATIONS TO HEADER FLOWER FOR LARGER SCREENS
-if (width > 999) {
-	document.getElementById("flowerBox").style.webkitAnimation = "petalGlow 5s ease .5s forwards";
-	document.getElementById("flowerBox").style.animation = "petalGlow 5s ease .5s forwards";
-	document.getElementById("petal_2").style.webkitAnimation = "petal_2 .5s ease .5s forwards";
-	document.getElementById("petal_2").style.animation = "petal_2 .5s ease .5s forwards";
-	document.getElementById("petal_3").style.webkitAnimation = "petal_3 1s ease .5s forwards";
-	document.getElementById("petal_3").style.animation = "petal_3 1s ease .5s forwards";
-	document.getElementById("petal_4").style.webkitAnimation = "petal_4 1.5s ease .5s forwards";
-	document.getElementById("petal_4").style.animation = "petal_4 1.5s ease .5s forwards";
-	document.getElementById("petal_5").style.webkitAnimation = "petal_5 2s ease .5s forwards";
-	document.getElementById("petal_5").style.animation = "petal_5 2s ease .5s forwards";
-	document.getElementById("petal_6").style.webkitAnimation = "petal_6 2.5s ease .5s forwards";
-	document.getElementById("petal_6").style.animation = "petal_6 2.5s ease .5s forwards";
-	document.getElementById("petal_7").style.webkitAnimation = "petal_7 3s ease .5s forwards";
-	document.getElementById("petal_7").style.animation = "petal_7 3s ease .5s forwards";
-	document.getElementById("petal_8").style.webkitAnimation = "petal_8 3.5s ease .5s forwards";
-	document.getElementById("petal_8").style.animation = "petal_8 3.5s ease .5s forwards";
-}
 
 
 // OPEN NAV
