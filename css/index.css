@@ -378,7 +378,7 @@ section p {
 	height: 150px;
 	margin: auto auto 100px;
 	background: ivory;
-	border-top: 5px solid rgb(50,50,50);
+	border-top: 4px solid rgb(50,50,50);
 	border-bottom: 5px solid rgb(50,50,50);
 	overflow-X: auto;
 	overflow-Y: hidden;

@@ -107,7 +107,7 @@ for (var i = 0; i < projectWrap.length; i++) {
 projectWrap[0].style.display = "block";
 pmP[0].style.opacity = "1";
 
-// PROJECT SLIDER LINKS
+// PROJECT SLIDER MENU LINKS
 for (var i = 0; i < pmP.length; i++) {
 	pmP[i].onclick = function(event) {
 		for (var i = 0; i < pmP.length; i++) {
@@ -116,6 +116,10 @@ for (var i = 0; i < pmP.length; i++) {
 			if (event.target == pmP[i]) {
 				projectWrap[i].style.display = "block";
 				pmP[i].style.opacity = "1";
+				var projLink = "index.html#" + projectWrap[i].querySelector("a").getAttribute("id");
+				if (width < 500) {
+					window.location.href = projLink;
+				}
 			}
 		}
 	};
@@ -192,7 +196,7 @@ for(var i = 0; i < projectImageDiv.length; i++) {
 	projectImageDiv[i].style.cursor = "pointer";
 }
 
-// SHORTCUT FUNCTION FOR CHANGE THE LINK COLOR ON PROJECT IMAGE HOVER
+// SHORTCUT FUNCTION FOR CHANGING THE LINK COLOR ON PROJECT IMAGE HOVER
 function hoverColor(idee, idee2, color, color2) {
 	var setIdee = document.getElementById(idee);
 	var setIdee2 = document.getElementById(idee2);
