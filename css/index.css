@@ -84,7 +84,7 @@ hr {
 	width: 90%;
 	max-width: 1000px;
 	border-radius: 50%;
-	margin: 50px auto 75px;
+	margin: 25px auto 35px;
 }
 /* END GENERAL *********************************/
 
@@ -373,10 +373,13 @@ section p {
 
 #projectMenuWrap {
 	position: relative;
-	width: 95%;
+	width: 100%;
 	max-width: 1200px;
 	height: 150px;
 	margin: auto auto 100px;
+	background: ivory;
+	border-top: 5px solid rgb(50,50,50);
+	border-bottom: 5px solid rgb(50,50,50);
 	overflow-X: auto;
 	overflow-Y: hidden;
 	white-space: nowrap;
@@ -398,6 +401,7 @@ section p {
 	background-repeat: no-repeat !important;
 	opacity: .7;
 	-webkit-transition-duration: .5s;transition-duration: .5s;
+	cursor: pointer;
 }
 
 .projectMainDes {
