@@ -108,9 +108,9 @@ hr {
 	padding: 5px;
 	padding-top: 10px;
 	border-bottom: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
 	border-radius: 0px 0px 2.5px 0px;
 	z-index: 999;
-	-webkit-filter: drop-shadow(2px 0px 2px rgba(0,0,0,0.5));filter: drop-shadow(2px 0px 2px rgba(0,0,0,0.5));
 }
 
 #navIcon {
@@ -223,9 +223,9 @@ nav cite {
 	padding-top: 5px;
 	background-color: rgba(255,255,250,0.9);
 	border-bottom: 1px solid lightgrey;
+	border-left: 1px solid lightgrey;
 	border-radius: 0px 0px 0px 2.5px;
-	z-index: 999;
-	-webkit-filter: drop-shadow(-2px 0px 2px rgba(0,0,0,0.5));filter: drop-shadow(-2px 0px 2px rgba(0,0,0,0.5));
+	z-index: 9999;
 }
 
 #headerNav a {
@@ -459,7 +459,6 @@ section p {
 #projectArrow1 {
 	margin-left: -75px;
 	-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);
-	-webkit-filter: drop-shadow(2px -2px 2px rgba(0,0,0,0.3));filter: drop-shadow(2px -2px 2px rgba(0,0,0,0.3));
 }
 
 #projectArrow1 p {
@@ -472,7 +471,6 @@ section p {
 #projectArrow2 {
 	margin-left: 35px;
 	-webkit-transform: rotate(-135deg);-ms-transform: rotate(-135deg);transform: rotate(-135deg);
-	-webkit-filter: drop-shadow(2px -2px 2px rgba(0,0,0,0.3));filter: drop-shadow(2px -2px 2px rgba(0,0,0,0.3));
 }
 
 #projectArrow2 p {
@@ -500,13 +498,11 @@ section p {
 	width: 225px;
 	height: 175px;
 	margin: 10px auto;
-	/* margin-top: 60px; */
 	-webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));
 }
 
 .projectDes {
 	font-family: 'Open Sans', sans-serif;
-	/* font-weight: 600; */
 	width: 90%;
 	max-width: 500px;
 	line-height: 27px;
