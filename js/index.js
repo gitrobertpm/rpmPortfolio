@@ -281,67 +281,69 @@ document.getElementById("codeSection").addEventListener("touchstart", codeSlide)
 var codeTag = document.getElementsByTagName("code");
 
 function codeSlide() {
-	setTimeout(function(){ codeTag[0].style.msTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ codeTag[0].style.webkitTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ codeTag[0].style.transform = "translate(0px, 0px)"; }, 0);
-	
-	setTimeout(function(){ codeTag[1].style.msTransform = "translate(0px, 0px)"; }, 100);
-	setTimeout(function(){ codeTag[1].style.webkitTransform = "translate(0px, 0px)"; }, 100);
-	setTimeout(function(){ codeTag[1].style.transform = "translate(0px, 0px)"; }, 100);
-	
-	setTimeout(function(){ codeTag[2].style.msTransform = "translate(0px, 0px)"; }, 200);
-	setTimeout(function(){ codeTag[2].style.webkitTransform = "translate(0px, 0px)"; }, 200);
-	setTimeout(function(){ codeTag[2].style.transform = "translate(0px, 0px)"; }, 200);
-	
-	setTimeout(function(){ codeTag[3].style.msTransform = "translate(0px, 0px)"; }, 300);
-	setTimeout(function(){ codeTag[3].style.webkitTransform = "translate(0px, 0px)"; }, 300);
-	setTimeout(function(){ codeTag[3].style.transform = "translate(0px, 0px)"; }, 300);
-	
-	setTimeout(function(){ codeTag[4].style.msTransform = "translate(0px, 0px)"; }, 400);
-	setTimeout(function(){ codeTag[4].style.webkitTransform = "translate(0px, 0px)"; }, 400);
-	setTimeout(function(){ codeTag[4].style.transform = "translate(0px, 0px)"; }, 400);
-	
-	setTimeout(function(){ codeTag[5].style.msTransform = "translate(0px, 0px)"; }, 500);
-	setTimeout(function(){ codeTag[5].style.webkitTransform = "translate(0px, 0px)"; }, 500);
-	setTimeout(function(){ codeTag[5].style.transform = "translate(0px, 0px)"; }, 500);
-	
-	setTimeout(function(){ codeTag[6].style.msTransform = "translate(0px, 0px)"; }, 600);
-	setTimeout(function(){ codeTag[6].style.webkitTransform = "translate(0px, 0px)"; }, 600);
-	setTimeout(function(){ codeTag[6].style.transform = "translate(0px, 0px)"; }, 600);
-	
-	setTimeout(function(){ codeTag[7].style.msTransform = "translate(0px, 0px)"; }, 700);
-	setTimeout(function(){ codeTag[7].style.webkitTransform = "translate(0px, 0px)"; }, 700);
-	setTimeout(function(){ codeTag[7].style.transform = "translate(0px, 0px)"; }, 700);
-	
-	setTimeout(function(){ codeTag[8].style.msTransform = "translate(0px, 0px)"; }, 800);
-	setTimeout(function(){ codeTag[8].style.webkitTransform = "translate(0px, 0px)"; }, 800);
-	setTimeout(function(){ codeTag[8].style.transform = "translate(0px, 0px)"; }, 800);
-	
-	setTimeout(function(){ codeTag[9].style.msTransform = "translate(0px, 0px)"; }, 900);
-	setTimeout(function(){ codeTag[9].style.webkitTransform = "translate(0px, 0px)"; }, 900);
-	setTimeout(function(){ codeTag[9].style.transform = "translate(0px, 0px)"; }, 900);
-	
-	setTimeout(function(){ codeTag[10].style.msTransform = "translate(0px, 0px)"; }, 1000);
-	setTimeout(function(){ codeTag[10].style.webkitTransform = "translate(0px, 0px)"; }, 1000);
-	setTimeout(function(){ codeTag[10].style.transform = "translate(0px, 0px)"; }, 1000);
-	
-	setTimeout(function(){ codeTag[11].style.msTransform = "translate(0px, 0px)"; }, 1100);
-	setTimeout(function(){ codeTag[11].style.webkitTransform = "translate(0px, 0px)"; }, 1100);
-	setTimeout(function(){ codeTag[11].style.transform = "translate(0px, 0px)"; }, 1100);
-	
-	setTimeout(function(){ codeTag[12].style.msTransform = "translate(0px, 0px)"; }, 1200);
-	setTimeout(function(){ codeTag[12].style.webkitTransform = "translate(0px, 0px)"; }, 1200);
-	setTimeout(function(){ codeTag[12].style.transform = "translate(0px, 0px)"; }, 1200);
-	
-	setTimeout(function(){ codeTag[13].style.msTransform = "translate(0px, 0px)"; }, 1300);
-	setTimeout(function(){ codeTag[13].style.webkitTransform = "translate(0px, 0px)"; }, 1300);
-	setTimeout(function(){ codeTag[13].style.transform = "translate(0px, 0px)"; }, 1300);
-	
-	setTimeout(function(){ codeTag[14].style.msTransform = "translate(0px, 0px)"; }, 1400);
-	setTimeout(function(){ codeTag[14].style.webkitTransform = "translate(0px, 0px)"; }, 1400);
-	setTimeout(function(){ codeTag[14].style.transform = "translate(0px, 0px)"; }, 1400);
-	
-	setTimeout(function(){ document.getElementById("quoteDiv").style.msTransform = "translate(0px, 0px)"; }, 1500);
-	setTimeout(function(){ document.getElementById("quoteDiv").style.webkitTransform = "translate(0px, 0px)"; }, 1500);
-	setTimeout(function(){ document.getElementById("quoteDiv").style.transform = "translate(0px, 0px)"; }, 1500);
+	if (width > 999) {
+		setTimeout(function(){ codeTag[0].style.msTransform = "translate(0px, 0px)"; }, 0);
+		setTimeout(function(){ codeTag[0].style.webkitTransform = "translate(0px, 0px)"; }, 0);
+		setTimeout(function(){ codeTag[0].style.transform = "translate(0px, 0px)"; }, 0);
+		
+		setTimeout(function(){ codeTag[1].style.msTransform = "translate(0px, 0px)"; }, 100);
+		setTimeout(function(){ codeTag[1].style.webkitTransform = "translate(0px, 0px)"; }, 100);
+		setTimeout(function(){ codeTag[1].style.transform = "translate(0px, 0px)"; }, 100);
+		
+		setTimeout(function(){ codeTag[2].style.msTransform = "translate(0px, 0px)"; }, 200);
+		setTimeout(function(){ codeTag[2].style.webkitTransform = "translate(0px, 0px)"; }, 200);
+		setTimeout(function(){ codeTag[2].style.transform = "translate(0px, 0px)"; }, 200);
+		
+		setTimeout(function(){ codeTag[3].style.msTransform = "translate(0px, 0px)"; }, 300);
+		setTimeout(function(){ codeTag[3].style.webkitTransform = "translate(0px, 0px)"; }, 300);
+		setTimeout(function(){ codeTag[3].style.transform = "translate(0px, 0px)"; }, 300);
+		
+		setTimeout(function(){ codeTag[4].style.msTransform = "translate(0px, 0px)"; }, 400);
+		setTimeout(function(){ codeTag[4].style.webkitTransform = "translate(0px, 0px)"; }, 400);
+		setTimeout(function(){ codeTag[4].style.transform = "translate(0px, 0px)"; }, 400);
+		
+		setTimeout(function(){ codeTag[5].style.msTransform = "translate(0px, 0px)"; }, 500);
+		setTimeout(function(){ codeTag[5].style.webkitTransform = "translate(0px, 0px)"; }, 500);
+		setTimeout(function(){ codeTag[5].style.transform = "translate(0px, 0px)"; }, 500);
+		
+		setTimeout(function(){ codeTag[6].style.msTransform = "translate(0px, 0px)"; }, 600);
+		setTimeout(function(){ codeTag[6].style.webkitTransform = "translate(0px, 0px)"; }, 600);
+		setTimeout(function(){ codeTag[6].style.transform = "translate(0px, 0px)"; }, 600);
+		
+		setTimeout(function(){ codeTag[7].style.msTransform = "translate(0px, 0px)"; }, 700);
+		setTimeout(function(){ codeTag[7].style.webkitTransform = "translate(0px, 0px)"; }, 700);
+		setTimeout(function(){ codeTag[7].style.transform = "translate(0px, 0px)"; }, 700);
+		
+		setTimeout(function(){ codeTag[8].style.msTransform = "translate(0px, 0px)"; }, 800);
+		setTimeout(function(){ codeTag[8].style.webkitTransform = "translate(0px, 0px)"; }, 800);
+		setTimeout(function(){ codeTag[8].style.transform = "translate(0px, 0px)"; }, 800);
+		
+		setTimeout(function(){ codeTag[9].style.msTransform = "translate(0px, 0px)"; }, 900);
+		setTimeout(function(){ codeTag[9].style.webkitTransform = "translate(0px, 0px)"; }, 900);
+		setTimeout(function(){ codeTag[9].style.transform = "translate(0px, 0px)"; }, 900);
+		
+		setTimeout(function(){ codeTag[10].style.msTransform = "translate(0px, 0px)"; }, 1000);
+		setTimeout(function(){ codeTag[10].style.webkitTransform = "translate(0px, 0px)"; }, 1000);
+		setTimeout(function(){ codeTag[10].style.transform = "translate(0px, 0px)"; }, 1000);
+		
+		setTimeout(function(){ codeTag[11].style.msTransform = "translate(0px, 0px)"; }, 1100);
+		setTimeout(function(){ codeTag[11].style.webkitTransform = "translate(0px, 0px)"; }, 1100);
+		setTimeout(function(){ codeTag[11].style.transform = "translate(0px, 0px)"; }, 1100);
+		
+		setTimeout(function(){ codeTag[12].style.msTransform = "translate(0px, 0px)"; }, 1200);
+		setTimeout(function(){ codeTag[12].style.webkitTransform = "translate(0px, 0px)"; }, 1200);
+		setTimeout(function(){ codeTag[12].style.transform = "translate(0px, 0px)"; }, 1200);
+		
+		setTimeout(function(){ codeTag[13].style.msTransform = "translate(0px, 0px)"; }, 1300);
+		setTimeout(function(){ codeTag[13].style.webkitTransform = "translate(0px, 0px)"; }, 1300);
+		setTimeout(function(){ codeTag[13].style.transform = "translate(0px, 0px)"; }, 1300);
+		
+		setTimeout(function(){ codeTag[14].style.msTransform = "translate(0px, 0px)"; }, 1400);
+		setTimeout(function(){ codeTag[14].style.webkitTransform = "translate(0px, 0px)"; }, 1400);
+		setTimeout(function(){ codeTag[14].style.transform = "translate(0px, 0px)"; }, 1400);
+		
+		setTimeout(function(){ document.getElementById("quoteDiv").style.msTransform = "translate(0px, 0px)"; }, 1500);
+		setTimeout(function(){ document.getElementById("quoteDiv").style.webkitTransform = "translate(0px, 0px)"; }, 1500);
+		setTimeout(function(){ document.getElementById("quoteDiv").style.transform = "translate(0px, 0px)"; }, 1500);
+	}
 };

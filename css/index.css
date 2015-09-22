@@ -400,12 +400,6 @@ section p {
 	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
-#projectMenu p:active, #projectMenu p:focus, #projectMenu p:hover {
-	opacity: 1;
-	font-style: italic;
-	-webkit-transition-duration: .5s;transition-duration: .5s;
-}
-
 .projectMainDes {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
@@ -425,12 +419,6 @@ section p {
 	height: 35px;
 	margin: 10px auto;
 	opacity: .7;
-	-webkit-filter: drop-shadow(0px 2px 1px rgba(0,0,0,0.9));filter: drop-shadow(0px 2px 1px rgba(0,0,0,0.9));
-}
-
-.projGitImg:active, .projGitImg:focus, .projGitImg:hover {
-	-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);
-	opacity: 1;
 }
 
 #mainProjHr {
@@ -448,11 +436,6 @@ section p {
 	border-color: transparent transparent grey grey;
 	z-index: 999;
 	cursor: pointer;
-	-webkit-transition-duration: .5s;transition-duration: .5s;
-}
-
-.projectArrow:active, .projectArrow:focus, .projectArrow:hover {
-	border-color: transparent transparent rgb(50,50,50) rgb(50,50,50);
 	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
@@ -498,7 +481,6 @@ section p {
 	width: 225px;
 	height: 175px;
 	margin: 10px auto;
-	-webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));
 }
 
 .projectDes {
@@ -518,18 +500,6 @@ section p {
 	border-bottom: 1px solid rgb(25,25,25);
 	padding-left: 5px;
 	padding-right: 5px;
-}
-
-.projectWrap:active > .projectDesRight, .projectWrap:focus > .projectDesRight, .projectWrap:hover > .projectDesRight {
-	background: rgba(255,255,245,0.9);
-	box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
-	-webkit-transition-duration: .5s;transition-duration: .5s;
-}
-
-.projectWrap:active > .projectDesLeft, .projectWrap:focus > .projectDesLeft, .projectWrap:hover > .projectDesLeft {
-	background: rgba(255,255,245,0.9);
-	box-shadow: -5px 5px 5px rgba(0,0,0,0.2);
-	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 /* END PROJECTS SECTION***********************/
 
@@ -1052,7 +1022,7 @@ section p {
 }
 
 #codeSection h5 {
-	color: white;
+	display: none;
 }
 
 #codeSection q span {
@@ -1073,8 +1043,6 @@ code {
 	text-align: left;
 	line-height: 20px;
 	color: ivory;
-	-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
-	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
 .italic {
@@ -1104,11 +1072,6 @@ code {
 
 .threeIndents {
 	text-indent: 45px;
-}
-
-#quoteDiv {
-	-webkit-transform: translate(750px, 0px);-ms-transform: translate(750px, 0px);transform: translate(750px, 0px);
-	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 /* END CODE SECTION *************/
 
@@ -1413,12 +1376,28 @@ footer p:nth-of-type(1) {
 		
 	}
 	
+	#projectMenu p:active, #projectMenu p:focus, #projectMenu p:hover {
+		opacity: 1;
+		font-style: italic;
+		-webkit-transition-duration: .5s;transition-duration: .5s;
+	}
+	
+	.projGitImg:active, .projGitImg:focus, .projGitImg:hover {
+		-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);
+		opacity: 1;
+	}
+	
 	#projectArrow1 {
 		margin-left: -475px;
 	}
 
 	#projectArrow2 {
 		margin-left: 445px;
+	}
+	
+	.projectArrow:active, .projectArrow:focus, .projectArrow:hover {
+		border-color: transparent transparent rgb(50,50,50) rgb(50,50,50);
+		-webkit-transition-duration: .5s;transition-duration: .5s;
 	}
 	
 	.projBox {
@@ -1470,6 +1449,7 @@ footer p:nth-of-type(1) {
 		left: 50%;
 		width: 420px;
 		height: 345px;
+		-webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));
 	}
 	
 	.projectImgLeft {
@@ -1488,7 +1468,6 @@ footer p:nth-of-type(1) {
 		line-height: 30px;
 		text-align: left;
 		padding: 10px;
-		/* text-indent: 125px; */
 		max-width: 420px;
 	}
 	
@@ -1502,6 +1481,18 @@ footer p:nth-of-type(1) {
 	
 	.projectDesLeft {
 		margin-left: -450px;
+	}
+	
+	.projectWrap:active > .projectDesRight, .projectWrap:focus > .projectDesRight, .projectWrap:hover > .projectDesRight {
+		background: rgba(255,255,245,0.9);
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+		-webkit-transition-duration: .5s;transition-duration: .5s;
+	}
+
+	.projectWrap:active > .projectDesLeft, .projectWrap:focus > .projectDesLeft, .projectWrap:hover > .projectDesLeft {
+		background: rgba(255,255,245,0.9);
+		box-shadow: -5px 5px 5px rgba(0,0,0,0.2);
+		-webkit-transition-duration: .5s;transition-duration: .5s;
 	}
 	/* END PROJECTS SECTION LARGE SCREENS***********************/
 	
@@ -1667,6 +1658,11 @@ footer p:nth-of-type(1) {
 	
 	
 	/* CODE FOR A HAPPY LIFE SECTION LARGE SCREENS ******************************/
+	#codeSection h5 {
+		display: block;
+		color: white;
+	}
+	
 	#codeSection p {
 		font-size: 1.5em;
 		max-width: 700px;
@@ -1674,6 +1670,8 @@ footer p:nth-of-type(1) {
 
 	code {
 		margin-left: 10%;
+		-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
+		-webkit-transition-duration: .5s;transition-duration: .5s;
 	}
 
 	.oneIndent {
@@ -1692,6 +1690,7 @@ footer p:nth-of-type(1) {
 		position: absolute;
 		top: 55%;
 		right: 7.5%;
+		-webkit-transform: translate(750px, 0px);-ms-transform: translate(750px, 0px);transform: translate(750px, 0px);
 		-webkit-transition-duration: .5s;transition-duration: .5s;
 	}
 	
