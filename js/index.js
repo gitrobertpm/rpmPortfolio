@@ -116,9 +116,10 @@ for (var i = 0; i < pmP.length; i++) {
 			if (event.target == pmP[i]) {
 				projectWrap[i].style.display = "block";
 				pmP[i].style.opacity = "1";
-				//var projLink = "index.html#" + projectWrap[i].querySelector("a").getAttribute("id");
 				if (width < 500) {
 					window.location.href = "index.html#projectMenu";
+				} else {
+					window.location.href = "index.html#projectsTitle";
 				}
 			}
 		}
