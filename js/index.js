@@ -5,41 +5,6 @@ var width = window.innerWidth;
 var height = window.innerHeight;
 
 
-// SLIDE IN SUBHEADER IMAGES
-document.getElementById("subHeaderWrap").addEventListener("DOMMouseScroll", subHeader);
-document.getElementById("subHeaderWrap").addEventListener("mousewheel", subHeader);
-document.getElementById("subHeaderWrap").addEventListener("wheel", subHeader);
-document.getElementById("subHeaderWrap").addEventListener("touchstart", subHeader);
-
-function subHeader() {
-	setTimeout(function(){ document.getElementById("devHand").style.msTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("devHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("devHand").style.transform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("desHand").style.msTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("desHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("desHand").style.transform = "translate(0px, 0px)"; }, 0);
-	
-	// ADD ANIMATIONS TO HEADER FLOWER FOR LARGER SCREENS
-	if (width > 999) {
-		document.getElementById("flowerBox").style.webkitAnimation = "petalGlow 5s ease .5s forwards";
-		document.getElementById("flowerBox").style.animation = "petalGlow 5s ease .5s forwards";
-		document.getElementById("petal_2").style.webkitAnimation = "petal_2 .5s ease .5s forwards";
-		document.getElementById("petal_2").style.animation = "petal_2 .5s ease .5s forwards";
-		document.getElementById("petal_3").style.webkitAnimation = "petal_3 1s ease .5s forwards";
-		document.getElementById("petal_3").style.animation = "petal_3 1s ease .5s forwards";
-		document.getElementById("petal_4").style.webkitAnimation = "petal_4 1.5s ease .5s forwards";
-		document.getElementById("petal_4").style.animation = "petal_4 1.5s ease .5s forwards";
-		document.getElementById("petal_5").style.webkitAnimation = "petal_5 2s ease .5s forwards";
-		document.getElementById("petal_5").style.animation = "petal_5 2s ease .5s forwards";
-		document.getElementById("petal_6").style.webkitAnimation = "petal_6 2.5s ease .5s forwards";
-		document.getElementById("petal_6").style.animation = "petal_6 2.5s ease .5s forwards";
-		document.getElementById("petal_7").style.webkitAnimation = "petal_7 3s ease .5s forwards";
-		document.getElementById("petal_7").style.animation = "petal_7 3s ease .5s forwards";
-		document.getElementById("petal_8").style.webkitAnimation = "petal_8 3.5s ease .5s forwards";
-		document.getElementById("petal_8").style.animation = "petal_8 3.5s ease .5s forwards";
-	}
-};
-
 
 // OPEN NAV
 document.getElementById("navIcon").onclick = function() {
@@ -54,6 +19,8 @@ document.getElementById("closeNav").onclick = function() {
 	document.getElementById("closeNav").style.display = "none";
 	document.getElementsByTagName("nav")[0].style.display = "none";
 };
+
+
 
 // NAV IN HOUSE LINKS THAT NEED THE NAV TO CLOSE
 document.getElementById("navProjectsLink").onclick = function() {
@@ -73,6 +40,7 @@ document.getElementById("backToTop").onclick = function() {
 	document.getElementById("closeNav").style.display = "none";
 	document.getElementsByTagName("nav")[0].style.display = "none";
 };
+
 
 
 // SHORTCUT FUNCIOTN FOR GRABBING ID AND SETTING BACKGROUND AND DISPLAY VALUES
@@ -115,30 +83,90 @@ set("projectImg6", "url('img/projectImgs/decider.png')", "block", "100% 100%", "
 
 
 
-// GITHUB IMAGES FOR PROJECT SOURCE CODE LINKS
-for (var i = 0; i < document.getElementsByClassName("projGitImg").length; i++) {
-	document.getElementsByClassName("projGitImg")[i].style.background = "url('img/misc_icons/github.jpg')";
-	document.getElementsByClassName("projGitImg")[i].style.backgroundSize = "100% 100%";
+// PROJECT SLIDERS STUFF
+var projectWrap = document.getElementsByClassName("projectWrap");
+var projectMenu = document.getElementById("projectMenu");
+var pmP
+
+// DYNAMICALLY CREATE PROJECT MENU
+for (var i = 0; i < projectWrap.length; i++) {
+	// GET PROJECT TITLE AND ADD IT TO PROJECT MENU
+	projectWrap[i].style.display = "none";
+	var p = document.createElement("p");
+	var projectTitle = projectWrap[i].querySelector("a").textContent;
+	var node = document.createTextNode(projectTitle);
+	p.appendChild(node);
+	projectMenu.appendChild(p);
+	
+	// GET PROJECT IMAGE AND ADD IT TO MENU
+	pmP = projectMenu.querySelectorAll("p");
+	pmP[i].style.background = projectWrap[i].querySelector("div").style.backgroundImage;
 }
 
+// SET INITIAL STATE FOR PROJECTS SECTION
+projectWrap[0].style.display = "block";
+pmP[0].style.opacity = "1";
+
+// PROJECT SLIDER LINKS
+for (var i = 0; i < pmP.length; i++) {
+	pmP[i].onclick = function(event) {
+		for (var i = 0; i < pmP.length; i++) {
+			projectWrap[i].style.display = "none";
+			pmP[i].style.opacity = ".7";
+			if (event.target == pmP[i]) {
+				projectWrap[i].style.display = "block";
+				pmP[i].style.opacity = "1";
+			}
+		}
+	};
+}
+
+// PROJECTS NEXT ARROW
+document.getElementById("projectArrow2").onclick = function() {
+	for (var i = 0; i < projectWrap.length; i++) {
+		if (projectWrap[i].style.display == "block") {
+			projectWrap[i].style.display = "none";
+			pmP[i].style.opacity = ".7";
+			if (projectWrap[i] == projectWrap[projectWrap.length - 1]) {
+				projectWrap[0].style.display = "block";
+				pmP[0].style.opacity = "1";
+				break;
+			} else {
+				projectWrap[i + 1].style.display = "block";
+				pmP[i + 1].style.opacity = "1";
+				break;
+			}
+		}
+	}
+};
+
+// PROJECTS PREVIOUS ARROW
+document.getElementById("projectArrow1").onclick = function() {
+	for (var i = 0; i < projectWrap.length; i++) {
+		if (projectWrap[i].style.display == "block") {
+			projectWrap[i].style.display = "none";
+			pmP[i].style.opacity = ".7";
+			if (projectWrap[i] == projectWrap[0]) {
+				projectWrap[projectWrap.length - 1].style.display = "block";
+				pmP[pmP.length - 1].style.opacity = "1";
+				break;
+			} else {
+				projectWrap[i - 1].style.display = "block";
+				pmP[i - 1].style.opacity = "1";
+				break;
+			}
+		}
+	}
+};
 
 
-// SET SKILL IMAGES
-set("skillSection", "url('img/backgrounds/rpmBackground.jpg')", "block", "100% auto", "repeat");
-set("skillLogo0", "url('img/misc_icons/html.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
-set("skillLogo1", "url('img/misc_icons/css.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
-set("skillLogo2", "url('img/misc_icons/js.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
-set("skillLogo3", "url('img/misc_icons/ai.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
-set("skillLogo4", "url('img/misc_icons/ps.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
-set("skillLogo5", "url('img/misc_icons/github.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
-set("skillLogo6", "url('img/misc_icons/jq.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
-set("skillLogo7", "url('img/misc_icons/ajax.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
-set("skillLogo8", "url('img/misc_icons/node.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
-set("skillLogo9", "url('img/misc_icons/angular.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
-set("skillLogo10", "url('img/misc_icons/php.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
-set("skillLogo11", "url('img/misc_icons/mysql.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
 
-
+// GITHUB IMAGES FOR PROJECT SOURCE CODE LINKS
+var projGitImg = document.getElementsByClassName("projGitImg");
+for (var i = 0; i < projGitImg.length; i++) {
+	projGitImg[i].style.background = "url('img/misc_icons/github.png')";
+	projGitImg[i].style.backgroundSize = "100% 100%";
+}
 
 // SHORTCUT FUNCTION FOR TURNING PROJECT IMAGE DIVS INTO LINKS
 function linker(idee, locale) {
@@ -164,8 +192,6 @@ for(var i = 0; i < projectImageDiv.length; i++) {
 	projectImageDiv[i].style.cursor = "pointer";
 }
 
-
-
 // SHORTCUT FUNCTION FOR CHANGE THE LINK COLOR ON PROJECT IMAGE HOVER
 function hoverColor(idee, idee2, color, color2) {
 	var setIdee = document.getElementById(idee);
@@ -189,6 +215,60 @@ hoverColor("projectImg3", "projectLink3", "rgb(225,15,15)", "rgb(25,25,25)");
 hoverColor("projectImg4", "projectLink4", "rgb(225,15,15)", "rgb(25,25,25)");
 hoverColor("projectImg5", "projectLink5", "rgb(225,15,15)", "rgb(25,25,25)");
 hoverColor("projectImg6", "projectLink6", "rgb(225,15,15)", "rgb(25,25,25)");
+
+
+
+// SLIDE IN SUBHEADER IMAGES
+document.getElementById("subHeaderWrap").addEventListener("DOMMouseScroll", subHeader);
+document.getElementById("subHeaderWrap").addEventListener("mousewheel", subHeader);
+document.getElementById("subHeaderWrap").addEventListener("wheel", subHeader);
+document.getElementById("subHeaderWrap").addEventListener("touchstart", subHeader);
+
+function subHeader() {
+	setTimeout(function(){ document.getElementById("devHand").style.msTransform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ document.getElementById("devHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ document.getElementById("devHand").style.transform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ document.getElementById("desHand").style.msTransform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ document.getElementById("desHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ document.getElementById("desHand").style.transform = "translate(0px, 0px)"; }, 0);
+	
+	// ADD ANIMATIONS TO HEADER FLOWER FOR LARGER SCREENS
+	if (width > 999) {
+		document.getElementById("flowerBox").style.webkitAnimation = "petalGlow 5s ease .5s forwards";
+		document.getElementById("flowerBox").style.animation = "petalGlow 5s ease .5s forwards";
+		document.getElementById("petal_2").style.webkitAnimation = "petal_2 .5s ease .5s forwards";
+		document.getElementById("petal_2").style.animation = "petal_2 .5s ease .5s forwards";
+		document.getElementById("petal_3").style.webkitAnimation = "petal_3 1s ease .5s forwards";
+		document.getElementById("petal_3").style.animation = "petal_3 1s ease .5s forwards";
+		document.getElementById("petal_4").style.webkitAnimation = "petal_4 1.5s ease .5s forwards";
+		document.getElementById("petal_4").style.animation = "petal_4 1.5s ease .5s forwards";
+		document.getElementById("petal_5").style.webkitAnimation = "petal_5 2s ease .5s forwards";
+		document.getElementById("petal_5").style.animation = "petal_5 2s ease .5s forwards";
+		document.getElementById("petal_6").style.webkitAnimation = "petal_6 2.5s ease .5s forwards";
+		document.getElementById("petal_6").style.animation = "petal_6 2.5s ease .5s forwards";
+		document.getElementById("petal_7").style.webkitAnimation = "petal_7 3s ease .5s forwards";
+		document.getElementById("petal_7").style.animation = "petal_7 3s ease .5s forwards";
+		document.getElementById("petal_8").style.webkitAnimation = "petal_8 3.5s ease .5s forwards";
+		document.getElementById("petal_8").style.animation = "petal_8 3.5s ease .5s forwards";
+	}
+};
+
+
+
+// SET SKILL IMAGES
+set("skillSection", "url('img/backgrounds/rpmBackground.jpg')", "block", "100% auto", "repeat");
+set("skillLogo0", "url('img/misc_icons/html.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
+set("skillLogo1", "url('img/misc_icons/css.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
+set("skillLogo2", "url('img/misc_icons/js.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
+set("skillLogo3", "url('img/misc_icons/ai.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
+set("skillLogo4", "url('img/misc_icons/ps.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
+set("skillLogo5", "url('img/misc_icons/github.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
+set("skillLogo6", "url('img/misc_icons/jq.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
+set("skillLogo7", "url('img/misc_icons/ajax.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
+set("skillLogo8", "url('img/misc_icons/node.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
+set("skillLogo9", "url('img/misc_icons/angular.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
+set("skillLogo10", "url('img/misc_icons/php.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
+set("skillLogo11", "url('img/misc_icons/mysql.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
 
 
 
