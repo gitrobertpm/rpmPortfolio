@@ -1331,8 +1331,9 @@ footer p:nth-of-type(1) {
 	header {
 		background: url('../img/backgrounds/rain2.jpg');
 		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
+		background-size: 100% 420px;
+		background-position: center top;
+		background-attachment: fixed;
 	}
 	
 	#whoIAmDiv {
