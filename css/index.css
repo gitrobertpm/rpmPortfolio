@@ -1522,6 +1522,30 @@ footer p:nth-of-type(1) {
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 	}
+	
+	#monitorShadow,
+	#monitorShadow2 {
+		display: block;
+		position: absolute;
+		bottom: 25px;
+		left: 50%;
+		
+		height: 65px;
+		border-radius: 25px;
+	}
+	
+	#monitorShadow {
+		background: radial-gradient(rgba(50,50,50,0.7), transparent, transparent);
+		margin-left: -60%;
+		width: 120%;
+	}
+	
+	#monitorShadow2 {
+		background: linear-gradient(to right, transparent, rgba(50,50,50,0.7), transparent);
+		margin-left: -35%;
+		width: 70%;
+		box-shadow: 
+	}
 
 	.headerImg {
 		width: 175px; 
