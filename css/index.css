@@ -1397,6 +1397,10 @@ footer p:nth-of-type(1) {
 	
 	
 	/* PROJECTS SECTION LARGE SCREENS ***********************/
+	#tools ul {
+		background: url('../img/backgrounds/methodBG.jpg');
+	}
+	
 	#projectsTitle {
 		padding-top: 100px;
 	}
