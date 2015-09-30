@@ -570,12 +570,14 @@ section p {
 	-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
 	-webkit-transition-duration: 1s;transition-duration: 1s;
 	-webkit-filter: saturate(2);filter: saturate(2);
+	opacity: 0;
 }
 
 #desHand {
 	-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
 	-webkit-transition-duration: 1s;transition-duration: 1s;
 	-webkit-filter: saturate(2);filter: saturate(2);
+	opacity: 0;
 }
 
 .headerTitle {

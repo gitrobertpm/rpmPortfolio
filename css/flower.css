@@ -9,16 +9,16 @@
 }
 
 @-webkit-keyframes petalGlow {
-	0% {background: transparent; box-shadow: none; -webkit-transform: rotateZ(0deg); transform: rotateZ(0deg);}
+	0% {opacity: 0; background: transparent; box-shadow: none; -webkit-transform: rotateZ(0deg); transform: rotateZ(0deg);}
 	80% {background: transparent; box-shadow: none;}
 	90% {background: rgba(255,0,0,0.3); box-shadow: 1px 1px 2px rgb(100,175,255), 1px -1px 2px rgb(100,175,255), -1px 1px 2px rgb(100,175,255), -1px -1px 2px rgb(100,175,255);}
-	100% {background: rgba(255,0,0,0.3); box-shadow: 1px 1px 2px rgb(100,175,255), 1px -1px 2px rgb(100,175,255), -1px 1px 2px rgb(100,175,255), -1px -1px 2px rgb(100,175,255); -webkit-transform: rotateZ(360deg); transform: rotateZ(360deg); -webkit-filter: drop-shadow(0px 7px 7px rgba(0,0,0,0.5));filter: drop-shadow(0px 7px 7px rgba(0,0,0,0.5));}
+	100% {opacity: 1; background: rgba(255,0,0,0.3); box-shadow: 1px 1px 2px rgb(100,175,255), 1px -1px 2px rgb(100,175,255), -1px 1px 2px rgb(100,175,255), -1px -1px 2px rgb(100,175,255); -webkit-transform: rotateZ(360deg); transform: rotateZ(360deg); -webkit-filter: drop-shadow(0px 7px 7px rgba(0,0,0,0.5));filter: drop-shadow(0px 7px 7px rgba(0,0,0,0.5));}
 }
 @keyframes petalGlow {
-	0% {background: transparent; box-shadow: none; -webkit-transform: rotateZ(0deg); transform: rotateZ(0deg);}
+	0% {opacity: 0; background: transparent; box-shadow: none; -webkit-transform: rotateZ(0deg); transform: rotateZ(0deg);}
 	80% {background: transparent; box-shadow: none;}
 	90% {background: rgba(255,0,0,0.3); box-shadow: 1px 1px 2px rgb(100,175,255), 1px -1px 2px rgb(100,175,255), -1px 1px 2px rgb(100,175,255), -1px -1px 2px rgb(100,175,255);}
-	100% {background: rgba(255,0,0,0.3); box-shadow: 1px 1px 2px rgb(100,175,255), 1px -1px 2px rgb(100,175,255), -1px 1px 2px rgb(100,175,255), -1px -1px 2px rgb(100,175,255); -webkit-transform: rotateZ(360deg); transform: rotateZ(360deg); -webkit-filter: drop-shadow(0px 7px 7px rgba(0,0,0,0.5));filter: drop-shadow(0px 7px 7px rgba(0,0,0,0.5));}
+	100% {opacity: 1;background: rgba(255,0,0,0.3); box-shadow: 1px 1px 2px rgb(100,175,255), 1px -1px 2px rgb(100,175,255), -1px 1px 2px rgb(100,175,255), -1px -1px 2px rgb(100,175,255); -webkit-transform: rotateZ(360deg); transform: rotateZ(360deg); -webkit-filter: drop-shadow(0px 7px 7px rgba(0,0,0,0.5));filter: drop-shadow(0px 7px 7px rgba(0,0,0,0.5));}
 }
 
 .petal {
@@ -43,12 +43,12 @@
 
 /* PETAL ANIMATIONS ONLY FOR LARGER SCREENS AND CALLED IN INDEX.JS */
 @-webkit-keyframes petal_2 {
-	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
-	to {-webkit-transform: rotate(45deg);transform: rotate(45deg);}
+	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);opacity: 0;}
+	to {-webkit-transform: rotate(45deg);transform: rotate(45deg);opacity: 1;}
 }
 @keyframes petal_2 {
-	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
-	to {-webkit-transform: rotate(45deg);transform: rotate(45deg);}
+	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);opacity: 0;}
+	to {-webkit-transform: rotate(45deg);transform: rotate(45deg);opacity: 1;}
 }
 
 #petal_3  {
@@ -57,12 +57,12 @@
 }
 
 @-webkit-keyframes petal_3 {
-	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
-	to {-webkit-transform: rotate(90deg);transform: rotate(90deg);}
+	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);opacity: 0;}
+	to {-webkit-transform: rotate(90deg);transform: rotate(90deg);opacity: 1;}
 }
 @keyframes petal_3 {
-	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
-	to {-webkit-transform: rotate(90deg);transform: rotate(90deg);}
+	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);opacity: 0;}
+	to {-webkit-transform: rotate(90deg);transform: rotate(90deg);opacity: 1;}
 }
 
 #petal_4 {
@@ -71,12 +71,12 @@
 }
 
 @-webkit-keyframes petal_4 {
-	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
-	to {-webkit-transform: rotate(135deg);transform: rotate(135deg);}
+	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);opacity: 0;}
+	to {-webkit-transform: rotate(135deg);transform: rotate(135deg);opacity: 1;}
 }
 @keyframes petal_4 {
-	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
-	to {-webkit-transform: rotate(135deg);transform: rotate(135deg);}
+	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);opacity: 0;}
+	to {-webkit-transform: rotate(135deg);transform: rotate(135deg);opacity: 1;}
 }
 
 #petal_5  {
@@ -85,12 +85,12 @@
 }
 
 @-webkit-keyframes petal_5 {
-	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
-	to {-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);opacity: 0;}
+	to {-webkit-transform: rotate(180deg);transform: rotate(180deg);opacity: 1;}
 }
 @keyframes petal_5 {
-	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
-	to {-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);opacity: 0;}
+	to {-webkit-transform: rotate(180deg);transform: rotate(180deg);opacity: 1;}
 }
 
 #petal_6  {
@@ -99,12 +99,12 @@
 }
 
 @-webkit-keyframes petal_6 {
-	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
-	to {-webkit-transform: rotate(225deg);transform: rotate(225deg);}
+	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);opacity: 0;}
+	to {-webkit-transform: rotate(225deg);transform: rotate(225deg);opacity: 1;}
 }
 @keyframes petal_6 {
-	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
-	to {-webkit-transform: rotate(225deg);transform: rotate(225deg);}
+	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);opacity: 0;}
+	to {-webkit-transform: rotate(225deg);transform: rotate(225deg);opacity: 1;}
 }
 
 #petal_7  {
@@ -113,12 +113,12 @@
 }
 
 @-webkit-keyframes petal_7 {
-	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
-	to {-webkit-transform: rotate(270deg);transform: rotate(270deg);}
+	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);opacity: 0;}
+	to {-webkit-transform: rotate(270deg);transform: rotate(270deg);opacity: 1;}
 }
 @keyframes petal_7 {
-	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
-	to {-webkit-transform: rotate(270deg);transform: rotate(270deg);}
+	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);opacity: 0;}
+	to {-webkit-transform: rotate(270deg);transform: rotate(270deg);opacity: 1;}
 }
 
 #petal_8  {
@@ -127,12 +127,12 @@
 }
 
 @-webkit-keyframes petal_8 {
-	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
-	to {-webkit-transform: rotate(315deg);transform: rotate(315deg);}
+	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);opacity: 0;}
+	to {-webkit-transform: rotate(315deg);transform: rotate(315deg);opacity: 1;}
 }
 @keyframes petal_8 {
-	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
-	to {-webkit-transform: rotate(315deg);transform: rotate(315deg);}
+	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);opacity: 0;}
+	to {-webkit-transform: rotate(315deg);transform: rotate(315deg);opacity: 1;}
 }
 
 #flowerBulb {
@@ -155,14 +155,17 @@
 	background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 1000) {
+@media screen and (min-width: 1000px) {
 	#flowerBox {
 		position: relative;
 		width: 100px;
 		height: 100px;
 		margin: 50px auto -75px;
 		border-radius: 50%;
-		background: transparent; box-shadow: none; -webkit-transform: rotateZ(0deg); transform: rotateZ(0deg);
+		background: transparent;
+		box-shadow: none;
+		-webkit-transform: rotateZ(0deg); transform: rotateZ(0deg);
+		opacity: 0;
 	}
 
 	#petal_2  {

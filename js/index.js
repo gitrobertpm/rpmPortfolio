@@ -244,13 +244,18 @@ document.getElementById("subHeaderWrap").addEventListener("mousewheel", subHeade
 document.getElementById("subHeaderWrap").addEventListener("wheel", subHeader);
 document.getElementById("subHeaderWrap").addEventListener("touchstart", subHeader);
 
+var devHand = document.getElementById("devHand");
+var desHand = document.getElementById("desHand");
+
 function subHeader() {
-	setTimeout(function(){ document.getElementById("devHand").style.msTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("devHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("devHand").style.transform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("desHand").style.msTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("desHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("desHand").style.transform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ devHand.style.msTransform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ devHand.style.webkitTransform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ devHand.style.transform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ devHand.style.opacity = "1"; }, 600);
+	setTimeout(function(){ desHand.style.msTransform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ desHand.style.webkitTransform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ desHand.style.transform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ desHand.style.opacity = "1"; }, 600);
 	
 	// ADD ANIMATIONS TO HEADER FLOWER FOR LARGER SCREENS
 	if (width > 999) {
