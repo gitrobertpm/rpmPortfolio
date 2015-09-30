@@ -375,8 +375,9 @@ section p {
 	position: relative;
 	width: 100%;
 	max-width: 1200px;
-	height: 150px;
+	height: 175px;
 	margin: auto auto 100px;
+	padding-top: 10px;
 	background: ivory;
 	border-top: 4px solid rgb(50,50,50);
 	border-bottom: 5px solid rgb(50,50,50);
@@ -413,8 +414,33 @@ section p {
 	margin: 10px auto;
 }
 
-.projectMainDes span {
+/* .projectMainDes span {
 	white-space: nowrap;
+} */
+
+#methodology {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.55em;
+	opacity: 0;
+	white-space: nowrap;
+	-webkit-animation: methodologySlide 3s linear infinite;animation: methodologySlide 3s linear infinite;
+}
+
+@-webkit-keyframes methodologySlide {
+	0% {opacity: 0;}
+	5% {opacity: 0;}
+	25% {opacity: 1;}
+	65% {opacity: 1;}
+	90% {opacity: 0;}
+	100% {opacity: 0;}
+}
+@keyframes methodologySlide {
+	0% {opacity: 0;}
+	5% {opacity: 0;}
+	25% {opacity: 1;}
+	65% {opacity: 1;}
+	90% {opacity: 0;}
+	100% {opacity: 0;}
 }
 
 .projGitImg {
@@ -1331,8 +1357,9 @@ footer p:nth-of-type(1) {
 	header {
 		background: url('../img/backgrounds/rain2.jpg');
 		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
+		background-size: 100% 420px;
+		background-position: center top;
+		background-attachment: fixed;
 	}
 	
 	#whoIAmDiv {
@@ -1376,10 +1403,6 @@ footer p:nth-of-type(1) {
 		
 	}
 	
-	#projectMenuWrap {
-		
-	}
-	
 	#projectMenu p:active, #projectMenu p:focus, #projectMenu p:hover {
 		opacity: 1;
 		font-style: italic;
@@ -1410,16 +1433,26 @@ footer p:nth-of-type(1) {
 		left: 50%;
 		width: 250px;
 		background: rgb(255,255,245);
+		background: url('../img/backgrounds/methodBG.jpg');
+		background-size: cover;
 	}
 	
 	#projBox1 {
 		margin-left: -485px;
-		box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+		height: 165px;
+		padding-top: 25px;
+		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+	}
+	
+	#methodology {
+		margin-bottom: 35px;
+		/* color: white; */
+		/* text-shadow: 0px 1px 1px rgb(50,50,50);  */
 	}
 	
 	#projBox2 {
 		margin-left: 235px;
-		box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
 	}
 	
 	.projectMainDes {
@@ -1520,6 +1553,30 @@ footer p:nth-of-type(1) {
 		background: url('../img/backgrounds/monitorLg2.png');
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
+	}
+	
+	#monitorShadow,
+	#monitorShadow2 {
+		display: block;
+		position: absolute;
+		bottom: 25px;
+		left: 50%;
+		
+		height: 65px;
+		border-radius: 25px;
+	}
+	
+	#monitorShadow {
+		background: radial-gradient(rgba(50,50,50,0.7), transparent, transparent);
+		margin-left: -60%;
+		width: 120%;
+	}
+	
+	#monitorShadow2 {
+		background: linear-gradient(to right, transparent, rgba(50,50,50,0.7), transparent);
+		margin-left: -35%;
+		width: 70%;
+		box-shadow: 
 	}
 
 	.headerImg {
@@ -1808,6 +1865,12 @@ footer p:nth-of-type(1) {
 	
 	
 	/* PROJECTS SECTION X LARGE SCREENS ***********************/
+	#projectMenuWrap {
+		background: url('../img/backgrounds/methodBG.jpg');
+		border: none;
+		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+	}
+	
 	#projectArrow1 {
 		margin-left: -585px;
 	}

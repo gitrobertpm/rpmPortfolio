@@ -82,6 +82,21 @@ set("projectImg5", "url('img/projectImgs/twu.png')", "block", "100% 100%", "no-r
 set("projectImg6", "url('img/projectImgs/decider.png')", "block", "100% 100%", "no-repeat");
 
 
+// TEXT SLIDER
+var methodologies = ["~ Mobile First ~", "~ Cross-Browser ~", "~ Responsive ~"];
+var counter = 0;
+var methodology = document.getElementById("methodology");
+methodology.innerHTML = methodologies[counter];
+var textSlider = setInterval(function() {textSlide();}, 3000);
+function textSlide() {
+	if (counter < methodologies.length - 1) {
+		counter += 1;
+	} else {
+		counter = 0;
+	}
+	methodology.innerHTML = methodologies[counter];
+};
+
 
 // PROJECT SLIDERS STUFF
 var projectWrap = document.getElementsByClassName("projectWrap");
@@ -116,9 +131,10 @@ for (var i = 0; i < pmP.length; i++) {
 			if (event.target == pmP[i]) {
 				projectWrap[i].style.display = "block";
 				pmP[i].style.opacity = "1";
-				//var projLink = "index.html#" + projectWrap[i].querySelector("a").getAttribute("id");
 				if (width < 500) {
 					window.location.href = "index.html#projectMenu";
+				} else {
+					window.location.href = "index.html#projectsTitle";
 				}
 			}
 		}
