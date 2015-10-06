@@ -1147,7 +1147,15 @@ footer p:nth-of-type(1) {
 
 /* MEDIA QUERIES ***********************/
 /* SMALL SCREENS ************/
-
+@media screen and (max-width: 1000px) {
+	#projectMenuWrap {
+		display: none;
+	}
+	
+	#projBox2 {
+		margin-bottom: 100px;
+	}
+}
 /* END SMALL SCREENS ************/
 
 
