@@ -378,9 +378,9 @@ section p {
 	height: 175px;
 	margin: auto auto 100px;
 	padding-top: 10px;
-	background: ivory;
-	border-top: 4px solid rgb(50,50,50);
-	border-bottom: 5px solid rgb(50,50,50);
+	/* background: ivory; */
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
 	overflow-X: auto;
 	overflow-Y: hidden;
 	white-space: nowrap;
@@ -1158,6 +1158,17 @@ footer p:nth-of-type(1) {
 /* MEDIA QUERIES ***********************/
 /* SMALL SCREENS ************/
 @media screen and (max-width: 1000px) {
+	#tools ul {
+		padding-bottom: 5px;
+	}
+	
+	#tools ul li {
+		font-size: .8em;
+		line-height: 8px;
+		padding-top: 1px;
+		padding-bottom: 3px;
+	}
+	
 	#projectMenuWrap {
 		display: none;
 	}
@@ -1416,7 +1427,7 @@ footer p:nth-of-type(1) {
 	
 	/* PROJECTS SECTION LARGE SCREENS ***********************/
 	#tools ul {
-		background: url('../img/backgrounds/methodBG.jpg');
+		/* background: url('../img/backgrounds/methodBG.jpg'); */
 	}
 	
 	#projectsTitle {
