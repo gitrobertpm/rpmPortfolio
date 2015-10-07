@@ -423,7 +423,7 @@ section p {
 	font-size: 1.55em;
 	opacity: 0;
 	white-space: nowrap;
-	-webkit-animation: methodologySlide 3s linear infinite;animation: methodologySlide 3s linear infinite;
+	/* -webkit-animation: methodologySlide 3s linear infinite;animation: methodologySlide 3s linear infinite; */
 }
 
 @-webkit-keyframes methodologySlide {
@@ -646,24 +646,34 @@ section p {
 	border-radius: 0px 30% 0px 30%;
 }
 
+.meTextWrap {
+	width: 90%;
+	background: white;
+	margin: 25px auto;
+	border-radius: 25px;
+}
+
+#meTextWrap1 {
+	width: 150px;
+}
+
+#meTextWrap2 {
+	max-width: 600px;
+}
+
 .meText {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	color: black;
 	line-height: 27px;
+	width: 100%;
 	background: white;
 	padding: 10px;
+	margin: 0px auto;
 	border-radius: 25px;
-	width: 90%;
-	margin: 25px auto;
-}
-
-.meText:nth-of-type(1) {
-	width: 150px;
-}
-
-.meText:nth-of-type(2) {
-	max-width: 600px;
+	-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
+	-webkit-transition-duration: 1s;transition-duration: 1s;
+	opacity: 0;
 }
 
 #yinyang2 {
@@ -1624,6 +1634,11 @@ footer p:nth-of-type(1) {
 	
 	
 	/* ME SECTION LARGE SCREENS *****************************/
+	#meSection {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+	
 	#contactTitle,
 	#myDealTitle {
 		font-size: 5em !important;
