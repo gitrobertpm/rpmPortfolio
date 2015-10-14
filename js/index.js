@@ -4,41 +4,42 @@
 var width = window.innerWidth;
 var height = window.innerHeight;
 
-
+var navIcon = document.getElementById("navIcon");
+var closeNav = document.getElementById("closeNav");
+var nav = document.getElementsByTagName("nav")[0];
 
 // OPEN NAV
-document.getElementById("navIcon").onclick = function() {
-	document.getElementById("navIcon").style.display = "none";
-	document.getElementById("closeNav").style.display = "block";
-	document.getElementsByTagName("nav")[0].style.display = "block";
+navIcon.onclick = function() {
+	navIcon.style.display = "none";
+	closeNav.style.display = "block";
+	nav.style.display = "block";
 };
 
 // CLOSE NAV
-document.getElementById("closeNav").onclick = function() {
-	document.getElementById("navIcon").style.display = "block";
-	document.getElementById("closeNav").style.display = "none";
-	document.getElementsByTagName("nav")[0].style.display = "none";
+closeNav.onclick = function() {
+	navIcon.style.display = "block";
+	closeNav.style.display = "none";
+	nav.style.display = "none";
 };
-
 
 
 // NAV IN HOUSE LINKS THAT NEED THE NAV TO CLOSE
 document.getElementById("navProjectsLink").onclick = function() {
-	document.getElementById("navIcon").style.display = "block";
-	document.getElementById("closeNav").style.display = "none";
-	document.getElementsByTagName("nav")[0].style.display = "none";
+	navIcon.style.display = "block";
+	closeNav.style.display = "none";
+	nav.style.display = "none";
 };
 
 document.getElementById("navMeLink").onclick = function() {
-	document.getElementById("navIcon").style.display = "block";
-	document.getElementById("closeNav").style.display = "none";
-	document.getElementsByTagName("nav")[0].style.display = "none";
+	navIcon.style.display = "block";
+	closeNav.style.display = "none";
+	nav.style.display = "none";
 };
 
 document.getElementById("backToTop").onclick = function() {
-	document.getElementById("navIcon").style.display = "block";
-	document.getElementById("closeNav").style.display = "none";
-	document.getElementsByTagName("nav")[0].style.display = "none";
+	navIcon.style.display = "block";
+	closeNav.style.display = "none";
+	nav.style.display = "none";
 };
 
 
@@ -87,6 +88,7 @@ var methodologies = ["~ Mobile First ~", "~ Cross-Browser ~", "~ Responsive ~"];
 var counter = 0;
 var methodology = document.getElementById("methodology");
 methodology.innerHTML = methodologies[counter];
+
 var textSlider = setInterval(function() {textSlide();}, 3000);
 function textSlide() {
 	if (counter < methodologies.length - 1) {
@@ -96,6 +98,13 @@ function textSlide() {
 	}
 	methodology.innerHTML = methodologies[counter];
 };
+
+// FUNCTION FOR ADDING VENDOR PREFIXES TO ANIMATION PROPERTY
+var styleAnimation = function(element, value) {
+	element.style.webkitAnimation = value;
+	element.style.animation = value;
+};
+styleAnimation(methodology, "methodologySlide 3s linear infinite");
 
 
 // PROJECT SLIDERS STUFF
@@ -237,42 +246,58 @@ hoverColor("projectImg5", "projectLink5", "rgb(225,15,15)", "rgb(25,25,25)");
 hoverColor("projectImg6", "projectLink6", "rgb(225,15,15)", "rgb(25,25,25)");
 
 
+// FUNCTION FOR ADDING VENDOR PREFIXES TO TRANSFORM PROPERTY
+var styleTransform = function(element, value) {
+	element.style.msTransform = value;
+	element.style.webkitTransform = value;
+	element.style.transform = value;
+};
+
 
 // SLIDE IN SUBHEADER IMAGES
-document.getElementById("subHeaderWrap").addEventListener("DOMMouseScroll", subHeader);
-document.getElementById("subHeaderWrap").addEventListener("mousewheel", subHeader);
-document.getElementById("subHeaderWrap").addEventListener("wheel", subHeader);
-document.getElementById("subHeaderWrap").addEventListener("touchstart", subHeader);
+var subHeaderWrap = document.getElementById("subHeaderWrap");
+subHeaderWrap.addEventListener("DOMMouseScroll", subHeader);
+subHeaderWrap.addEventListener("mousewheel", subHeader);
+subHeaderWrap.addEventListener("wheel", subHeader);
+subHeaderWrap.addEventListener("touchstart", subHeader);
+
+var devHand = document.getElementById("devHand");
+var desHand = document.getElementById("desHand");
 
 function subHeader() {
-	setTimeout(function(){ document.getElementById("devHand").style.msTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("devHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("devHand").style.transform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("desHand").style.msTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("desHand").style.webkitTransform = "translate(0px, 0px)"; }, 0);
-	setTimeout(function(){ document.getElementById("desHand").style.transform = "translate(0px, 0px)"; }, 0);
+	setTimeout(function(){ styleTransform(devHand, "translate(0px, 0px)"); }, 0);
+	setTimeout(function(){ devHand.style.opacity = "1"; }, 500);
+	setTimeout(function(){ styleTransform(desHand, "translate(0px, 0px)"); }, 0);
+	setTimeout(function(){ desHand.style.opacity = "1"; }, 500);
 	
 	// ADD ANIMATIONS TO HEADER FLOWER FOR LARGER SCREENS
 	if (width > 999) {
-		document.getElementById("flowerBox").style.webkitAnimation = "petalGlow 5s ease .5s forwards";
-		document.getElementById("flowerBox").style.animation = "petalGlow 5s ease .5s forwards";
-		document.getElementById("petal_2").style.webkitAnimation = "petal_2 .5s ease .5s forwards";
-		document.getElementById("petal_2").style.animation = "petal_2 .5s ease .5s forwards";
-		document.getElementById("petal_3").style.webkitAnimation = "petal_3 1s ease .5s forwards";
-		document.getElementById("petal_3").style.animation = "petal_3 1s ease .5s forwards";
-		document.getElementById("petal_4").style.webkitAnimation = "petal_4 1.5s ease .5s forwards";
-		document.getElementById("petal_4").style.animation = "petal_4 1.5s ease .5s forwards";
-		document.getElementById("petal_5").style.webkitAnimation = "petal_5 2s ease .5s forwards";
-		document.getElementById("petal_5").style.animation = "petal_5 2s ease .5s forwards";
-		document.getElementById("petal_6").style.webkitAnimation = "petal_6 2.5s ease .5s forwards";
-		document.getElementById("petal_6").style.animation = "petal_6 2.5s ease .5s forwards";
-		document.getElementById("petal_7").style.webkitAnimation = "petal_7 3s ease .5s forwards";
-		document.getElementById("petal_7").style.animation = "petal_7 3s ease .5s forwards";
-		document.getElementById("petal_8").style.webkitAnimation = "petal_8 3.5s ease .5s forwards";
-		document.getElementById("petal_8").style.animation = "petal_8 3.5s ease .5s forwards";
+		styleAnimation(document.getElementById("flowerBox"), "petalGlow 5s ease .5s forwards");
+		styleAnimation(document.getElementById("petal_2"), "petal_2 .5s ease .5s forwards");
+		styleAnimation(document.getElementById("petal_3"), "petal_3 1s ease .5s forwards");
+		styleAnimation(document.getElementById("petal_4"), "petal_4 1.5s ease .5s forwards");
+		styleAnimation(document.getElementById("petal_5"), "petal_5 2s ease .5s forwards");
+		styleAnimation(document.getElementById("petal_6"), "petal_6 2.5s ease .5s forwards");
+		styleAnimation(document.getElementById("petal_7"), "petal_7 3s ease .5s forwards");
+		styleAnimation(document.getElementById("petal_8"), "petal_8 3.5s ease .5s forwards");
 	}
 };
 
+
+var meSection = document.getElementById("meSection");
+meSection.addEventListener("DOMMouseScroll", greeting);
+meSection.addEventListener("mousewheel", greeting);
+meSection.addEventListener("wheel", greeting);
+meSection.addEventListener("touchstart", greeting);
+
+var meText = document.getElementsByClassName("meText");
+
+function greeting() {
+	setTimeout(function(){ styleTransform(meText[0], "translate(0px, 0px)"); }, 0);
+	setTimeout(function(){ meText[0].style.opacity = "1"; }, 250);
+	setTimeout(function(){ styleTransform(meText[1], "translate(0px, 0px)"); }, 500);
+	setTimeout(function(){ meText[1].style.opacity = "1"; }, 750);
+};
 
 
 // SET SKILL IMAGES
@@ -293,77 +318,32 @@ set("skillLogo11", "url('img/misc_icons/mysql.jpg')", "inline-block", "100% 100%
 
 
 // GOOD LIFE CODE TRANSOFRMS
-document.getElementById("codeSection").addEventListener("DOMMouseScroll", codeSlide);
-document.getElementById("codeSection").addEventListener("mousewheel", codeSlide);
-document.getElementById("codeSection").addEventListener("wheel", codeSlide);
-document.getElementById("codeSection").addEventListener("touchstart", codeSlide);
+var codeSection = document.getElementById("codeSection");
+codeSection.addEventListener("DOMMouseScroll", codeSlide);
+codeSection.addEventListener("mousewheel", codeSlide);
+codeSection.addEventListener("wheel", codeSlide);
+codeSection.addEventListener("touchstart", codeSlide);
 
 var codeTag = document.getElementsByTagName("code");
+var quoteDiv = document.getElementById("quoteDiv");
 
 function codeSlide() {
 	if (width > 999) {
-		setTimeout(function(){ codeTag[0].style.msTransform = "translate(0px, 0px)"; }, 0);
-		setTimeout(function(){ codeTag[0].style.webkitTransform = "translate(0px, 0px)"; }, 0);
-		setTimeout(function(){ codeTag[0].style.transform = "translate(0px, 0px)"; }, 0);
-		
-		setTimeout(function(){ codeTag[1].style.msTransform = "translate(0px, 0px)"; }, 100);
-		setTimeout(function(){ codeTag[1].style.webkitTransform = "translate(0px, 0px)"; }, 100);
-		setTimeout(function(){ codeTag[1].style.transform = "translate(0px, 0px)"; }, 100);
-		
-		setTimeout(function(){ codeTag[2].style.msTransform = "translate(0px, 0px)"; }, 200);
-		setTimeout(function(){ codeTag[2].style.webkitTransform = "translate(0px, 0px)"; }, 200);
-		setTimeout(function(){ codeTag[2].style.transform = "translate(0px, 0px)"; }, 200);
-		
-		setTimeout(function(){ codeTag[3].style.msTransform = "translate(0px, 0px)"; }, 300);
-		setTimeout(function(){ codeTag[3].style.webkitTransform = "translate(0px, 0px)"; }, 300);
-		setTimeout(function(){ codeTag[3].style.transform = "translate(0px, 0px)"; }, 300);
-		
-		setTimeout(function(){ codeTag[4].style.msTransform = "translate(0px, 0px)"; }, 400);
-		setTimeout(function(){ codeTag[4].style.webkitTransform = "translate(0px, 0px)"; }, 400);
-		setTimeout(function(){ codeTag[4].style.transform = "translate(0px, 0px)"; }, 400);
-		
-		setTimeout(function(){ codeTag[5].style.msTransform = "translate(0px, 0px)"; }, 500);
-		setTimeout(function(){ codeTag[5].style.webkitTransform = "translate(0px, 0px)"; }, 500);
-		setTimeout(function(){ codeTag[5].style.transform = "translate(0px, 0px)"; }, 500);
-		
-		setTimeout(function(){ codeTag[6].style.msTransform = "translate(0px, 0px)"; }, 600);
-		setTimeout(function(){ codeTag[6].style.webkitTransform = "translate(0px, 0px)"; }, 600);
-		setTimeout(function(){ codeTag[6].style.transform = "translate(0px, 0px)"; }, 600);
-		
-		setTimeout(function(){ codeTag[7].style.msTransform = "translate(0px, 0px)"; }, 700);
-		setTimeout(function(){ codeTag[7].style.webkitTransform = "translate(0px, 0px)"; }, 700);
-		setTimeout(function(){ codeTag[7].style.transform = "translate(0px, 0px)"; }, 700);
-		
-		setTimeout(function(){ codeTag[8].style.msTransform = "translate(0px, 0px)"; }, 800);
-		setTimeout(function(){ codeTag[8].style.webkitTransform = "translate(0px, 0px)"; }, 800);
-		setTimeout(function(){ codeTag[8].style.transform = "translate(0px, 0px)"; }, 800);
-		
-		setTimeout(function(){ codeTag[9].style.msTransform = "translate(0px, 0px)"; }, 900);
-		setTimeout(function(){ codeTag[9].style.webkitTransform = "translate(0px, 0px)"; }, 900);
-		setTimeout(function(){ codeTag[9].style.transform = "translate(0px, 0px)"; }, 900);
-		
-		setTimeout(function(){ codeTag[10].style.msTransform = "translate(0px, 0px)"; }, 1000);
-		setTimeout(function(){ codeTag[10].style.webkitTransform = "translate(0px, 0px)"; }, 1000);
-		setTimeout(function(){ codeTag[10].style.transform = "translate(0px, 0px)"; }, 1000);
-		
-		setTimeout(function(){ codeTag[11].style.msTransform = "translate(0px, 0px)"; }, 1100);
-		setTimeout(function(){ codeTag[11].style.webkitTransform = "translate(0px, 0px)"; }, 1100);
-		setTimeout(function(){ codeTag[11].style.transform = "translate(0px, 0px)"; }, 1100);
-		
-		setTimeout(function(){ codeTag[12].style.msTransform = "translate(0px, 0px)"; }, 1200);
-		setTimeout(function(){ codeTag[12].style.webkitTransform = "translate(0px, 0px)"; }, 1200);
-		setTimeout(function(){ codeTag[12].style.transform = "translate(0px, 0px)"; }, 1200);
-		
-		setTimeout(function(){ codeTag[13].style.msTransform = "translate(0px, 0px)"; }, 1300);
-		setTimeout(function(){ codeTag[13].style.webkitTransform = "translate(0px, 0px)"; }, 1300);
-		setTimeout(function(){ codeTag[13].style.transform = "translate(0px, 0px)"; }, 1300);
-		
-		setTimeout(function(){ codeTag[14].style.msTransform = "translate(0px, 0px)"; }, 1400);
-		setTimeout(function(){ codeTag[14].style.webkitTransform = "translate(0px, 0px)"; }, 1400);
-		setTimeout(function(){ codeTag[14].style.transform = "translate(0px, 0px)"; }, 1400);
-		
-		setTimeout(function(){ document.getElementById("quoteDiv").style.msTransform = "translate(0px, 0px)"; }, 1500);
-		setTimeout(function(){ document.getElementById("quoteDiv").style.webkitTransform = "translate(0px, 0px)"; }, 1500);
-		setTimeout(function(){ document.getElementById("quoteDiv").style.transform = "translate(0px, 0px)"; }, 1500);
+		setTimeout(function(){ styleTransform(codeTag[0], "translate(0px, 0px)"); }, 0);
+		setTimeout(function(){ styleTransform(codeTag[1], "translate(0px, 0px)"); }, 100);
+		setTimeout(function(){ styleTransform(codeTag[2], "translate(0px, 0px)"); }, 200);
+		setTimeout(function(){ styleTransform(codeTag[3], "translate(0px, 0px)"); }, 300);
+		setTimeout(function(){ styleTransform(codeTag[4], "translate(0px, 0px)"); }, 400);
+		setTimeout(function(){ styleTransform(codeTag[5], "translate(0px, 0px)"); }, 500);
+		setTimeout(function(){ styleTransform(codeTag[6], "translate(0px, 0px)"); }, 600);
+		setTimeout(function(){ styleTransform(codeTag[7], "translate(0px, 0px)"); }, 700);
+		setTimeout(function(){ styleTransform(codeTag[8], "translate(0px, 0px)"); }, 800);
+		setTimeout(function(){ styleTransform(codeTag[9], "translate(0px, 0px)"); }, 900);
+		setTimeout(function(){ styleTransform(codeTag[10], "translate(0px, 0px)"); }, 1000);
+		setTimeout(function(){ styleTransform(codeTag[11], "translate(0px, 0px)"); }, 1100);
+		setTimeout(function(){ styleTransform(codeTag[12], "translate(0px, 0px)"); }, 1200);
+		setTimeout(function(){ styleTransform(codeTag[13], "translate(0px, 0px)"); }, 1300);
+		setTimeout(function(){ styleTransform(codeTag[14], "translate(0px, 0px)"); }, 1400);
+		setTimeout(function(){ styleTransform(quoteDiv, "translate(0px, 0px)"); }, 1500);
 	}
 };

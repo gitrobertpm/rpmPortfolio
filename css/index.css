@@ -378,9 +378,9 @@ section p {
 	height: 175px;
 	margin: auto auto 100px;
 	padding-top: 10px;
-	background: ivory;
-	border-top: 4px solid rgb(50,50,50);
-	border-bottom: 5px solid rgb(50,50,50);
+	/* background: ivory; */
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
 	overflow-X: auto;
 	overflow-Y: hidden;
 	white-space: nowrap;
@@ -423,7 +423,7 @@ section p {
 	font-size: 1.55em;
 	opacity: 0;
 	white-space: nowrap;
-	-webkit-animation: methodologySlide 3s linear infinite;animation: methodologySlide 3s linear infinite;
+	/* -webkit-animation: methodologySlide 3s linear infinite;animation: methodologySlide 3s linear infinite; */
 }
 
 @-webkit-keyframes methodologySlide {
@@ -535,77 +535,6 @@ section p {
 
 
 
-/* SUBHEADER FLOWER STYLINGS IN FLOWER.CSS *************/
-#subHeaderWrap {
-	position: relative;
-}
-
-#subHeader {
-	position: relative;
-	padding-bottom: 25px;
-	overflow: hidden;
-}
-
-#subHeader h1 {
-	font-family: 'Playfair Display', serif;
-	font-weight: 900;
-	font-size: 10vw;
-	letter-spacing: 1px;
-	color: black;
-	margin-bottom: -10px;
-	cursor: default;
-	z-index: 99999;
-}
-
-#monitor {
-	display: none;
-}
-
-.headerImg {
-	width: 125px; 
-	height: 204px;
-}
-
-#devHand {
-	-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
-	-webkit-transition-duration: 1s;transition-duration: 1s;
-	-webkit-filter: saturate(2);filter: saturate(2);
-}
-
-#desHand {
-	-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
-	-webkit-transition-duration: 1s;transition-duration: 1s;
-	-webkit-filter: saturate(2);filter: saturate(2);
-}
-
-.headerTitle {
-	width: 200px; 
-	height: 30px;
-	margin: 5px;	
-}
-
-#dev{
-	-webkit-transition-duration: 1s;transition-duration: 1s;
-}
-
-#des {
-	-webkit-transition-duration: 1s;transition-duration: 1s;
-}
-
-.subTitle {
-	font-family: "Times New Roman", Times, serif;
-	font-style: italic;
-	font-size: 1.25em;
-	margin: 25px auto;
-}
-
-#color {
-	display: none;
-}
-/* END SUBHEADER **********************/
-
-
-
 /* ME SECTION **************/
 #meSection {
 	position: relative;
@@ -644,24 +573,34 @@ section p {
 	border-radius: 0px 30% 0px 30%;
 }
 
+.meTextWrap {
+	width: 90%;
+	background: white;
+	margin: 25px auto;
+	border-radius: 25px;
+}
+
+#meTextWrap1 {
+	width: 150px;
+}
+
+#meTextWrap2 {
+	max-width: 600px;
+}
+
 .meText {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	color: black;
 	line-height: 27px;
+	width: 100%;
 	background: white;
 	padding: 10px;
+	margin: 0px auto;
 	border-radius: 25px;
-	width: 90%;
-	margin: 25px auto;
-}
-
-.meText:nth-of-type(1) {
-	width: 150px;
-}
-
-.meText:nth-of-type(2) {
-	max-width: 600px;
+	-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
+	-webkit-transition-duration: 1s;transition-duration: 1s;
+	opacity: 0;
 }
 
 #yinyang2 {
@@ -685,6 +624,14 @@ section p {
 	background: black;
 	text-align: center;
 	padding-bottom: 50px;
+}
+
+#myDealSection h3 {
+	color: rgb(100,175,255);
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	font-size: 1.5em;
+	letter-spacing: 1px;
 }
 
 #myDealTitle {
@@ -1003,7 +950,7 @@ section p {
 #skillQuoteDiv {
 	width: 95%;
 	max-width: 750px;
-	margin: auto;
+	margin: 25px auto;
 	background: rgba(0,0,0,0.9);
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -1021,6 +968,79 @@ section p {
 	color: rgb(100,175,255);
 }
 /* END SKILL SECTION ***********************/
+
+
+
+/* SUBHEADER FLOWER STYLINGS IN FLOWER.CSS *************/
+#subHeaderWrap {
+	position: relative;
+}
+
+#subHeader {
+	position: relative;
+	padding-bottom: 25px;
+	overflow: hidden;
+}
+
+#subHeader h1 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	font-size: 10vw;
+	letter-spacing: 1px;
+	color: black;
+	margin-bottom: -10px;
+	cursor: default;
+	z-index: 99999;
+}
+
+#monitor {
+	display: none;
+}
+
+.headerImg {
+	width: 125px; 
+	height: 204px;
+}
+
+#devHand {
+	-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
+	-webkit-transition-duration: 1s;transition-duration: 1s;
+	-webkit-filter: saturate(2);filter: saturate(2);
+	opacity: 0;
+}
+
+#desHand {
+	-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
+	-webkit-transition-duration: 1s;transition-duration: 1s;
+	-webkit-filter: saturate(2);filter: saturate(2);
+	opacity: 0;
+}
+
+.headerTitle {
+	width: 200px; 
+	height: 30px;
+	margin: 5px;	
+}
+
+#dev{
+	-webkit-transition-duration: 1s;transition-duration: 1s;
+}
+
+#des {
+	-webkit-transition-duration: 1s;transition-duration: 1s;
+}
+
+.subTitle {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 1.25em;
+	margin: 25px auto;
+}
+
+#color {
+	display: none;
+}
+/* END SUBHEADER **********************/
 
 
 
@@ -1145,7 +1165,26 @@ footer p:nth-of-type(1) {
 
 /* MEDIA QUERIES ***********************/
 /* SMALL SCREENS ************/
-
+@media screen and (max-width: 1000px) {
+	#tools ul {
+		padding-bottom: 5px;
+	}
+	
+	#tools ul li {
+		font-size: .8em;
+		line-height: 8px;
+		padding-top: 1px;
+		padding-bottom: 3px;
+	}
+	
+	#projectMenuWrap {
+		display: none;
+	}
+	
+	#projBox2 {
+		margin-bottom: 100px;
+	}
+}
 /* END SMALL SCREENS ************/
 
 
@@ -1395,6 +1434,10 @@ footer p:nth-of-type(1) {
 	
 	
 	/* PROJECTS SECTION LARGE SCREENS ***********************/
+	#tools ul {
+		/* background: url('../img/backgrounds/methodBG.jpg'); */
+	}
+	
 	#projectsTitle {
 		padding-top: 100px;
 	}
@@ -1446,8 +1489,6 @@ footer p:nth-of-type(1) {
 	
 	#methodology {
 		margin-bottom: 35px;
-		/* color: white; */
-		/* text-shadow: 0px 1px 1px rgb(50,50,50);  */
 	}
 	
 	#projBox2 {
@@ -1610,6 +1651,11 @@ footer p:nth-of-type(1) {
 	
 	
 	/* ME SECTION LARGE SCREENS *****************************/
+	#meSection {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+	
 	#contactTitle,
 	#myDealTitle {
 		font-size: 5em !important;
@@ -1639,7 +1685,7 @@ footer p:nth-of-type(1) {
 	/*  SKILL SECTION LARGE SCREENS ***********************/
 	#skillSection {
 		position: relative;
-		height: 1750px;
+		height: 1775px;
 		background-attachment: fixed !important;
 	}
 	
@@ -1666,7 +1712,7 @@ footer p:nth-of-type(1) {
 	
 	#skills {
 		position: absolute;
-		top: 875px;
+		top: 850px;
 		left: 50%;
 		width: 350px;
 		margin-left: -175px;
@@ -1709,7 +1755,7 @@ footer p:nth-of-type(1) {
 	
 	#skillQuoteDiv {
 		position: absolute;
-		bottom: 25px;
+		bottom: 50px;
 		left: 50%;
 		width: 750px;
 		margin-left: -375px;
@@ -1904,7 +1950,7 @@ footer p:nth-of-type(1) {
 	}
 	
 	#skills {
-		top: 900px;
+		top: 850px;
 	}
 	/* END SKILL SECTION X LARGE SCREENS***********************/
 	
