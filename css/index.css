@@ -535,79 +535,6 @@ section p {
 
 
 
-/* SUBHEADER FLOWER STYLINGS IN FLOWER.CSS *************/
-#subHeaderWrap {
-	position: relative;
-}
-
-#subHeader {
-	position: relative;
-	padding-bottom: 25px;
-	overflow: hidden;
-}
-
-#subHeader h1 {
-	font-family: 'Playfair Display', serif;
-	font-weight: 900;
-	font-size: 10vw;
-	letter-spacing: 1px;
-	color: black;
-	margin-bottom: -10px;
-	cursor: default;
-	z-index: 99999;
-}
-
-#monitor {
-	display: none;
-}
-
-.headerImg {
-	width: 125px; 
-	height: 204px;
-}
-
-#devHand {
-	-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
-	-webkit-transition-duration: 1s;transition-duration: 1s;
-	-webkit-filter: saturate(2);filter: saturate(2);
-	opacity: 0;
-}
-
-#desHand {
-	-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
-	-webkit-transition-duration: 1s;transition-duration: 1s;
-	-webkit-filter: saturate(2);filter: saturate(2);
-	opacity: 0;
-}
-
-.headerTitle {
-	width: 200px; 
-	height: 30px;
-	margin: 5px;	
-}
-
-#dev{
-	-webkit-transition-duration: 1s;transition-duration: 1s;
-}
-
-#des {
-	-webkit-transition-duration: 1s;transition-duration: 1s;
-}
-
-.subTitle {
-	font-family: "Times New Roman", Times, serif;
-	font-style: italic;
-	font-size: 1.25em;
-	margin: 25px auto;
-}
-
-#color {
-	display: none;
-}
-/* END SUBHEADER **********************/
-
-
-
 /* ME SECTION **************/
 #meSection {
 	position: relative;
@@ -697,6 +624,14 @@ section p {
 	background: black;
 	text-align: center;
 	padding-bottom: 50px;
+}
+
+#myDealSection h3 {
+	color: rgb(100,175,255);
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	font-size: 1.5em;
+	letter-spacing: 1px;
 }
 
 #myDealTitle {
@@ -1015,7 +950,7 @@ section p {
 #skillQuoteDiv {
 	width: 95%;
 	max-width: 750px;
-	margin: auto;
+	margin: 25px auto;
 	background: rgba(0,0,0,0.9);
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -1033,6 +968,79 @@ section p {
 	color: rgb(100,175,255);
 }
 /* END SKILL SECTION ***********************/
+
+
+
+/* SUBHEADER FLOWER STYLINGS IN FLOWER.CSS *************/
+#subHeaderWrap {
+	position: relative;
+}
+
+#subHeader {
+	position: relative;
+	padding-bottom: 25px;
+	overflow: hidden;
+}
+
+#subHeader h1 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	font-size: 10vw;
+	letter-spacing: 1px;
+	color: black;
+	margin-bottom: -10px;
+	cursor: default;
+	z-index: 99999;
+}
+
+#monitor {
+	display: none;
+}
+
+.headerImg {
+	width: 125px; 
+	height: 204px;
+}
+
+#devHand {
+	-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
+	-webkit-transition-duration: 1s;transition-duration: 1s;
+	-webkit-filter: saturate(2);filter: saturate(2);
+	opacity: 0;
+}
+
+#desHand {
+	-webkit-transform: translate(1000px, 0px);-ms-transform: translate(1000px, 0px);transform: translate(1000px, 0px);
+	-webkit-transition-duration: 1s;transition-duration: 1s;
+	-webkit-filter: saturate(2);filter: saturate(2);
+	opacity: 0;
+}
+
+.headerTitle {
+	width: 200px; 
+	height: 30px;
+	margin: 5px;	
+}
+
+#dev{
+	-webkit-transition-duration: 1s;transition-duration: 1s;
+}
+
+#des {
+	-webkit-transition-duration: 1s;transition-duration: 1s;
+}
+
+.subTitle {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 1.25em;
+	margin: 25px auto;
+}
+
+#color {
+	display: none;
+}
+/* END SUBHEADER **********************/
 
 
 
@@ -1481,8 +1489,6 @@ footer p:nth-of-type(1) {
 	
 	#methodology {
 		margin-bottom: 35px;
-		/* color: white; */
-		/* text-shadow: 0px 1px 1px rgb(50,50,50);  */
 	}
 	
 	#projBox2 {
@@ -1679,7 +1685,7 @@ footer p:nth-of-type(1) {
 	/*  SKILL SECTION LARGE SCREENS ***********************/
 	#skillSection {
 		position: relative;
-		height: 1750px;
+		height: 1775px;
 		background-attachment: fixed !important;
 	}
 	
@@ -1706,7 +1712,7 @@ footer p:nth-of-type(1) {
 	
 	#skills {
 		position: absolute;
-		top: 875px;
+		top: 850px;
 		left: 50%;
 		width: 350px;
 		margin-left: -175px;
@@ -1749,7 +1755,7 @@ footer p:nth-of-type(1) {
 	
 	#skillQuoteDiv {
 		position: absolute;
-		bottom: 25px;
+		bottom: 50px;
 		left: 50%;
 		width: 750px;
 		margin-left: -375px;
@@ -1944,7 +1950,7 @@ footer p:nth-of-type(1) {
 	}
 	
 	#skills {
-		top: 900px;
+		top: 850px;
 	}
 	/* END SKILL SECTION X LARGE SCREENS***********************/
 	
