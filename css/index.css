@@ -899,7 +899,7 @@ section p {
 /* JQUERY */
 #skillLevDis6 {
 	background: -webkit-linear-gradient(left, black, darkblue);background: linear-gradient(to right, black, darkblue);
-	width: 40px;
+	width: 55px;
 }
 
 /* AJAX */
@@ -911,7 +911,7 @@ section p {
 /* NODE */
 #skillLevDis8 {
 	background: -webkit-linear-gradient(left, black, green);background: linear-gradient(to right, black, green);
-	width: 40px;
+	width: 55px;
 }
 
 /* ANGULAR */

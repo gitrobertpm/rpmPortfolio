@@ -309,7 +309,7 @@ set("skillLogo3", "url('img/misc_icons/ai.jpg')", "inline-block", "100% 100%", "
 set("skillLogo4", "url('img/misc_icons/ps.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
 set("skillLogo5", "url('img/misc_icons/github.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
 set("skillLogo6", "url('img/misc_icons/jq.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
-set("skillLogo7", "url('img/misc_icons/ajax.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
+set("skillLogo7", "url('img/misc_icons/mean.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
 set("skillLogo8", "url('img/misc_icons/node.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
 set("skillLogo9", "url('img/misc_icons/angular.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
 set("skillLogo10", "url('img/misc_icons/php.jpg')", "inline-block", "100% 100%", "no-repeat", "center");
