@@ -862,7 +862,7 @@ section p {
 
 /* HTML */
 #skillLevDis0 {
-	background: -webkit-linear-gradient(left, black, orange);background: linear-gradient(to right, black, orange);
+	background: -webkit-linear-gradient(left, black, coral);background: linear-gradient(to right, black, coral);
 	width: 110px;
 }
 
@@ -874,7 +874,7 @@ section p {
 
 /* JAVASCRIPT */
 #skillLevDis2 {
-	background: -webkit-linear-gradient(left, black, red);background: linear-gradient(to right, black, red);
+	background: -webkit-linear-gradient(left, black, darkorange);background: linear-gradient(to right, black, darkorange);
 	width: 83px;
 }
 
@@ -893,36 +893,36 @@ section p {
 /* GITHUB */
 #skillLevDis5 {
 	background: -webkit-linear-gradient(left, black, purple);background: linear-gradient(to right, black, purple);
-	width: 70px;
+	width: 83px;
 }
 
 /* JQUERY */
 #skillLevDis6 {
-	background: -webkit-linear-gradient(left, black, darkblue);background: linear-gradient(to right, black, darkblue);
+	background: -webkit-linear-gradient(left, black, red);background: linear-gradient(to right, black, red);
 	width: 55px;
 }
 
-/* AJAX */
+/* MEAN STACK */
 #skillLevDis7 {
-	background: -webkit-linear-gradient(left, black, blue);background: linear-gradient(to right, black, blue);
+	background: -webkit-linear-gradient(left, black, darkgreen);background: linear-gradient(to right, black, darkgreen);
 	width: 40px;
 }
 
-/* NODE */
+/* RESPONSIVE */
 #skillLevDis8 {
-	background: -webkit-linear-gradient(left, black, green);background: linear-gradient(to right, black, green);
-	width: 55px;
+	background: -webkit-linear-gradient(left, black, mediumturquoise);background: linear-gradient(to right, black, mediumturquoise);
+	width: 97px;
 }
 
-/* ANGULAR */
+/* BOOTSTRAP */
 #skillLevDis9 {
-	background: -webkit-linear-gradient(left, black, red);background: linear-gradient(to right, black, red);
+	background: -webkit-linear-gradient(left, black, blueviolet);background: linear-gradient(to right, black, blueviolet);
 	width: 40px;
 }
 
 /* PHP */
 #skillLevDis10 {
-	background: -webkit-linear-gradient(left, black, purple);background: linear-gradient(to right, black, purple);
+	background: -webkit-linear-gradient(left, black, mediumpurple);background: linear-gradient(to right, black, mediumpurple);
 	width: 27px;
 }
 
