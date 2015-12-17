@@ -284,7 +284,7 @@
 	}
 	
 	#projectMenu p:active, #projectMenu p:focus, #projectMenu p:hover {
-		opacity: 1;
+		opacity: 1 !important;
 		font-style: italic;
 		-webkit-transition-duration: .5s;transition-duration: .5s;
 	}
