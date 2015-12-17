@@ -13,10 +13,6 @@
 		padding-bottom: 3px;
 	}
 	
-	/* #projectMenuWrap {
-		display: none;
-	} */
-	
 	#projBox2 {
 		margin-bottom: 100px;
 	}
@@ -96,19 +92,6 @@
 	
 	
 	/* PROJECTS MEDIUM SCREENS ***********************/
-	/* #projectsTitle {
-		letter-spacing: 7.5px;
-		text-indent: 65px;
-	} */
-
-	/* #projectsTitle  span {
-		margin-left: 15px;
-	} */
-	
-	/* #projectMenuWrap {
-		margin: auto auto 125px;
-	} */
-	
 	.projectArrow {
 		margin-top: -75px;
 	}
@@ -172,10 +155,6 @@
 	
 	
 	/* ME SECTION MEDIUM SCREENS *****************************/
-	#meSection {
-		/* margin-top: 50px; */
-	}
-	
 	#myDealSection {
 		padding-bottom: 100px;
 	}
@@ -269,19 +248,9 @@
 	
 	
 	
-	/* PROJECTS SECTION LARGE SCREENS ***********************/
-	#tools ul {
-		/* color: rgb(245,245,255); */
-		/* background: -webkit-linear-gradient(left, rgb(35,75,245), rgb(45,85,255), rgb(35,75,245));background: linear-gradient(to right, rgb(35,75,245), rgb(45,85,255), rgb(35,75,245)); */
-		/* border-bottom: 2px solid navy; */
-	}
-	
+	/* PROJECTS SECTION LARGE SCREENS ***********************/	
 	#projectsTitle {
 		padding-top: 100px;
-	}
-
-	#projectsTitle  span {
-		
 	}
 	
 	#projectMenuWrap {
@@ -290,25 +259,13 @@
 		width: 100%;
 		max-width: 1200px;
 		height: 175px;
-		margin: auto auto 100px;
+		margin: auto auto 125px;
 		padding-top: 10px;
-		/* background: ivory; */
-		/* border-top: 1px solid lightgrey;
-		border-bottom: 1px solid lightgrey; */
 		border-top: 2px solid rgb(50,125,255);
 		border-bottom: 2px solid rgb(50,125,255);
 		overflow-X: auto;
 		overflow-Y: hidden;
 		white-space: nowrap;
-	}
-	
-	#projectMenuWrap {
-		/* background: -webkit-linear-gradient(top left, rgb(35,75,245), rgb(65,95,215), rgb(35,75,245));background: linear-gradient(to bottom right, rgb(35,75,245), rgb(65,95,215), rgb(35,75,245)); */
-		/* background: rgb(100,175,255); */
-	}
-	
-	#projectMenuWrap {
-		margin: auto auto 125px;
 	}
 	
 	#projectMenu p {
@@ -330,10 +287,6 @@
 		opacity: 1;
 		font-style: italic;
 		-webkit-transition-duration: .5s;transition-duration: .5s;
-	}
-	
-	#projectMenu p {
-		/* color: rgb(245,245,255); */
 	}
 	
 	.projGitImg:active, .projGitImg:focus, .projGitImg:hover {
@@ -359,8 +312,6 @@
 		top: 65px;
 		left: 50%;
 		width: 250px;
-		/* background: url('../img/backgrounds/methodBG.jpg'); */
-		/* background: -webkit-linear-gradient(top left, rgb(35,75,245), rgb(65,95,215), rgb(35,75,245));background: linear-gradient(to bottom right, rgb(35,75,245), rgb(65,95,215), rgb(35,75,245)); */
 		background-size: cover;
 	}
 	
@@ -377,11 +328,12 @@
 	
 	#projBox2 {
 		margin-left: 235px;
+		padding-top: 0px;
+		padding-bottom: 0px;
 		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
 	}
 	
 	.projectMainDes {
-		/* color: rgb(175,15,15); */
 		font-size: 1.25em;
 		line-height: 30px;
 	}
@@ -598,29 +550,6 @@
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 	}
-	
-	/* #monitorShadow,
-	#monitorShadow2 {
-		display: block;
-		position: absolute;
-		bottom: 25px;
-		left: 50%;
-		height: 65px;
-		border-radius: 25px;
-	}
-	
-	#monitorShadow {
-		background: radial-gradient(rgba(50,50,50,0.7), transparent, transparent);
-		margin-left: -60%;
-		width: 120%;
-	}
-	
-	#monitorShadow2 {
-		background: linear-gradient(to right, transparent, rgba(50,50,50,0.7), transparent);
-		margin-left: -35%;
-		width: 70%;
-		box-shadow: 
-	} */
 
 	.headerImg {
 		width: 175px; 
@@ -787,12 +716,6 @@
 	
 	
 	/* PROJECTS SECTION X LARGE SCREENS ***********************/
-	/* #projectMenuWrap {
-		background: url('../img/backgrounds/methodBG.jpg');
-		border: none;
-		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
-	} */
-	
 	#projectArrow1 {
 		margin-left: -585px;
 	}
@@ -876,7 +799,6 @@
 	
 	.tfLeft {
 		margin-left: -635px;
-		/* max-width: 675px; */
 	}
 	
 	.tfRight {
