@@ -1,0 +1,1026 @@
+
+/* MEDIA QUERIES ***********************/
+/* SMALL SCREENS ************/
+@media screen and (max-width: 1000px) {
+	#tools ul {
+		padding-bottom: 5px;
+	}
+	
+	#tools ul li {
+		font-size: .8em;
+		line-height: 8px;
+		padding-top: 1px;
+		padding-bottom: 3px;
+	}
+	
+	/* #projectMenuWrap {
+		display: none;
+	} */
+	
+	#projBox2 {
+		margin-bottom: 100px;
+	}
+}
+/* END SMALL SCREENS ************/
+
+
+
+/* MEDIUM SCREENS ************/
+@media screen and (min-width: 500px) {	
+	/* NAV MEDIUM SCREENS ******************************/
+	nav p {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	
+	nav ul {
+		margin-top: 0px;
+	}
+
+	nav ul li {
+		display: inline-block;
+		padding-left: 15px;
+	}
+	
+	#navGithubLink,
+	#navLinkedinLink {
+		margin-top: 0px;
+	}
+	
+	#headerNav {
+		padding-top: 0px;
+	}
+	
+	#headerNav a {
+		font-size: 1.25em;
+		margin-left: 25px;
+		padding-bottom: 30px;
+	}
+	
+	#headerProjects,
+	#headerMe,
+	#headerContact,
+	#headerTop {
+		background-size: 35px 30px;
+	}
+	/* END NAV MEDIUM SCREENS ******************/
+	
+	
+	
+	/* HEADER MEDIUM SCREENS ***********************/
+	#whoIAmDiv h2 {
+		font-size: 3.5em;
+		color: ivory;
+		margin-top: -30px;
+		padding-bottom: 150px;
+		text-shadow: 1px 1px 0px rgb(50,50,50);
+	}
+
+	#whoIAmDiv p {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		font-size: 1.25em;
+		color: ivory;
+		text-shadow: 1px 1px 0px rgb(50,50,50);
+	}
+	/* END HEADER MEDIUM SCREENS ***********************/
+	
+	
+	
+	/* GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
+	section h1 {
+		font-size: 10vw;
+	}
+	/* END GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
+	
+	
+	
+	/* PROJECTS MEDIUM SCREENS ***********************/
+	/* #projectsTitle {
+		letter-spacing: 7.5px;
+		text-indent: 65px;
+	} */
+
+	/* #projectsTitle  span {
+		margin-left: 15px;
+	} */
+	
+	/* #projectMenuWrap {
+		margin: auto auto 125px;
+	} */
+	
+	.projectArrow {
+		margin-top: -75px;
+	}
+	
+	#projectArrow1 {
+		margin-left: -100px;
+	}
+
+	#projectArrow2 {
+		margin-left: 60px;
+	}
+	
+	.projectImg {
+		width: 300px;
+		height: 250px;
+		margin-top: 35px;
+	}
+	
+	.projectLink {
+		font-size: 2em;
+	}
+	/* END PROJECTS SECTION MEDIUM SCREENS ***********************/
+	
+	
+	
+	/* SUB HEADER MEDIUM SCREENS *******/
+	#subHeader h1 {
+		font-size: 10vw;
+		margin-top: 25px;
+		margin-bottom: 0px;
+	}
+	
+	.headerImg {
+		width: 150px; 
+		height: 245px;
+		margin-top: 25px;
+	}
+	
+	.headerTitle {
+		margin: 5px 10px 15px;
+	}
+	
+	.subTitle {
+		font-size: 1.25em;
+		margin: 0px auto 50px;
+	}
+	
+	#color {
+		display: inline-block;
+		width: 250px;
+		height: 300px;
+		background: url('../img/backgrounds/colorPaper.png');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		margin: -57.5px auto auto;
+		-webkit-filter: hue-rotate(45deg) drop-shadow(0px 10px 5px rgba(0,0,0,0.5));filter: hue-rotate(45deg) drop-shadow(0px 10px 5px rgba(0,0,0,0.5));
+		z-index: 99;
+	}
+	/* END SUB HEADER MEDIUM SCREENS *******/
+	
+	
+	
+	/* ME SECTION MEDIUM SCREENS *****************************/
+	#meSection {
+		/* margin-top: 50px; */
+	}
+	
+	#myDealSection {
+		padding-bottom: 100px;
+	}
+	
+	.refEmail {
+		letter-spacing: .75px;
+	}
+	/* END SECTION TWO MEDIUM SCREENS *****************************/
+	
+	
+	
+	/* SKILL SECTION MEDIUM SCREENS ***********************/
+	#skillSection h1 {
+		padding-bottom: 111px;
+	}
+	/* END SKILL SECTION MEDIUM SCREENS ***********************/
+	
+	
+	
+	/* CODE FOR A HAPPY LIFE SECTION MEDIUM SCREENS ******************************/
+	code {
+		font-size: 1.5em;
+		line-height: 30px;
+	}
+	/* END CODE SECTION MEDIUM SCREENS *************/
+	
+	
+	/* FOOTER MEDIUM SCREENS ***********************/
+	#footerGithubLink {
+		left: 50%;
+		margin-left: -150px;
+	}
+
+	#footerLinkedinLink {
+		left: 50%;
+		margin-left: 100px;
+	}
+	/* END FOOTER MEDIUM SCREENS ***********************/
+}
+/* END MEDIUM SCREENS ***********************/
+
+
+/* LARGE SCREENS ************/
+@media screen and (min-width: 1000px) {
+	/* GENERAL SECTIONS STYLING LARGE SCREENS ***********************/
+	section h1 {
+		font-size: 7vw;
+	}
+	/* END GENERAL SECTIONS STYLING LARGE SCREENS ***********************/
+
+	
+	
+	/* HEADER LARGE SCREENS ***********************/
+	header {
+		background: url('../img/backgrounds/rain2.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% 420px;
+		background-position: center top;
+		background-attachment: fixed;
+	}
+	
+	#whoIAmDiv {
+		position: absolute;
+		top: -50px;
+		left: 150px;
+	}
+
+	#whoIAmDiv h2 {
+		font-family: 'Playfair Display', serif;
+		font-size: 3em;
+		color: ivory;
+		margin-top: 0px;
+		padding-bottom: 25px;
+		text-shadow: 1px 1px 0px rgb(50,50,50);
+	}
+
+	#whoIAmDiv p {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		font-size: 1.1em;
+		color: ivory;
+		text-shadow: 1px 1px 0px rgb(50,50,50);
+	}
+	/* END HEADER LARGE SCREENS ***********************/
+	
+	
+	
+	/* MAIN DIV  LARGE SCREENS *************/
+
+	/* END LARGE SCREENS ****************/
+	
+	
+	
+	/* PROJECTS SECTION LARGE SCREENS ***********************/
+	#tools ul {
+		/* color: rgb(245,245,255); */
+		/* background: -webkit-linear-gradient(left, rgb(35,75,245), rgb(45,85,255), rgb(35,75,245));background: linear-gradient(to right, rgb(35,75,245), rgb(45,85,255), rgb(35,75,245)); */
+		/* border-bottom: 2px solid navy; */
+	}
+	
+	#projectsTitle {
+		padding-top: 100px;
+	}
+
+	#projectsTitle  span {
+		
+	}
+	
+	#projectMenuWrap {
+		position: relative;
+		display: block;
+		width: 100%;
+		max-width: 1200px;
+		height: 175px;
+		margin: auto auto 100px;
+		padding-top: 10px;
+		/* background: ivory; */
+		/* border-top: 1px solid lightgrey;
+		border-bottom: 1px solid lightgrey; */
+		border-top: 2px solid rgb(50,125,255);
+		border-bottom: 2px solid rgb(50,125,255);
+		overflow-X: auto;
+		overflow-Y: hidden;
+		white-space: nowrap;
+	}
+	
+	#projectMenuWrap {
+		/* background: -webkit-linear-gradient(top left, rgb(35,75,245), rgb(65,95,215), rgb(35,75,245));background: linear-gradient(to bottom right, rgb(35,75,245), rgb(65,95,215), rgb(35,75,245)); */
+		/* background: rgb(100,175,255); */
+	}
+	
+	#projectMenuWrap {
+		margin: auto auto 125px;
+	}
+	
+	#projectMenu p {
+		display: inline;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		padding-right: 30px;
+		padding-bottom: 100px;
+		padding-left: 30px;
+		background-size: 100px 100px !important;
+		background-position: center bottom !important;
+		background-repeat: no-repeat !important;
+		opacity: .7;
+		-webkit-transition-duration: .5s;transition-duration: .5s;
+		cursor: pointer;
+	}
+	
+	#projectMenu p:active, #projectMenu p:focus, #projectMenu p:hover {
+		opacity: 1;
+		font-style: italic;
+		-webkit-transition-duration: .5s;transition-duration: .5s;
+	}
+	
+	#projectMenu p {
+		/* color: rgb(245,245,255); */
+	}
+	
+	.projGitImg:active, .projGitImg:focus, .projGitImg:hover {
+		-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);
+		opacity: 1;
+	}
+	
+	#projectArrow1 {
+		margin-left: -475px;
+	}
+
+	#projectArrow2 {
+		margin-left: 445px;
+	}
+	
+	.projectArrow:active, .projectArrow:focus, .projectArrow:hover {
+		border-color: transparent transparent rgb(50,50,50) rgb(50,50,50);
+		-webkit-transition-duration: .5s;transition-duration: .5s;
+	}
+	
+	.projBox {
+		position: absolute;
+		top: 65px;
+		left: 50%;
+		width: 250px;
+		/* background: url('../img/backgrounds/methodBG.jpg'); */
+		/* background: -webkit-linear-gradient(top left, rgb(35,75,245), rgb(65,95,215), rgb(35,75,245));background: linear-gradient(to bottom right, rgb(35,75,245), rgb(65,95,215), rgb(35,75,245)); */
+		background-size: cover;
+	}
+	
+	#projBox1 {
+		margin-left: -485px;
+		height: 165px;
+		padding-top: 25px;
+		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+	}
+	
+	#methodology {
+		margin-bottom: 35px;
+	}
+	
+	#projBox2 {
+		margin-left: 235px;
+		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+	}
+	
+	.projectMainDes {
+		/* color: rgb(175,15,15); */
+		font-size: 1.25em;
+		line-height: 30px;
+	}
+	
+	.projectWrap {
+		position: relative;
+		margin: 25px auto 150px;
+		height: 420px;
+	}
+	
+	.projectLink {
+		font-size: 1.75em;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	.projectLinkLeft {
+		margin-left: -420px;
+	}
+	
+	.projectLinkRight {
+		margin-right: -550px;
+	}
+
+	.projectImg {
+		position: absolute;
+		top: 50px;
+		left: 50%;
+		width: 420px;
+		height: 345px;
+		-webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));
+	}
+	
+	.projectImgLeft {
+		margin-left: -450px;
+	}
+	
+	.projectImgRight {
+		margin-left: 25px;
+	}
+
+	.projectDes {
+		position: absolute;
+		top: -25px;
+		left: 50%;
+		font-size: 1.25em;
+		line-height: 30px;
+		text-align: left;
+		padding: 10px;
+		max-width: 420px;
+	}
+	
+	.projectDes span {
+		
+	}
+	
+	.projectDesRight {
+		margin-left: 25px;
+	}
+	
+	.projectDesLeft {
+		margin-left: -450px;
+	}
+	
+	.projectWrap:active > .projectDesRight, .projectWrap:focus > .projectDesRight, .projectWrap:hover > .projectDesRight {
+		background: rgba(255,255,245,0.9);
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+		-webkit-transition-duration: .5s;transition-duration: .5s;
+	}
+
+	.projectWrap:active > .projectDesLeft, .projectWrap:focus > .projectDesLeft, .projectWrap:hover > .projectDesLeft {
+		background: rgba(255,255,245,0.9);
+		box-shadow: -5px 5px 5px rgba(0,0,0,0.2);
+		-webkit-transition-duration: .5s;transition-duration: .5s;
+	}
+	/* END PROJECTS SECTION LARGE SCREENS***********************/
+	
+	
+	
+	/* ME SECTION LARGE SCREENS *****************************/
+	#meSection {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+	
+	#contactTitle,
+	#myDealTitle {
+		font-size: 5em !important;
+	}
+	
+	.meText,
+	.myDealText,
+	.contactText {
+		font-size: 1.25em;
+	}
+	
+	.happyFace {
+		font-size: 2.5em;
+	}
+	
+	#dealSection p {
+		font-size: 1.25em;
+	}
+	
+	#dealH3{
+		margin: 50px auto 35px;
+	}
+	
+	#myDealSection q {
+		max-width: 700px;
+	}
+	/* END ME SECTION LARGE SCREENS *****************************/
+	
+	
+	
+	/*  SKILL SECTION LARGE SCREENS ***********************/
+	#skillSection {
+		position: relative;
+		height: 1775px;
+		background-attachment: fixed !important;
+	}
+	
+	.skillExplanation {
+		font-size: 1.25em;
+		text-align: justify;
+	}
+
+	.aboutWrap {
+		margin: 125px auto;
+	}
+	
+	.leftAboutWrap {
+		margin-left: 50px;
+	}
+	
+	.rightAboutWrap {
+		margin-right: 50px;
+	}
+	
+	.innerAboutWrap {
+		padding: 75px 25px;
+	}
+	
+	#skills {
+		position: absolute;
+		top: 850px;
+		left: 50%;
+		width: 350px;
+		margin-left: -175px;
+		-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);
+	}
+	
+	#skillGauge {
+		margin-left: 135px;
+		margin-bottom: 25px;
+	}
+	
+	#skillCategory {
+		position: absolute;
+		width: 500px !important;
+		top: 360px;
+		left: -225px;
+		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
+	}
+	
+	.skillInfo {
+		-webkit-transform: rotate(35deg);-ms-transform: rotate(35deg);transform: rotate(35deg);
+	}
+	
+	.skillNum {
+		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
+	}
+	
+	#skillLevelExplanationDiv {
+		position: absolute;
+		top: 45%;
+		left: 75px;
+		width: 500px;
+		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
+		border-bottom: 2px solid white;
+	}
+	
+	.skillLevelExplanation {
+		display: inline;
+	}
+	
+	#skillQuoteDiv {
+		position: absolute;
+		bottom: 50px;
+		left: 50%;
+		width: 750px;
+		margin-left: -375px;
+	}
+	/* END SKILL SECTION LARGE SCREENS ***********************/
+	
+	
+	
+	/* SUB HEADER LARGE SCREEN **************/
+	#subHeader h1 {
+		font-size: 7.5vw;
+		margin-top: 50px;
+		margin-bottom: 25px;
+		padding-top: 90px;
+	}
+	
+	#monitor {
+		display: block;
+		position: absolute;
+		top: 75px;
+		left: 2.5%;
+		width: 95%;
+		height: 775px;
+		background: url('../img/backgrounds/monitorLg2.png');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	
+	/* #monitorShadow,
+	#monitorShadow2 {
+		display: block;
+		position: absolute;
+		bottom: 25px;
+		left: 50%;
+		height: 65px;
+		border-radius: 25px;
+	}
+	
+	#monitorShadow {
+		background: radial-gradient(rgba(50,50,50,0.7), transparent, transparent);
+		margin-left: -60%;
+		width: 120%;
+	}
+	
+	#monitorShadow2 {
+		background: linear-gradient(to right, transparent, rgba(50,50,50,0.7), transparent);
+		margin-left: -35%;
+		width: 70%;
+		box-shadow: 
+	} */
+
+	.headerImg {
+		width: 175px; 
+		height: 270px; 
+		margin-top: -35px;
+	}
+	
+	.headerTitle {
+		position: absolute;
+		bottom: 350px;
+		left: 50%;
+		width: 300px; 
+		height: 50px;
+	}
+
+	#dev{
+		margin-left: -400px;
+	}
+
+	#des {
+		margin-left: 100px;
+	}
+	
+	.subTitle {
+		font-size: 1.5em;
+		margin: 25px auto 50px;
+	}
+	/* END SUB HEADER LARGE SCREEN **************/
+	
+	
+	
+	/* CODE FOR A HAPPY LIFE SECTION LARGE SCREENS ******************************/
+	#codeSection h5 {
+		display: block;
+		color: white;
+	}
+	
+	#codeSection p {
+		font-size: 1.5em;
+		max-width: 700px;
+	}
+
+	code {
+		margin-left: 10%;
+		-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
+		-webkit-transition-duration: .5s;transition-duration: .5s;
+	}
+
+	.oneIndent {
+		text-indent: 25px;
+	}
+
+	.twoIndents {
+		text-indent: 50px;
+	}
+
+	.threeIndents {
+		text-indent: 75px;
+	}
+	
+	#quoteDiv {
+		position: absolute;
+		top: 55%;
+		right: 7.5%;
+		-webkit-transform: translate(900px, 0px);-ms-transform: translate(900px, 0px);transform: translate(900px, 0px);
+		-webkit-transition-duration: .5s;transition-duration: .5s;
+	}
+	
+	#quote3 {
+		width: auto;
+	}
+	/* END CODE SECTION LARGE SCREENS *************/
+	
+	
+	
+	/* FOOTER LARGE SCREENS ***********************/	
+	footer p:nth-of-type(2) {
+		float: left;
+		margin-left: 10px;
+	}
+	
+	footer p:nth-of-type(3) {
+		float: right;
+		margin-right: 10px;
+	}
+	/* END FOOTER LARGE SCREENS***********************/
+}
+/* END LARGE SCREENS ************/
+
+
+
+/* X LARGE SCREENS ************/
+@media screen and (min-width: 1250px) {
+	/* NAV X LARGE SCREENS ******************************/
+	#whoIAmDiv {
+		position: absolute;
+		top: -50px;
+		left: 50%;
+		margin-left: -420px;
+	}
+	
+	#navIconWrap {
+		left: 50%;
+		margin-left: -600px;
+	}
+	
+	#headerNav {
+		right: auto;
+		left: 50%;
+		margin-left: 240px;
+	}
+	
+	nav p {
+		font-size: 1.5em;
+		padding-top: 10px;
+	}
+
+	nav ul {
+		margin: 75px auto 25px;
+	}
+
+	nav ul li {
+		display: block;
+		margin: 25px auto;
+	}
+	
+	nav ul li:nth-of-type(2) {
+		margin-bottom: 15px;
+	}
+	
+	#navGithubLink,
+	#navLinkedinLink {
+		margin-top: 25px;
+	}
+	/* END NAV X LARGE SCREENS ******************/
+	
+
+	
+	/* MAIN DIV X LARGE SCREENS *************/
+	
+	/* END X LARGE SCREENS ****************/
+	
+	
+	
+	/* GENERAL SECTIONS STYLING X LARGE SCREENS ***********************/
+	section h1 {
+		font-size: 5.5vw;
+	}
+	
+	q {
+		font-size: 2em;
+		max-width: 1200px;
+	}
+	
+	q span {
+		font-size: .9em;
+	}
+	
+	hr {
+		max-width: 1200px;
+	}
+	/* END GENERAL SECTIONS STYLING X LARGE SCREENS ***********************/
+	
+	
+	
+	/* PROJECTS SECTION X LARGE SCREENS ***********************/
+	/* #projectMenuWrap {
+		background: url('../img/backgrounds/methodBG.jpg');
+		border: none;
+		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+	} */
+	
+	#projectArrow1 {
+		margin-left: -585px;
+	}
+
+	#projectArrow2 {
+		margin-left: 555px;
+	}
+	
+	#projBox1 {
+		margin-left: -600px;
+	}
+	
+	#projBox2 {
+		margin-left: 350px;
+	}
+	
+	.projectLinkLeft {
+		margin-left: -600px;
+	}
+	
+	.projectLinkRight {
+		margin-right: -750px;
+	}
+
+	.projectImg {
+		width: 420px;
+	}
+	
+	.projectImgLeft {
+		margin-left: -550px;
+	}
+	
+	.projectImgRight {
+		margin-left: 125px;
+	}
+
+	.projectDes {
+		max-width: 625px;
+	}
+	
+	.projectDesRight {
+		margin-left: -25px;
+	}
+	
+	.projectDesLeft {
+		margin-left: -600px;
+	}
+	/* END PROJECTS SECTION X LARGE SCREENS***********************/
+	
+	
+	
+	/* ME SECTION X LARGE SCREENS *****************************/
+	#meSection h1 {
+		margin-left: -30px;
+	}
+	
+	#myDealSection {
+		position: realitve;
+		min-height: 1000px;
+	}
+	
+	#dealH3-2 {
+		text-align: left;
+		text-indent: 150px;
+		font-size: 1.8em !important;
+	}
+	
+	#dealH3{
+		font-size: 2em !important;
+	}
+	
+	.textFloat {
+		position: absolute;
+		left: 50%;
+		max-width: 600px;
+	}
+	
+	.textFloat p {
+		line-height: 30px;
+	}
+	
+	.tfLeft {
+		margin-left: -635px;
+		/* max-width: 675px; */
+	}
+	
+	.tfRight {
+		margin-top: -40px;
+		margin-left: 50px;
+	}
+	
+	.mdtL {
+		text-align: left;
+	}
+	
+	.mdtR {
+		text-align: left;
+	}
+	
+	.happyFace {
+		padding-top: 500px;
+	}
+	/* END ME SECTION X LARGE SCREENS *****************************/
+	
+	
+	
+	/* SKILL SECTION X LARGE SCREENS ***********************/
+	#skillSection {
+		height: 1750px;
+	}
+	
+	#skillExplanationDiv {
+		max-width: 1200px;
+	}
+	
+	#skills {
+		top: 500px;
+		height: 1200px; 
+	}
+	
+	#skillCategory {
+		margin-top: 200px;
+	}
+	
+	.skill {
+		margin: 32.5px auto;
+	}
+	
+	#skillQuoteDiv {
+		max-width: 1200px;
+		width: 1200px;
+		margin-left: -600px;
+	}
+	
+	q {
+		width: 1200px;
+		max-width: 1200px;
+	}
+	/* END SKILL SECTION X LARGE SCREENS***********************/
+	
+	
+	
+	/* SUB HEADER X LARGE SCREENS ***********************/
+	#subHeader {
+		padding-bottom: 50px;
+	}
+	
+	#subHeader h1 {
+		font-size: 7.5em;
+		margin-bottom: -25px;
+	}
+	
+	#monitor {
+		left: 50%;
+		margin-left: -620px;
+		width: 1240px;
+		height: 825px;
+	}
+	
+	#dev {
+		margin-left: -450px;
+	}
+	
+	#des {
+		margin-left: 150px;
+	}
+	
+	.headerTitle {
+		bottom: 425px;
+	}
+	
+	.subTitle {
+		margin-top: 25px;
+	}
+
+	/* END SUB HEADER X LARGE SCREENS ***********************/
+	
+	
+	
+	/* CODE FOR A HAPPY LIFE SECTION LARGE SCREENS ******************************/
+	#codeSection {
+		position: realtive;
+		padding-bottom: 560px;
+	}
+	
+	#codeSection h1 {
+		font-size: 7.7em;
+	}
+
+	.codeWrap {
+		position: absolute;
+		left: 50%;
+		margin-left: -650px;
+	}
+	
+	#quoteDiv {
+		position: absolute;
+		top: 420px;
+		left: 50%;
+		margin-left: 25px;
+		right: auto;
+	}
+	
+	#quote3 {
+		width: auto;
+	}
+	/* END CODE SECTION LARGE SCREENS *************/
+	
+	
+	
+	/* FOOTER X LARGE SCREENS***********************/
+	footer {
+		position: relative;
+	}
+	
+	.copyRight {
+		position: absolute;
+		bottom: 5px;
+		left: 50%;
+	}
+	
+	.copyRight1 {
+		margin-left: -590px !important;
+	}
+	
+	.copyRight2 {
+		margin-left: 110px;
+	}
+	/* END FOOTER X LARGE SCREENS***********************/
+}
+/* END X LARGE SCREENS ************/

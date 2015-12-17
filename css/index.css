@@ -95,7 +95,8 @@ hr {
 	top: 0px;
 	width: 100%;
 	height: 65px;
-	background: rgba(255,255,245,0.7);
+	/* background: -webkit-linear-gradient(left, rgba(35,75,245,0.5), rgba(45,85,255,0.5), rgba(35,75,245,0.5));background: linear-gradient(to right, rgba(35,75,245,0.5), rgba(45,85,255,0.5), rgba(35,75,245,0.5)); */
+	background: rgb(100,175,255);
 }
 
 #navIconWrap {
@@ -312,12 +313,15 @@ header {
 	list-style: none;
 	margin: 0 auto;
 	padding-left: 0;
-	background: rgb(255,255,245);
-	border-bottom: 1px solid lightgrey;
+	/* background: -webkit-linear-gradient(left, rgb(35,75,245), rgb(45,85,255), rgb(35,75,245));background: linear-gradient(to right, rgb(35,75,245), rgb(45,85,255), rgb(35,75,245)); */
+	background: rgb(100,175,255);
+	border-top: 1px solid rgb(125,200,255);
+	border-bottom: 2px solid rgb(50,125,255);
 }
 
 #tools ul li {
 	display: inline-block;
+	color: rgb(245,245,255);
 	font-family: 'Open Sans', sans-serif;
 	margin: 0;
 	padding: 5px 7.5px 6px 7.5px;
@@ -326,7 +330,7 @@ header {
 }
 
 .subUL {
-	background: rgb(235,235,235);
+	background: rgba(235,235,235,.5);
 }
 /* END TOOLS SECTION ************************/
 
@@ -359,7 +363,7 @@ section p {
 
 /* PROJECTS SECTION ***********************/
 #projectSection {
-	color: rgb(35,35,35);
+	color: rgb(65,65,65);
 	overflow: hidden;
 	position: relative;
 }
@@ -375,26 +379,39 @@ section p {
 	
 }
 
-#projectMenuWrap {
+.projBox {
+	/* color: rgb(175,15,15); */
+	/* background: -webkit-linear-gradient(rgb(35,75,245), rgb(255,255,255));background: linear-gradient(rgb(35,75,245), rgb(255,255,255)); */
+	background: rgb(100,175,255);
+	padding-top: 10px;
+	padding-bottom: 15px;
+	border-top: 1px solid rgb(175,250,255);
+	border-bottom: 2px solid rgb(50,125,255);
+}
+
+/* #projectMenuWrap {
 	position: relative;
 	width: 100%;
 	max-width: 1200px;
 	height: 175px;
 	margin: auto auto 100px;
 	padding-top: 10px;
-	/* background: ivory; */
 	border-top: 1px solid lightgrey;
 	border-bottom: 1px solid lightgrey;
 	overflow-X: auto;
 	overflow-Y: hidden;
 	white-space: nowrap;
+} */
+
+#projectMenuWrap {
+	display: none;
 }
 
 #projectMenu {
 
 }
 
-#projectMenu p {
+/* #projectMenu p {
 	display: inline;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
@@ -407,7 +424,7 @@ section p {
 	opacity: .7;
 	-webkit-transition-duration: .5s;transition-duration: .5s;
 	cursor: pointer;
-}
+} */
 
 .projectMainDes {
 	font-family: 'Open Sans', sans-serif;
@@ -415,6 +432,7 @@ section p {
 	width: 90%;
 	max-width: 1100px;
 	line-height: 27px;
+	/* color: rgb(175,15,15); */
 	margin: 10px auto;
 }
 
@@ -636,6 +654,11 @@ section p {
 	font-weight: 900;
 	font-size: 1.5em;
 	letter-spacing: 1px;
+}
+
+#dealH3-2 {
+	padding-top: 35px;
+	padding-bottom: 25px;
 }
 
 #myDealTitle {
@@ -879,7 +902,7 @@ section p {
 /* JAVASCRIPT */
 #skillLevDis2 {
 	background: -webkit-linear-gradient(left, black, darkorange);background: linear-gradient(to right, black, darkorange);
-	width: 83px;
+	width: 97px;
 }
 
 /* ILLUSTRATOR */
@@ -1164,804 +1187,3 @@ footer p:nth-of-type(1) {
 	margin-bottom: 15px;
 }
 /* END FOOTER ***********************/
-
-
-
-/* MEDIA QUERIES ***********************/
-/* SMALL SCREENS ************/
-@media screen and (max-width: 1000px) {
-	#tools ul {
-		padding-bottom: 5px;
-	}
-	
-	#tools ul li {
-		font-size: .8em;
-		line-height: 8px;
-		padding-top: 1px;
-		padding-bottom: 3px;
-	}
-	
-	#projectMenuWrap {
-		display: none;
-	}
-	
-	#projBox2 {
-		margin-bottom: 100px;
-	}
-}
-/* END SMALL SCREENS ************/
-
-
-
-/* MEDIUM SCREENS ************/
-@media screen and (min-width: 500px) {	
-	/* NAV MEDIUM SCREENS ******************************/
-	nav p {
-		padding-top: 0px;
-		padding-bottom: 0px;
-	}
-	
-	nav ul {
-		margin-top: 0px;
-	}
-
-	nav ul li {
-		display: inline-block;
-		padding-left: 15px;
-	}
-	
-	#navGithubLink,
-	#navLinkedinLink {
-		margin-top: 0px;
-	}
-	
-	#headerNav {
-		padding-top: 0px;
-	}
-	
-	#headerNav a {
-		font-size: 1.25em;
-		margin-left: 25px;
-		padding-bottom: 30px;
-	}
-	
-	#headerProjects,
-	#headerMe,
-	#headerContact,
-	#headerTop {
-		background-size: 35px 30px;
-	}
-	/* END NAV MEDIUM SCREENS ******************/
-	
-	
-	
-	/* HEADER MEDIUM SCREENS ***********************/
-	#whoIAmDiv h2 {
-		font-size: 3.5em;
-		color: ivory;
-		margin-top: -30px;
-		padding-bottom: 150px;
-		text-shadow: 1px 1px 0px rgb(50,50,50);
-	}
-
-	#whoIAmDiv p {
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 600;
-		font-size: 1.25em;
-		color: ivory;
-		text-shadow: 1px 1px 0px rgb(50,50,50);
-	}
-	/* END HEADER MEDIUM SCREENS ***********************/
-	
-	
-	
-	/* GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
-	section h1 {
-		font-size: 10vw;
-	}
-	/* END GENERAL SECTIONS STYLING MEDIUM SCREENS ***********************/
-	
-	
-	
-	/* PROJECTS MEDIUM SCREENS ***********************/
-	/* #projectsTitle {
-		letter-spacing: 7.5px;
-		text-indent: 65px;
-	} */
-
-	/* #projectsTitle  span {
-		margin-left: 15px;
-	} */
-	
-	#projectMenuWrap {
-		margin: auto auto 125px;
-	}
-	
-	.projectArrow {
-		margin-top: -75px;
-	}
-	
-	#projectArrow1 {
-		margin-left: -100px;
-	}
-
-	#projectArrow2 {
-		margin-left: 60px;
-	}
-	
-	.projectImg {
-		width: 300px;
-		height: 250px;
-		margin-top: 35px;
-	}
-	
-	.projectLink {
-		font-size: 2em;
-	}
-	/* END PROJECTS SECTION MEDIUM SCREENS ***********************/
-	
-	
-	
-	/* SUB HEADER MEDIUM SCREENS *******/
-	#subHeader h1 {
-		font-size: 10vw;
-		margin-top: 25px;
-		margin-bottom: 0px;
-	}
-	
-	.headerImg {
-		width: 150px; 
-		height: 245px;
-		margin-top: 25px;
-	}
-	
-	.headerTitle {
-		margin: 5px 10px 15px;
-	}
-	
-	.subTitle {
-		font-size: 1.25em;
-		margin: 0px auto 50px;
-	}
-	
-	#color {
-		display: inline-block;
-		width: 250px;
-		height: 300px;
-		background: url('../img/backgrounds/colorPaper.png');
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
-		margin: -57.5px auto auto;
-		-webkit-filter: hue-rotate(45deg) drop-shadow(0px 10px 5px rgba(0,0,0,0.5));filter: hue-rotate(45deg) drop-shadow(0px 10px 5px rgba(0,0,0,0.5));
-		z-index: 99;
-	}
-	/* END SUB HEADER MEDIUM SCREENS *******/
-	
-	
-	
-	/* ME SECTION MEDIUM SCREENS *****************************/
-	#meSection {
-		/* margin-top: 50px; */
-	}
-	
-	#myDealSection {
-		padding-bottom: 100px;
-	}
-	
-	.refEmail {
-		letter-spacing: .75px;
-	}
-	/* END SECTION TWO MEDIUM SCREENS *****************************/
-	
-	
-	
-	/* SKILL SECTION MEDIUM SCREENS ***********************/
-	#skillSection h1 {
-		padding-bottom: 111px;
-	}
-	/* END SKILL SECTION MEDIUM SCREENS ***********************/
-	
-	
-	
-	/* CODE FOR A HAPPY LIFE SECTION MEDIUM SCREENS ******************************/
-	code {
-		font-size: 1.5em;
-		line-height: 30px;
-	}
-	/* END CODE SECTION MEDIUM SCREENS *************/
-	
-	
-	/* FOOTER MEDIUM SCREENS ***********************/
-	#footerGithubLink {
-		left: 50%;
-		margin-left: -150px;
-	}
-
-	#footerLinkedinLink {
-		left: 50%;
-		margin-left: 100px;
-	}
-	/* END FOOTER MEDIUM SCREENS ***********************/
-}
-/* END MEDIUM SCREENS ***********************/
-
-
-/* LARGE SCREENS ************/
-@media screen and (min-width: 1000px) {
-	/* GENERAL SECTIONS STYLING LARGE SCREENS ***********************/
-	section h1 {
-		font-size: 7vw;
-	}
-	/* END GENERAL SECTIONS STYLING LARGE SCREENS ***********************/
-
-	
-	
-	/* HEADER LARGE SCREENS ***********************/
-	header {
-		background: url('../img/backgrounds/rain2.jpg');
-		background-repeat: no-repeat;
-		background-size: 100% 420px;
-		background-position: center top;
-		background-attachment: fixed;
-	}
-	
-	#whoIAmDiv {
-		position: absolute;
-		top: -50px;
-		left: 150px;
-	}
-
-	#whoIAmDiv h2 {
-		font-family: 'Playfair Display', serif;
-		font-size: 3em;
-		color: ivory;
-		margin-top: 0px;
-		padding-bottom: 25px;
-		text-shadow: 1px 1px 0px rgb(50,50,50);
-	}
-
-	#whoIAmDiv p {
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 600;
-		font-size: 1.1em;
-		color: ivory;
-		text-shadow: 1px 1px 0px rgb(50,50,50);
-	}
-	/* END HEADER LARGE SCREENS ***********************/
-	
-	
-	
-	/* MAIN DIV  LARGE SCREENS *************/
-
-	/* END LARGE SCREENS ****************/
-	
-	
-	
-	/* PROJECTS SECTION LARGE SCREENS ***********************/
-	#tools ul {
-		/* background: url('../img/backgrounds/methodBG.jpg'); */
-	}
-	
-	#projectsTitle {
-		padding-top: 100px;
-	}
-
-	#projectsTitle  span {
-		
-	}
-	
-	#projectMenu p:active, #projectMenu p:focus, #projectMenu p:hover {
-		opacity: 1;
-		font-style: italic;
-		-webkit-transition-duration: .5s;transition-duration: .5s;
-	}
-	
-	.projGitImg:active, .projGitImg:focus, .projGitImg:hover {
-		-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);
-		opacity: 1;
-	}
-	
-	#projectArrow1 {
-		margin-left: -475px;
-	}
-
-	#projectArrow2 {
-		margin-left: 445px;
-	}
-	
-	.projectArrow:active, .projectArrow:focus, .projectArrow:hover {
-		border-color: transparent transparent rgb(50,50,50) rgb(50,50,50);
-		-webkit-transition-duration: .5s;transition-duration: .5s;
-	}
-	
-	.projBox {
-		position: absolute;
-		top: 65px;
-		left: 50%;
-		width: 250px;
-		background: rgb(255,255,245);
-		background: url('../img/backgrounds/methodBG.jpg');
-		background-size: cover;
-	}
-	
-	#projBox1 {
-		margin-left: -485px;
-		height: 165px;
-		padding-top: 25px;
-		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
-	}
-	
-	#methodology {
-		margin-bottom: 35px;
-	}
-	
-	#projBox2 {
-		margin-left: 235px;
-		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
-	}
-	
-	.projectMainDes {
-		font-size: 1.25em;
-		line-height: 30px;
-	}
-	
-	.projectWrap {
-		position: relative;
-		margin: 25px auto 150px;
-		height: 420px;
-	}
-	
-	.projectLink {
-		font-size: 1.75em;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	
-	.projectLinkLeft {
-		margin-left: -420px;
-	}
-	
-	.projectLinkRight {
-		margin-right: -550px;
-	}
-
-	.projectImg {
-		position: absolute;
-		top: 50px;
-		left: 50%;
-		width: 420px;
-		height: 345px;
-		-webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));
-	}
-	
-	.projectImgLeft {
-		margin-left: -450px;
-	}
-	
-	.projectImgRight {
-		margin-left: 25px;
-	}
-
-	.projectDes {
-		position: absolute;
-		top: -25px;
-		left: 50%;
-		font-size: 1.25em;
-		line-height: 30px;
-		text-align: left;
-		padding: 10px;
-		max-width: 420px;
-	}
-	
-	.projectDes span {
-		
-	}
-	
-	.projectDesRight {
-		margin-left: 25px;
-	}
-	
-	.projectDesLeft {
-		margin-left: -450px;
-	}
-	
-	.projectWrap:active > .projectDesRight, .projectWrap:focus > .projectDesRight, .projectWrap:hover > .projectDesRight {
-		background: rgba(255,255,245,0.9);
-		box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
-		-webkit-transition-duration: .5s;transition-duration: .5s;
-	}
-
-	.projectWrap:active > .projectDesLeft, .projectWrap:focus > .projectDesLeft, .projectWrap:hover > .projectDesLeft {
-		background: rgba(255,255,245,0.9);
-		box-shadow: -5px 5px 5px rgba(0,0,0,0.2);
-		-webkit-transition-duration: .5s;transition-duration: .5s;
-	}
-	/* END PROJECTS SECTION LARGE SCREENS***********************/
-	
-	
-	
-	/* SUB HEADER LARGE SCREEN **************/
-	#subHeader h1 {
-		font-size: 7.5vw;
-		margin-top: 75px;
-		margin-bottom: 25px;
-		padding-top: 90px;
-	}
-	
-	#monitor {
-		display: block;
-		position: absolute;
-		top: 75px;
-		left: 5%;
-		width: 90%;
-		height: 775px;
-		background: url('../img/backgrounds/monitorLg2.png');
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
-	}
-	
-	#monitorShadow,
-	#monitorShadow2 {
-		display: block;
-		position: absolute;
-		bottom: 25px;
-		left: 50%;
-		
-		height: 65px;
-		border-radius: 25px;
-	}
-	
-	#monitorShadow {
-		background: radial-gradient(rgba(50,50,50,0.7), transparent, transparent);
-		margin-left: -60%;
-		width: 120%;
-	}
-	
-	#monitorShadow2 {
-		background: linear-gradient(to right, transparent, rgba(50,50,50,0.7), transparent);
-		margin-left: -35%;
-		width: 70%;
-		box-shadow: 
-	}
-
-	.headerImg {
-		width: 175px; 
-		height: 270px; 
-		margin-top: -25px;
-	}
-	
-	.headerTitle {
-		position: absolute;
-		bottom: 350px;
-		left: 50%;
-		width: 300px; 
-		height: 50px;
-	}
-
-	#dev{
-		margin-left: -400px;
-	}
-
-	#des {
-		margin-left: 100px;
-	}
-	
-	.subTitle {
-		font-size: 1.5em;
-		margin: 25px auto 50px;
-	}
-	/* END SUB HEADER LARGE SCREEN **************/
-	
-	
-	
-	/* ME SECTION LARGE SCREENS *****************************/
-	#meSection {
-		padding-top: 75px;
-		padding-bottom: 75px;
-	}
-	
-	#contactTitle,
-	#myDealTitle {
-		font-size: 5em !important;
-	}
-	
-	.meText,
-	.myDealText,
-	.contactText {
-		font-size: 1.25em;
-	}
-	
-	.happyFace {
-		font-size: 2.5em;
-	}
-	
-	#dealSection p {
-		font-size: 1.25em;
-	}
-	
-	#myDealSection q {
-		max-width: 700px;
-	}
-	/* END ME SECTION LARGE SCREENS *****************************/
-	
-	
-	
-	/*  SKILL SECTION LARGE SCREENS ***********************/
-	#skillSection {
-		position: relative;
-		height: 1775px;
-		background-attachment: fixed !important;
-	}
-	
-	.skillExplanation {
-		font-size: 1.25em;
-		text-align: justify;
-	}
-
-	.aboutWrap {
-		margin: 125px auto;
-	}
-	
-	.leftAboutWrap {
-		margin-left: 50px;
-	}
-	
-	.rightAboutWrap {
-		margin-right: 50px;
-	}
-	
-	.innerAboutWrap {
-		padding: 75px 25px;
-	}
-	
-	#skills {
-		position: absolute;
-		top: 850px;
-		left: 50%;
-		width: 350px;
-		margin-left: -175px;
-		-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);
-	}
-	
-	#skillGauge {
-		margin-left: 135px;
-		margin-bottom: 25px;
-	}
-	
-	#skillCategory {
-		position: absolute;
-		width: 500px !important;
-		top: 360px;
-		left: -225px;
-		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
-	}
-	
-	.skillInfo {
-		-webkit-transform: rotate(35deg);-ms-transform: rotate(35deg);transform: rotate(35deg);
-	}
-	
-	.skillNum {
-		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
-	}
-	
-	#skillLevelExplanationDiv {
-		position: absolute;
-		top: 45%;
-		left: 75px;
-		width: 500px;
-		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
-		border-bottom: 2px solid white;
-	}
-	
-	.skillLevelExplanation {
-		display: inline;
-	}
-	
-	#skillQuoteDiv {
-		position: absolute;
-		bottom: 50px;
-		left: 50%;
-		width: 750px;
-		margin-left: -375px;
-	}
-	/* END SKILL SECTION LARGE SCREENS ***********************/
-	
-	
-	
-	/* CODE FOR A HAPPY LIFE SECTION LARGE SCREENS ******************************/
-	#codeSection h5 {
-		display: block;
-		color: white;
-	}
-	
-	#codeSection p {
-		font-size: 1.5em;
-		max-width: 700px;
-	}
-
-	code {
-		margin-left: 10%;
-		-webkit-transform: translate(-1000px, 0px);-ms-transform: translate(-1000px, 0px);transform: translate(-1000px, 0px);
-		-webkit-transition-duration: .5s;transition-duration: .5s;
-	}
-
-	.oneIndent {
-		text-indent: 25px;
-	}
-
-	.twoIndents {
-		text-indent: 50px;
-	}
-
-	.threeIndents {
-		text-indent: 75px;
-	}
-	
-	#quoteDiv {
-		position: absolute;
-		top: 55%;
-		right: 7.5%;
-		-webkit-transform: translate(750px, 0px);-ms-transform: translate(750px, 0px);transform: translate(750px, 0px);
-		-webkit-transition-duration: .5s;transition-duration: .5s;
-	}
-	
-	#quote3 {
-		width: auto;
-	}
-	/* END CODE SECTION LARGE SCREENS *************/
-	
-	
-	
-	/* FOOTER LARGE SCREENS ***********************/	
-	footer p:nth-of-type(2) {
-		float: left;
-		margin-left: 10px;
-	}
-	
-	footer p:nth-of-type(3) {
-		float: right;
-		margin-right: 10px;
-	}
-	/* END FOOTER LARGE SCREENS***********************/
-}
-/* END LARGE SCREENS ************/
-
-
-
-/* X LARGE SCREENS ************/
-@media screen and (min-width: 1250px) {
-	/* NAV X LARGE SCREENS ******************************/
-	nav p {
-		font-size: 1.5em;
-		padding-top: 10px;
-	}
-
-	nav ul {
-		margin: 75px auto 25px;
-	}
-
-	nav ul li {
-		display: block;
-		margin: 25px auto;
-	}
-	
-	nav ul li:nth-of-type(2) {
-		margin-bottom: 15px;
-	}
-	
-	#navGithubLink,
-	#navLinkedinLink {
-		margin-top: 25px;
-	}
-	/* END NAV X LARGE SCREENS ******************/
-	
-
-	
-	/* MAIN DIV X LARGE SCREENS *************/
-	
-	/* END X LARGE SCREENS ****************/
-	
-	
-
-	/* SUB HEADER X LARGE SCREENS ***********************/
-	#subHeader {
-		padding-bottom: 85px;
-	}
-	
-	#subHeader h1 {
-		margin-bottom: -25px;
-	}
-	
-	#monitor {
-		left: 10%;
-		width: 80%;
-		height: 825px;
-	}
-	
-	#dev {
-		margin-left: -450px;
-	}
-	
-	#des {
-		margin-left: 150px;
-	}
-	
-	.headerTitle {
-		bottom: 425px;
-	}
-	
-	.subTitle {
-		margin-top: 25px;
-	}
-
-	/* END SUB HEADER X LARGE SCREENS ***********************/
-	
-	
-	
-	/* GENERAL SECTIONS STYLING X LARGE SCREENS ***********************/
-	section h1 {
-		font-size: 5.5vw;
-	}
-	
-	q {
-		font-size: 2em;
-	}
-	
-	q span {
-		font-size: .9em;
-	}
-	/* END GENERAL SECTIONS STYLING X LARGE SCREENS ***********************/
-	
-	
-	
-	/* PROJECTS SECTION X LARGE SCREENS ***********************/
-	#projectMenuWrap {
-		background: url('../img/backgrounds/methodBG.jpg');
-		border: none;
-		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
-	}
-	
-	#projectArrow1 {
-		margin-left: -585px;
-	}
-
-	#projectArrow2 {
-		margin-left: 555px;
-	}
-	
-	#projBox1 {
-		margin-left: -600px;
-	}
-	
-	#projBox2 {
-		margin-left: 350px;
-	}
-	/* END PROJECTS SECTION X LARGE SCREENS***********************/
-	
-	
-	
-	/* ME SECTION X LARGE SCREENS *****************************/
-	#meSection h1 {
-		margin-left: -30px;
-	}
-	/* END ME SECTION X LARGE SCREENS *****************************/
-	
-	
-	
-	/* SKILL SECTION X LARGE SCREENS ***********************/
-	#skillSection {
-		height: 1850px;
-	}
-	
-	#skills {
-		top: 850px;
-	}
-	/* END SKILL SECTION X LARGE SCREENS***********************/
-	
-	
-	
-	/* FOOTER X LARGE SCREENS***********************/
-
-	/* END FOOTER X LARGE SCREENS***********************/
-}
-/* END X LARGE SCREENS ************/
