@@ -24,6 +24,13 @@
 /* MEDIUM SCREENS ************/
 @media screen and (min-width: 500px) {	
 	/* NAV MEDIUM SCREENS ******************************/
+	nav {
+		background: rgba(0,0,0,0.99) url('../img/backgrounds/solarSystemM.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: top center;
+	}
+	
 	nav p {
 		padding-top: 0px;
 		padding-bottom: 0px;
@@ -206,12 +213,19 @@
 	/* END GENERAL SECTIONS STYLING LARGE SCREENS ***********************/
 
 	
+	nav {
+		background: rgba(0,0,0,0.99) url('../img/backgrounds/solarSystemLg.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: top center;
+	}
+	
 	
 	/* HEADER LARGE SCREENS ***********************/
 	header {
 		background: url('../img/backgrounds/rain2.jpg');
 		background-repeat: no-repeat;
-		background-size: 100% 420px;
+		background-size: auto 420px;
 		background-position: center top;
 		background-attachment: fixed;
 	}
@@ -312,7 +326,9 @@
 		top: 65px;
 		left: 50%;
 		width: 250px;
-		background-size: cover;
+		background: rgb(100,175,255);
+		border-top: 1px solid rgb(175,250,255);
+		border-bottom: 2px solid rgb(50,125,255);
 	}
 	
 	#projBox1 {
@@ -479,7 +495,7 @@
 	
 	#skills {
 		position: absolute;
-		top: 850px;
+		top: 875px;
 		left: 50%;
 		width: 350px;
 		margin-left: -175px;
@@ -826,12 +842,16 @@
 		height: 1750px;
 	}
 	
+	#skillTitle {
+		font-size: 5em;
+	}
+	
 	#skillExplanationDiv {
 		max-width: 1200px;
 	}
 	
 	#skills {
-		top: 500px;
+		top: 525px;
 		height: 1200px; 
 	}
 	
