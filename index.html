@@ -38,7 +38,7 @@
 					</ul>
 					<a href="https://github.com/gitrobertpm" target="_blank" id="navGithubLink"></a>
 					<a href="https://www.linkedin.com/pub/robert-manolis/b1/40a/34a" target="_blank" id="navLinkedinLink"></a>
-					<p>robertpm@robertpm.com</p>
+					<p class="email">robertpm@robertpm.com</p>
 					<q><span>It's hard to beat a person who never gives up.</span></q>
 					<cite>Babe Ruth, <span>Ball Player</span></cite>
 				</nav>
@@ -85,8 +85,9 @@
 						<br>
 						<div id="projectMenuWrap">
 							<div id="projectMenu"></div>
-							<div></div>
-							<div></div>
+						</div>
+						<div id="projMenuTip">
+							<p>The above menu is dynamically generated with my own vanilla JavaScript.<br>For every project inserted into the showcase below,<br>a matching item is automatically inserted into the menu above.  Yay JavaScript!</p>
 						</div>
 						<div id="projectArrow1" class="projectArrow"><p>prev</p></div>
 						<div id="projectArrow2" class="projectArrow"><p>next</p></div>
@@ -95,37 +96,40 @@
 							<div id="projectImg1" class="projectImg projectImgRight"></div>
 							<p class="projectDes projectDesLeft">My greatest work yet.<a href="https://github.com/gitrobertpm/galacticodom" target="_blank" class="projGitImg"></a></p>
 						</div> -->
-						<div class="projectWrap">
+						<div id="clickTipWrap">
+							<p id="clickTip">Click below to open a project in a new window.<p>
+						</div>
+						<div class="projectWrap projectWrapLeft">
 							<a href="http://gitrobertpm.github.io/eching" target="_blank" id="projectLink1" class="projectLink projectLinkLeft">The E Ching</a>
 							<div id="projectImg1" class="projectImg projectImgLeft"></div>
 							<p class="projectDes projectDesRight"><span>August ~ Septemeber, 2015</span><br><br><span>Just for fun</span><br><br>Enjoy a free digital simulation of the preeminent form of ancient divination.<br><br>A CSS sprite animation gives life to coins you can flip with the press of a button.  Choose from a selection of coins, follow the prompts, and recieve some relevant sage-like advice.<br><br>JavaScript produces 3 * 6 random coin flips, which builds a random I Ching hexagram, and displays a reading of that hexagram.<a href="https://github.com/gitrobertpm/eching" target="_blank" class="projGitImg"></a></p>
 						</div>
 
-						<div class="projectWrap">
+						<div class="projectWrap projectWrapRight">
 							<a href="http://gitrobertpm.github.io/galacticodom" target="_blank" id="projectLink3" class="projectLink projectLinkRight">Galactic Odometer</a>
 							<div id="projectImg3" class="projectImg projectImgRight"></div>
 							<p class="projectDes projectDesLeft"><span>2014 ~ 2015</span><br><br><span>Just for fun</span><br><br>This JavaScript powered odometer calculates and outputs a running count of the space miles you've traveled as the Earth and galaxy orbit.<br><br>Just enter your date of birth, and watch the vast miles fly by.<br><br>Complete with cool animations and a space-styled explanation of the math and speeds involved in coming up with milage approximation.<a href="https://github.com/gitrobertpm/galacticodom" target="_blank" class="projGitImg"></a></p>
 						</div>
 
-						<div class="projectWrap">
+						<div class="projectWrap  projectWrapLeft">
 							<a href="http://gitrobertpm.github.io/the-decid-o-matic-5000/" target="_blank" id="projectLink6" class="projectLink projectLinkLeft">Decid-o-matic 5000</a>
 							<div id="projectImg6" class="projectImg projectImgLeft"></div>
 							<p class="projectDes projectDesRight"><span>2014 ~ 2015</span><br><br><span>Just for fun</span><br><br>This stylized question and answer machine is designed to help with those difficult decisions.<br><br>Think of something you are considering doing, answer a few simple questions and enjoy a little JavaScript powered advice.<br><br>Programmed with JavaScript, but designed entirely with CSS.  No images.<a href="https://github.com/gitrobertpm/the-decid-o-matic-5000" target="_blank" class="projGitImg"></a></p>
 						</div>
 
-						<div class="projectWrap">
+						<div class="projectWrap projectWrapRight">
 							<a href="http://thewayunraveled.com" target="_blank" id="projectLink5" class="projectLink projectLinkRight">The Way Unraveled</a>
 							<div id="projectImg5" class="projectImg projectImgRight"></div>
 							<p class="projectDes projectDesLeft"><span>March, 2015</span><br><br><span>First portfolio and code laboratory</span><br><br>I built this to be something of a portfolio, and also a sort of inspirational website with an emphasis on compassion and creativity.<br><br>I didn't quite pull it off, but there were plenty of CSS and JavaScript DOM manipulation experiments in here.  And the onload animation on the welcome page is still pretty cool.<a href="https://github.com/gitrobertpm/thewayunraveled" target="_blank" class="projGitImg"></a></p>
 						</div>
 
-						<div class="projectWrap">
+						<div class="projectWrap  projectWrapLeft">
 							<a href="http://thefreshesthigh.com" target="_blank" id="projectLink4" class="projectLink projectLinkLeft">The Freshest High</a>
 							<div id="projectImg4" class="projectImg projectImgLeft"></div>
 							<p class="projectDes projectDesRight"><span>June, 2015</span><br><br><span>Pro bono gig</span><br><br>This is a product description website for a new start-up, TABE, LLC.<br><br>A playful animation adds levity to the home page.  Original icons and photographs assist a detailed and slide-styled explanation of product info, instructions, and safety information.<br><br>I built this for free just to gain experience and add to my portfolio.<a href="https://github.com/gitrobertpm/newTabe" target="_blank" class="projGitImg"></a></p>
 						</div>
 
-						<div class="projectWrap">
+						<div class="projectWrap projectWrapRight">
 							<a href="http://gitrobertpm.github.io/gianni" target="_blank" id="projectLink2" class="projectLink projectLinkRight">Gianni's Gallery</a>
 							<div id="projectImg2" class="projectImg projectImgRight"></div>
 							<p class="projectDes projectDesLeft"><span>July, 2015 ~ Present</span><br><br><span>Ongoing side project</span><br><br>The purpose of this project is to experiment with possible horizontal display options, and to showcase some portfolio art for my brother, the recent college grad.<br><br>It's meant to simulate the experience of walking through a gallery.  JavaScript powers a neat auto scroll feature that can be set to Pachebel's Cannon.<br><br>Art by Gianni Vardanega, 3D Lighting Artist.  Doesn't work in mobile or tablet yet.<a href="https://github.com/gitrobertpm/gianni" target="_blank" class="projGitImg"></a></p>

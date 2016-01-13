@@ -45,6 +45,10 @@
 		padding-left: 15px;
 	}
 	
+	.email {
+		font-weight: bold;
+	}
+	
 	#navGithubLink,
 	#navLinkedinLink {
 		margin-top: 0px;
@@ -301,6 +305,36 @@
 		opacity: 1 !important;
 		font-style: italic;
 		-webkit-transition-duration: .5s;transition-duration: .5s;
+	}
+	
+	#projMenuTip {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		width: 700px;
+		position: absolute;
+		left: 50%;
+		margin-left: -350px;
+		margin-top: -125px;
+		background: rgba(100,175,255,0.5);
+	}
+	
+	#projectMenuWrap:active + #projMenuTip, #projectMenuWrap:focus + #projMenuTip, #projectMenuWrap:hover + #projMenuTip {
+		display: block;
+	}
+	
+	#clickTipWrap {
+		display: block;
+	}
+	
+	#clickTip {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		position: absolute;
+		width: 420px;
+		left: 50%;
+		/* margin-left: -210px; */
+		margin-top: -15px;
+		background: rgba(100,175,255,0.5);
 	}
 	
 	.projGitImg:active, .projGitImg:focus, .projGitImg:hover {
@@ -777,7 +811,7 @@
 	}
 	
 	.projectDesLeft {
-		margin-left: -600px;
+		margin-left: -550px;
 	}
 	/* END PROJECTS SECTION X LARGE SCREENS***********************/
 	

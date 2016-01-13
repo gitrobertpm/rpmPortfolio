@@ -58,8 +58,8 @@ function set(idee, background, display, bs, br, bp) {
 set("navIcon", "url('img/rpm.png')", "block", "100% 100%", "no-repeat");
 
 // SET NAV LINK ICONS
-set("navGithubLink", "url('img/github.png')", "block", "50px 50px", "no-repeat", "center");
-set("navLinkedinLink", "url('img/linkedin.png')", "block", "50px 50px", "no-repeat", "center");
+set("navGithubLink", "rgba(0,0,0,0.5) url('img/github.png')", "block", "50px 50px", "no-repeat", "center");
+set("navLinkedinLink", "rgba(0,0,0,0.5) url('img/linkedin.png')", "block", "50px 50px", "no-repeat", "center");
 
 // SET FOOTER LINK ICONS
 set("footerGithubLink", "url('img/github.png')", "block", "50px 50px", "no-repeat", "center");
@@ -149,6 +149,29 @@ for (var i = 0; i < pmP.length; i++) {
 		}
 	};
 }
+
+// CLICK TIP ON PROJECT HOVER
+var clickTip = document.getElementById("clickTip");
+
+// var getClass = clickTip[0].getAttribute("class");
+// alert(getClass);
+
+// if (width > 999) {
+	// for (var zzTop = 0; zzTop < projectWrap.length; zzTop++) {
+		// projectWrap[zzTop].onmouseover = function() {
+			// clickTip.style.display = "block";
+			// if (projectWrap[zzTop] % )  {
+				// clickTip.style.marginLeft = "-400px";
+			// } else if (projectWrap[zzTop] === 1){
+				// clickTip.style.marginLeft = "-100px";
+			// }
+		// };
+		
+		// projectWrap[zzTop].onmouseout = function() {
+			// clickTip.style.display = "none";
+		// };
+	// }
+// }
 
 // PROJECTS NEXT ARROW
 document.getElementById("projectArrow2").onclick = function() {
