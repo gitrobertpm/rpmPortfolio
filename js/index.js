@@ -150,29 +150,6 @@ for (var i = 0; i < pmP.length; i++) {
 	};
 }
 
-// CLICK TIP ON PROJECT HOVER
-var clickTip = document.getElementById("clickTip");
-
-// var getClass = clickTip[0].getAttribute("class");
-// alert(getClass);
-
-// if (width > 999) {
-	// for (var zzTop = 0; zzTop < projectWrap.length; zzTop++) {
-		// projectWrap[zzTop].onmouseover = function() {
-			// clickTip.style.display = "block";
-			// if (projectWrap[zzTop] % )  {
-				// clickTip.style.marginLeft = "-400px";
-			// } else if (projectWrap[zzTop] === 1){
-				// clickTip.style.marginLeft = "-100px";
-			// }
-		// };
-		
-		// projectWrap[zzTop].onmouseout = function() {
-			// clickTip.style.display = "none";
-		// };
-	// }
-// }
-
 // PROJECTS NEXT ARROW
 document.getElementById("projectArrow2").onclick = function() {
 	for (var i = 0; i < projectWrap.length; i++) {

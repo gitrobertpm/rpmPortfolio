@@ -382,11 +382,7 @@ section p {
 	color: rgb(100,175,255);
 }
 
-#clickTipWrap {
-	display: none;
-}
-
-#clickTip {
+.clickTip {
 	display: none;
 }
 

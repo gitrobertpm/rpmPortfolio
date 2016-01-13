@@ -271,13 +271,46 @@
 		padding-top: 100px;
 	}
 	
+	.projectArrow:active, .projectArrow:focus, .projectArrow:hover {
+		border-color: transparent transparent rgb(50,50,50) rgb(50,50,50);
+		-webkit-transition-duration: .5s;transition-duration: .5s;
+	}
+	
+	.projBox {
+		position: absolute;
+		top: 65px;
+		left: 50%;
+		width: 250px;
+		background: rgb(100,175,255);
+		border-top: 1px solid rgb(175,250,255);
+		border-bottom: 2px solid rgb(50,125,255);
+	}
+	
+	#projBox1 {
+		margin-left: -485px;
+		height: 165px;
+		padding-top: 25px;
+		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+	}
+	
+	#methodology {
+		margin-bottom: 35px;
+	}
+	
+	#projBox2 {
+		margin-left: 235px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+	}
+	
 	#projectMenuWrap {
 		position: relative;
 		display: block;
 		width: 100%;
 		max-width: 1200px;
 		height: 175px;
-		margin: auto auto 125px;
+		margin: auto auto 150px;
 		padding-top: 10px;
 		border-top: 2px solid rgb(50,125,255);
 		border-bottom: 2px solid rgb(50,125,255);
@@ -314,27 +347,39 @@
 		position: absolute;
 		left: 50%;
 		margin-left: -350px;
-		margin-top: -125px;
-		background: rgba(100,175,255,0.5);
+		margin-top: -150px;
+		background: rgba(100,175,255,0.9);
+		border-bottom: 2px solid rgb(50,125,255);
+	}
+	
+	#projMenuTip p {
+		color: ivory !important;
 	}
 	
 	#projectMenuWrap:active + #projMenuTip, #projectMenuWrap:focus + #projMenuTip, #projectMenuWrap:hover + #projMenuTip {
 		display: block;
 	}
 	
-	#clickTipWrap {
-		display: block;
-	}
-	
-	#clickTip {
+	.clickTip {
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 600;
+		color: ivory;
 		position: absolute;
-		width: 420px;
+		width: 400px;
 		left: 50%;
-		/* margin-left: -210px; */
-		margin-top: -15px;
-		background: rgba(100,175,255,0.5);
+		margin-top: -75px;
+		background: rgba(100,175,255,0.9);
+		border-bottom: 2px solid rgb(50,125,255);
+	}
+	
+	.projectWrapLeft:active > .clickTip, .projectWrapLeft:focus > .clickTip, .projectWrapLeft:hover > .clickTip {
+		display: block;
+		margin-left: -400px;
+	}
+	
+	.projectWrapRight:active > .clickTip, .projectWrapRight:focus > .clickTip, .projectWrapRight:hover > .clickTip {
+		display: block;
+		margin-left: 10px;
 	}
 	
 	.projGitImg:active, .projGitImg:focus, .projGitImg:hover {
@@ -350,39 +395,6 @@
 		margin-left: 445px;
 	}
 	
-	.projectArrow:active, .projectArrow:focus, .projectArrow:hover {
-		border-color: transparent transparent rgb(50,50,50) rgb(50,50,50);
-		-webkit-transition-duration: .5s;transition-duration: .5s;
-	}
-	
-	.projBox {
-		position: absolute;
-		top: 65px;
-		left: 50%;
-		width: 250px;
-		background: rgb(100,175,255);
-		border-top: 1px solid rgb(175,250,255);
-		border-bottom: 2px solid rgb(50,125,255);
-	}
-	
-	#projBox1 {
-		margin-left: -485px;
-		height: 165px;
-		padding-top: 25px;
-		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
-	}
-	
-	#methodology {
-		margin-bottom: 35px;
-	}
-	
-	#projBox2 {
-		margin-left: 235px;
-		padding-top: 0px;
-		padding-bottom: 0px;
-		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
-	}
-	
 	.projectMainDes {
 		font-size: 1.25em;
 		line-height: 30px;
@@ -390,7 +402,7 @@
 	
 	.projectWrap {
 		position: relative;
-		margin: 25px auto 150px;
+		margin: 50px auto 150px;
 		height: 420px;
 	}
 	
@@ -780,6 +792,16 @@
 	
 	#projBox2 {
 		margin-left: 350px;
+	}
+	
+	.projectWrapLeft:active > .clickTip, .projectWrapLeft:focus > .clickTip, .projectWrapLeft:hover > .clickTip {
+		display: block;
+		margin-left: -500px;
+	}
+	
+	.projectWrapRight:active > .clickTip, .projectWrapRight:focus > .clickTip, .projectWrapRight:hover > .clickTip {
+		display: block;
+		margin-left: 110px;
 	}
 	
 	.projectLinkLeft {
