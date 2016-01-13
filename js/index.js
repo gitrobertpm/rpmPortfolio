@@ -58,8 +58,8 @@ function set(idee, background, display, bs, br, bp) {
 set("navIcon", "url('img/rpm.png')", "block", "100% 100%", "no-repeat");
 
 // SET NAV LINK ICONS
-set("navGithubLink", "url('img/github.png')", "block", "50px 50px", "no-repeat", "center");
-set("navLinkedinLink", "url('img/linkedin.png')", "block", "50px 50px", "no-repeat", "center");
+set("navGithubLink", "rgba(0,0,0,0.5) url('img/github.png')", "block", "50px 50px", "no-repeat", "center");
+set("navLinkedinLink", "rgba(0,0,0,0.5) url('img/linkedin.png')", "block", "50px 50px", "no-repeat", "center");
 
 // SET FOOTER LINK ICONS
 set("footerGithubLink", "url('img/github.png')", "block", "50px 50px", "no-repeat", "center");

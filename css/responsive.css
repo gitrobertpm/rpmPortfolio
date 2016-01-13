@@ -24,6 +24,13 @@
 /* MEDIUM SCREENS ************/
 @media screen and (min-width: 500px) {	
 	/* NAV MEDIUM SCREENS ******************************/
+	nav {
+		background: rgba(0,0,0,0.99) url('../img/backgrounds/solarSystemM.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: top center;
+	}
+	
 	nav p {
 		padding-top: 0px;
 		padding-bottom: 0px;
@@ -36,6 +43,10 @@
 	nav ul li {
 		display: inline-block;
 		padding-left: 15px;
+	}
+	
+	.email {
+		font-weight: bold;
 	}
 	
 	#navGithubLink,
@@ -206,12 +217,19 @@
 	/* END GENERAL SECTIONS STYLING LARGE SCREENS ***********************/
 
 	
+	nav {
+		background: rgba(0,0,0,0.99) url('../img/backgrounds/solarSystemLg.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: top center;
+	}
+	
 	
 	/* HEADER LARGE SCREENS ***********************/
 	header {
 		background: url('../img/backgrounds/rain2.jpg');
 		background-repeat: no-repeat;
-		background-size: 100% 420px;
+		background-size: auto 420px;
 		background-position: center top;
 		background-attachment: fixed;
 	}
@@ -253,13 +271,46 @@
 		padding-top: 100px;
 	}
 	
+	.projectArrow:active, .projectArrow:focus, .projectArrow:hover {
+		border-color: transparent transparent rgb(50,50,50) rgb(50,50,50);
+		-webkit-transition-duration: .5s;transition-duration: .5s;
+	}
+	
+	.projBox {
+		position: absolute;
+		top: 65px;
+		left: 50%;
+		width: 250px;
+		background: rgb(100,175,255);
+		border-top: 1px solid rgb(175,250,255);
+		border-bottom: 2px solid rgb(50,125,255);
+	}
+	
+	#projBox1 {
+		margin-left: -485px;
+		height: 165px;
+		padding-top: 25px;
+		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+	}
+	
+	#methodology {
+		margin-bottom: 35px;
+	}
+	
+	#projBox2 {
+		margin-left: 235px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+	}
+	
 	#projectMenuWrap {
 		position: relative;
 		display: block;
 		width: 100%;
 		max-width: 1200px;
 		height: 175px;
-		margin: auto auto 125px;
+		margin: auto auto 150px;
 		padding-top: 10px;
 		border-top: 2px solid rgb(50,125,255);
 		border-bottom: 2px solid rgb(50,125,255);
@@ -289,6 +340,48 @@
 		-webkit-transition-duration: .5s;transition-duration: .5s;
 	}
 	
+	#projMenuTip {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		width: 700px;
+		position: absolute;
+		left: 50%;
+		margin-left: -350px;
+		margin-top: -150px;
+		background: rgba(100,175,255,0.9);
+		border-bottom: 2px solid rgb(50,125,255);
+	}
+	
+	#projMenuTip p {
+		color: ivory !important;
+	}
+	
+	#projectMenuWrap:active + #projMenuTip, #projectMenuWrap:focus + #projMenuTip, #projectMenuWrap:hover + #projMenuTip {
+		display: block;
+	}
+	
+	.clickTip {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		color: ivory;
+		position: absolute;
+		width: 400px;
+		left: 50%;
+		margin-top: -75px;
+		background: rgba(100,175,255,0.9);
+		border-bottom: 2px solid rgb(50,125,255);
+	}
+	
+	.projectWrapLeft:active > .clickTip, .projectWrapLeft:focus > .clickTip, .projectWrapLeft:hover > .clickTip {
+		display: block;
+		margin-left: -400px;
+	}
+	
+	.projectWrapRight:active > .clickTip, .projectWrapRight:focus > .clickTip, .projectWrapRight:hover > .clickTip {
+		display: block;
+		margin-left: 10px;
+	}
+	
 	.projGitImg:active, .projGitImg:focus, .projGitImg:hover {
 		-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);
 		opacity: 1;
@@ -302,37 +395,6 @@
 		margin-left: 445px;
 	}
 	
-	.projectArrow:active, .projectArrow:focus, .projectArrow:hover {
-		border-color: transparent transparent rgb(50,50,50) rgb(50,50,50);
-		-webkit-transition-duration: .5s;transition-duration: .5s;
-	}
-	
-	.projBox {
-		position: absolute;
-		top: 65px;
-		left: 50%;
-		width: 250px;
-		background-size: cover;
-	}
-	
-	#projBox1 {
-		margin-left: -485px;
-		height: 165px;
-		padding-top: 25px;
-		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
-	}
-	
-	#methodology {
-		margin-bottom: 35px;
-	}
-	
-	#projBox2 {
-		margin-left: 235px;
-		padding-top: 0px;
-		padding-bottom: 0px;
-		box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
-	}
-	
 	.projectMainDes {
 		font-size: 1.25em;
 		line-height: 30px;
@@ -340,7 +402,7 @@
 	
 	.projectWrap {
 		position: relative;
-		margin: 25px auto 150px;
+		margin: 50px auto 150px;
 		height: 420px;
 	}
 	
@@ -479,7 +541,7 @@
 	
 	#skills {
 		position: absolute;
-		top: 850px;
+		top: 875px;
 		left: 50%;
 		width: 350px;
 		margin-left: -175px;
@@ -686,7 +748,7 @@
 	}
 	/* END NAV X LARGE SCREENS ******************/
 	
-
+	
 	
 	/* MAIN DIV X LARGE SCREENS *************/
 	
@@ -732,6 +794,16 @@
 		margin-left: 350px;
 	}
 	
+	.projectWrapLeft:active > .clickTip, .projectWrapLeft:focus > .clickTip, .projectWrapLeft:hover > .clickTip {
+		display: block;
+		margin-left: -500px;
+	}
+	
+	.projectWrapRight:active > .clickTip, .projectWrapRight:focus > .clickTip, .projectWrapRight:hover > .clickTip {
+		display: block;
+		margin-left: 110px;
+	}
+	
 	.projectLinkLeft {
 		margin-left: -600px;
 	}
@@ -761,7 +833,7 @@
 	}
 	
 	.projectDesLeft {
-		margin-left: -600px;
+		margin-left: -550px;
 	}
 	/* END PROJECTS SECTION X LARGE SCREENS***********************/
 	
@@ -826,12 +898,16 @@
 		height: 1750px;
 	}
 	
+	#skillTitle {
+		font-size: 5em;
+	}
+	
 	#skillExplanationDiv {
 		max-width: 1200px;
 	}
 	
 	#skills {
-		top: 500px;
+		top: 525px;
 		height: 1200px; 
 	}
 	

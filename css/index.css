@@ -14,6 +14,7 @@ body {
 	font-size: 1em;
 	position: relative;
 	text-align: center;
+	background: rgb(250,250,250);
 }
 
 html,
@@ -95,7 +96,7 @@ hr {
 	top: 0px;
 	width: 100%;
 	height: 65px;
-	background: rgb(100,175,255);
+	background: rgba(100,175,255,0.5);
 }
 
 #navIconWrap {
@@ -104,11 +105,12 @@ hr {
 	left: 0px;
 	width: 50px;
 	height: 65px;
-	background-color: rgba(255,255,245,0.9);
+	background-color: rgba(235,235,235,0.9);
 	padding: 5px;
 	padding-top: 10px;
 	border-bottom: 1px solid lightgrey;
-	border-right: 1px solid lightgrey;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
 	border-radius: 0px 0px 2.5px 0px;
 	z-index: 9999;
 }
@@ -123,10 +125,9 @@ hr {
 }
 
 #navIcon:active, #navIcon:focus, #navIcon:hover {
-	-webkit-filter: opacity(.9);filter: opacity(.9);
+	-webkit-filter: opacity(.8);filter: opacity(.8);
 	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
-
 
 nav {
 	position: fixed;
@@ -142,6 +143,7 @@ nav {
 
 nav a {
 	color: rgb(225,15,15);
+	background: rgba(0,0,0,0.7);
 	width: 75px;
 	height: 50px;
 	margin: auto;
@@ -157,6 +159,15 @@ nav p {
 	font-size: 1.25em;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+.email {
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+.email:active, .email:focus, .email:hover {
+	color: rgb(200,50,50);
+	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
 nav ul {
@@ -221,9 +232,10 @@ nav cite {
 	padding: 10px;
 	padding-left: 0px;
 	padding-top: 5px;
-	background-color: rgba(255,255,250,0.9);
+	background-color: rgba(235,235,235,0.9);
 	border-bottom: 1px solid lightgrey;
-	border-left: 1px solid lightgrey;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
 	border-radius: 0px 0px 0px 2.5px;
 	z-index: 9999;
 }
@@ -263,8 +275,8 @@ nav cite {
 
 #headerNav a:active, #headerNav a:focus, #headerNav a:hover {
 	font-style: italic;
-	color: rgb(0,0,0);
-	-webkit-filter: opacity(.9);filter: opacity(.9);
+	color: rgb(100,175,255);
+	-webkit-filter: opacity(.8);filter: opacity(.8);
 }
 /* END NAV ******************/
 
@@ -370,6 +382,10 @@ section p {
 	color: rgb(100,175,255);
 }
 
+.clickTip {
+	display: none;
+}
+
 #projectsTitle {
 	font-style: normal;
 	letter-spacing: 1px;
@@ -377,19 +393,16 @@ section p {
 	padding-bottom: 25px;
 }
 
-#projectsTitle  span {
-	
-}
-
 .projBox {
-	background: rgb(100,175,255);
 	padding-top: 10px;
 	padding-bottom: 15px;
-	border-top: 1px solid rgb(175,250,255);
-	border-bottom: 2px solid rgb(50,125,255);
 }
 
 #projectMenuWrap {
+	display: none;
+}
+
+#projMenuTip {
 	display: none;
 }
 
