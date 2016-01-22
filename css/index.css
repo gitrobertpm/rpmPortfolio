@@ -1,7 +1,7 @@
 /* INDEX CSS */
 
 /* DESIGNED FOR SMALL SCREENS FIRST */
-/* STYLING FOR MEDIUM AND LARGE SCREENS BELOW IN MEDIA QUERRIES */
+/* STYLES FOR LARGER SCREENS IN RESPONSIVE.CSS */
 
 
 /* GENERAL RESETS AND STYLINGS**********************************************************/
@@ -35,7 +35,7 @@ cite,
 span,
 footer {
 	margin: 0;
-	padding: 0
+	padding: 0;
 }
 
 a {
